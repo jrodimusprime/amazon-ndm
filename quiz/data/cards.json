@@ -1,0 +1,10 @@
+{
+  "decks": [
+    {
+      "id": "core",
+      "title": "NDM Network Core concepts",
+      "dataFile": "cards/core.json",
+      "cardCount": 136
+    }
+  ]
+}

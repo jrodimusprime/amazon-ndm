@@ -1,0 +1,265 @@
+{
+  "questions": [
+    {
+      "id": "M2-001",
+      "module": "M2",
+      "difficulty": "interview",
+      "tags": [
+        "performance",
+        "manager"
+      ],
+      "source": "Amazon SDM patterns",
+      "question": "High performer vs low performer management:",
+      "options": [
+        "Stretch and visibility for high; clear expectations, coaching, and timelines for low",
+        "Treat identically always",
+        "Ignore low performers",
+        "Punish high performers with all pages"
+      ],
+      "correctIndex": 0,
+      "explanation": "Classic manager LP interview; also GSRE C5 parallel."
+    },
+    {
+      "id": "M2-002",
+      "module": "M2",
+      "difficulty": "interview",
+      "tags": [
+        "on-call",
+        "manager"
+      ],
+      "source": "ANDM prep",
+      "question": "24x7 rotation health requires:",
+      "options": [
+        "Fair schedules, alert hygiene, and tracking load per engineer",
+        "Heroics culture",
+        "Unlimited pages",
+        "No handoffs"
+      ],
+      "correctIndex": 0,
+      "explanation": "JD: day-to-day oversight of effective 24x7 rotation."
+    },
+    {
+      "id": "M2-003",
+      "module": "M2",
+      "difficulty": "interview",
+      "tags": [
+        "on-call",
+        "ops"
+      ],
+      "source": "ANDM prep",
+      "question": "Chronic noisy alerts \u2014 manager action:",
+      "options": [
+        "Drive engineering to fix signal quality; measure pages reduced",
+        "Tell people to mute forever",
+        "Add more people only",
+        "Ignore"
+      ],
+      "correctIndex": 0,
+      "explanation": "Operational excellence over coping."
+    },
+    {
+      "id": "M2-004",
+      "module": "M2",
+      "difficulty": "interview",
+      "tags": [
+        "manager"
+      ],
+      "source": "ANDM prep",
+      "question": "1:1s should cover:",
+      "options": [
+        "Growth, blockers, wellbeing, and technical coaching \u2014 not only status",
+        "Status only",
+        "Gossip only",
+        "Never technical topics"
+      ],
+      "correctIndex": 0,
+      "explanation": "JD: 1:1s, mentoring soft + technical."
+    },
+    {
+      "id": "M2-005",
+      "module": "M2",
+      "difficulty": "interview",
+      "tags": [
+        "incident",
+        "manager"
+      ],
+      "source": "ANDM prep",
+      "question": "Escalation during critical issue \u2014 manager role:",
+      "options": [
+        "Ensure IC/commander clarity, stakeholder updates, and remove blockers",
+        "Debug every packet alone silently",
+        "Hide from leadership",
+        "Blame the on-call publicly"
+      ],
+      "correctIndex": 0,
+      "explanation": "JD: escalation and critical issue management."
+    },
+    {
+      "id": "M2-006",
+      "module": "M2",
+      "difficulty": "interview",
+      "tags": [
+        "ops",
+        "manager"
+      ],
+      "source": "ANDM prep",
+      "question": "Quality audit of ops means:",
+      "options": [
+        "Sample changes/incidents for process adherence and learning",
+        "Punish every mistake",
+        "Audit never",
+        "Only audit after customer complaints"
+      ],
+      "correctIndex": 0,
+      "explanation": "JD mentions quality audits."
+    },
+    {
+      "id": "M2-007",
+      "module": "M2",
+      "difficulty": "interview",
+      "tags": [
+        "on-call",
+        "lp"
+      ],
+      "source": "ANDM prep",
+      "question": "Burnout signal in network ops teams:",
+      "options": [
+        "Rising pages, declining change quality, attrition risk \u2014 act systemically",
+        "Ask them to try harder",
+        "Add more Sev pages",
+        "Cancel 1:1s"
+      ],
+      "correctIndex": 0,
+      "explanation": "Earth's Best Employer + ops excellence."
+    },
+    {
+      "id": "M2-008",
+      "module": "M2",
+      "difficulty": "interview",
+      "tags": [
+        "performance"
+      ],
+      "source": "ANDM prep",
+      "question": "Performance feedback should be:",
+      "options": [
+        "Timely, specific, behavioral, with examples",
+        "Annual only",
+        "Vague",
+        "Public shaming"
+      ],
+      "correctIndex": 0,
+      "explanation": "Earn Trust + Hire and Develop."
+    },
+    {
+      "id": "M2-009",
+      "module": "M2",
+      "difficulty": "interview",
+      "tags": [
+        "manager",
+        "roadmap"
+      ],
+      "source": "ANDM prep",
+      "question": "Project management for the team includes:",
+      "options": [
+        "Clear owners, milestones, risks, and reporting to leadership",
+        "Hope-based delivery",
+        "No roadmaps",
+        "Hidden work"
+      ],
+      "correctIndex": 0,
+      "explanation": "JD: roadmaps, goals, progress reporting."
+    },
+    {
+      "id": "M2-010",
+      "module": "M2",
+      "difficulty": "interview",
+      "tags": [
+        "manager",
+        "lp"
+      ],
+      "source": "ANDM prep",
+      "question": "When two engineers conflict on design:",
+      "options": [
+        "Facilitate data-driven decision; then disagree-and-commit as a team",
+        "Pick based on friendship",
+        "Let conflict fester",
+        "Escalate without facilitation"
+      ],
+      "correctIndex": 0,
+      "explanation": "Manager soft skills + Backbone."
+    },
+    {
+      "id": "M2-011",
+      "module": "M2",
+      "difficulty": "interview",
+      "tags": [
+        "manager"
+      ],
+      "source": "ANDM prep",
+      "question": "Training investment is justified when:",
+      "options": [
+        "It raises team capability on critical platforms and reduces risk",
+        "It is only for travel perks",
+        "It replaces all hiring forever",
+        "It is unrelated to role"
+      ],
+      "correctIndex": 0,
+      "explanation": "JD: training and development."
+    },
+    {
+      "id": "M2-012",
+      "module": "M2",
+      "difficulty": "interview",
+      "tags": [
+        "on-call"
+      ],
+      "source": "ANDM prep",
+      "question": "On-call participation for managers:",
+      "options": [
+        "Stay close enough to dive deep and support escalations \u2014 role-appropriate",
+        "Never learn production",
+        "Take every page forever alone",
+        "Forbid engineers from escalating"
+      ],
+      "correctIndex": 0,
+      "explanation": "Preferred quals: manage on-call and escalation."
+    },
+    {
+      "id": "M2-013",
+      "module": "M2",
+      "difficulty": "interview",
+      "tags": [
+        "manager"
+      ],
+      "source": "ANDM prep",
+      "question": "Team goal setting should be:",
+      "options": [
+        "Credible, measurable, aligned to customer/network outcomes",
+        "Vague \"be excellent\"",
+        "Individual only with no team goals",
+        "Secret from the team"
+      ],
+      "correctIndex": 0,
+      "explanation": "JD: define and deliver goals; communicate objectives."
+    },
+    {
+      "id": "M2-014",
+      "module": "M2",
+      "difficulty": "interview",
+      "tags": [
+        "incident",
+        "manager"
+      ],
+      "source": "ANDM prep",
+      "question": "After a painful incident, people care looks like:",
+      "options": [
+        "Blameless learning + recovery time + systemic fixes",
+        "Public blame",
+        "Immediate PIP for everyone on shift",
+        "No retro"
+      ],
+      "correctIndex": 0,
+      "explanation": "Combine Highest Standards with Best Employer."
+    }
+  ]
+}

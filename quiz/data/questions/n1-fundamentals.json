@@ -1,0 +1,338 @@
+{
+  "questions": [
+    {
+      "id": "N1-001",
+      "module": "N1",
+      "difficulty": "foundational",
+      "tags": [
+        "networking",
+        "bgp"
+      ],
+      "source": "ANDM prep",
+      "question": "BGP's primary role in large networks is:",
+      "options": [
+        "Exchange routing information between autonomous systems / domains with policy control",
+        "Encrypt all packets",
+        "Replace DNS",
+        "Terminate TLS"
+      ],
+      "correctIndex": 0,
+      "explanation": "Core routing literacy for Network Core managers."
+    },
+    {
+      "id": "N1-002",
+      "module": "N1",
+      "difficulty": "foundational",
+      "tags": [
+        "networking",
+        "ospf"
+      ],
+      "source": "ANDM prep",
+      "question": "OSPF is typically used for:",
+      "options": [
+        "Interior routing within an AS with fast convergence characteristics",
+        "Public internet peering only",
+        "Email delivery",
+        "Certificate management"
+      ],
+      "correctIndex": 0,
+      "explanation": "IGP vs EGP distinction."
+    },
+    {
+      "id": "N1-003",
+      "module": "N1",
+      "difficulty": "interview",
+      "tags": [
+        "networking",
+        "reliability"
+      ],
+      "source": "ANDM prep",
+      "question": "A failure domain is:",
+      "options": [
+        "The blast radius of a single fault \u2014 design to limit correlated failure",
+        "A meeting room",
+        "Only a power circuit",
+        "Always the whole internet"
+      ],
+      "correctIndex": 0,
+      "explanation": "Managers must reason about blast radius."
+    },
+    {
+      "id": "N1-004",
+      "module": "N1",
+      "difficulty": "interview",
+      "tags": [
+        "networking"
+      ],
+      "source": "ANDM prep",
+      "question": "Redundancy without diversity fails when:",
+      "options": [
+        "Both paths share a common risk (same fiber, same software bug)",
+        "Paths are fully independent",
+        "You test failover",
+        "You monitor both"
+      ],
+      "correctIndex": 0,
+      "explanation": "Classic network design pitfall."
+    },
+    {
+      "id": "N1-005",
+      "module": "N1",
+      "difficulty": "interview",
+      "tags": [
+        "networking"
+      ],
+      "source": "ANDM prep",
+      "question": "ECMP helps by:",
+      "options": [
+        "Spreading flows across equal-cost paths for capacity and resilience",
+        "Compressing packets",
+        "Blocking BGP",
+        "Removing need for monitoring"
+      ],
+      "correctIndex": 0,
+      "explanation": "Data center / core fabric concept."
+    },
+    {
+      "id": "N1-006",
+      "module": "N1",
+      "difficulty": "interview",
+      "tags": [
+        "networking"
+      ],
+      "source": "ANDM prep",
+      "question": "Anycast can improve:",
+      "options": [
+        "Latency and resilience by routing to the nearest healthy instance",
+        "Encryption strength",
+        "Disk IOPS",
+        "HR hiring"
+      ],
+      "correctIndex": 0,
+      "explanation": "Common at scale."
+    },
+    {
+      "id": "N1-007",
+      "module": "N1",
+      "difficulty": "interview",
+      "tags": [
+        "networking",
+        "troubleshooting"
+      ],
+      "source": "ANDM prep",
+      "question": "MTU black hole symptoms often look like:",
+      "options": [
+        "Hangs on large packets / TLS mid-handshake while small pings work",
+        "Always complete outage of ICMP",
+        "DNS only",
+        "BGP always down"
+      ],
+      "correctIndex": 0,
+      "explanation": "Dive Deep networking troubleshooting."
+    },
+    {
+      "id": "N1-008",
+      "module": "N1",
+      "difficulty": "foundational",
+      "tags": [
+        "networking"
+      ],
+      "source": "ANDM prep",
+      "question": "Control plane vs data plane:",
+      "options": [
+        "Control plane computes routes; data plane forwards packets",
+        "They are identical",
+        "Data plane runs BGP only",
+        "Control plane is only SNMP"
+      ],
+      "correctIndex": 0,
+      "explanation": "Foundational separation."
+    },
+    {
+      "id": "N1-009",
+      "module": "N1",
+      "difficulty": "interview",
+      "tags": [
+        "networking",
+        "ops"
+      ],
+      "source": "ANDM prep",
+      "question": "Convergence time matters because:",
+      "options": [
+        "Slow reconvergence extends customer-impacting loss after a failure",
+        "It only affects logging",
+        "Faster is always worse",
+        "It is unrelated to SLAs"
+      ],
+      "correctIndex": 0,
+      "explanation": "Ops excellence metric."
+    },
+    {
+      "id": "N1-010",
+      "module": "N1",
+      "difficulty": "interview",
+      "tags": [
+        "networking"
+      ],
+      "source": "ANDM prep",
+      "question": "Route flaps harm networks by:",
+      "options": [
+        "Destabilizing forwarding and consuming control-plane CPU",
+        "Improving compression",
+        "Reducing power",
+        "Fixing MTU"
+      ],
+      "correctIndex": 0,
+      "explanation": "Stability is a first-class goal."
+    },
+    {
+      "id": "N1-011",
+      "module": "N1",
+      "difficulty": "interview",
+      "tags": [
+        "networking"
+      ],
+      "source": "ANDM prep",
+      "question": "L2 loops without protection cause:",
+      "options": [
+        "Broadcast storms and meltdown \u2014 need STP/fabric controls",
+        "Faster BGP",
+        "Better DNS",
+        "Nothing"
+      ],
+      "correctIndex": 0,
+      "explanation": "Still relevant in parts of the stack."
+    },
+    {
+      "id": "N1-012",
+      "module": "N1",
+      "difficulty": "interview",
+      "tags": [
+        "networking"
+      ],
+      "source": "ANDM prep",
+      "question": "QoS is used to:",
+      "options": [
+        "Prioritize critical traffic under congestion",
+        "Replace capacity planning",
+        "Encrypt management",
+        "Disable monitoring"
+      ],
+      "correctIndex": 0,
+      "explanation": "Understand limits \u2014 not a substitute for capacity."
+    },
+    {
+      "id": "N1-013",
+      "module": "N1",
+      "difficulty": "interview",
+      "tags": [
+        "networking",
+        "aws"
+      ],
+      "source": "ANDM prep",
+      "question": "Overlay vs underlay:",
+      "options": [
+        "Overlay virtual networks ride an underlay physical/IP fabric",
+        "Overlay replaces physics",
+        "Underlay is only Wi-Fi",
+        "They never interact"
+      ],
+      "correctIndex": 0,
+      "explanation": "AWS-scale mental model."
+    },
+    {
+      "id": "N1-014",
+      "module": "N1",
+      "difficulty": "interview",
+      "tags": [
+        "networking",
+        "ops"
+      ],
+      "source": "ANDM prep",
+      "question": "A good health signal for a link is NOT only:",
+      "options": [
+        "Admin up with no traffic validation or error counters",
+        "Error rates + utilization + neighbor state",
+        "Packet loss probes",
+        "Optical levels where applicable"
+      ],
+      "correctIndex": 0,
+      "explanation": "Green \u2260 healthy."
+    },
+    {
+      "id": "N1-015",
+      "module": "N1",
+      "difficulty": "interview",
+      "tags": [
+        "networking",
+        "troubleshooting"
+      ],
+      "source": "ANDM prep",
+      "question": "Asymmetric routing can break:",
+      "options": [
+        "Stateful firewalls and return-path assumptions",
+        "All copper cables",
+        "BGP ASNs permanently",
+        "DNS TTLs"
+      ],
+      "correctIndex": 0,
+      "explanation": "Common troubleshooting trap."
+    },
+    {
+      "id": "N1-016",
+      "module": "N1",
+      "difficulty": "interview",
+      "tags": [
+        "capacity"
+      ],
+      "source": "ANDM prep",
+      "question": "Capacity headroom exists to:",
+      "options": [
+        "Absorb bursts and failures without SLO breach",
+        "Look impressive on graphs idle",
+        "Avoid monitoring",
+        "Skip forecasting"
+      ],
+      "correctIndex": 0,
+      "explanation": "JD: capacity management."
+    },
+    {
+      "id": "N1-017",
+      "module": "N1",
+      "difficulty": "interview",
+      "tags": [
+        "networking",
+        "ops"
+      ],
+      "source": "ANDM prep",
+      "question": "Telemetry that helps Dive Deep includes:",
+      "options": [
+        "Interface errors, drops, queue depth, control-plane CPU, flow/latency probes",
+        "Only ticket volume",
+        "Only employee NPS",
+        "Only rack photos"
+      ],
+      "correctIndex": 0,
+      "explanation": "Managers should know what good looks like."
+    },
+    {
+      "id": "N1-018",
+      "module": "N1",
+      "difficulty": "interview",
+      "tags": [
+        "networking",
+        "lp"
+      ],
+      "source": "ANDM prep",
+      "question": "When two regions lose a path, customers care about:",
+      "options": [
+        "Whether alternate paths and apps tolerate the loss",
+        "Device hostname aesthetics",
+        "Cable color",
+        "Ticket ID format"
+      ],
+      "correctIndex": 0,
+      "explanation": "Customer Obsession framing."
+    }
+  ]
+}

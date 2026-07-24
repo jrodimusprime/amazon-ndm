@@ -1,0 +1,307 @@
+{
+  "questions": [
+    {
+      "id": "LP-FULL-001",
+      "module": "LP-FULL",
+      "difficulty": "interview",
+      "tags": [
+        "lp"
+      ],
+      "source": "ANDM prep",
+      "question": "Which LP emphasizes mechanisms over good intentions?",
+      "options": [
+        "Insist on the Highest Standards (and related mechanism culture)",
+        "Frugality only",
+        "Think Big only",
+        "Bias for Action only"
+      ],
+      "correctIndex": 0,
+      "explanation": "Amazon culture rewards durable mechanisms \u2014 checklists, automation, bars \u2014 not heroics."
+    },
+    {
+      "id": "LP-FULL-002",
+      "module": "LP-FULL",
+      "difficulty": "interview",
+      "tags": [
+        "lp",
+        "backbone"
+      ],
+      "source": "ANDM prep",
+      "question": "\"Disagree and Commit\" requires that after disagreement you:",
+      "options": [
+        "Fully support the decision publicly and execute",
+        "Sabotage quietly",
+        "Escalate forever",
+        "Quit immediately"
+      ],
+      "correctIndex": 0,
+      "explanation": "Have Backbone; Disagree and Commit."
+    },
+    {
+      "id": "LP-FULL-003",
+      "module": "LP-FULL",
+      "difficulty": "interview",
+      "tags": [
+        "lp",
+        "invent-simplify"
+      ],
+      "source": "ANDM prep",
+      "question": "Invent and Simplify is NOT:",
+      "options": [
+        "Adding complexity for resume prestige",
+        "Removing steps that do not add customer value",
+        "Automating toil",
+        "Simplifying interfaces for operators"
+      ],
+      "correctIndex": 0,
+      "explanation": "Complexity is a cost in Network Core."
+    },
+    {
+      "id": "LP-FULL-004",
+      "module": "LP-FULL",
+      "difficulty": "interview",
+      "tags": [
+        "lp",
+        "earn-trust"
+      ],
+      "source": "ANDM prep",
+      "question": "Earn Trust includes delivering:",
+      "options": [
+        "Hard news early with transparency",
+        "Only good news",
+        "Optimism without data",
+        "Silence during incidents"
+      ],
+      "correctIndex": 0,
+      "explanation": "Managers represent networking to customers \u2014 trust is currency."
+    },
+    {
+      "id": "LP-FULL-005",
+      "module": "LP-FULL",
+      "difficulty": "interview",
+      "tags": [
+        "lp",
+        "dive-deep",
+        "manager"
+      ],
+      "source": "ANDM prep",
+      "question": "Dive Deep anti-pattern for managers:",
+      "options": [
+        "Delegating all technical understanding permanently and never verifying",
+        "Sampling tickets and pairing on hard issues",
+        "Reading dashboards weekly",
+        "Asking probing questions in design reviews"
+      ],
+      "correctIndex": 0,
+      "explanation": "JD: technical leaders dive deep and help engineers decide well."
+    },
+    {
+      "id": "LP-FULL-006",
+      "module": "LP-FULL",
+      "difficulty": "interview",
+      "tags": [
+        "lp",
+        "bias-for-action",
+        "change-control"
+      ],
+      "source": "ANDM prep",
+      "question": "Bias for Action still requires:",
+      "options": [
+        "Calculated risk with reversible steps when stakes are high",
+        "Reckless change without rollback",
+        "Ignoring change control",
+        "Skipping peer review always"
+      ],
+      "correctIndex": 0,
+      "explanation": "Safe ops + bias for action coexist via reversible changes."
+    },
+    {
+      "id": "LP-FULL-007",
+      "module": "LP-FULL",
+      "difficulty": "interview",
+      "tags": [
+        "lp",
+        "frugality"
+      ],
+      "source": "ANDM prep",
+      "question": "Frugality does NOT justify:",
+      "options": [
+        "Removing monitoring to save license cost without a replacement",
+        "Right-sizing spare capacity with data",
+        "Preferring automation over headcount for toil",
+        "Reusing tools across teams"
+      ],
+      "correctIndex": 0,
+      "explanation": "Cutting observability is false economy."
+    },
+    {
+      "id": "LP-FULL-008",
+      "module": "LP-FULL",
+      "difficulty": "interview",
+      "tags": [
+        "lp",
+        "think-big"
+      ],
+      "source": "ANDM prep",
+      "question": "Think Big without Deliver Results fails when you:",
+      "options": [
+        "Only present vision slides with no milestones or metrics",
+        "Ship incremental capacity with a multi-year architecture",
+        "Pilot then scale",
+        "Document a roadmap with owners"
+      ],
+      "correctIndex": 0,
+      "explanation": "Amazon wants both vision and delivery."
+    },
+    {
+      "id": "LP-FULL-009",
+      "module": "LP-FULL",
+      "difficulty": "interview",
+      "tags": [
+        "lp"
+      ],
+      "source": "ANDM prep",
+      "question": "Are Right, A Lot includes:",
+      "options": [
+        "Seeking diverse perspectives and updating beliefs",
+        "Never changing your mind",
+        "Winning arguments by seniority",
+        "Ignoring juniors"
+      ],
+      "correctIndex": 0,
+      "explanation": "Leaders use data and voices across the org."
+    },
+    {
+      "id": "LP-FULL-010",
+      "module": "LP-FULL",
+      "difficulty": "interview",
+      "tags": [
+        "lp"
+      ],
+      "source": "ANDM prep",
+      "question": "Learn and Be Curious for network managers:",
+      "options": [
+        "Stay current on protocols/tools and teach the team",
+        "Freeze skills at hire date",
+        "Only learn during outages",
+        "Outsource all learning to vendors"
+      ],
+      "correctIndex": 0,
+      "explanation": "Network platforms evolve continuously."
+    },
+    {
+      "id": "LP-FULL-011",
+      "module": "LP-FULL",
+      "difficulty": "interview",
+      "tags": [
+        "lp",
+        "on-call"
+      ],
+      "source": "ANDM prep",
+      "question": "Earth's Best Employer in a 24x7 network team means:",
+      "options": [
+        "Fair rotations, recovery time, and addressing chronic pages",
+        "Unlimited pages as a badge of honor",
+        "No career conversations",
+        "Hiding attrition"
+      ],
+      "correctIndex": 0,
+      "explanation": "JD explicitly covers 24x7 operational rotation health."
+    },
+    {
+      "id": "LP-FULL-012",
+      "module": "LP-FULL",
+      "difficulty": "interview",
+      "tags": [
+        "lp"
+      ],
+      "source": "ANDM prep",
+      "question": "Broad Responsibility example:",
+      "options": [
+        "Designing change so a failure does not cascade to unrelated customers",
+        "Optimizing only your team's ticket count",
+        "Ignoring security reviews",
+        "Local heroics over org standards"
+      ],
+      "correctIndex": 0,
+      "explanation": "AWS Networking impacts many customers."
+    },
+    {
+      "id": "LP-FULL-013",
+      "module": "LP-FULL",
+      "difficulty": "interview",
+      "tags": [
+        "lp",
+        "ownership"
+      ],
+      "source": "ANDM prep",
+      "question": "Ownership of a Sev-1 after your shift ends:",
+      "options": [
+        "Stay engaged or ensure a clean handoff with context \u2014 do not disappear",
+        "Close laptop immediately with no handoff",
+        "Mute all channels",
+        "Blame NOC only"
+      ],
+      "correctIndex": 0,
+      "explanation": "Ownership transcends shift boundaries until ownership is clear."
+    },
+    {
+      "id": "LP-FULL-014",
+      "module": "LP-FULL",
+      "difficulty": "interview",
+      "tags": [
+        "lp",
+        "customer-obsession"
+      ],
+      "source": "ANDM prep",
+      "question": "Customer Obsession metric for network ops:",
+      "options": [
+        "Customer-impacting minutes / error budgets \u2014 not only device uptime",
+        "Interface CRC counters alone",
+        "Number of tickets closed",
+        "Lines of Ansible written"
+      ],
+      "correctIndex": 0,
+      "explanation": "Customer impact > device green."
+    },
+    {
+      "id": "LP-FULL-015",
+      "module": "LP-FULL",
+      "difficulty": "interview",
+      "tags": [
+        "lp",
+        "star"
+      ],
+      "source": "ANDM prep",
+      "question": "Deliver Results story needs:",
+      "options": [
+        "Baseline, action, and quantified outcome with your role clear",
+        "A long list of meetings attended",
+        "Job titles of people you know",
+        "Only future plans"
+      ],
+      "correctIndex": 0,
+      "explanation": "STAR Results must be concrete."
+    },
+    {
+      "id": "LP-FULL-016",
+      "module": "LP-FULL",
+      "difficulty": "interview",
+      "tags": [
+        "lp",
+        "hire-develop",
+        "manager"
+      ],
+      "source": "ANDM prep",
+      "question": "Hire and Develop includes performance management when:",
+      "options": [
+        "You give timely feedback, clear expectations, and growth plans \u2014 including hard conversations",
+        "You avoid feedback until annual review",
+        "You only praise publicly",
+        "You outsource all coaching to HR forever"
+      ],
+      "correctIndex": 0,
+      "explanation": "JD: performance management and team health."
+    }
+  ]
+}

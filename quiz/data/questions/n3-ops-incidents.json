@@ -1,0 +1,299 @@
+{
+  "questions": [
+    {
+      "id": "N3-001",
+      "module": "N3",
+      "difficulty": "interview",
+      "tags": [
+        "ops",
+        "metrics"
+      ],
+      "source": "JD",
+      "question": "Operational excellence reporting should track:",
+      "options": [
+        "Availability/error budget style impact, change success, MTTR, backlog risk",
+        "Only ticket count",
+        "Only LOE hours",
+        "Only device uptime ignoring customers"
+      ],
+      "correctIndex": 0,
+      "explanation": "JD: manage/track/report ops and network status with metrics."
+    },
+    {
+      "id": "N3-002",
+      "module": "N3",
+      "difficulty": "interview",
+      "tags": [
+        "incident"
+      ],
+      "source": "JD",
+      "question": "After mitigating an incident, long-term fix means:",
+      "options": [
+        "Root cause with durable prevention \u2014 not ticket ping-pong",
+        "Close when green temporarily",
+        "Reboot forever",
+        "Mute alerts"
+      ],
+      "correctIndex": 0,
+      "explanation": "JD: address root cause and avoid recurrence."
+    },
+    {
+      "id": "N3-003",
+      "module": "N3",
+      "difficulty": "interview",
+      "tags": [
+        "incident",
+        "ops"
+      ],
+      "source": "ANDM prep",
+      "question": "MTTR improvement usually comes from:",
+      "options": [
+        "Better detection, runbooks, automation, and clear ownership",
+        "More meetings during outages",
+        "Hiding status",
+        "Disabling pages"
+      ],
+      "correctIndex": 0,
+      "explanation": "Ops excellence."
+    },
+    {
+      "id": "N3-004",
+      "module": "N3",
+      "difficulty": "interview",
+      "tags": [
+        "metrics"
+      ],
+      "source": "ANDM prep",
+      "question": "Dashboarding anti-pattern:",
+      "options": [
+        "Vanity metrics that do not drive action",
+        "SLO burn and top talkers",
+        "Error budgets",
+        "Change failure rate"
+      ],
+      "correctIndex": 0,
+      "explanation": "JD: metrics and dashboarding techniques."
+    },
+    {
+      "id": "N3-005",
+      "module": "N3",
+      "difficulty": "interview",
+      "tags": [
+        "reliability"
+      ],
+      "source": "JD",
+      "question": "Availability risk management includes:",
+      "options": [
+        "Known risks tracked with owners and mitigation dates",
+        "Hoping nothing fails",
+        "Secret risk lists",
+        "Only insurance"
+      ],
+      "correctIndex": 0,
+      "explanation": "JD: manage network issues and availability risks."
+    },
+    {
+      "id": "N3-006",
+      "module": "N3",
+      "difficulty": "interview",
+      "tags": [
+        "incident"
+      ],
+      "source": "ANDM prep",
+      "question": "Incident commander role:",
+      "options": [
+        "Coordinates mitigation, communication, and roles \u2014 not solo debug everything",
+        "Silences everyone",
+        "Only takes notes after",
+        "Leaves channel"
+      ],
+      "correctIndex": 0,
+      "explanation": "Critical issue management."
+    },
+    {
+      "id": "N3-007",
+      "module": "N3",
+      "difficulty": "interview",
+      "tags": [
+        "incident"
+      ],
+      "source": "ANDM prep",
+      "question": "Blameless postmortem goal:",
+      "options": [
+        "Systemic learning and prevention",
+        "HR punishment record",
+        "Public shaming",
+        "Skip actions"
+      ],
+      "correctIndex": 0,
+      "explanation": "Highest Standards + learning culture."
+    },
+    {
+      "id": "N3-008",
+      "module": "N3",
+      "difficulty": "interview",
+      "tags": [
+        "troubleshooting"
+      ],
+      "source": "ANDM prep",
+      "question": "When synthetic probes are green but customers hurt:",
+      "options": [
+        "Probes miss path/region/cohort \u2014 correlate with real traffic",
+        "Customers are wrong",
+        "Ignore",
+        "Disable customer tickets"
+      ],
+      "correctIndex": 0,
+      "explanation": "Dive Deep troubleshooting."
+    },
+    {
+      "id": "N3-009",
+      "module": "N3",
+      "difficulty": "interview",
+      "tags": [
+        "incident",
+        "communication"
+      ],
+      "source": "ANDM prep",
+      "question": "SEV communication to stakeholders should be:",
+      "options": [
+        "Factual, timed updates with impact and ETA of next update",
+        "Silence until RCA complete",
+        "Blame names",
+        "Speculation as fact"
+      ],
+      "correctIndex": 0,
+      "explanation": "Earn Trust under pressure."
+    },
+    {
+      "id": "N3-010",
+      "module": "N3",
+      "difficulty": "interview",
+      "tags": [
+        "ops"
+      ],
+      "source": "JD",
+      "question": "Process optimization uses data to:",
+      "options": [
+        "Find bottlenecks and remove toil with measured before/after",
+        "Add steps randomly",
+        "Ignore metrics",
+        "Optimize only PowerPoint"
+      ],
+      "correctIndex": 0,
+      "explanation": "JD: process optimization using data."
+    },
+    {
+      "id": "N3-011",
+      "module": "N3",
+      "difficulty": "interview",
+      "tags": [
+        "on-call"
+      ],
+      "source": "ANDM prep",
+      "question": "On-call escalation policy should be:",
+      "options": [
+        "Clear thresholds and backup paths \u2014 practiced",
+        "Tribal only",
+        "Never escalate",
+        "Escalate everything instantly with no triage"
+      ],
+      "correctIndex": 0,
+      "explanation": "Preferred: escalation management."
+    },
+    {
+      "id": "N3-012",
+      "module": "N3",
+      "difficulty": "interview",
+      "tags": [
+        "incident",
+        "manager"
+      ],
+      "source": "ANDM prep",
+      "question": "Recurring identical Sev pages indicate:",
+      "options": [
+        "Missing durable fix / mechanism \u2014 manager should drive it",
+        "Normal business",
+        "Need more mute rules only",
+        "Hire only"
+      ],
+      "correctIndex": 0,
+      "explanation": "Avoid re-occurrence."
+    },
+    {
+      "id": "N3-013",
+      "module": "N3",
+      "difficulty": "interview",
+      "tags": [
+        "ops",
+        "slo"
+      ],
+      "source": "ANDM prep",
+      "question": "Error budget thinking for networks:",
+      "options": [
+        "Track customer-impacting unreliability allowance to prioritize work",
+        "Never launch changes",
+        "Ignore SLOs",
+        "Only use device ping"
+      ],
+      "correctIndex": 0,
+      "explanation": "Ops excellence language transferable from SRE."
+    },
+    {
+      "id": "N3-014",
+      "module": "N3",
+      "difficulty": "interview",
+      "tags": [
+        "incident",
+        "lp"
+      ],
+      "source": "ANDM prep",
+      "question": "During incident, Dive Deep vs mitigate:",
+      "options": [
+        "Mitigate first; deepen in parallel once impact controlled",
+        "Deep forever before mitigate",
+        "Neither",
+        "Only mitigate never learn"
+      ],
+      "correctIndex": 0,
+      "explanation": "Amazon Bias for Action + Dive Deep balance."
+    },
+    {
+      "id": "N3-015",
+      "module": "N3",
+      "difficulty": "interview",
+      "tags": [
+        "manager",
+        "metrics"
+      ],
+      "source": "ANDM prep",
+      "question": "Ops status report for leadership weekly should highlight:",
+      "options": [
+        "Customer impact, top risks, capacity, hiring \u2014 actionable",
+        "Raw syslog dump",
+        "Only celebrations",
+        "No asks"
+      ],
+      "correctIndex": 0,
+      "explanation": "Represent status to leadership."
+    },
+    {
+      "id": "N3-016",
+      "module": "N3",
+      "difficulty": "interview",
+      "tags": [
+        "ops"
+      ],
+      "source": "JD",
+      "question": "Continuous improvement example:",
+      "options": [
+        "Turn incident learnings into automation and standard process updates",
+        "Write a wiki and never revisit",
+        "Add blame",
+        "Increase toil"
+      ],
+      "correctIndex": 0,
+      "explanation": "JD: continuous improvement of frameworks/tools/processes."
+    }
+  ]
+}

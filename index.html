@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="dark">
+  <meta name="theme-color" content="#232f3e">
+  <title>ANDM Interview Quiz</title>
+  <link rel="stylesheet" href="quiz/css/quiz.css?v=andm-1">
+</head>
+<body class="dark">
+  <header>
+    <div class="header-top">
+      <div>
+        <h1>Amazon Network Development Manager Prep</h1>
+        <p class="subtitle">Network Core · Leadership Principles · Ops excellence</p>
+        <p class="resource-links">
+          <a href="cards/">Flash cards</a>
+          <span aria-hidden="true"> · </span>
+          <a href="cheat-sheet.html" target="_blank" rel="noopener">Cheat sheet</a>
+        </p>
+      </div>
+      <div id="score-bar" class="score-bar">
+        <span class="score-label">Average score</span>
+        <span id="avg-score" class="avg-score">—</span>
+        <span id="score-detail" class="score-detail">No questions answered yet</span>
+        <span id="pool-remaining" class="pool-remaining">—</span>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="quiz-area" class="quiz-area">
+      <p id="quiz-meta" class="meta"></p>
+      <div id="question-text" class="question"></div>
+      <div id="options" class="options"></div>
+      <div id="video-link" class="video-link"></div>
+      <div id="explanation" class="explanation hidden"></div>
+      <div class="quiz-actions">
+        <button id="skip-btn" type="button" class="btn-secondary">Skip for later</button>
+        <button id="next-btn" type="button" class="btn-primary hidden">Next question</button>
+      </div>
+    </section>
+
+    <section id="module-filters" class="module-filters">
+      <h2>In scope</h2>
+      <p class="hint">Untick sections to exclude them from the random question pool.</p>
+      <div id="module-chips" class="module-chips"></div>
+    </section>
+
+    <section id="section-stats" class="section-stats">
+      <div class="section-stats-header">
+        <h2>Performance by section</h2>
+        <button id="reset-progress-btn" type="button" class="btn-secondary">Reset progress</button>
+      </div>
+      <div id="stats-grid" class="stats-grid"></div>
+    </section>
+  </main>
+
+  <script id="quiz-loader" src="quiz/js/loader.js?v=andm-1"></script>
+  <script src="quiz/js/storage.js?v=andm-1"></script>
+  <script src="quiz/js/engine.js?v=andm-1"></script>
+  <script src="quiz/js/format.js?v=andm-1"></script>
+  <script src="quiz/js/ui.js?v=andm-1"></script>
+  <script src="quiz/js/app.js?v=andm-1"></script>
+</body>
+</html>

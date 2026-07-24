@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ANDM Interview Cheat Sheet</title>
+  <style>
+    @page { size: A4; margin: 8mm; }
+    * { box-sizing: border-box; }
+    body {
+      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      font-size: 7.2pt;
+      line-height: 1.25;
+      color: #111;
+      margin: 0;
+      padding: 6mm;
+    }
+    h1 { font-size: 13pt; margin: 0 0 2mm; color: #232f3e; }
+    .subtitle { margin: 0 0 3mm; color: #555; font-size: 7pt; }
+    .loop-bar { display: flex; gap: 2mm; margin-bottom: 3mm; }
+    .loop-step {
+      flex: 1; background: #232f3e; color: #fff; padding: 2mm;
+      border-radius: 2px; font-size: 6.5pt;
+    }
+    .loop-step .tag { color: #ff9900; display: block; margin-top: 1mm; }
+    .grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 2.5mm; }
+    section {
+      border: 0.4pt solid #ccc; border-radius: 2px; padding: 2mm 2.5mm;
+      break-inside: avoid;
+    }
+    h2 {
+      font-size: 8pt; margin: 0 0 1.5mm; color: #232f3e;
+      border-bottom: 1.5pt solid #ff9900; padding-bottom: 0.5mm;
+    }
+    h3 { font-size: 7pt; margin: 1.5mm 0 0.5mm; color: #333; }
+    ul, ol { margin: 0; padding-left: 3mm; }
+    li { margin-bottom: 0.4mm; }
+    table { width: 100%; border-collapse: collapse; font-size: 6.5pt; }
+    th, td { border-bottom: 0.3pt solid #ddd; padding: 0.6mm 1mm; text-align: left; vertical-align: top; }
+    th { color: #232f3e; }
+    .ok { color: #1e8900; font-weight: 600; }
+    .warn { color: #d13212; font-weight: 600; }
+    .mono { font-family: ui-monospace, Menlo, monospace; font-size: 6.2pt; }
+    .footer { margin-top: 3mm; font-size: 6pt; color: #777; text-align: center; }
+    a { color: #e47911; }
+  </style>
+</head>
+<body>
+<h1>Amazon NDM — Network Core Interview Cheat Sheet</h1>
+<p class="subtitle">ANDM quiz bank · Leadership Principles · Network ops · Manager excellence</p>
+
+<div class="loop-bar">
+  <div class="loop-step">① LP / BEHAVIORAL<br><span class="tag">STAR · Bar Raiser · metrics</span></div>
+  <div class="loop-step">② NETWORK DEEP-DIVE<br><span class="tag">Resume · routing · change safety</span></div>
+  <div class="loop-step">③ MANAGER / OPS<br><span class="tag">Hiring · 24×7 · stakeholders</span></div>
+</div>
+
+<div class="grid">
+  <section>
+    <h2>Top LPs for NDM</h2>
+    <ul>
+      <li><strong>Dive Deep</strong> — mechanisms, metrics, logs</li>
+      <li><strong>Ownership</strong> — drive deps to done</li>
+      <li><strong>Deliver Results</strong> — baselines + numbers</li>
+      <li><strong>Hire &amp; Develop</strong> — raise bar + coach</li>
+      <li><strong>Earn Trust</strong> — bad news early</li>
+      <li><strong>Customer Obsession</strong> — impact minutes</li>
+      <li><strong>Highest Standards</strong> — safety bar holds</li>
+      <li><strong>Bias for Action</strong> — reversible mitigate</li>
+    </ul>
+    <h3>STAR</h3>
+    <ul>
+      <li>Situation → Task → <strong>I</strong> Actions → Result (+ Learning)</li>
+      <li>~2 min; invite follow-ups</li>
+      <li>Result needs baseline → delta</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Ops triage</h2>
+    <ol>
+      <li><strong>Impact</strong> — who, how much, since when?</li>
+      <li><strong>Mitigate</strong> — restore customers first</li>
+      <li><strong>Scope</strong> — failure domain / blast radius</li>
+      <li><strong>Change correlate</strong> — deploys, peers, fiber</li>
+      <li><strong>Dive deep</strong> — telemetry, not guesses</li>
+      <li><strong>Durable fix</strong> — stop recurrence</li>
+    </ol>
+    <h3>Green ≠ healthy</h3>
+    <ul>
+      <li>Probe miss path/region/cohort</li>
+      <li>Admin-up without traffic/errors</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Change &amp; capacity</h2>
+    <ul>
+      <li>Peer review · canary · rollback · owner</li>
+      <li>No overlapping failure-domain changes</li>
+      <li>Forecast: peaks + growth + repair margin</li>
+      <li>Lead indicators → capacity before demand</li>
+      <li>Emergency change = fast + audited</li>
+    </ul>
+    <h3>Physics napkin</h3>
+    <ul>
+      <li>1 TB @ 10 Mbps ≈ <strong>9.3 days</strong></li>
+      <li>Always convert to same units (Mb)</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Network flash points</h2>
+    <table>
+      <tr><th>Topic</th><th>Manager signal</th></tr>
+      <tr><td>BGP / IGP</td><td>Policy vs interior convergence</td></tr>
+      <tr><td>Failure domain</td><td>Limit correlated risk</td></tr>
+      <tr><td>ECMP / anycast</td><td>Capacity + nearest healthy</td></tr>
+      <tr><td>MTU black hole</td><td>Small OK, large hangs</td></tr>
+      <tr><td>Asymmetry</td><td>Stateful midboxes break</td></tr>
+      <tr><td>Control vs data</td><td>Routes vs forward</td></tr>
+    </table>
+  </section>
+
+  <section>
+    <h2>Manager moves</h2>
+    <ul>
+      <li>High performer: stretch + visibility</li>
+      <li>Low performer: expectations + plan + timeline</li>
+      <li>24×7: fair rotation + page hygiene</li>
+      <li>Hiring: bar &gt; 50% of team on key dims</li>
+      <li>Status: R/Y/G · risks · asks · impact</li>
+      <li>Customer unique needs: scope + safety</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Loop quirks</h2>
+    <ul>
+      <li>LPs in <span class="warn">every</span> round</li>
+      <li>Bar Raiser protects the bar</li>
+      <li>Confirm coding with recruiter</li>
+      <li>AU: AGSVA clearance eligibility</li>
+      <li>Disagree → then <span class="ok">commit</span></li>
+    </ul>
+    <h3>Ask recruiter</h3>
+    <ul>
+      <li>Round list + LP vs deep-dive mix</li>
+      <li>Any coding / design format</li>
+      <li>Level expectations (org impact)</li>
+    </ul>
+  </section>
+</div>
+
+<p class="footer">ANDM · <a href="https://jrodimusprime.github.io/ANDM/">Quiz</a> · <a href="https://jrodimusprime.github.io/ANDM/cards/">Flash cards</a> · Modules: LP · M1–M3 · N1–N4 · WX</p>
+</body>
+</html>

@@ -1,0 +1,225 @@
+{
+  "questions": [
+    {
+      "id": "M3-001",
+      "module": "M3",
+      "difficulty": "interview",
+      "tags": [
+        "stakeholder",
+        "customer"
+      ],
+      "source": "JD",
+      "question": "Representing networking to a large customer means:",
+      "options": [
+        "Translate risk/options clearly; commit to deliverables; follow through",
+        "Hide uncertainty",
+        "Use unexplained jargon only",
+        "Avoid the customer"
+      ],
+      "correctIndex": 0,
+      "explanation": "JD: represent networking to customers."
+    },
+    {
+      "id": "M3-002",
+      "module": "M3",
+      "difficulty": "interview",
+      "tags": [
+        "stakeholder"
+      ],
+      "source": "ANDM prep",
+      "question": "Cross-team dependency late \u2014 best move:",
+      "options": [
+        "Surface early with impact, propose options, escalate with data if needed",
+        "Surprise leadership at the deadline",
+        "Silent wait",
+        "Blame publicly in Slack"
+      ],
+      "correctIndex": 0,
+      "explanation": "Earn Trust + Deliver Results."
+    },
+    {
+      "id": "M3-003",
+      "module": "M3",
+      "difficulty": "interview",
+      "tags": [
+        "stakeholder",
+        "manager"
+      ],
+      "source": "ANDM prep",
+      "question": "Status to leadership should be:",
+      "options": [
+        "Concise: green/yellow/red, risks, asks, customer impact",
+        "50-page raw logs",
+        "Only good news",
+        "No metrics"
+      ],
+      "correctIndex": 0,
+      "explanation": "JD: reporting progress to leadership."
+    },
+    {
+      "id": "M3-004",
+      "module": "M3",
+      "difficulty": "interview",
+      "tags": [
+        "communication"
+      ],
+      "source": "ANDM prep",
+      "question": "Complex idea to non-network stakeholders:",
+      "options": [
+        "Analogy + impact + decision needed \u2014 then offer deep dive",
+        "Full BGP attribute lecture first",
+        "Emoji only",
+        "Forward a 200-page RFC"
+      ],
+      "correctIndex": 0,
+      "explanation": "Preferred: convey complex ideas clearly."
+    },
+    {
+      "id": "M3-005",
+      "module": "M3",
+      "difficulty": "interview",
+      "tags": [
+        "stakeholder"
+      ],
+      "source": "ANDM prep",
+      "question": "Working with service teams on network dependencies:",
+      "options": [
+        "Identify deliverables early; track; communicate slips",
+        "Assume they know network constraints",
+        "Refuse collaboration",
+        "Only engage during outages"
+      ],
+      "correctIndex": 0,
+      "explanation": "JD: ensure network dependencies identified and delivered."
+    },
+    {
+      "id": "M3-006",
+      "module": "M3",
+      "difficulty": "interview",
+      "tags": [
+        "customer",
+        "lp"
+      ],
+      "source": "ANDM prep",
+      "question": "Conflict between customer ask and safety bar:",
+      "options": [
+        "Explain trade-offs; seek safer path that still meets need",
+        "Always override safety",
+        "Always refuse without options",
+        "Ghost the customer"
+      ],
+      "correctIndex": 0,
+      "explanation": "Customer Obsession + Highest Standards."
+    },
+    {
+      "id": "M3-007",
+      "module": "M3",
+      "difficulty": "interview",
+      "tags": [
+        "stakeholder"
+      ],
+      "source": "ANDM prep",
+      "question": "Synergies with other engineering teams:",
+      "options": [
+        "Share best practices, reuse tooling, create growth opportunities",
+        "Silo knowledge",
+        "Compete destructively",
+        "Never share runbooks"
+      ],
+      "correctIndex": 0,
+      "explanation": "JD: improve synergies and opportunities for engineers."
+    },
+    {
+      "id": "M3-008",
+      "module": "M3",
+      "difficulty": "interview",
+      "tags": [
+        "roadmap"
+      ],
+      "source": "ANDM prep",
+      "question": "Roadmap communication fails when:",
+      "options": [
+        "Priorities are unclear and owners missing",
+        "Milestones exist with owners",
+        "Risks are listed",
+        "Customers know impact windows"
+      ],
+      "correctIndex": 0,
+      "explanation": "JD: develop and maintain project road maps."
+    },
+    {
+      "id": "M3-009",
+      "module": "M3",
+      "difficulty": "interview",
+      "tags": [
+        "communication"
+      ],
+      "source": "ANDM prep",
+      "question": "Written escalation to directors should include:",
+      "options": [
+        "Impact, timeline, mitigation, ask",
+        "Anger",
+        "Unverified rumors",
+        "No ask"
+      ],
+      "correctIndex": 0,
+      "explanation": "Managers escalate with structure."
+    },
+    {
+      "id": "M3-010",
+      "module": "M3",
+      "difficulty": "interview",
+      "tags": [
+        "customer"
+      ],
+      "source": "ANDM prep",
+      "question": "Customer unique requirements (per JD) require:",
+      "options": [
+        "Careful scoping, security/compliance checks, and clear delivery plans",
+        "Bypassing all standards",
+        "Ignoring them",
+        "Verbal-only agreements"
+      ],
+      "correctIndex": 0,
+      "explanation": "JD: serving large customers with unique requirements."
+    },
+    {
+      "id": "M3-011",
+      "module": "M3",
+      "difficulty": "interview",
+      "tags": [
+        "security",
+        "compliance"
+      ],
+      "source": "ANDM prep",
+      "question": "Compliance/security engagement is:",
+      "options": [
+        "Required \u2014 adopt AWS best practices and policies",
+        "Optional if busy",
+        "Customer problem only",
+        "Only for auditors once a year"
+      ],
+      "correctIndex": 0,
+      "explanation": "JD: compliance with policies and security."
+    },
+    {
+      "id": "M3-012",
+      "module": "M3",
+      "difficulty": "interview",
+      "tags": [
+        "wx",
+        "compliance"
+      ],
+      "source": "JD AGSVA",
+      "question": "AGSVA clearance note for AU roles means:",
+      "options": [
+        "Be prepared for government vetting eligibility as a job requirement",
+        "It is optional trivia",
+        "It replaces all interviews",
+        "It is only for contractors abroad"
+      ],
+      "correctIndex": 0,
+      "explanation": "JD requires ability to attain AGSVA clearance."
+    }
+  ]
+}

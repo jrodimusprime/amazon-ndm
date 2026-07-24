@@ -1,0 +1,264 @@
+{
+  "questions": [
+    {
+      "id": "N4-001",
+      "module": "N4",
+      "difficulty": "interview",
+      "tags": [
+        "automation"
+      ],
+      "source": "ANDM prep",
+      "question": "Best first automation target in network ops:",
+      "options": [
+        "High-frequency, well-understood, error-prone toil with clear validation",
+        "Rare one-off artisanal tasks only",
+        "Unvalidated production mutations",
+        "Documentation deletion"
+      ],
+      "correctIndex": 0,
+      "explanation": "Invent and Simplify."
+    },
+    {
+      "id": "N4-002",
+      "module": "N4",
+      "difficulty": "interview",
+      "tags": [
+        "automation",
+        "ops"
+      ],
+      "source": "ANDM prep",
+      "question": "Automation without observability is risky because:",
+      "options": [
+        "Failures scale faster and hide \u2014 need metrics/logs/alerts",
+        "Automation never fails",
+        "Logs are optional",
+        "Humans prefer surprise"
+      ],
+      "correctIndex": 0,
+      "explanation": "Highest Standards."
+    },
+    {
+      "id": "N4-003",
+      "module": "N4",
+      "difficulty": "interview",
+      "tags": [
+        "automation"
+      ],
+      "source": "ANDM prep",
+      "question": "IaC / config management helps by:",
+      "options": [
+        "Making intended state reviewable, repeatable, and auditable",
+        "Removing need for peer review",
+        "Guaranteeing zero outages alone",
+        "Replacing capacity planning"
+      ],
+      "correctIndex": 0,
+      "explanation": "Safe implementation at scale."
+    },
+    {
+      "id": "N4-004",
+      "module": "N4",
+      "difficulty": "interview",
+      "tags": [
+        "automation",
+        "lp"
+      ],
+      "source": "ANDM prep",
+      "question": "When automation causes an outage:",
+      "options": [
+        "Mitigate, disable/auto-gate, fix, add tests \u2014 own it",
+        "Hide the tool",
+        "Ban all automation forever",
+        "Blame the newest hire only"
+      ],
+      "correctIndex": 0,
+      "explanation": "Ownership + mechanisms."
+    },
+    {
+      "id": "N4-005",
+      "module": "N4",
+      "difficulty": "interview",
+      "tags": [
+        "automation",
+        "ops"
+      ],
+      "source": "ANDM prep",
+      "question": "Process optimization should measure:",
+      "options": [
+        "Lead time, error rate, and operator minutes saved",
+        "Slide count",
+        "Meeting count alone",
+        "Lines of YAML only"
+      ],
+      "correctIndex": 0,
+      "explanation": "JD: data and metrics."
+    },
+    {
+      "id": "N4-006",
+      "module": "N4",
+      "difficulty": "interview",
+      "tags": [
+        "automation"
+      ],
+      "source": "ANDM prep",
+      "question": "Self-service for partner teams works when:",
+      "options": [
+        "Guardrails and quotas prevent unsafe actions",
+        "Everything is wide open",
+        "No documentation",
+        "Only managers can click"
+      ],
+      "correctIndex": 0,
+      "explanation": "Synergies with engineering teams."
+    },
+    {
+      "id": "N4-007",
+      "module": "N4",
+      "difficulty": "interview",
+      "tags": [
+        "automation"
+      ],
+      "source": "ANDM prep",
+      "question": "Runbook automation maturity:",
+      "options": [
+        "Human-executed \u2192 semi-auto \u2192 auto with human approval \u2192 auto with oversight",
+        "Jump to fully autonomous on day one for Sev-1 paths",
+        "Never automate",
+        "Automate only emails"
+      ],
+      "correctIndex": 0,
+      "explanation": "Credible continuous improvement."
+    },
+    {
+      "id": "N4-008",
+      "module": "N4",
+      "difficulty": "interview",
+      "tags": [
+        "automation",
+        "toil"
+      ],
+      "source": "ANDM prep",
+      "question": "Toil definition (ops):",
+      "options": [
+        "Manual, repetitive, automatable, devoid of enduring value",
+        "All engineering",
+        "Only customer meetings",
+        "Only hiring"
+      ],
+      "correctIndex": 0,
+      "explanation": "Useful framing even outside Google SRE."
+    },
+    {
+      "id": "N4-009",
+      "module": "N4",
+      "difficulty": "interview",
+      "tags": [
+        "automation"
+      ],
+      "source": "ANDM prep",
+      "question": "Tooling adoption fails when:",
+      "options": [
+        "It ignores operator workflow and lacks training",
+        "It reduces clicks with training",
+        "It has clear owners",
+        "It is measured"
+      ],
+      "correctIndex": 0,
+      "explanation": "Improve existing frameworks/tools."
+    },
+    {
+      "id": "N4-010",
+      "module": "N4",
+      "difficulty": "interview",
+      "tags": [
+        "automation",
+        "change-control"
+      ],
+      "source": "ANDM prep",
+      "question": "CI for network config should:",
+      "options": [
+        "Lint, simulate/validate, and block unsafe diffs",
+        "Push directly to prod from laptops",
+        "Skip tests",
+        "Allow unsigned changes from anywhere"
+      ],
+      "correctIndex": 0,
+      "explanation": "Safe change at scale."
+    },
+    {
+      "id": "N4-011",
+      "module": "N4",
+      "difficulty": "interview",
+      "tags": [
+        "automation",
+        "incident"
+      ],
+      "source": "ANDM prep",
+      "question": "ChatOps for incidents helps when:",
+      "options": [
+        "It speeds safe actions with auditability",
+        "It encourages unreviewed destructive commands",
+        "It replaces IC role",
+        "It is unlogged"
+      ],
+      "correctIndex": 0,
+      "explanation": "Bias for Action with Highest Standards."
+    },
+    {
+      "id": "N4-012",
+      "module": "N4",
+      "difficulty": "interview",
+      "tags": [
+        "automation",
+        "lp"
+      ],
+      "source": "ANDM prep",
+      "question": "Building vs buying ops tooling:",
+      "options": [
+        "Evaluate against reliability needs, operability, and team skill \u2014 not ideology",
+        "Always build",
+        "Always buy most expensive",
+        "Never evaluate"
+      ],
+      "correctIndex": 0,
+      "explanation": "Frugality + Deliver Results."
+    },
+    {
+      "id": "N4-013",
+      "module": "N4",
+      "difficulty": "interview",
+      "tags": [
+        "ops"
+      ],
+      "source": "ANDM prep",
+      "question": "Documentation as a product means:",
+      "options": [
+        "Owned, reviewed, and updated with the system",
+        "Write once abandon",
+        "Only in private DMs",
+        "Oral tradition only"
+      ],
+      "correctIndex": 0,
+      "explanation": "JD: improve documentation."
+    },
+    {
+      "id": "N4-014",
+      "module": "N4",
+      "difficulty": "interview",
+      "tags": [
+        "automation",
+        "manager"
+      ],
+      "source": "ANDM prep",
+      "question": "Manager contribution to automation:",
+      "options": [
+        "Prioritize the roadmap, protect engineering time, remove blockers",
+        "Write all code alone secretly",
+        "Forbid automation",
+        "Only ask for status"
+      ],
+      "correctIndex": 0,
+      "explanation": "Technical leader + people leader."
+    }
+  ]
+}

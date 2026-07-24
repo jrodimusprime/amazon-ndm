@@ -1,0 +1,233 @@
+{
+  "questions": [
+    {
+      "id": "WX-001",
+      "module": "WX",
+      "difficulty": "interview",
+      "tags": [
+        "wx",
+        "lp",
+        "loop"
+      ],
+      "source": "Exponent LP guide",
+      "question": "Amazon interviews assess Leadership Principles:",
+      "options": [
+        "Across the loop \u2014 including technical conversations",
+        "Only in a single HR screen",
+        "Never for managers",
+        "Only via written essay"
+      ],
+      "correctIndex": 0,
+      "explanation": "Exponent/IGotAnOffer: LPs permeate rounds."
+    },
+    {
+      "id": "WX-002",
+      "module": "WX",
+      "difficulty": "interview",
+      "tags": [
+        "wx",
+        "loop"
+      ],
+      "source": "LinkedIn NDE reports",
+      "question": "Network Development Engineer loops often include:",
+      "options": [
+        "Networking deep-dive on resume projects + LP behavioral (+ sometimes light coding)",
+        "Only LeetCode hard for 5 hours",
+        "No technical questions",
+        "Only whiteboard art"
+      ],
+      "correctIndex": 0,
+      "explanation": "LinkedIn NDE reports: networking + LP + possible coding variance."
+    },
+    {
+      "id": "WX-003",
+      "module": "WX",
+      "difficulty": "interview",
+      "tags": [
+        "wx",
+        "manager"
+      ],
+      "source": "JD",
+      "question": "Manager loops differ from IC primarily by:",
+      "options": [
+        "More Hire/Develop, org impact, and stakeholder stories \u2014 still technical Dive Deep",
+        "Zero technical content",
+        "Only payroll questions",
+        "No LPs"
+      ],
+      "correctIndex": 0,
+      "explanation": "NDM JD emphasizes both technical leadership and people management."
+    },
+    {
+      "id": "WX-004",
+      "module": "WX",
+      "difficulty": "interview",
+      "tags": [
+        "wx",
+        "hiring"
+      ],
+      "source": "ANDM prep",
+      "question": "Bar Raiser role is best described as:",
+      "options": [
+        "An objective interviewer protecting the hiring bar and LP signal quality",
+        "Your future manager only",
+        "A random peer with no notes",
+        "HR scheduling bot"
+      ],
+      "correctIndex": 0,
+      "explanation": "Amazon hiring mechanism."
+    },
+    {
+      "id": "WX-005",
+      "module": "WX",
+      "difficulty": "interview",
+      "tags": [
+        "wx",
+        "dive-deep"
+      ],
+      "source": "JD",
+      "question": "Dive Deep surprise for managers:",
+      "options": [
+        "Interviewers may push past high-level slides into mechanisms and metrics",
+        "Managers never get technical questions",
+        "Only softballs",
+        "No follow-ups"
+      ],
+      "correctIndex": 0,
+      "explanation": "JD: dive deep with engineers; interviewers test that."
+    },
+    {
+      "id": "WX-006",
+      "module": "WX",
+      "difficulty": "interview",
+      "tags": [
+        "wx",
+        "compliance"
+      ],
+      "source": "JD",
+      "question": "AGSVA clearance on an AU Network Core role means:",
+      "options": [
+        "Eligibility/suitability for government vetting can be required \u2014 plan accordingly",
+        "It is decorative",
+        "It replaces behavioral interviews",
+        "Only US citizens apply in AU"
+      ],
+      "correctIndex": 0,
+      "explanation": "Explicit JD requirement for this posting."
+    },
+    {
+      "id": "WX-007",
+      "module": "WX",
+      "difficulty": "interview",
+      "tags": [
+        "wx",
+        "loop"
+      ],
+      "source": "ANDM prep",
+      "question": "If recruiter is vague on coding for NDM:",
+      "options": [
+        "Ask explicitly what rounds exist: LP, networking deep-dive, coding, bar raiser",
+        "Assume no prep needed",
+        "Only grind DP",
+        "Ignore recruiter"
+      ],
+      "correctIndex": 0,
+      "explanation": "Loop variance is high \u2014 confirm."
+    },
+    {
+      "id": "WX-008",
+      "module": "WX",
+      "difficulty": "interview",
+      "tags": [
+        "wx",
+        "star"
+      ],
+      "source": "ANDM prep",
+      "question": "STAR stories that fail Bar Raisers often:",
+      "options": [
+        "Hide the candidate's actions in \"we\" and lack metrics",
+        "Have clear I-actions and numbers",
+        "Include a failure learning",
+        "Map to an LP"
+      ],
+      "correctIndex": 0,
+      "explanation": "Common coaching feedback."
+    },
+    {
+      "id": "WX-009",
+      "module": "WX",
+      "difficulty": "interview",
+      "tags": [
+        "wx",
+        "customer"
+      ],
+      "source": "JD",
+      "question": "Unique large-customer requirements (JD) imply interviews may probe:",
+      "options": [
+        "Handling exceptions without breaking shared platform safety",
+        "Only retail website CSS",
+        "Only mobile apps",
+        "Ignoring customers"
+      ],
+      "correctIndex": 0,
+      "explanation": "Role serves large customers with unique needs."
+    },
+    {
+      "id": "WX-010",
+      "module": "WX",
+      "difficulty": "interview",
+      "tags": [
+        "wx",
+        "on-call"
+      ],
+      "source": "ANDM prep",
+      "question": "On-call management questions may ask:",
+      "options": [
+        "How you design rotations, escalations, and reduce pages",
+        "Your favorite pizza",
+        "Only salary",
+        "Whether you forbid escalations"
+      ],
+      "correctIndex": 0,
+      "explanation": "Preferred qualifications call this out."
+    },
+    {
+      "id": "WX-011",
+      "module": "WX",
+      "difficulty": "interview",
+      "tags": [
+        "wx",
+        "lp"
+      ],
+      "source": "ANDM prep",
+      "question": "Invent and Simplify trap:",
+      "options": [
+        "Building a complex custom tool when a standard mechanism exists",
+        "Removing toil with a simple guardrailed tool",
+        "Documenting a process",
+        "Reusing platform standards"
+      ],
+      "correctIndex": 0,
+      "explanation": "Amazon prefers mechanisms that scale."
+    },
+    {
+      "id": "WX-012",
+      "module": "WX",
+      "difficulty": "interview",
+      "tags": [
+        "wx",
+        "lp"
+      ],
+      "source": "ANDM prep",
+      "question": "Deliver Results follow-up you should expect:",
+      "options": [
+        "What was your baseline? What did YOU do? What changed quantitatively?",
+        "No follow-ups ever",
+        "Only hobbies",
+        "Only compensation history"
+      ],
+      "correctIndex": 0,
+      "explanation": "Bar Raisers probe depth."
+    }
+  ]
+}

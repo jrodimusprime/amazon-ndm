@@ -1,0 +1,262 @@
+{
+  "questions": [
+    {
+      "id": "M1-001",
+      "module": "M1",
+      "difficulty": "interview",
+      "tags": [
+        "hiring",
+        "manager"
+      ],
+      "source": "JD; Amazon hiring",
+      "question": "As NDM hiring network engineers, the strongest signal is:",
+      "options": [
+        "Systems thinking, debugging approach, and ops judgment under ambiguity",
+        "Maximum certifications with no production stories",
+        "Willingness to never automate",
+        "Only vendor training hours"
+      ],
+      "correctIndex": 0,
+      "explanation": "Aligned with JD + Amazon hiring bar culture."
+    },
+    {
+      "id": "M1-002",
+      "module": "M1",
+      "difficulty": "interview",
+      "tags": [
+        "hiring"
+      ],
+      "source": "ANDM prep",
+      "question": "Phone screen for NDE should include:",
+      "options": [
+        "Technical depth + LP probe + communication clarity",
+        "Culture chat only",
+        "LeetCode hard only for all candidates",
+        "Salary negotiation only"
+      ],
+      "correctIndex": 0,
+      "explanation": "JD: participate in phone screens and interviews."
+    },
+    {
+      "id": "M1-003",
+      "module": "M1",
+      "difficulty": "interview",
+      "tags": [
+        "hiring",
+        "lp"
+      ],
+      "source": "ANDM prep",
+      "question": "Raising the bar means a hire should:",
+      "options": [
+        "Be stronger than 50% of current team in the role's key dimensions",
+        "Be average to keep peace",
+        "Match the weakest engineer",
+        "Never exceed the manager"
+      ],
+      "correctIndex": 0,
+      "explanation": "Amazon Hire and Develop the Best."
+    },
+    {
+      "id": "M1-004",
+      "module": "M1",
+      "difficulty": "interview",
+      "tags": [
+        "hiring",
+        "onboarding"
+      ],
+      "source": "ANDM prep",
+      "question": "Onboarding a new network engineer well includes:",
+      "options": [
+        "Clear 30/60/90 goals, mentor, access, and safe early change practice",
+        "Throw them into Sev-1 alone day one",
+        "No documentation",
+        "Skip introductions to partner teams"
+      ],
+      "correctIndex": 0,
+      "explanation": "JD: ensure new hire onboarding and training."
+    },
+    {
+      "id": "M1-005",
+      "module": "M1",
+      "difficulty": "interview",
+      "tags": [
+        "hiring"
+      ],
+      "source": "ANDM prep",
+      "question": "When staffing is short, best hiring move:",
+      "options": [
+        "Define role gaps with data, partner with recruiting, keep the bar",
+        "Panic-hire anyone",
+        "Stop interviewing",
+        "Only hire contractors forever without plan"
+      ],
+      "correctIndex": 0,
+      "explanation": "JD: identify hiring needs with recruiting."
+    },
+    {
+      "id": "M1-006",
+      "module": "M1",
+      "difficulty": "interview",
+      "tags": [
+        "hiring"
+      ],
+      "source": "ANDM prep",
+      "question": "Diversity of experience in hiring means:",
+      "options": [
+        "Value non-linear paths when skills transfer \u2014 still assess the bar",
+        "Ignore qualifications",
+        "Only hire from one school",
+        "Skip technical assessment"
+      ],
+      "correctIndex": 0,
+      "explanation": "JD encourages diverse experiences while maintaining bar."
+    },
+    {
+      "id": "M1-007",
+      "module": "M1",
+      "difficulty": "interview",
+      "tags": [
+        "hiring"
+      ],
+      "source": "ANDM prep",
+      "question": "Interview debrief best practice:",
+      "options": [
+        "Evidence against LPs and technical bar, not gut vibe alone",
+        "Highest title in room decides silently",
+        "Only reject on style",
+        "Skip written feedback"
+      ],
+      "correctIndex": 0,
+      "explanation": "Amazon interview culture is evidence-based."
+    },
+    {
+      "id": "M1-008",
+      "module": "M1",
+      "difficulty": "interview",
+      "tags": [
+        "hiring",
+        "networking"
+      ],
+      "source": "ANDM prep",
+      "question": "Technical interview for Network Core should dive into:",
+      "options": [
+        "Failure domains, routing, change safety, and past ops incidents",
+        "Only PowerPoint design",
+        "Only soft skills",
+        "Only cloud product marketing"
+      ],
+      "correctIndex": 0,
+      "explanation": "Role is network engineering + management."
+    },
+    {
+      "id": "M1-009",
+      "module": "M1",
+      "difficulty": "interview",
+      "tags": [
+        "hiring"
+      ],
+      "source": "ANDM prep",
+      "question": "A candidate freezes on Dive Deep. You should:",
+      "options": [
+        "Probe with scaffolding questions; note depth limits honestly in debrief",
+        "Coach them to the answer then hire",
+        "End interview angrily",
+        "Ignore it"
+      ],
+      "correctIndex": 0,
+      "explanation": "Assess signal without contaminating the bar."
+    },
+    {
+      "id": "M1-010",
+      "module": "M1",
+      "difficulty": "interview",
+      "tags": [
+        "onboarding"
+      ],
+      "source": "ANDM prep",
+      "question": "Training after hire should emphasize:",
+      "options": [
+        "Local runbooks, change process, tools, and escalation paths",
+        "Only vendor certification exams",
+        "No shadowing",
+        "Email-only learning"
+      ],
+      "correctIndex": 0,
+      "explanation": "Operational readiness beats cert theater."
+    },
+    {
+      "id": "M1-011",
+      "module": "M1",
+      "difficulty": "interview",
+      "tags": [
+        "hiring",
+        "manager"
+      ],
+      "source": "ANDM prep",
+      "question": "Headcount request is stronger with:",
+      "options": [
+        "Workload metrics, risk, and customer impact of understaffing",
+        "Anecdotes only",
+        "Fear without numbers",
+        "Copying another team's org chart"
+      ],
+      "correctIndex": 0,
+      "explanation": "Managers use data with leadership."
+    },
+    {
+      "id": "M1-012",
+      "module": "M1",
+      "difficulty": "interview",
+      "tags": [
+        "hiring"
+      ],
+      "source": "ANDM prep",
+      "question": "Intern/junior hire can raise the bar if:",
+      "options": [
+        "Growth trajectory and fundamentals are exceptional",
+        "They are cheap only",
+        "They need no mentoring",
+        "They replace seniors immediately"
+      ],
+      "correctIndex": 0,
+      "explanation": "Hire and Develop includes growing talent."
+    },
+    {
+      "id": "M1-013",
+      "module": "M1",
+      "difficulty": "interview",
+      "tags": [
+        "hiring",
+        "lp"
+      ],
+      "source": "ANDM prep",
+      "question": "Rejecting a likable but shallow candidate demonstrates:",
+      "options": [
+        "Highest Standards / Hire and Develop the Best",
+        "Bias for Action poorly applied",
+        "Frugality",
+        "Think Big"
+      ],
+      "correctIndex": 0,
+      "explanation": "Bar Raisers watch for lowering the bar."
+    },
+    {
+      "id": "M1-014",
+      "module": "M1",
+      "difficulty": "interview",
+      "tags": [
+        "hiring"
+      ],
+      "source": "ANDM prep",
+      "question": "Loop coordination for hiring includes:",
+      "options": [
+        "Clear LP assignment per interviewer and written feedback",
+        "Everyone asks the same question",
+        "No debrief",
+        "Manager interviews alone always"
+      ],
+      "correctIndex": 0,
+      "explanation": "Amazon loop hygiene."
+    }
+  ]
+}

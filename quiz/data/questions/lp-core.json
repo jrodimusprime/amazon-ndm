@@ -1,0 +1,477 @@
+{
+  "questions": [
+    {
+      "id": "LP-CORE-001",
+      "module": "LP-CORE",
+      "difficulty": "interview",
+      "tags": [
+        "lp",
+        "customer-obsession",
+        "star"
+      ],
+      "source": "ANDM prep",
+      "question": "A customer reports intermittent packet loss during peak. As NDM, which response best shows Customer Obsession?",
+      "options": [
+        "Prioritize restoring customer impact, communicate status clearly, and drive durable fixes beyond a temporary workaround",
+        "Avoid customers and focus only on internal tickets",
+        "Wait for perfect information before any action",
+        "Delegate all technical judgment permanently to vendors"
+      ],
+      "correctIndex": 0,
+      "explanation": "Customer Obsession: Amazon interviewers score STAR stories against LPs. Strong answers show customer impact, personal ownership, and measurable results."
+    },
+    {
+      "id": "LP-CORE-002",
+      "module": "LP-CORE",
+      "difficulty": "interview",
+      "tags": [
+        "lp",
+        "ownership",
+        "star"
+      ],
+      "source": "ANDM prep",
+      "question": "An adjacent team owns a ticket that is blocking your network change window. Ownership looks like:",
+      "options": [
+        "You drive the dependency to resolution \u2014 escalate with data, offer help, and do not drop the ball until customers are unblocked",
+        "Avoid customers and focus only on internal tickets",
+        "Wait for perfect information before any action",
+        "Delegate all technical judgment permanently to vendors"
+      ],
+      "correctIndex": 0,
+      "explanation": "Ownership: Amazon interviewers score STAR stories against LPs. Strong answers show customer impact, personal ownership, and measurable results."
+    },
+    {
+      "id": "LP-CORE-003",
+      "module": "LP-CORE",
+      "difficulty": "interview",
+      "tags": [
+        "lp",
+        "invent-simplify",
+        "star"
+      ],
+      "source": "ANDM prep",
+      "question": "Your team spends hours on repetitive ACL reviews. Invent and Simplify favors:",
+      "options": [
+        "Automate validation and propose a simpler control plane so humans review exceptions, not every change",
+        "Avoid customers and focus only on internal tickets",
+        "Wait for perfect information before any action",
+        "Delegate all technical judgment permanently to vendors"
+      ],
+      "correctIndex": 0,
+      "explanation": "Invent and Simplify: Amazon interviewers score STAR stories against LPs. Strong answers show customer impact, personal ownership, and measurable results."
+    },
+    {
+      "id": "LP-CORE-004",
+      "module": "LP-CORE",
+      "difficulty": "interview",
+      "tags": [
+        "lp",
+        "are-right",
+        "star"
+      ],
+      "source": "ANDM prep",
+      "question": "You disagree with a peer about a capacity forecast. Best Are Right, A Lot behavior:",
+      "options": [
+        "Seek disconfirming data, update your model, and change your mind if evidence warrants \u2014 then commit",
+        "Avoid customers and focus only on internal tickets",
+        "Wait for perfect information before any action",
+        "Delegate all technical judgment permanently to vendors"
+      ],
+      "correctIndex": 0,
+      "explanation": "Are Right, A Lot: Amazon interviewers score STAR stories against LPs. Strong answers show customer impact, personal ownership, and measurable results."
+    },
+    {
+      "id": "LP-CORE-005",
+      "module": "LP-CORE",
+      "difficulty": "interview",
+      "tags": [
+        "lp",
+        "learn-curious",
+        "star"
+      ],
+      "source": "ANDM prep",
+      "question": "A new fabric technology is proposed. Learn and Be Curious means:",
+      "options": [
+        "You study failure modes, run a limited pilot, and share learnings with the org \u2014 not dismiss it as unfamiliar",
+        "Avoid customers and focus only on internal tickets",
+        "Wait for perfect information before any action",
+        "Delegate all technical judgment permanently to vendors"
+      ],
+      "correctIndex": 0,
+      "explanation": "Learn and Be Curious: Amazon interviewers score STAR stories against LPs. Strong answers show customer impact, personal ownership, and measurable results."
+    },
+    {
+      "id": "LP-CORE-006",
+      "module": "LP-CORE",
+      "difficulty": "interview",
+      "tags": [
+        "lp",
+        "hire-develop",
+        "star"
+      ],
+      "source": "ANDM prep",
+      "question": "Interviewing for a network engineer, Hire and Develop the Best prioritizes:",
+      "options": [
+        "Raising the bar on systems thinking, ops judgment, and learning velocity \u2014 not just years of Cisco certs",
+        "Avoid customers and focus only on internal tickets",
+        "Wait for perfect information before any action",
+        "Delegate all technical judgment permanently to vendors"
+      ],
+      "correctIndex": 0,
+      "explanation": "Hire and Develop the Best: Amazon interviewers score STAR stories against LPs. Strong answers show customer impact, personal ownership, and measurable results."
+    },
+    {
+      "id": "LP-CORE-007",
+      "module": "LP-CORE",
+      "difficulty": "interview",
+      "tags": [
+        "lp",
+        "highest-standards",
+        "star"
+      ],
+      "source": "ANDM prep",
+      "question": "A change plan skips canary and peer review to hit a date. Highest Standards means:",
+      "options": [
+        "You push back, restore the safety bar, and find a schedule that still protects customers",
+        "Avoid customers and focus only on internal tickets",
+        "Wait for perfect information before any action",
+        "Delegate all technical judgment permanently to vendors"
+      ],
+      "correctIndex": 0,
+      "explanation": "Insist on the Highest Standards: Amazon interviewers score STAR stories against LPs. Strong answers show customer impact, personal ownership, and measurable results."
+    },
+    {
+      "id": "LP-CORE-008",
+      "module": "LP-CORE",
+      "difficulty": "interview",
+      "tags": [
+        "lp",
+        "think-big",
+        "star"
+      ],
+      "source": "ANDM prep",
+      "question": "Think Big for Network Core is closest to:",
+      "options": [
+        "Designing capacity and automation that scale beyond the current region while keeping near-term delivery credible",
+        "Avoid customers and focus only on internal tickets",
+        "Wait for perfect information before any action",
+        "Delegate all technical judgment permanently to vendors"
+      ],
+      "correctIndex": 0,
+      "explanation": "Think Big: Amazon interviewers score STAR stories against LPs. Strong answers show customer impact, personal ownership, and measurable results."
+    },
+    {
+      "id": "LP-CORE-009",
+      "module": "LP-CORE",
+      "difficulty": "interview",
+      "tags": [
+        "lp",
+        "bias-for-action",
+        "star"
+      ],
+      "source": "ANDM prep",
+      "question": "A Sev-2 is degrading. Bias for Action looks like:",
+      "options": [
+        "Mitigate quickly with a reversible change, then deepen root cause \u2014 do not wait for perfect analysis",
+        "Avoid customers and focus only on internal tickets",
+        "Wait for perfect information before any action",
+        "Delegate all technical judgment permanently to vendors"
+      ],
+      "correctIndex": 0,
+      "explanation": "Bias for Action: Amazon interviewers score STAR stories against LPs. Strong answers show customer impact, personal ownership, and measurable results."
+    },
+    {
+      "id": "LP-CORE-010",
+      "module": "LP-CORE",
+      "difficulty": "interview",
+      "tags": [
+        "lp",
+        "frugality",
+        "star"
+      ],
+      "source": "ANDM prep",
+      "question": "Frugality in network ops means:",
+      "options": [
+        "Maximize customer outcomes per dollar \u2014 right-size capacity and tooling without cutting safety corners",
+        "Avoid customers and focus only on internal tickets",
+        "Wait for perfect information before any action",
+        "Delegate all technical judgment permanently to vendors"
+      ],
+      "correctIndex": 0,
+      "explanation": "Frugality: Amazon interviewers score STAR stories against LPs. Strong answers show customer impact, personal ownership, and measurable results."
+    },
+    {
+      "id": "LP-CORE-011",
+      "module": "LP-CORE",
+      "difficulty": "interview",
+      "tags": [
+        "lp",
+        "earn-trust",
+        "star"
+      ],
+      "source": "ANDM prep",
+      "question": "Earn Trust with a frustrated product partner by:",
+      "options": [
+        "Sharing bad news early with data, owning misses, and following through on commitments",
+        "Avoid customers and focus only on internal tickets",
+        "Wait for perfect information before any action",
+        "Delegate all technical judgment permanently to vendors"
+      ],
+      "correctIndex": 0,
+      "explanation": "Earn Trust: Amazon interviewers score STAR stories against LPs. Strong answers show customer impact, personal ownership, and measurable results."
+    },
+    {
+      "id": "LP-CORE-012",
+      "module": "LP-CORE",
+      "difficulty": "interview",
+      "tags": [
+        "lp",
+        "dive-deep",
+        "star"
+      ],
+      "source": "ANDM prep",
+      "question": "Dive Deep during a recurring BGP flap means:",
+      "options": [
+        "You inspect logs, configs, and metrics yourself until the mechanism is understood \u2014 not stop at \"vendor bug\"",
+        "Avoid customers and focus only on internal tickets",
+        "Wait for perfect information before any action",
+        "Delegate all technical judgment permanently to vendors"
+      ],
+      "correctIndex": 0,
+      "explanation": "Dive Deep: Amazon interviewers score STAR stories against LPs. Strong answers show customer impact, personal ownership, and measurable results."
+    },
+    {
+      "id": "LP-CORE-013",
+      "module": "LP-CORE",
+      "difficulty": "interview",
+      "tags": [
+        "lp",
+        "backbone",
+        "star"
+      ],
+      "source": "ANDM prep",
+      "question": "You disagree with leadership on a risky cutover. Backbone means:",
+      "options": [
+        "Argue the customer risk with data; if overruled, commit fully to the decision and execute safely",
+        "Avoid customers and focus only on internal tickets",
+        "Wait for perfect information before any action",
+        "Delegate all technical judgment permanently to vendors"
+      ],
+      "correctIndex": 0,
+      "explanation": "Have Backbone; Disagree and Commit: Amazon interviewers score STAR stories against LPs. Strong answers show customer impact, personal ownership, and measurable results."
+    },
+    {
+      "id": "LP-CORE-014",
+      "module": "LP-CORE",
+      "difficulty": "interview",
+      "tags": [
+        "lp",
+        "deliver-results",
+        "star"
+      ],
+      "source": "ANDM prep",
+      "question": "Deliver Results for an NDM is best shown by:",
+      "options": [
+        "Measurable outcomes \u2014 availability, change success rate, MTTR, hiring bar \u2014 not activity theater",
+        "Avoid customers and focus only on internal tickets",
+        "Wait for perfect information before any action",
+        "Delegate all technical judgment permanently to vendors"
+      ],
+      "correctIndex": 0,
+      "explanation": "Deliver Results: Amazon interviewers score STAR stories against LPs. Strong answers show customer impact, personal ownership, and measurable results."
+    },
+    {
+      "id": "LP-CORE-015",
+      "module": "LP-CORE",
+      "difficulty": "interview",
+      "tags": [
+        "lp",
+        "best-employer",
+        "star"
+      ],
+      "source": "ANDM prep",
+      "question": "Team health LP looks like:",
+      "options": [
+        "Sustainable on-call, career growth, and fixing systemic toil \u2014 not celebrating burnout heroics",
+        "Avoid customers and focus only on internal tickets",
+        "Wait for perfect information before any action",
+        "Delegate all technical judgment permanently to vendors"
+      ],
+      "correctIndex": 0,
+      "explanation": "Strive to be Earth's Best Employer: Amazon interviewers score STAR stories against LPs. Strong answers show customer impact, personal ownership, and measurable results."
+    },
+    {
+      "id": "LP-CORE-016",
+      "module": "LP-CORE",
+      "difficulty": "interview",
+      "tags": [
+        "lp",
+        "broad-responsibility",
+        "star"
+      ],
+      "source": "ANDM prep",
+      "question": "Broad Responsibility for Network Core includes:",
+      "options": [
+        "Considering security, compliance, and downstream customer blast radius \u2014 not only local team KPIs",
+        "Avoid customers and focus only on internal tickets",
+        "Wait for perfect information before any action",
+        "Delegate all technical judgment permanently to vendors"
+      ],
+      "correctIndex": 0,
+      "explanation": "Success and Scale Bring Broad Responsibility: Amazon interviewers score STAR stories against LPs. Strong answers show customer impact, personal ownership, and measurable results."
+    },
+    {
+      "id": "LP-CORE-017",
+      "module": "LP-CORE",
+      "difficulty": "foundational",
+      "tags": [
+        "lp",
+        "star"
+      ],
+      "source": "ANDM prep",
+      "question": "For Amazon LP interviews, STAR stands for:",
+      "options": [
+        "Situation, Task, Action, Result",
+        "Scope, Team, Agenda, Report",
+        "Strategy, Timeline, Analysis, Review",
+        "Summary, Test, Automate, Release"
+      ],
+      "correctIndex": 0,
+      "explanation": "Structure answers so Actions are yours and Results are quantified."
+    },
+    {
+      "id": "LP-CORE-018",
+      "module": "LP-CORE",
+      "difficulty": "interview",
+      "tags": [
+        "lp",
+        "star"
+      ],
+      "source": "ANDM prep",
+      "question": "Amazon LP answers should emphasize \"I\" for:",
+      "options": [
+        "Your specific decisions and actions, with \"we\" only for shared context",
+        "Everything the company did",
+        "Never using I \u2014 only we",
+        "Only the Result section"
+      ],
+      "correctIndex": 0,
+      "explanation": "Bar Raisers need to score your individual contribution."
+    },
+    {
+      "id": "LP-CORE-019",
+      "module": "LP-CORE",
+      "difficulty": "interview",
+      "tags": [
+        "lp",
+        "deliver-results"
+      ],
+      "source": "ANDM prep",
+      "question": "A weak Result statement is:",
+      "options": [
+        "\"Things got better and the team was happy\"",
+        "\"P99 loss dropped from 0.8% to 0.05% over 6 weeks\"",
+        "\"MTTR fell from 90m to 25m after runbook automation\"",
+        "\"Change failure rate fell 40% quarter-over-quarter\""
+      ],
+      "correctIndex": 0,
+      "explanation": "Quantify impact. Vague happiness is not Deliver Results."
+    },
+    {
+      "id": "LP-CORE-020",
+      "module": "LP-CORE",
+      "difficulty": "interview",
+      "tags": [
+        "lp",
+        "earn-trust"
+      ],
+      "source": "ANDM prep",
+      "question": "Bar Raisers often probe failure stories. Strongest pattern:",
+      "options": [
+        "Honest miss, your role, systemic fix, and what you do differently now",
+        "Blame another team entirely",
+        "Claim you have never failed",
+        "Hide the failure and invent a success"
+      ],
+      "correctIndex": 0,
+      "explanation": "Learn and Be Curious / Earn Trust reward ownership of misses."
+    },
+    {
+      "id": "LP-CORE-021",
+      "module": "LP-CORE",
+      "difficulty": "interview",
+      "tags": [
+        "lp",
+        "dive-deep"
+      ],
+      "source": "JD; Amazon LPs",
+      "question": "Which LP is MOST associated with inspecting metrics and logs yourself as a manager?",
+      "options": [
+        "Dive Deep",
+        "Frugality",
+        "Think Big only",
+        "Earth's Best Employer only"
+      ],
+      "correctIndex": 0,
+      "explanation": "NDM JD expects technical leaders who dive deep with engineers."
+    },
+    {
+      "id": "LP-CORE-022",
+      "module": "LP-CORE",
+      "difficulty": "interview",
+      "tags": [
+        "lp",
+        "hire-develop",
+        "manager"
+      ],
+      "source": "ANDM prep",
+      "question": "Hire and Develop the Best for managers includes:",
+      "options": [
+        "Raising the hiring bar and coaching growth \u2014 not hoarding critical work",
+        "Hiring only friends",
+        "Never interviewing personally",
+        "Promoting everyone annually regardless of impact"
+      ],
+      "correctIndex": 0,
+      "explanation": "Core NDM responsibility per JD recruiting/mentoring language."
+    },
+    {
+      "id": "LP-CORE-023",
+      "module": "LP-CORE",
+      "difficulty": "interview",
+      "tags": [
+        "lp",
+        "customer-obsession"
+      ],
+      "source": "ANDM prep",
+      "question": "Customer Obsession vs Ownership conflict: a risky launch tomorrow. Best framing:",
+      "options": [
+        "Protect customers with data-backed risk options; own the outcome either way",
+        "Always say yes to launch",
+        "Always say no forever",
+        "Stay silent so you are not blamed"
+      ],
+      "correctIndex": 0,
+      "explanation": "Managers negotiate with data \u2014 Highest Standards + Customer Obsession."
+    },
+    {
+      "id": "LP-CORE-024",
+      "module": "LP-CORE",
+      "difficulty": "interview",
+      "tags": [
+        "lp",
+        "loop"
+      ],
+      "source": "Exponent LP guide",
+      "question": "Typical Amazon loop LP reality:",
+      "options": [
+        "LPs are assessed across rounds \u2014 not only one labeled behavioral hour",
+        "LPs are never asked in technical rounds",
+        "Only HR asks LPs",
+        "Managers skip LPs"
+      ],
+      "correctIndex": 0,
+      "explanation": "Exponent/IGotAnOffer: LP scoring permeates the loop."
+    }
+  ]
+}

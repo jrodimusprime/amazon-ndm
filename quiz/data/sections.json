@@ -1,0 +1,117 @@
+{
+  "modules": [
+    {
+      "id": "LP-CORE",
+      "title": "Leadership Principles \u2014 core",
+      "questionCount": 24,
+      "dataFile": "questions/lp-core.json",
+      "buildOrder": 1,
+      "priority": 1
+    },
+    {
+      "id": "LP-FULL",
+      "title": "Leadership Principles \u2014 full coverage",
+      "questionCount": 16,
+      "dataFile": "questions/lp-full.json",
+      "buildOrder": 2,
+      "priority": 2
+    },
+    {
+      "id": "M1",
+      "title": "Hiring & developing network engineers",
+      "questionCount": 14,
+      "dataFile": "questions/m1-hiring.json",
+      "buildOrder": 3,
+      "priority": 1
+    },
+    {
+      "id": "M2",
+      "title": "Performance, team health & 24x7 rotation",
+      "questionCount": 14,
+      "dataFile": "questions/m2-performance.json",
+      "buildOrder": 4,
+      "priority": 1
+    },
+    {
+      "id": "M3",
+      "title": "Stakeholders & customer representation",
+      "questionCount": 12,
+      "dataFile": "questions/m3-stakeholders.json",
+      "buildOrder": 5,
+      "priority": 2
+    },
+    {
+      "id": "N1",
+      "title": "Network fundamentals for managers",
+      "questionCount": 18,
+      "dataFile": "questions/n1-fundamentals.json",
+      "buildOrder": 6,
+      "priority": 2
+    },
+    {
+      "id": "N2",
+      "title": "Capacity, forecast & change control",
+      "questionCount": 16,
+      "dataFile": "questions/n2-capacity-change.json",
+      "buildOrder": 7,
+      "priority": 1
+    },
+    {
+      "id": "N3",
+      "title": "Ops excellence \u2014 metrics & incidents",
+      "questionCount": 16,
+      "dataFile": "questions/n3-ops-incidents.json",
+      "buildOrder": 8,
+      "priority": 1
+    },
+    {
+      "id": "N4",
+      "title": "Automation & process optimization",
+      "questionCount": 14,
+      "dataFile": "questions/n4-automation.json",
+      "buildOrder": 9,
+      "priority": 2
+    },
+    {
+      "id": "WX",
+      "title": "Weird & unexpected Amazon NDM cases",
+      "questionCount": 12,
+      "dataFile": "questions/wx-weird.json",
+      "buildOrder": 10,
+      "priority": 2
+    }
+  ],
+  "examPresets": [
+    {
+      "id": "ndm-loop",
+      "title": "NDM Network Core loop",
+      "modules": [
+        "LP-CORE",
+        "M1",
+        "M2",
+        "M3",
+        "N1",
+        "N2",
+        "N3",
+        "N4",
+        "WX"
+      ]
+    },
+    {
+      "id": "full",
+      "title": "Full bank",
+      "modules": [
+        "LP-CORE",
+        "LP-FULL",
+        "M1",
+        "M2",
+        "M3",
+        "N1",
+        "N2",
+        "N3",
+        "N4",
+        "WX"
+      ]
+    }
+  ]
+}
