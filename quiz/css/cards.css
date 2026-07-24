@@ -52,7 +52,7 @@ body.cards-page .resource-links {
 .cards-remaining-num {
   font-size: 1.35rem;
   font-weight: 500;
-  color: var(--google-green);
+  color: var(--amazon-orange);
   line-height: 1;
 }
 

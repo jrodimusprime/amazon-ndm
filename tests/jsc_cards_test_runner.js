@@ -28,7 +28,7 @@ globalThis.localStorage = {
 
 globalThis.location = {
   href: `file://${ROOT}cards/index.html`,
-  pathname: '/ANDM/cards/',
+  pathname: '/amazon-ndm/cards/',
   origin: 'file://',
   search: '',
 };

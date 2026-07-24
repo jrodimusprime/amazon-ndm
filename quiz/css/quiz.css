@@ -1,43 +1,50 @@
 :root {
   color-scheme: dark;
 
-  /* Amazon-neutral accents */
-  --google-blue: #ff9900;
+  /* Amazon brand */
   --amazon-orange: #ff9900;
-  --google-red: #d13212;
-  --google-yellow: #ff9900;
-  --google-green: #1e8900;
+  --amazon-orange-dark: #e47911;
+  --amazon-orange-light: #ffb84d;
+  --squid-ink: #232f3e;
+  --squid-ink-deep: #131a22;
+  --amazon-teal: #00a8e1;
 
-  /* Dark surfaces */
-  --bg: #202124;
-  --surface: #292a2d;
-  --surface-raised: #35363a;
-  --border: #3c4043;
-  --border-hover: #5f6368;
+  /* Keep legacy aliases used in markup/CSS */
+  --google-blue: var(--amazon-orange);
+  --google-red: #ff5252;
+  --google-yellow: var(--amazon-orange);
+  --google-green: #7ccd7c;
+
+  /* Dark surfaces — Squid Ink family */
+  --bg: #0f1419;
+  --surface: #1b242d;
+  --surface-raised: #232f3e;
+  --border: #3d4b5c;
+  --border-hover: #5a6b7d;
 
   /* Text */
-  --text: #e8eaed;
-  --text-secondary: #9aa0a6;
-  --text-muted: #80868b;
+  --text: #f2f3f3;
+  --text-secondary: #b8bec4;
+  --text-muted: #8b939c;
 
-  /* Accents — dark-mode tuned */
-  --accent: #ff9900;
-  --accent-strong: #e47911;
-  --accent-hover: #ffb84d;
-  --accent-bg: rgba(255, 153, 0, 0.12);
-  --accent-border: rgba(255, 153, 0, 0.45);
+  /* Accents */
+  --accent: var(--amazon-orange);
+  --accent-strong: var(--amazon-orange-dark);
+  --accent-hover: var(--amazon-orange-light);
+  --accent-bg: rgba(255, 153, 0, 0.14);
+  --accent-border: rgba(255, 153, 0, 0.5);
 
-  --success-bg: rgba(52, 168, 83, 0.15);
-  --success-border: #34a853;
-  --success-text: #81c995;
+  --success-bg: rgba(124, 205, 124, 0.12);
+  --success-border: #7ccd7c;
+  --success-text: #a8e6a8;
 
-  --error-bg: rgba(234, 67, 53, 0.15);
-  --error-border: #ea4335;
-  --error-text: #f28b82;
+  --error-bg: rgba(255, 82, 82, 0.12);
+  --error-border: #ff5252;
+  --error-text: #ff8a80;
 
-  --warning: #fdd663;
+  --warning: #ffb84d;
   --radius: 8px;
-  --shadow: 0 1px 3px rgba(0, 0, 0, 0.4), 0 4px 12px rgba(0, 0, 0, 0.25);
+  --shadow: 0 1px 3px rgba(0, 0, 0, 0.5), 0 4px 16px rgba(0, 0, 0, 0.35);
 }
 
 * { box-sizing: border-box; }
@@ -47,11 +54,13 @@ html {
 }
 
 body {
-  font-family: 'Amazon Ember', 'Helvetica Neue', system-ui, -apple-system, sans-serif;
+  font-family: 'Amazon Ember', 'Helvetica Neue', Arial, system-ui, -apple-system, sans-serif;
   max-width: 820px;
   margin: 0 auto;
   padding: 1.5rem;
-  background: var(--bg);
+  background:
+    radial-gradient(ellipse 120% 60% at 50% -10%, rgba(255, 153, 0, 0.08), transparent 55%),
+    var(--bg);
   color: var(--text);
   line-height: 1.5;
   min-height: 100vh;
@@ -70,10 +79,9 @@ header {
   border-bottom: 3px solid transparent;
   border-image: linear-gradient(
     to right,
-    #232f3e 0%,
-    #ff9900 40%,
-    #e47911 70%,
-    #232f3e 100%
+    var(--squid-ink) 0%,
+    var(--amazon-orange) 45%,
+    var(--amazon-orange-dark) 100%
   ) 1;
 }
 
@@ -287,15 +295,16 @@ a:hover { color: var(--accent-hover); text-decoration: underline; }
   cursor: pointer;
   font-size: 0.9rem;
   font-family: inherit;
-  font-weight: 500;
-  background: var(--google-blue);
-  color: #fff;
-  transition: background 0.15s;
+  font-weight: 600;
+  background: var(--amazon-orange);
+  color: #131a22;
+  transition: background 0.15s, color 0.15s;
 }
 
 .btn-primary:hover {
-  background: #5a95f5;
-  box-shadow: 0 1px 4px rgba(66, 133, 244, 0.45);
+  background: var(--amazon-orange-light);
+  color: #131a22;
+  box-shadow: 0 1px 6px rgba(255, 153, 0, 0.45);
 }
 
 .quiz-actions {
@@ -456,7 +465,7 @@ a:hover { color: var(--accent-hover); text-decoration: underline; }
 }
 
 .stat-card.has-data .stat-bar-fill {
-  background: linear-gradient(to right, var(--google-blue), var(--google-green));
+  background: linear-gradient(to right, var(--amazon-orange), var(--amazon-orange-dark));
 }
 
 .stat-detail {
@@ -478,4 +487,53 @@ code {
   .header-top { flex-direction: column; }
   .score-bar { text-align: left; }
   .chip-title { max-width: 120px; }
+}
+
+
+/* Amazon brand chrome */
+.brand-row {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  margin-bottom: 0.35rem;
+}
+
+.brand-mark {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.1rem;
+  height: 2.1rem;
+  border-radius: 6px;
+  background: var(--squid-ink);
+  border: 1px solid var(--amazon-orange);
+  color: var(--amazon-orange);
+  font-weight: 800;
+  font-size: 0.7rem;
+  letter-spacing: 0.02em;
+  flex-shrink: 0;
+}
+
+.brand-smile {
+  display: block;
+  width: 3.5rem;
+  height: 0.35rem;
+  margin-top: 0.15rem;
+  border-radius: 0 0 1rem 1rem;
+  border-bottom: 2.5px solid var(--amazon-orange);
+  border-left: 2px solid transparent;
+  border-right: 2px solid transparent;
+  transform: rotate(-2deg);
+}
+
+header h1 {
+  color: var(--text);
+}
+
+.resource-links a {
+  color: var(--amazon-orange);
+}
+
+.pool-remaining {
+  color: var(--amazon-orange-light);
 }

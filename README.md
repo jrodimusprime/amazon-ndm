@@ -1,4 +1,6 @@
-# ANDM — Amazon Network Development Manager Prep
+# amazon-ndm — Amazon Network Development Manager Prep
+
+**Live:** https://jrodimusprime.github.io/amazon-ndm/
 
 Static interview study tool for **Network Development Manager, Network Core** (AWS Networking):
 

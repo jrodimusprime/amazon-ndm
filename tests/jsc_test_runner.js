@@ -26,7 +26,7 @@ globalThis.localStorage = {
   removeItem(k) { delete mockStorage[k]; },
 };
 
-globalThis.location = { href: `file://${ROOT}index.html`, pathname: '/ANDM/index.html', origin: 'file://', search: '' };
+globalThis.location = { href: `file://${ROOT}index.html`, pathname: '/amazon-ndm/index.html', origin: 'file://', search: '' };
 
 const elements = {};
 function makeEl(id) {

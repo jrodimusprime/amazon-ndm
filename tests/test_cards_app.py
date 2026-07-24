@@ -86,10 +86,10 @@ class CardsAppTests(unittest.TestCase):
         self.assertIn("insertIndexForRating", engine)
 
     def test_loader_resolves_from_cards_page(self):
-        script = "https://jrodimusprime.github.io/ANDM/quiz/js/cards-loader.js"
+        script = "https://jrodimusprime.github.io/amazon-ndm/quiz/js/cards-loader.js"
         site_root = urljoin(script, "../..")
         base = urljoin(site_root, "quiz/data/")
-        self.assertEqual(base, "https://jrodimusprime.github.io/ANDM/quiz/data/")
+        self.assertEqual(base, "https://jrodimusprime.github.io/amazon-ndm/quiz/data/")
 
 
 class CardsJSCSmokeTests(unittest.TestCase):

@@ -107,7 +107,7 @@ class QuizAppTests(unittest.TestCase):
         html = (ROOT / "index.html").read_text(encoding="utf-8")
         for script in REQUIRED_SCRIPTS:
             self.assertIn(f'src="{script}', html)
-        self.assertIn("ANDM", html)
+        self.assertIn("Amazon", html)
         self.assertIn("Flash cards", html)
 
     def test_storage_uses_andm_key(self):
@@ -117,10 +117,10 @@ class QuizAppTests(unittest.TestCase):
 
     def test_loader_resolves_github_pages_base(self):
         base = resolve_data_base(
-            "https://jrodimusprime.github.io/ANDM/",
-            "https://jrodimusprime.github.io/ANDM/quiz/js/loader.js",
+            "https://jrodimusprime.github.io/amazon-ndm/",
+            "https://jrodimusprime.github.io/amazon-ndm/quiz/js/loader.js",
         )
-        self.assertEqual(base, "https://jrodimusprime.github.io/ANDM/quiz/data/")
+        self.assertEqual(base, "https://jrodimusprime.github.io/amazon-ndm/quiz/data/")
 
     def test_all_questions_load(self):
         questions, config = get_all_questions()
