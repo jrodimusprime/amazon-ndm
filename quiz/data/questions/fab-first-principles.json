@@ -1,0 +1,838 @@
+{
+  "questions": [
+    {
+      "id": "FAB-001",
+      "module": "FAB",
+      "difficulty": "interview",
+      "tags": [
+        "fabric",
+        "definition"
+      ],
+      "source": "ANDM fabric reliability 2026-07",
+      "question": "From first principles, a data-center network fabric is best described as:",
+      "options": [
+        "A dense multipath interconnect (many equal-cost paths) optimized for scalable east-west connectivity",
+        "Only the public internet peering edge",
+        "Only a single uplink to one core router",
+        "A customer VPC console product"
+      ],
+      "correctIndex": 0,
+      "explanation": "Fabric = multipath Clos/spine-leaf (or successor) plane under hosts."
+    },
+    {
+      "id": "FAB-002",
+      "module": "FAB",
+      "difficulty": "interview",
+      "tags": [
+        "underpin",
+        "services"
+      ],
+      "source": "ANDM fabric reliability 2026-07",
+      "question": "When the JD says fabrics 'underpin the software services and platforms' in a region, it means:",
+      "options": [
+        "EC2/EBS/S3 and internal platforms depend on that connectivity plane for capacity, low loss, and fast recovery",
+        "Fabrics replace the need for any application software",
+        "Only DNS is required; fabrics are optional",
+        "Customers must configure fabric OSPF themselves"
+      ],
+      "correctIndex": 0,
+      "explanation": "NFE language: unconstrained connectivity for EC2/EBS/S3-class services."
+    },
+    {
+      "id": "FAB-003",
+      "module": "FAB",
+      "difficulty": "interview",
+      "tags": [
+        "region",
+        "az"
+      ],
+      "source": "ANDM fabric reliability 2026-07",
+      "question": "Inside an AWS Region, fabrics matter at which layers?",
+      "options": [
+        "Intra-DC server interconnect plus AZ/DC interconnect so regional services can talk across isolated partitions",
+        "Only between continents on the public internet",
+        "Only Wi-Fi in offices",
+        "Only customer home routers"
+      ],
+      "correctIndex": 0,
+      "explanation": "Region \u2192 AZs/DCs \u2192 racks; metro fiber stitches buildings."
+    },
+    {
+      "id": "FAB-004",
+      "module": "FAB",
+      "difficulty": "interview",
+      "tags": [
+        "clos",
+        "spine-leaf"
+      ],
+      "source": "ANDM fabric reliability 2026-07",
+      "question": "Classic Clos / spine-leaf exists mainly to solve:",
+      "options": [
+        "Predictable scale-out bandwidth and path diversity for east-west traffic versus hierarchical choke points",
+        "Eliminating the need for any routing protocol",
+        "Guaranteeing infinite bandwidth with one switch",
+        "Replacing TCP"
+      ],
+      "correctIndex": 0,
+      "explanation": "Clos theory \u2192 modern DC fabric pattern."
+    },
+    {
+      "id": "FAB-005",
+      "module": "FAB",
+      "difficulty": "interview",
+      "tags": [
+        "sustainability",
+        "ops"
+      ],
+      "source": "ANDM fabric reliability 2026-07",
+      "question": "In AWS networking JD language, 'sustainable' solutions primarily emphasize:",
+      "options": [
+        "Simple, repeatable mechanisms that keep the network healthy as scale grows\u2014not one-off heroics",
+        "Never changing the network again",
+        "Maximum manual toil forever",
+        "Ignoring capacity forecasts"
+      ],
+      "correctIndex": 0,
+      "explanation": "NDE JDs: simple/sustainable/repeatable; stability and sustainability of IP networks."
+    },
+    {
+      "id": "FAB-006",
+      "module": "FAB",
+      "difficulty": "interview",
+      "tags": [
+        "sustainability",
+        "power"
+      ],
+      "source": "ANDM fabric reliability 2026-07",
+      "question": "Why does network-equipment power matter to fabric sustainability in a data center?",
+      "options": [
+        "Watts used by switches/optics compete with servers; leaner fabrics free power/cooling for more useful capacity",
+        "Network gear uses zero power",
+        "Only GPUs consume power",
+        "Power is unrelated to rack density"
+      ],
+      "correctIndex": 0,
+      "explanation": "Amazon Science RNG: fewer routers \u2192 less network electricity \u2192 more server racks."
+    },
+    {
+      "id": "FAB-007",
+      "module": "FAB",
+      "difficulty": "interview",
+      "tags": [
+        "rng",
+        "evolution"
+      ],
+      "source": "ANDM fabric reliability 2026-07",
+      "question": "AWS public research on Resilient Network Graphs (RNG) highlights flatter topologies that aim to:",
+      "options": [
+        "Cut router count and network power while improving throughput/resilience versus classic fat-tree overhead",
+        "Remove all redundancy intentionally",
+        "Require every customer to rewrite apps",
+        "Replace fiber with Wi-Fi only"
+      ],
+      "correctIndex": 0,
+      "explanation": "Amazon Science: ~69% fewer routers, ~33% better throughput, ~40% less network electricity projected."
+    },
+    {
+      "id": "FAB-008",
+      "module": "FAB",
+      "difficulty": "interview",
+      "tags": [
+        "east-west"
+      ],
+      "source": "ANDM fabric reliability 2026-07",
+      "question": "Why east-west traffic dominates fabric design pressure in cloud DCs:",
+      "options": [
+        "Services and storage talk constantly inside the DC/AZ\u2014not only north-south to the internet",
+        "All traffic is only to the public internet",
+        "East-west never exists in Clos",
+        "Only email uses the fabric"
+      ],
+      "correctIndex": 0,
+      "explanation": "Underpinning platforms = heavy internal bandwidth."
+    },
+    {
+      "id": "FAB-009",
+      "module": "FAB",
+      "difficulty": "interview",
+      "tags": [
+        "customer-invisible"
+      ],
+      "source": "ANDM fabric reliability 2026-07",
+      "question": "A healthy regional fabric is 'doing its job' for software platforms when:",
+      "options": [
+        "Service teams get predictable connectivity without caring about Clos/RNG internals",
+        "Every app must program spine ASICs",
+        "Customers SSH to ToRs daily",
+        "APIs expose raw TCAM tables"
+      ],
+      "correctIndex": 0,
+      "explanation": "Underpin = abstraction + reliability underneath APIs."
+    },
+    {
+      "id": "FAB-010",
+      "module": "FAB",
+      "difficulty": "interview",
+      "tags": [
+        "ai-fabric",
+        "general"
+      ],
+      "source": "ANDM fabric reliability 2026-07",
+      "question": "Specialized AI/HPC fabrics vs general-purpose regional fabrics:",
+      "options": [
+        "May use different topologies/protocols optimized for ultra-low latency clusters, while general fabrics still underpin broad regional services",
+        "Are identical in every constraint",
+        "Replace the need for Regions",
+        "Mean general fabrics no longer matter"
+      ],
+      "correctIndex": 0,
+      "explanation": "UltraCluster/10p10u vs general Clos/RNG\u2014still one Region, multiple fabric classes."
+    },
+    {
+      "id": "FAB-011",
+      "module": "FAB",
+      "difficulty": "interview",
+      "tags": [
+        "reliability",
+        "failure-domain"
+      ],
+      "source": "ANDM fabric reliability 2026-07",
+      "question": "In fabric reliability design, a failure domain is:",
+      "options": [
+        "The set of components that can fail together from one fault\u2014design to limit correlated customer impact",
+        "Always exactly one rack forever",
+        "Only a ticket queue name",
+        "The entire public internet by definition"
+      ],
+      "correctIndex": 0,
+      "explanation": "Blast-radius thinking for systems that underpin platforms."
+    },
+    {
+      "id": "FAB-012",
+      "module": "FAB",
+      "difficulty": "interview",
+      "tags": [
+        "reliability",
+        "correlated"
+      ],
+      "source": "ANDM fabric reliability 2026-07",
+      "question": "Two 'redundant' uplinks that share one optical system violate reliability diversity because:",
+      "options": [
+        "A single physical/optical fault can take both paths\u2014redundancy without independence is weak",
+        "Optics never fail",
+        "ECMP forbids diversity",
+        "Only software bugs matter"
+      ],
+      "correctIndex": 0,
+      "explanation": "Common-mode failure is a classic fabric design miss."
+    },
+    {
+      "id": "FAB-013",
+      "module": "FAB",
+      "difficulty": "interview",
+      "tags": [
+        "reliability",
+        "n-plus"
+      ],
+      "source": "ANDM fabric reliability 2026-07",
+      "question": "N+1 fabric capacity for a failure scenario means:",
+      "options": [
+        "After one planned loss (device/link/spine plane), remaining capacity still meets the designed load/SLO",
+        "You only ever need one device",
+        "Spare inventory with zero live capacity margin",
+        "Disabling monitoring during failures"
+      ],
+      "correctIndex": 0,
+      "explanation": "Reliability budgeting: design for the failed state, not only the happy path."
+    },
+    {
+      "id": "FAB-014",
+      "module": "FAB",
+      "difficulty": "interview",
+      "tags": [
+        "reliability",
+        "ecmp"
+      ],
+      "source": "ANDM fabric reliability 2026-07",
+      "question": "ECMP improves fabric reliability and scale when:",
+      "options": [
+        "Multiple equal-cost paths exist and hashing spreads load; loss of one path degrades capacity instead of hard isolation",
+        "There is only ever one path",
+        "It removes need for health checks",
+        "It encrypts packets"
+      ],
+      "correctIndex": 0,
+      "explanation": "Multipath is foundational to Clos reliability."
+    },
+    {
+      "id": "FAB-015",
+      "module": "FAB",
+      "difficulty": "interview",
+      "tags": [
+        "reliability",
+        "graceful"
+      ],
+      "source": "ANDM fabric reliability 2026-07",
+      "question": "Graceful degradation for a fabric underpinning services means:",
+      "options": [
+        "Partial failures reduce capacity/latency budget predictably while critical connectivity continues where designed",
+        "Any fault immediately blacks out the Region",
+        "Silent total loss with no alarms",
+        "Forcing every app to reboot"
+      ],
+      "correctIndex": 0,
+      "explanation": "Platforms need brownouts they can shed load for\u2014not cliffs."
+    },
+    {
+      "id": "FAB-016",
+      "module": "FAB",
+      "difficulty": "interview",
+      "tags": [
+        "reliability",
+        "az"
+      ],
+      "source": "ANDM fabric reliability 2026-07",
+      "question": "Why must regional fabric design preserve AZ isolation?",
+      "options": [
+        "Software HA assumes independent failure domains; shared fabric fate across AZs defeats multi-AZ architecture",
+        "AZs are only marketing names",
+        "Isolation always reduces performance with no benefit",
+        "One shared control plane across all AZs is required"
+      ],
+      "correctIndex": 0,
+      "explanation": "Underpinning platforms inherit AZ independence requirements."
+    },
+    {
+      "id": "FAB-017",
+      "module": "FAB",
+      "difficulty": "interview",
+      "tags": [
+        "reliability",
+        "control-data"
+      ],
+      "source": "ANDM fabric reliability 2026-07",
+      "question": "Separating concerns between control plane and data plane reliability matters because:",
+      "options": [
+        "You can sometimes forward on last-known-good state while control recovers\u2014or conversely lose forwarding despite 'green' sessions",
+        "They are always identical failure modes",
+        "Only SNMP defines both",
+        "Data plane never fails"
+      ],
+      "correctIndex": 0,
+      "explanation": "RIB\u2260FIB; design and ops must validate both."
+    },
+    {
+      "id": "FAB-018",
+      "module": "FAB",
+      "difficulty": "interview",
+      "tags": [
+        "reliability",
+        "gray-failure"
+      ],
+      "source": "ANDM fabric reliability 2026-07",
+      "question": "Gray failures (high loss, corruption, or intermittent faults) are dangerous to platforms because:",
+      "options": [
+        "They cause app timeouts/retries without a clean 'link down' signal\u2014harder detection and longer customer pain",
+        "They are always caught by admin-up alone",
+        "They never affect storage paths",
+        "They only affect documentation"
+      ],
+      "correctIndex": 0,
+      "explanation": "Reliability design must detect gray failure, not only hard down."
+    },
+    {
+      "id": "FAB-019",
+      "module": "FAB",
+      "difficulty": "interview",
+      "tags": [
+        "reliability",
+        "observability"
+      ],
+      "source": "ANDM fabric reliability 2026-07",
+      "question": "Reliability-oriented fabric observability should include:",
+      "options": [
+        "Loss/latency probes, error/drop counters, utilization, session/neighbor health, and control-plane CPU\u2014not only 'ping the gateway'",
+        "Only ticket volume",
+        "Only employee NPS",
+        "Only rack photos"
+      ],
+      "correctIndex": 0,
+      "explanation": "You cannot sustain what you cannot see."
+    },
+    {
+      "id": "FAB-020",
+      "module": "FAB",
+      "difficulty": "interview",
+      "tags": [
+        "reliability",
+        "slo"
+      ],
+      "source": "ANDM fabric reliability 2026-07",
+      "question": "A useful reliability SLO for a fabric that underpins platforms might track:",
+      "options": [
+        "Availability/error budget for critical paths (e.g., leaf\u2194leaf or AZ interconnect) tied to customer-impact minutes",
+        "Only lines of config committed",
+        "Only number of switches purchased",
+        "Only meeting attendance"
+      ],
+      "correctIndex": 0,
+      "explanation": "Error budgets drive change velocity vs risk."
+    },
+    {
+      "id": "FAB-021",
+      "module": "FAB",
+      "difficulty": "interview",
+      "tags": [
+        "reliability",
+        "reconvergence"
+      ],
+      "source": "ANDM fabric reliability 2026-07",
+      "question": "Fast reconvergence after a fabric fault is a reliability property because:",
+      "options": [
+        "Customer impact duration \u2248 detection + recovery time; slow reconvergence extends brownouts",
+        "Faster is always worse for TCP",
+        "Only DNS TTLs matter",
+        "Reconvergence is unrelated to SLOs"
+      ],
+      "correctIndex": 0,
+      "explanation": "BFD/PIC/intent-driven recovery themes at hyperscale."
+    },
+    {
+      "id": "FAB-022",
+      "module": "FAB",
+      "difficulty": "interview",
+      "tags": [
+        "reliability",
+        "bfd-tradeoff"
+      ],
+      "source": "ANDM fabric reliability 2026-07",
+      "question": "Aggressive failure detection (e.g., very tight BFD) trades off:",
+      "options": [
+        "Faster shift away from dead paths versus false positives/CPU load that can themselves cause instability",
+        "Only aesthetic LED blink rates",
+        "Guaranteed zero false positives always",
+        "Removal of all capacity planning"
+      ],
+      "correctIndex": 0,
+      "explanation": "Reliability design is tradeoffs, not max aggressiveness."
+    },
+    {
+      "id": "FAB-023",
+      "module": "FAB",
+      "difficulty": "interview",
+      "tags": [
+        "reliability",
+        "drain"
+      ],
+      "source": "ANDM fabric reliability 2026-07",
+      "question": "Before maintenance on a spine/leaf, reliability practice is to:",
+      "options": [
+        "Drain/shift traffic, prove remaining capacity meets SLO, then change with a tested rollback",
+        "Yank power without draining",
+        "Disable all monitoring first",
+        "Change every AZ simultaneously"
+      ],
+      "correctIndex": 0,
+      "explanation": "Planned failure must look like a designed failure scenario."
+    },
+    {
+      "id": "FAB-024",
+      "module": "FAB",
+      "difficulty": "interview",
+      "tags": [
+        "reliability",
+        "canary"
+      ],
+      "source": "ANDM fabric reliability 2026-07",
+      "question": "Canarying fabric automation/config improves reliability by:",
+      "options": [
+        "Limiting blast radius of bad changes and enabling stop/rollback before region-wide impact",
+        "Shipping globally faster with no gates",
+        "Hiding failures from operators",
+        "Removing peer review"
+      ],
+      "correctIndex": 0,
+      "explanation": "Change is a top reliability risk at scale."
+    },
+    {
+      "id": "FAB-025",
+      "module": "FAB",
+      "difficulty": "interview",
+      "tags": [
+        "reliability",
+        "rollback"
+      ],
+      "source": "ANDM fabric reliability 2026-07",
+      "question": "Rollback readiness is part of reliability design because:",
+      "options": [
+        "Mitigation speed during self-inflicted outages dominates customer-impact minutes",
+        "Forward-only changes never fail",
+        "Rollback is only for apps, never networks",
+        "CI green means rollback is unnecessary"
+      ],
+      "correctIndex": 0,
+      "explanation": "Bias for Action needs a rehearsed escape hatch."
+    },
+    {
+      "id": "FAB-026",
+      "module": "FAB",
+      "difficulty": "interview",
+      "tags": [
+        "reliability",
+        "stacked-risk"
+      ],
+      "source": "ANDM fabric reliability 2026-07",
+      "question": "Stacking fiber work + controller deploy + DNS change in one window hurts reliability because:",
+      "options": [
+        "Ambiguous causality and overlapping blast radius slow mitigation",
+        "It is always the most efficient plan",
+        "Monitoring prefers chaos",
+        "LPs require simultaneous risk"
+      ],
+      "correctIndex": 0,
+      "explanation": "Serialize independent failure domains."
+    },
+    {
+      "id": "FAB-027",
+      "module": "FAB",
+      "difficulty": "interview",
+      "tags": [
+        "reliability",
+        "capacity-fail"
+      ],
+      "source": "ANDM fabric reliability 2026-07",
+      "question": "Capacity planning for reliability must include failure cases because:",
+      "options": [
+        "Peak+growth on a healthy fabric can still breach SLO after a spine/AZ interconnect loss",
+        "Failures never coincide with peaks",
+        "Only average idle matters",
+        "Spare ports with no bandwidth math are enough"
+      ],
+      "correctIndex": 0,
+      "explanation": "Design for N-k load, not only N."
+    },
+    {
+      "id": "FAB-028",
+      "module": "FAB",
+      "difficulty": "interview",
+      "tags": [
+        "reliability",
+        "optics"
+      ],
+      "source": "ANDM fabric reliability 2026-07",
+      "question": "Optics/transceiver reliability is first-class in fabric design because:",
+      "options": [
+        "Link flaps and soft failures at high lane speeds drive availability and toil at hyperscale",
+        "Optics are perfect forever",
+        "Only chassis fans matter",
+        "Software cannot observe optics"
+      ],
+      "correctIndex": 0,
+      "explanation": "Public AWS talks stress optics ownership and reliability."
+    },
+    {
+      "id": "FAB-029",
+      "module": "FAB",
+      "difficulty": "interview",
+      "tags": [
+        "reliability",
+        "cabling"
+      ],
+      "source": "ANDM fabric reliability 2026-07",
+      "question": "Operationally sustainable cabling (e.g., standardized trunks / ShuffleBox-style patterns) aids reliability by:",
+      "options": [
+        "Reducing misplug rates and speeding correct bring-up/repair under change pressure",
+        "Maximizing unique undocumented runs",
+        "Eliminating the need for validation",
+        "Making every path undiverse on purpose"
+      ],
+      "correctIndex": 0,
+      "explanation": "Human factors are part of reliability design."
+    },
+    {
+      "id": "FAB-030",
+      "module": "FAB",
+      "difficulty": "interview",
+      "tags": [
+        "reliability",
+        "control-scale"
+      ],
+      "source": "ANDM fabric reliability 2026-07",
+      "question": "Control-plane sustainability/reliability at fabric scale requires:",
+      "options": [
+        "Bounded state and reconvergence so failures don't trigger control-plane storms that worsen the outage",
+        "Full-mesh flooding of all prefixes with no policy",
+        "A single global spanning-tree for the Region",
+        "Disabling routing entirely"
+      ],
+      "correctIndex": 0,
+      "explanation": "Why BGP-underlay / intent-driven designs appear."
+    },
+    {
+      "id": "FAB-031",
+      "module": "FAB",
+      "difficulty": "interview",
+      "tags": [
+        "reliability",
+        "oversubscription"
+      ],
+      "source": "ANDM fabric reliability 2026-07",
+      "question": "Oversubscription is a reliability-and-cost tradeoff because:",
+      "options": [
+        "Too aggressive oversub causes contention brownouts under hot spots; too little wastes power/capital",
+        "Oversub always improves reliability",
+        "It only affects cable colors",
+        "Platforms never see congestion"
+      ],
+      "correctIndex": 0,
+      "explanation": "Match fabric oversub to workload + SLO."
+    },
+    {
+      "id": "FAB-032",
+      "module": "FAB",
+      "difficulty": "interview",
+      "tags": [
+        "reliability",
+        "automation"
+      ],
+      "source": "ANDM fabric reliability 2026-07",
+      "question": "Unsafe automation is a reliability anti-pattern because:",
+      "options": [
+        "Software multiplies blast radius of mistakes across the fabric faster than manual errors",
+        "Automation never fails",
+        "Humans prefer surprise outages",
+        "Validation only slows docs"
+      ],
+      "correctIndex": 0,
+      "explanation": "Sustainable ops = safe automation."
+    },
+    {
+      "id": "FAB-033",
+      "module": "FAB",
+      "difficulty": "interview",
+      "tags": [
+        "reliability",
+        "shared-fate"
+      ],
+      "source": "ANDM fabric reliability 2026-07",
+      "question": "A fabric controller that must be up for all forwarding creates shared fate. Better reliability design:",
+      "options": [
+        "Data plane keeps forwarding on failures where possible; control recovery is independent and staged",
+        "Couple every packet to a remote API call",
+        "Single global lock for all leaves",
+        "Disable local failover"
+      ],
+      "correctIndex": 0,
+      "explanation": "Avoid control-plane as hard dependency for every packet."
+    },
+    {
+      "id": "FAB-034",
+      "module": "FAB",
+      "difficulty": "interview",
+      "tags": [
+        "reliability",
+        "software-plane"
+      ],
+      "source": "ANDM fabric reliability 2026-07",
+      "question": "Network Core software platforms improve fabric reliability when they provide:",
+      "options": [
+        "Validated change pipelines, health signals, auto-remediation with guardrails, and durable RCA fixes",
+        "Only chatbots with no metrics",
+        "Unreviewed production writes",
+        "Deletion of historical incident data"
+      ],
+      "correctIndex": 0,
+      "explanation": "SysDE plane sustains fabric reliability."
+    },
+    {
+      "id": "FAB-035",
+      "module": "FAB",
+      "difficulty": "interview",
+      "tags": [
+        "reliability",
+        "multi-tenant"
+      ],
+      "source": "ANDM fabric reliability 2026-07",
+      "question": "Noisy-neighbor / hot-spot effects threaten reliability of platforms on a shared fabric when:",
+      "options": [
+        "A few elephant flows or incast patterns congest shared ECMP members and raise latency/loss for others",
+        "ECMP always perfect-balances forever",
+        "Only north-south traffic exists",
+        "QoS alone replaces capacity"
+      ],
+      "correctIndex": 0,
+      "explanation": "Design: headroom, hashing awareness, isolation where needed."
+    },
+    {
+      "id": "FAB-036",
+      "module": "FAB",
+      "difficulty": "interview",
+      "tags": [
+        "reliability",
+        "pre-prod"
+      ],
+      "source": "ANDM fabric reliability 2026-07",
+      "question": "Reliability design for new fabric capacity includes pre-production validation because:",
+      "options": [
+        "You must prove paths, failover, and performance before customer workloads depend on it",
+        "Production is the only acceptable testbed always",
+        "Lab tests never transfer",
+        "Skip validation if cables click"
+      ],
+      "correctIndex": 0,
+      "explanation": "Bring-up assurance is reliability engineering."
+    },
+    {
+      "id": "FAB-037",
+      "module": "FAB",
+      "difficulty": "interview",
+      "tags": [
+        "reliability",
+        "game-day"
+      ],
+      "source": "ANDM fabric reliability 2026-07",
+      "question": "Game days / failure injection on fabric tooling or drains help reliability by:",
+      "options": [
+        "Revealing detection gaps, runbook holes, and wrong capacity assumptions before real Sevs",
+        "Wasting time versus hoping",
+        "Only creating fear",
+        "Replacing monitoring permanently"
+      ],
+      "correctIndex": 0,
+      "explanation": "Practice the failed state."
+    },
+    {
+      "id": "FAB-038",
+      "module": "FAB",
+      "difficulty": "interview",
+      "tags": [
+        "reliability",
+        "coe"
+      ],
+      "source": "ANDM fabric reliability 2026-07",
+      "question": "After a fabric-impacting incident, reliability improves sustainably when:",
+      "options": [
+        "COE actions change mechanisms (guards, tests, topology, alarms)\u2014not only 'be more careful'",
+        "Blame ends the process",
+        "No owners are assigned",
+        "The same bug class is accepted as normal"
+      ],
+      "correctIndex": 0,
+      "explanation": "Highest Standards: defects stay fixed."
+    },
+    {
+      "id": "FAB-039",
+      "module": "FAB",
+      "difficulty": "interview",
+      "tags": [
+        "reliability",
+        "lifecycle"
+      ],
+      "source": "ANDM fabric reliability 2026-07",
+      "question": "Refresh/turndown (life-cycle) reliability means:",
+      "options": [
+        "Move traffic safely, decommission without shared-fate surprises, and keep intended state truthful",
+        "Yank gear during peaks for speed",
+        "Leave ghost configs forever",
+        "Skip partner coordination"
+      ],
+      "correctIndex": 0,
+      "explanation": "DCLC-style operational excellence."
+    },
+    {
+      "id": "FAB-040",
+      "module": "FAB",
+      "difficulty": "interview",
+      "tags": [
+        "reliability",
+        "metro"
+      ],
+      "source": "ANDM fabric reliability 2026-07",
+      "question": "AZ/DC interconnect (metro) reliability design should assume:",
+      "options": [
+        "Diverse fiber/paths and failure scenarios\u2014campus cuts are real and must not collapse multi-AZ software HA",
+        "A single conduit is fine forever",
+        "Metro links never need monitoring",
+        "Only intra-rack links matter"
+      ],
+      "correctIndex": 0,
+      "explanation": "Regional platforms span buildings."
+    },
+    {
+      "id": "FAB-041",
+      "module": "FAB",
+      "difficulty": "interview",
+      "tags": [
+        "reliability",
+        "intent"
+      ],
+      "source": "ANDM fabric reliability 2026-07",
+      "question": "Intent-driven / declarative fabric operations improve reliability when:",
+      "options": [
+        "Desired state is reviewable, continuously reconciled, and divergences are detected before customers feel them",
+        "Operators hand-edit unique snowflakes only",
+        "Intent is secret and untested",
+        "Reconciliation is disabled in prod"
+      ],
+      "correctIndex": 0,
+      "explanation": "Public AWS networking culture: intent, shift, validate."
+    },
+    {
+      "id": "FAB-042",
+      "module": "FAB",
+      "difficulty": "interview",
+      "tags": [
+        "reliability",
+        "brownout-comms"
+      ],
+      "source": "ANDM fabric reliability 2026-07",
+      "question": "During a fabric brownout underpinning platforms, reliability operations prioritize:",
+      "options": [
+        "Customer-impact clarity, mitigate/shift first, then Dive Deep\u2014with timed stakeholder updates",
+        "Silence until perfect RCA",
+        "Only debating LP names",
+        "Disabling probes to quiet pages"
+      ],
+      "correctIndex": 0,
+      "explanation": "Customer Obsession under partial failure."
+    },
+    {
+      "id": "FAB-043",
+      "module": "FAB",
+      "difficulty": "interview",
+      "tags": [
+        "reliability",
+        "dual-homing"
+      ],
+      "source": "ANDM fabric reliability 2026-07",
+      "question": "Dual-homing critical hosts/services to diverse fabric leaves helps when:",
+      "options": [
+        "Leaf/ToR failure does not isolate the workload\u2014and upstream diversity is real, not paper redundancy",
+        "Both NICs share one leaf and one uplink",
+        "Bonding without testing failover",
+        "Ignoring switch software bugs that hit both"
+      ],
+      "correctIndex": 0,
+      "explanation": "Host attachment is part of fabric reliability design."
+    },
+    {
+      "id": "FAB-044",
+      "module": "FAB",
+      "difficulty": "interview",
+      "tags": [
+        "sdm",
+        "star"
+      ],
+      "source": "ANDM fabric reliability 2026-07",
+      "question": "Best SDM STAR for fabric reliability + sustainability:",
+      "options": [
+        "Mechanism that reduced blast radius, impact minutes, or unsafe toil\u2014with baselines and durable follow-through",
+        "A one-off CLI hero moment with no mechanism",
+        "Avoiding metrics",
+        "Shipping without post-launch monitoring"
+      ],
+      "correctIndex": 0,
+      "explanation": "Deliver Results + Ownership + Highest Standards."
+    }
+  ]
+}

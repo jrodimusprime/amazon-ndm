@@ -64,6 +64,20 @@
       <li><strong>NDEs:</strong> Clos/fabric design, routing, availability, compliance, change</li>
       <li><strong>Not:</strong> customer VPC SA day job; not CLI-only NOC manager</li>
     </ul>
+    <h3>Fabric first principles</h3>
+    <ul>
+      <li><strong>Underpin:</strong> EC2/EBS/S3/platforms need fabric BW + recovery</li>
+      <li><strong>Region:</strong> AZ/DC fabrics + metro interconnect</li>
+      <li><strong>Sustain (ops):</strong> repeatable scale, change safety, no heroics</li>
+      <li><strong>Sustain (power):</strong> leaner fabric → more server watts</li>
+    </ul>
+    <h3>Reliability design</h3>
+    <ul>
+      <li>Independent diversity · N-k capacity · graceful degrade</li>
+      <li>Gray failure probes · control≠data plane</li>
+      <li>Drain → canary → rollback · no stacked domains</li>
+      <li>AZ isolation · safe automation · COE→mechanism</li>
+    </ul>
     <h3>Top LPs</h3>
     <ul>
       <li>Dive Deep · Ownership · Deliver Results</li>
@@ -152,6 +166,6 @@
   </section>
 </div>
 
-<p class="footer">ANDM · <a href="https://jrodimusprime.github.io/amazon-ndm/">Quiz</a> · <a href="https://jrodimusprime.github.io/amazon-ndm/cards/">Flash cards</a> · Modules: LP · NC · SYS · M · N · LOOP · WX</p>
+<p class="footer">ANDM · <a href="https://jrodimusprime.github.io/amazon-ndm/">Quiz</a> · <a href="https://jrodimusprime.github.io/amazon-ndm/cards/">Flash cards</a> · Modules: LP · NC · FAB · SYS · M · N · LOOP · WX</p>
 </body>
 </html>

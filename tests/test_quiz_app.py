@@ -124,7 +124,7 @@ class QuizAppTests(unittest.TestCase):
 
     def test_all_questions_load(self):
         questions, config = get_all_questions()
-        self.assertEqual(len(config["modules"]), 13)
+        self.assertEqual(len(config["modules"]), 14)
         self.assertGreaterEqual(len(questions), 120)
         for mod in config["modules"]:
             qs = load_module_questions(mod)

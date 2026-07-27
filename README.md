@@ -18,6 +18,7 @@ Vanilla HTML/CSS/JS (no build). Progress in `localStorage` (`andm-quiz-v1`, `and
 |----|--------|
 | LP-CORE / LP-FULL | Amazon Leadership Principles |
 | NC | What Network Core is (NDE / SysDE / SDM) |
+| FAB | Fabric first principles & reliability design |
 | SYS | Network software platforms, CI/CD, RCA |
 | M1–M3 | Hiring SysDEs, performance/on-call, stakeholders |
 | N1–N4 | Fabric Dive Deep, capacity/change, ops, automation |
