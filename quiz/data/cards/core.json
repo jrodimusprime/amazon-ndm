@@ -2107,6 +2107,42 @@
       "back": "Form factor (1U/2U/chassis), ASIC/buffer model, port density, HA features, and ops mechanisms\u2014not datasheet peak Gbps alone \u2014 Capstone: design principles \u2192 reasonable platforms."
     },
     {
+      "id": "FC-HW-051",
+      "deck": "core",
+      "tags": [
+        "life-of-packet",
+        "l2-l3",
+        "hw"
+      ],
+      "source": "ANDM life of a packet 2026-07",
+      "front": "Life of a packet \u2014 host to ToR (first hop) typically includes:",
+      "back": "Frame leaves NIC with dest MAC of gateway/peer; ToR parses, learns/forwards at L2 or routes at L3 toward the fabric \u2014 Start of path: host \u2192 leaf/ToR attachment."
+    },
+    {
+      "id": "FC-HW-052",
+      "deck": "core",
+      "tags": [
+        "life-of-packet",
+        "fabric",
+        "hw"
+      ],
+      "source": "ANDM life of a packet 2026-07",
+      "front": "Life of a packet \u2014 across a Clos/spine-leaf fabric after the leaf routes it:",
+      "back": "Leaf does FIB lookup, rewrites L2 toward a chosen ECMP uplink; spine switches toward the destination leaf; egress leaf delivers to the host subnet \u2014 Fabric hops: lookup \u2192 rewrite \u2192 ECMP \u2192 destination leaf."
+    },
+    {
+      "id": "FC-HW-053",
+      "deck": "core",
+      "tags": [
+        "life-of-packet",
+        "rewrite-ttl",
+        "hw"
+      ],
+      "source": "ANDM life of a packet 2026-07",
+      "front": "Life of a packet \u2014 at each L3 hop the platform must at least:",
+      "back": "Lookup the next hop in the forwarding table, rewrite L2 headers, decrement TTL/hop limit, then transmit (buffering if congested) \u2014 Canonical hop: lookup \u2192 rewrite \u2192 TTL \u2192 schedule/transmit."
+    },
+    {
       "id": "FC-SYS-001",
       "deck": "core",
       "tags": [

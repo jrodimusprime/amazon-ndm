@@ -954,6 +954,63 @@
       ],
       "correctIndex": 0,
       "explanation": "Capstone: design principles \u2192 reasonable platforms."
+    },
+    {
+      "id": "HW-051",
+      "module": "HW",
+      "difficulty": "interview",
+      "tags": [
+        "life-of-packet",
+        "l2-l3"
+      ],
+      "source": "ANDM life of a packet 2026-07",
+      "question": "Life of a packet \u2014 host to ToR (first hop) typically includes:",
+      "options": [
+        "Frame leaves NIC with dest MAC of gateway/peer; ToR parses, learns/forwards at L2 or routes at L3 toward the fabric",
+        "The packet skips the ToR and appears magically at the destination AZ",
+        "Only DNS is consulted; no MAC or FIB lookup occurs",
+        "TTL is increased at the NIC before send"
+      ],
+      "correctIndex": 0,
+      "explanation": "Start of path: host \u2192 leaf/ToR attachment."
+    },
+    {
+      "id": "HW-052",
+      "module": "HW",
+      "difficulty": "interview",
+      "tags": [
+        "life-of-packet",
+        "fabric"
+      ],
+      "source": "ANDM life of a packet 2026-07",
+      "question": "Life of a packet \u2014 across a Clos/spine-leaf fabric after the leaf routes it:",
+      "options": [
+        "Leaf does FIB lookup, rewrites L2 toward a chosen ECMP uplink; spine switches toward the destination leaf; egress leaf delivers to the host subnet",
+        "Every hop decrements the MAC address instead of TTL",
+        "Spines always flood every packet to all leaves like a hub",
+        "The packet is stored on the supervisor disk then emailed"
+      ],
+      "correctIndex": 0,
+      "explanation": "Fabric hops: lookup \u2192 rewrite \u2192 ECMP \u2192 destination leaf."
+    },
+    {
+      "id": "HW-053",
+      "module": "HW",
+      "difficulty": "interview",
+      "tags": [
+        "life-of-packet",
+        "rewrite-ttl"
+      ],
+      "source": "ANDM life of a packet 2026-07",
+      "question": "Life of a packet \u2014 at each L3 hop the platform must at least:",
+      "options": [
+        "Lookup the next hop in the forwarding table, rewrite L2 headers, decrement TTL/hop limit, then transmit (buffering if congested)",
+        "Only update BGP and drop the packet",
+        "Strip IP and forward raw TCP on a random port",
+        "Increment TTL and clear the FCS always"
+      ],
+      "correctIndex": 0,
+      "explanation": "Canonical hop: lookup \u2192 rewrite \u2192 TTL \u2192 schedule/transmit."
     }
   ]
 }

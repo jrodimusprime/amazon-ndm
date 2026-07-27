@@ -43,7 +43,7 @@
     {
       "id": "HW",
       "title": "Hardware datapath \u2014 RU, ASICs, planes, buffers, protocols",
-      "questionCount": 50,
+      "questionCount": 53,
       "dataFile": "questions/hw-datapath.json",
       "buildOrder": 6,
       "priority": 1
