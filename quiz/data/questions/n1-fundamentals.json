@@ -3,336 +3,330 @@
     {
       "id": "N1-001",
       "module": "N1",
-      "difficulty": "foundational",
+      "difficulty": "interview",
       "tags": [
-        "networking",
-        "bgp"
+        "bgp",
+        "policy"
       ],
-      "source": "ANDM prep",
-      "question": "BGP's primary role in large networks is:",
+      "source": "ANDM Network Core harvest 2026-07",
+      "question": "During a Dive Deep, an engineer says 'BGP just picks the shortest path.' Your correction:",
       "options": [
-        "Exchange routing information between autonomous systems / domains with policy control",
-        "Encrypt all packets",
-        "Replace DNS",
-        "Terminate TLS"
+        "BGP is policy-driven; attributes (local-pref, AS-path, MED, etc.) decide path selection\u2014not simple hop count",
+        "BGP always equals OSPF cost",
+        "BGP only encrypts packets",
+        "BGP replaces DNS"
       ],
       "correctIndex": 0,
-      "explanation": "Core routing literacy for Network Core managers."
+      "explanation": "Global NDE prep + InterviewStack: BGP decision process literacy."
     },
     {
       "id": "N1-002",
       "module": "N1",
-      "difficulty": "foundational",
+      "difficulty": "interview",
       "tags": [
-        "networking",
-        "ospf"
+        "bgp",
+        "loop-prevention"
       ],
-      "source": "ANDM prep",
-      "question": "OSPF is typically used for:",
+      "source": "ANDM Network Core harvest 2026-07",
+      "question": "A candidate claims iBGP needs no loop prevention. Best pushback:",
       "options": [
-        "Interior routing within an AS with fast convergence characteristics",
-        "Public internet peering only",
-        "Email delivery",
-        "Certificate management"
+        "iBGP doesn\u2019t re-advertise learned iBGP routes by default\u2014hence route reflectors/confederations and AS-path for eBGP",
+        "Loops are impossible on Ethernet",
+        "OSPF handles all BGP loops",
+        "TCAM prevents all loops"
       ],
       "correctIndex": 0,
-      "explanation": "IGP vs EGP distinction."
+      "explanation": "NDE Dublin/Jointaro-style BGP depth."
     },
     {
       "id": "N1-003",
       "module": "N1",
       "difficulty": "interview",
       "tags": [
-        "networking",
-        "reliability"
+        "ospf",
+        "igp"
       ],
-      "source": "ANDM prep",
-      "question": "A failure domain is:",
+      "source": "ANDM Network Core harvest 2026-07",
+      "question": "When would you prefer an IGP like OSPF/IS-IS inside a domain versus eBGP everywhere?",
       "options": [
-        "The blast radius of a single fault \u2014 design to limit correlated failure",
-        "A meeting room",
-        "Only a power circuit",
-        "Always the whole internet"
+        "When you need fast interior convergence and topology awareness within an AS, accepting different operational tradeoffs than policy-heavy BGP",
+        "Always\u2014BGP cannot be used in DCs",
+        "Never\u2014IGPs are obsolete",
+        "Only for Wi-Fi"
       ],
       "correctIndex": 0,
-      "explanation": "Managers must reason about blast radius."
+      "explanation": "Tradeoff thinking over memorization."
     },
     {
       "id": "N1-004",
       "module": "N1",
       "difficulty": "interview",
       "tags": [
-        "networking"
+        "failure-domain"
       ],
-      "source": "ANDM prep",
-      "question": "Redundancy without diversity fails when:",
+      "source": "ANDM Network Core harvest 2026-07",
+      "question": "Two 'redundant' uplinks share one optical system. As manager you flag:",
       "options": [
-        "Both paths share a common risk (same fiber, same software bug)",
-        "Paths are fully independent",
-        "You test failover",
-        "You monitor both"
+        "Diversity failure: correlated risk means redundancy is partially illusory",
+        "Perfect N+1 by definition",
+        "Optics never fail",
+        "Only power matters"
       ],
       "correctIndex": 0,
-      "explanation": "Classic network design pitfall."
+      "explanation": "Correlated failure / diversity."
     },
     {
       "id": "N1-005",
       "module": "N1",
       "difficulty": "interview",
       "tags": [
-        "networking"
+        "ecmp",
+        "hash"
       ],
-      "source": "ANDM prep",
-      "question": "ECMP helps by:",
+      "source": "ANDM Network Core harvest 2026-07",
+      "question": "Elephant flows hashing to one ECMP member cause hot spots. Good engineering response:",
       "options": [
-        "Spreading flows across equal-cost paths for capacity and resilience",
-        "Compressing packets",
-        "Blocking BGP",
-        "Removing need for monitoring"
+        "Understand flow hashing limits; consider spraying/rehash strategies and capacity headroom\u2014not assume perfect balance",
+        "Disable ECMP forever",
+        "Ignore utilization metrics",
+        "Add random ACLs"
       ],
       "correctIndex": 0,
-      "explanation": "Data center / core fabric concept."
+      "explanation": "Clos ECMP operational reality."
     },
     {
       "id": "N1-006",
       "module": "N1",
       "difficulty": "interview",
       "tags": [
-        "networking"
+        "control-data"
       ],
-      "source": "ANDM prep",
-      "question": "Anycast can improve:",
+      "source": "ANDM Network Core harvest 2026-07",
+      "question": "RIB looks healthy but packets blackhole. Most useful mental model:",
       "options": [
-        "Latency and resilience by routing to the nearest healthy instance",
-        "Encryption strength",
-        "Disk IOPS",
-        "HR hiring"
+        "Control plane (RIB) can diverge from forwarding/data plane (FIB/hardware)\u2014validate actual forward path",
+        "Routing tables always equal forwarding",
+        "Only SNMP can fail",
+        "DNS caused it always"
       ],
       "correctIndex": 0,
-      "explanation": "Common at scale."
+      "explanation": "NDE prep: routing vs forwarding tables."
     },
     {
       "id": "N1-007",
       "module": "N1",
       "difficulty": "interview",
       "tags": [
-        "networking",
-        "troubleshooting"
+        "mtu"
       ],
-      "source": "ANDM prep",
-      "question": "MTU black hole symptoms often look like:",
+      "source": "ANDM Network Core harvest 2026-07",
+      "question": "Small pings work; large transfers stall mid-TLS. First networking hypothesis:",
       "options": [
-        "Hangs on large packets / TLS mid-handshake while small pings work",
-        "Always complete outage of ICMP",
-        "DNS only",
-        "BGP always down"
+        "MTU/PMTUD black hole\u2014large packets dropped along the path",
+        "BGP ASN typo only",
+        "Certificate CA always offline",
+        "HR firewall"
       ],
       "correctIndex": 0,
-      "explanation": "Dive Deep networking troubleshooting."
+      "explanation": "Classic Dive Deep symptom."
     },
     {
       "id": "N1-008",
       "module": "N1",
-      "difficulty": "foundational",
+      "difficulty": "interview",
       "tags": [
-        "networking"
+        "tcp"
       ],
-      "source": "ANDM prep",
-      "question": "Control plane vs data plane:",
+      "source": "ANDM Network Core harvest 2026-07",
+      "question": "Why might TCP throughput stay low on a high-BDP path even with 'green' links?",
       "options": [
-        "Control plane computes routes; data plane forwards packets",
-        "They are identical",
-        "Data plane runs BGP only",
-        "Control plane is only SNMP"
+        "Windowing, loss, buffering, and RTT interact\u2014link up \u2260 app goodput",
+        "TCP ignores RTT by design",
+        "Only UDP matters in DCs",
+        "Goodput equals line rate always"
       ],
       "correctIndex": 0,
-      "explanation": "Foundational separation."
+      "explanation": "NDE TCP deep dive themes."
     },
     {
       "id": "N1-009",
       "module": "N1",
       "difficulty": "interview",
       "tags": [
-        "networking",
-        "ops"
+        "convergence"
       ],
-      "source": "ANDM prep",
-      "question": "Convergence time matters because:",
+      "source": "ANDM Network Core harvest 2026-07",
+      "question": "BFD is often paired with routing to:",
       "options": [
-        "Slow reconvergence extends customer-impacting loss after a failure",
-        "It only affects logging",
-        "Faster is always worse",
-        "It is unrelated to SLAs"
+        "Detect failures faster than hello timers alone, enabling quicker traffic shift\u2014with CPU/false-positive tradeoffs",
+        "Compress packets",
+        "Replace capacity planning",
+        "Terminate TLS"
       ],
       "correctIndex": 0,
-      "explanation": "Ops excellence metric."
+      "explanation": "InterviewStack mid-level convergence."
     },
     {
       "id": "N1-010",
       "module": "N1",
       "difficulty": "interview",
       "tags": [
-        "networking"
+        "anycast"
       ],
-      "source": "ANDM prep",
-      "question": "Route flaps harm networks by:",
+      "source": "ANDM Network Core harvest 2026-07",
+      "question": "Anycast helps services when:",
       "options": [
-        "Destabilizing forwarding and consuming control-plane CPU",
-        "Improving compression",
-        "Reducing power",
-        "Fixing MTU"
+        "Traffic steers to a nearby healthy instance and unhealthy announcements are withdrawn",
+        "It encrypts better than TLS",
+        "It removes monitoring needs",
+        "It replaces BGP"
       ],
       "correctIndex": 0,
-      "explanation": "Stability is a first-class goal."
+      "explanation": "Scale pattern with failure semantics."
     },
     {
       "id": "N1-011",
       "module": "N1",
       "difficulty": "interview",
       "tags": [
-        "networking"
+        "overlay-underlay"
       ],
-      "source": "ANDM prep",
-      "question": "L2 loops without protection cause:",
+      "source": "ANDM Network Core harvest 2026-07",
+      "question": "Customer overlay symptoms with healthy underlay metrics suggest:",
       "options": [
-        "Broadcast storms and meltdown \u2014 need STP/fabric controls",
-        "Faster BGP",
-        "Better DNS",
-        "Nothing"
+        "Fault may be overlay control plane, encapsulation, or mapping\u2014not only physical links",
+        "Underlay metrics prove overlay health always",
+        "Overlays never fail",
+        "Only reboot hosts"
       ],
       "correctIndex": 0,
-      "explanation": "Still relevant in parts of the stack."
+      "explanation": "AWS-scale mental model."
     },
     {
       "id": "N1-012",
       "module": "N1",
       "difficulty": "interview",
       "tags": [
-        "networking"
+        "asymmetry"
       ],
-      "source": "ANDM prep",
-      "question": "QoS is used to:",
+      "source": "ANDM Network Core harvest 2026-07",
+      "question": "Stateful midboxes plus asymmetric routing often fail because:",
       "options": [
-        "Prioritize critical traffic under congestion",
-        "Replace capacity planning",
-        "Encrypt management",
-        "Disable monitoring"
+        "Return traffic may bypass the state holder that saw the forward flow",
+        "Copper cannot be asymmetric",
+        "BGP forbids multipath",
+        "DNS TTLs break copper"
       ],
       "correctIndex": 0,
-      "explanation": "Understand limits \u2014 not a substitute for capacity."
+      "explanation": "Troubleshooting trap."
     },
     {
       "id": "N1-013",
       "module": "N1",
       "difficulty": "interview",
       "tags": [
-        "networking",
-        "aws"
+        "life-of-packet"
       ],
-      "source": "ANDM prep",
-      "question": "Overlay vs underlay:",
+      "source": "ANDM Network Core harvest 2026-07",
+      "question": "Asking 'life of a packet' from host A to B is valuable because it forces:",
       "options": [
-        "Overlay virtual networks ride an underlay physical/IP fabric",
-        "Overlay replaces physics",
-        "Underlay is only Wi-Fi",
-        "They never interact"
+        "Layered path reasoning: L2/L3 hops, lookups, ACLs, encapsulation, and failure points",
+        "Only discussing org charts",
+        "Skipping hardware entirely",
+        "Memorizing vendor SKUs only"
       ],
       "correctIndex": 0,
-      "explanation": "AWS-scale mental model."
+      "explanation": "Global NDE Interview Prep staple."
     },
     {
       "id": "N1-014",
       "module": "N1",
       "difficulty": "interview",
       "tags": [
-        "networking",
-        "ops"
+        "hardware"
       ],
-      "source": "ANDM prep",
-      "question": "A good health signal for a link is NOT only:",
+      "source": "ANDM Network Core harvest 2026-07",
+      "question": "CAM/TCAM pressure matters operationally because:",
       "options": [
-        "Admin up with no traffic validation or error counters",
-        "Error rates + utilization + neighbor state",
-        "Packet loss probes",
-        "Optical levels where applicable"
+        "Forwarding/ACL scale limits can cause unexpected drops or slow-path behavior under growth",
+        "TCAM only affects HR systems",
+        "Hardware tables are infinite",
+        "Only disk space matters"
       ],
       "correctIndex": 0,
-      "explanation": "Green \u2260 healthy."
+      "explanation": "NDE hardware literacy signals."
     },
     {
       "id": "N1-015",
       "module": "N1",
       "difficulty": "interview",
       "tags": [
-        "networking",
-        "troubleshooting"
+        "health-signals"
       ],
-      "source": "ANDM prep",
-      "question": "Asymmetric routing can break:",
+      "source": "ANDM Network Core harvest 2026-07",
+      "question": "Admin-up with zero errors but customers impacted implies:",
       "options": [
-        "Stateful firewalls and return-path assumptions",
-        "All copper cables",
-        "BGP ASNs permanently",
-        "DNS TTLs"
+        "Need traffic/error/latency probes\u2014green \u2260 healthy",
+        "Ignore customers if SNMP is green",
+        "Always replace the chassis first",
+        "Disable telemetry"
       ],
       "correctIndex": 0,
-      "explanation": "Common troubleshooting trap."
+      "explanation": "Ops excellence."
     },
     {
       "id": "N1-016",
       "module": "N1",
       "difficulty": "interview",
       "tags": [
-        "capacity"
+        "qos"
       ],
-      "source": "ANDM prep",
-      "question": "Capacity headroom exists to:",
+      "source": "ANDM Network Core harvest 2026-07",
+      "question": "QoS under congestion is best framed as:",
       "options": [
-        "Absorb bursts and failures without SLO breach",
-        "Look impressive on graphs idle",
-        "Avoid monitoring",
-        "Skip forecasting"
+        "Prioritization that buys time\u2014not a substitute for capacity and healthy topology",
+        "A permanent fix for undersized fabrics",
+        "Encryption of management plane",
+        "A reason to skip forecasting"
       ],
       "correctIndex": 0,
-      "explanation": "JD: capacity management."
+      "explanation": "Manager judgment."
     },
     {
       "id": "N1-017",
       "module": "N1",
       "difficulty": "interview",
       "tags": [
-        "networking",
-        "ops"
+        "flaps"
       ],
-      "source": "ANDM prep",
-      "question": "Telemetry that helps Dive Deep includes:",
+      "source": "ANDM Network Core harvest 2026-07",
+      "question": "Route flaps hurt more than a clean fail-over because they:",
       "options": [
-        "Interface errors, drops, queue depth, control-plane CPU, flow/latency probes",
-        "Only ticket volume",
-        "Only employee NPS",
-        "Only rack photos"
+        "Thrash forwarding and burn control-plane CPU repeatedly",
+        "Improve compression",
+        "Reduce power usage",
+        "Fix MTU"
       ],
       "correctIndex": 0,
-      "explanation": "Managers should know what good looks like."
+      "explanation": "Stability as a goal."
     },
     {
       "id": "N1-018",
       "module": "N1",
       "difficulty": "interview",
       "tags": [
-        "networking",
-        "lp"
+        "telemetry"
       ],
-      "source": "ANDM prep",
-      "question": "When two regions lose a path, customers care about:",
+      "source": "ANDM Network Core harvest 2026-07",
+      "question": "Minimum useful fabric telemetry set for Dive Deep:",
       "options": [
-        "Whether alternate paths and apps tolerate the loss",
-        "Device hostname aesthetics",
-        "Cable color",
-        "Ticket ID format"
+        "Errors/drops, utilization, neighbor/session state, control-plane health, and synthetic probes",
+        "Only ticket counts",
+        "Only employee NPS",
+        "Only rack photos"
       ],
       "correctIndex": 0,
-      "explanation": "Customer Obsession framing."
+      "explanation": "Manager must know good signals."
     }
   ]
 }

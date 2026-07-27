@@ -6,7 +6,8 @@
       "tags": [
         "lp",
         "customer-obsession",
-        "star"
+        "star",
+        "lp-core"
       ],
       "source": "ANDM prep",
       "front": "A customer reports intermittent packet loss during peak. As NDM, which response best shows Customer Obsession?",
@@ -18,7 +19,8 @@
       "tags": [
         "lp",
         "ownership",
-        "star"
+        "star",
+        "lp-core"
       ],
       "source": "ANDM prep",
       "front": "An adjacent team owns a ticket that is blocking your network change window. Ownership looks like:",
@@ -30,7 +32,8 @@
       "tags": [
         "lp",
         "invent-simplify",
-        "star"
+        "star",
+        "lp-core"
       ],
       "source": "ANDM prep",
       "front": "Your team spends hours on repetitive ACL reviews. Invent and Simplify favors:",
@@ -42,7 +45,8 @@
       "tags": [
         "lp",
         "are-right",
-        "star"
+        "star",
+        "lp-core"
       ],
       "source": "ANDM prep",
       "front": "You disagree with a peer about a capacity forecast. Best Are Right, A Lot behavior:",
@@ -54,7 +58,8 @@
       "tags": [
         "lp",
         "learn-curious",
-        "star"
+        "star",
+        "lp-core"
       ],
       "source": "ANDM prep",
       "front": "A new fabric technology is proposed. Learn and Be Curious means:",
@@ -66,7 +71,8 @@
       "tags": [
         "lp",
         "hire-develop",
-        "star"
+        "star",
+        "lp-core"
       ],
       "source": "ANDM prep",
       "front": "Interviewing for a network engineer, Hire and Develop the Best prioritizes:",
@@ -78,7 +84,8 @@
       "tags": [
         "lp",
         "highest-standards",
-        "star"
+        "star",
+        "lp-core"
       ],
       "source": "ANDM prep",
       "front": "A change plan skips canary and peer review to hit a date. Highest Standards means:",
@@ -90,7 +97,8 @@
       "tags": [
         "lp",
         "think-big",
-        "star"
+        "star",
+        "lp-core"
       ],
       "source": "ANDM prep",
       "front": "Think Big for Network Core is closest to:",
@@ -102,7 +110,8 @@
       "tags": [
         "lp",
         "bias-for-action",
-        "star"
+        "star",
+        "lp-core"
       ],
       "source": "ANDM prep",
       "front": "A Sev-2 is degrading. Bias for Action looks like:",
@@ -114,7 +123,8 @@
       "tags": [
         "lp",
         "frugality",
-        "star"
+        "star",
+        "lp-core"
       ],
       "source": "ANDM prep",
       "front": "Frugality in network ops means:",
@@ -126,7 +136,8 @@
       "tags": [
         "lp",
         "earn-trust",
-        "star"
+        "star",
+        "lp-core"
       ],
       "source": "ANDM prep",
       "front": "Earn Trust with a frustrated product partner by:",
@@ -138,7 +149,8 @@
       "tags": [
         "lp",
         "dive-deep",
-        "star"
+        "star",
+        "lp-core"
       ],
       "source": "ANDM prep",
       "front": "Dive Deep during a recurring BGP flap means:",
@@ -150,7 +162,8 @@
       "tags": [
         "lp",
         "backbone",
-        "star"
+        "star",
+        "lp-core"
       ],
       "source": "ANDM prep",
       "front": "You disagree with leadership on a risky cutover. Backbone means:",
@@ -162,7 +175,8 @@
       "tags": [
         "lp",
         "deliver-results",
-        "star"
+        "star",
+        "lp-core"
       ],
       "source": "ANDM prep",
       "front": "Deliver Results for an NDM is best shown by:",
@@ -174,7 +188,8 @@
       "tags": [
         "lp",
         "best-employer",
-        "star"
+        "star",
+        "lp-core"
       ],
       "source": "ANDM prep",
       "front": "Team health LP looks like:",
@@ -186,7 +201,8 @@
       "tags": [
         "lp",
         "broad-responsibility",
-        "star"
+        "star",
+        "lp-core"
       ],
       "source": "ANDM prep",
       "front": "Broad Responsibility for Network Core includes:",
@@ -197,7 +213,8 @@
       "deck": "core",
       "tags": [
         "lp",
-        "star"
+        "star",
+        "lp-core"
       ],
       "source": "ANDM prep",
       "front": "For Amazon LP interviews, STAR stands for:",
@@ -208,7 +225,8 @@
       "deck": "core",
       "tags": [
         "lp",
-        "star"
+        "star",
+        "lp-core"
       ],
       "source": "ANDM prep",
       "front": "Amazon LP answers should emphasize \"I\" for:",
@@ -219,7 +237,8 @@
       "deck": "core",
       "tags": [
         "lp",
-        "deliver-results"
+        "deliver-results",
+        "lp-core"
       ],
       "source": "ANDM prep",
       "front": "A weak Result statement is:",
@@ -230,7 +249,8 @@
       "deck": "core",
       "tags": [
         "lp",
-        "earn-trust"
+        "earn-trust",
+        "lp-core"
       ],
       "source": "ANDM prep",
       "front": "Bar Raisers often probe failure stories. Strongest pattern:",
@@ -241,7 +261,8 @@
       "deck": "core",
       "tags": [
         "lp",
-        "dive-deep"
+        "dive-deep",
+        "lp-core"
       ],
       "source": "JD; Amazon LPs",
       "front": "Which LP is MOST associated with inspecting metrics and logs yourself as a manager?",
@@ -253,7 +274,8 @@
       "tags": [
         "lp",
         "hire-develop",
-        "manager"
+        "manager",
+        "lp-core"
       ],
       "source": "ANDM prep",
       "front": "Hire and Develop the Best for managers includes:",
@@ -264,7 +286,8 @@
       "deck": "core",
       "tags": [
         "lp",
-        "customer-obsession"
+        "customer-obsession",
+        "lp-core"
       ],
       "source": "ANDM prep",
       "front": "Customer Obsession vs Ownership conflict: a risky launch tomorrow. Best framing:",
@@ -275,1073 +298,19 @@
       "deck": "core",
       "tags": [
         "lp",
-        "loop"
+        "loop",
+        "lp-core"
       ],
       "source": "Exponent LP guide",
       "front": "Typical Amazon loop LP reality:",
       "back": "LPs are assessed across rounds \u2014 not only one labeled behavioral hour \u2014 Exponent/IGotAnOffer: LP scoring permeates the loop."
     },
     {
-      "id": "FC-M1-001",
-      "deck": "core",
-      "tags": [
-        "hiring",
-        "manager"
-      ],
-      "source": "JD; Amazon hiring",
-      "front": "As NDM hiring network engineers, the strongest signal is:",
-      "back": "Systems thinking, debugging approach, and ops judgment under ambiguity \u2014 Aligned with JD + Amazon hiring bar culture."
-    },
-    {
-      "id": "FC-M1-002",
-      "deck": "core",
-      "tags": [
-        "hiring"
-      ],
-      "source": "ANDM prep",
-      "front": "Phone screen for NDE should include:",
-      "back": "Technical depth + LP probe + communication clarity \u2014 JD: participate in phone screens and interviews."
-    },
-    {
-      "id": "FC-M1-003",
-      "deck": "core",
-      "tags": [
-        "hiring",
-        "lp"
-      ],
-      "source": "ANDM prep",
-      "front": "Raising the bar means a hire should:",
-      "back": "Be stronger than 50% of current team in the role's key dimensions \u2014 Amazon Hire and Develop the Best."
-    },
-    {
-      "id": "FC-M1-004",
-      "deck": "core",
-      "tags": [
-        "hiring",
-        "onboarding"
-      ],
-      "source": "ANDM prep",
-      "front": "Onboarding a new network engineer well includes:",
-      "back": "Clear 30/60/90 goals, mentor, access, and safe early change practice \u2014 JD: ensure new hire onboarding and training."
-    },
-    {
-      "id": "FC-M1-005",
-      "deck": "core",
-      "tags": [
-        "hiring"
-      ],
-      "source": "ANDM prep",
-      "front": "When staffing is short, best hiring move:",
-      "back": "Define role gaps with data, partner with recruiting, keep the bar \u2014 JD: identify hiring needs with recruiting."
-    },
-    {
-      "id": "FC-M1-006",
-      "deck": "core",
-      "tags": [
-        "hiring"
-      ],
-      "source": "ANDM prep",
-      "front": "Diversity of experience in hiring means:",
-      "back": "Value non-linear paths when skills transfer \u2014 still assess the bar \u2014 JD encourages diverse experiences while maintaining bar."
-    },
-    {
-      "id": "FC-M1-007",
-      "deck": "core",
-      "tags": [
-        "hiring"
-      ],
-      "source": "ANDM prep",
-      "front": "Interview debrief best practice:",
-      "back": "Evidence against LPs and technical bar, not gut vibe alone \u2014 Amazon interview culture is evidence-based."
-    },
-    {
-      "id": "FC-M1-008",
-      "deck": "core",
-      "tags": [
-        "hiring",
-        "networking"
-      ],
-      "source": "ANDM prep",
-      "front": "Technical interview for Network Core should dive into:",
-      "back": "Failure domains, routing, change safety, and past ops incidents \u2014 Role is network engineering + management."
-    },
-    {
-      "id": "FC-M1-009",
-      "deck": "core",
-      "tags": [
-        "hiring"
-      ],
-      "source": "ANDM prep",
-      "front": "A candidate freezes on Dive Deep. You should:",
-      "back": "Probe with scaffolding questions; note depth limits honestly in debrief \u2014 Assess signal without contaminating the bar."
-    },
-    {
-      "id": "FC-M1-010",
-      "deck": "core",
-      "tags": [
-        "onboarding"
-      ],
-      "source": "ANDM prep",
-      "front": "Training after hire should emphasize:",
-      "back": "Local runbooks, change process, tools, and escalation paths \u2014 Operational readiness beats cert theater."
-    },
-    {
-      "id": "FC-M1-011",
-      "deck": "core",
-      "tags": [
-        "hiring",
-        "manager"
-      ],
-      "source": "ANDM prep",
-      "front": "Headcount request is stronger with:",
-      "back": "Workload metrics, risk, and customer impact of understaffing \u2014 Managers use data with leadership."
-    },
-    {
-      "id": "FC-M1-012",
-      "deck": "core",
-      "tags": [
-        "hiring"
-      ],
-      "source": "ANDM prep",
-      "front": "Intern/junior hire can raise the bar if:",
-      "back": "Growth trajectory and fundamentals are exceptional \u2014 Hire and Develop includes growing talent."
-    },
-    {
-      "id": "FC-M2-001",
-      "deck": "core",
-      "tags": [
-        "performance",
-        "manager"
-      ],
-      "source": "Amazon SDM patterns",
-      "front": "High performer vs low performer management:",
-      "back": "Stretch and visibility for high; clear expectations, coaching, and timelines for low \u2014 Classic manager LP interview; also GSRE C5 parallel."
-    },
-    {
-      "id": "FC-M2-002",
-      "deck": "core",
-      "tags": [
-        "on-call",
-        "manager"
-      ],
-      "source": "ANDM prep",
-      "front": "24x7 rotation health requires:",
-      "back": "Fair schedules, alert hygiene, and tracking load per engineer \u2014 JD: day-to-day oversight of effective 24x7 rotation."
-    },
-    {
-      "id": "FC-M2-003",
-      "deck": "core",
-      "tags": [
-        "on-call",
-        "ops"
-      ],
-      "source": "ANDM prep",
-      "front": "Chronic noisy alerts \u2014 manager action:",
-      "back": "Drive engineering to fix signal quality; measure pages reduced \u2014 Operational excellence over coping."
-    },
-    {
-      "id": "FC-M2-004",
-      "deck": "core",
-      "tags": [
-        "manager"
-      ],
-      "source": "ANDM prep",
-      "front": "1:1s should cover:",
-      "back": "Growth, blockers, wellbeing, and technical coaching \u2014 not only status \u2014 JD: 1:1s, mentoring soft + technical."
-    },
-    {
-      "id": "FC-M2-005",
-      "deck": "core",
-      "tags": [
-        "incident",
-        "manager"
-      ],
-      "source": "ANDM prep",
-      "front": "Escalation during critical issue \u2014 manager role:",
-      "back": "Ensure IC/commander clarity, stakeholder updates, and remove blockers \u2014 JD: escalation and critical issue management."
-    },
-    {
-      "id": "FC-M2-006",
-      "deck": "core",
-      "tags": [
-        "ops",
-        "manager"
-      ],
-      "source": "ANDM prep",
-      "front": "Quality audit of ops means:",
-      "back": "Sample changes/incidents for process adherence and learning \u2014 JD mentions quality audits."
-    },
-    {
-      "id": "FC-M2-007",
-      "deck": "core",
-      "tags": [
-        "on-call",
-        "lp"
-      ],
-      "source": "ANDM prep",
-      "front": "Burnout signal in network ops teams:",
-      "back": "Rising pages, declining change quality, attrition risk \u2014 act systemically \u2014 Earth's Best Employer + ops excellence."
-    },
-    {
-      "id": "FC-M2-008",
-      "deck": "core",
-      "tags": [
-        "performance"
-      ],
-      "source": "ANDM prep",
-      "front": "Performance feedback should be:",
-      "back": "Timely, specific, behavioral, with examples \u2014 Earn Trust + Hire and Develop."
-    },
-    {
-      "id": "FC-M2-009",
-      "deck": "core",
-      "tags": [
-        "manager",
-        "roadmap"
-      ],
-      "source": "ANDM prep",
-      "front": "Project management for the team includes:",
-      "back": "Clear owners, milestones, risks, and reporting to leadership \u2014 JD: roadmaps, goals, progress reporting."
-    },
-    {
-      "id": "FC-M2-010",
-      "deck": "core",
-      "tags": [
-        "manager",
-        "lp"
-      ],
-      "source": "ANDM prep",
-      "front": "When two engineers conflict on design:",
-      "back": "Facilitate data-driven decision; then disagree-and-commit as a team \u2014 Manager soft skills + Backbone."
-    },
-    {
-      "id": "FC-M2-011",
-      "deck": "core",
-      "tags": [
-        "manager"
-      ],
-      "source": "ANDM prep",
-      "front": "Training investment is justified when:",
-      "back": "It raises team capability on critical platforms and reduces risk \u2014 JD: training and development."
-    },
-    {
-      "id": "FC-M2-012",
-      "deck": "core",
-      "tags": [
-        "on-call"
-      ],
-      "source": "ANDM prep",
-      "front": "On-call participation for managers:",
-      "back": "Stay close enough to dive deep and support escalations \u2014 role-appropriate \u2014 Preferred quals: manage on-call and escalation."
-    },
-    {
-      "id": "FC-M3-001",
-      "deck": "core",
-      "tags": [
-        "stakeholder",
-        "customer"
-      ],
-      "source": "JD",
-      "front": "Representing networking to a large customer means:",
-      "back": "Translate risk/options clearly; commit to deliverables; follow through \u2014 JD: represent networking to customers."
-    },
-    {
-      "id": "FC-M3-002",
-      "deck": "core",
-      "tags": [
-        "stakeholder"
-      ],
-      "source": "ANDM prep",
-      "front": "Cross-team dependency late \u2014 best move:",
-      "back": "Surface early with impact, propose options, escalate with data if needed \u2014 Earn Trust + Deliver Results."
-    },
-    {
-      "id": "FC-M3-003",
-      "deck": "core",
-      "tags": [
-        "stakeholder",
-        "manager"
-      ],
-      "source": "ANDM prep",
-      "front": "Status to leadership should be:",
-      "back": "Concise: green/yellow/red, risks, asks, customer impact \u2014 JD: reporting progress to leadership."
-    },
-    {
-      "id": "FC-M3-004",
-      "deck": "core",
-      "tags": [
-        "communication"
-      ],
-      "source": "ANDM prep",
-      "front": "Complex idea to non-network stakeholders:",
-      "back": "Analogy + impact + decision needed \u2014 then offer deep dive \u2014 Preferred: convey complex ideas clearly."
-    },
-    {
-      "id": "FC-M3-005",
-      "deck": "core",
-      "tags": [
-        "stakeholder"
-      ],
-      "source": "ANDM prep",
-      "front": "Working with service teams on network dependencies:",
-      "back": "Identify deliverables early; track; communicate slips \u2014 JD: ensure network dependencies identified and delivered."
-    },
-    {
-      "id": "FC-M3-006",
-      "deck": "core",
-      "tags": [
-        "customer",
-        "lp"
-      ],
-      "source": "ANDM prep",
-      "front": "Conflict between customer ask and safety bar:",
-      "back": "Explain trade-offs; seek safer path that still meets need \u2014 Customer Obsession + Highest Standards."
-    },
-    {
-      "id": "FC-M3-007",
-      "deck": "core",
-      "tags": [
-        "stakeholder"
-      ],
-      "source": "ANDM prep",
-      "front": "Synergies with other engineering teams:",
-      "back": "Share best practices, reuse tooling, create growth opportunities \u2014 JD: improve synergies and opportunities for engineers."
-    },
-    {
-      "id": "FC-M3-008",
-      "deck": "core",
-      "tags": [
-        "roadmap"
-      ],
-      "source": "ANDM prep",
-      "front": "Roadmap communication fails when:",
-      "back": "Priorities are unclear and owners missing \u2014 JD: develop and maintain project road maps."
-    },
-    {
-      "id": "FC-M3-009",
-      "deck": "core",
-      "tags": [
-        "communication"
-      ],
-      "source": "ANDM prep",
-      "front": "Written escalation to directors should include:",
-      "back": "Impact, timeline, mitigation, ask \u2014 Managers escalate with structure."
-    },
-    {
-      "id": "FC-M3-010",
-      "deck": "core",
-      "tags": [
-        "customer"
-      ],
-      "source": "ANDM prep",
-      "front": "Customer unique requirements (per JD) require:",
-      "back": "Careful scoping, security/compliance checks, and clear delivery plans \u2014 JD: serving large customers with unique requirements."
-    },
-    {
-      "id": "FC-N1-001",
-      "deck": "core",
-      "tags": [
-        "networking",
-        "bgp"
-      ],
-      "source": "ANDM prep",
-      "front": "BGP's primary role in large networks is:",
-      "back": "Exchange routing information between autonomous systems / domains with policy control \u2014 Core routing literacy for Network Core managers."
-    },
-    {
-      "id": "FC-N1-002",
-      "deck": "core",
-      "tags": [
-        "networking",
-        "ospf"
-      ],
-      "source": "ANDM prep",
-      "front": "OSPF is typically used for:",
-      "back": "Interior routing within an AS with fast convergence characteristics \u2014 IGP vs EGP distinction."
-    },
-    {
-      "id": "FC-N1-003",
-      "deck": "core",
-      "tags": [
-        "networking",
-        "reliability"
-      ],
-      "source": "ANDM prep",
-      "front": "A failure domain is:",
-      "back": "The blast radius of a single fault \u2014 design to limit correlated failure \u2014 Managers must reason about blast radius."
-    },
-    {
-      "id": "FC-N1-004",
-      "deck": "core",
-      "tags": [
-        "networking"
-      ],
-      "source": "ANDM prep",
-      "front": "Redundancy without diversity fails when:",
-      "back": "Both paths share a common risk (same fiber, same software bug) \u2014 Classic network design pitfall."
-    },
-    {
-      "id": "FC-N1-005",
-      "deck": "core",
-      "tags": [
-        "networking"
-      ],
-      "source": "ANDM prep",
-      "front": "ECMP helps by:",
-      "back": "Spreading flows across equal-cost paths for capacity and resilience \u2014 Data center / core fabric concept."
-    },
-    {
-      "id": "FC-N1-006",
-      "deck": "core",
-      "tags": [
-        "networking"
-      ],
-      "source": "ANDM prep",
-      "front": "Anycast can improve:",
-      "back": "Latency and resilience by routing to the nearest healthy instance \u2014 Common at scale."
-    },
-    {
-      "id": "FC-N1-007",
-      "deck": "core",
-      "tags": [
-        "networking",
-        "troubleshooting"
-      ],
-      "source": "ANDM prep",
-      "front": "MTU black hole symptoms often look like:",
-      "back": "Hangs on large packets / TLS mid-handshake while small pings work \u2014 Dive Deep networking troubleshooting."
-    },
-    {
-      "id": "FC-N1-008",
-      "deck": "core",
-      "tags": [
-        "networking"
-      ],
-      "source": "ANDM prep",
-      "front": "Control plane vs data plane:",
-      "back": "Control plane computes routes; data plane forwards packets \u2014 Foundational separation."
-    },
-    {
-      "id": "FC-N1-009",
-      "deck": "core",
-      "tags": [
-        "networking",
-        "ops"
-      ],
-      "source": "ANDM prep",
-      "front": "Convergence time matters because:",
-      "back": "Slow reconvergence extends customer-impacting loss after a failure \u2014 Ops excellence metric."
-    },
-    {
-      "id": "FC-N1-010",
-      "deck": "core",
-      "tags": [
-        "networking"
-      ],
-      "source": "ANDM prep",
-      "front": "Route flaps harm networks by:",
-      "back": "Destabilizing forwarding and consuming control-plane CPU \u2014 Stability is a first-class goal."
-    },
-    {
-      "id": "FC-N1-011",
-      "deck": "core",
-      "tags": [
-        "networking"
-      ],
-      "source": "ANDM prep",
-      "front": "L2 loops without protection cause:",
-      "back": "Broadcast storms and meltdown \u2014 need STP/fabric controls \u2014 Still relevant in parts of the stack."
-    },
-    {
-      "id": "FC-N1-012",
-      "deck": "core",
-      "tags": [
-        "networking"
-      ],
-      "source": "ANDM prep",
-      "front": "QoS is used to:",
-      "back": "Prioritize critical traffic under congestion \u2014 Understand limits \u2014 not a substitute for capacity."
-    },
-    {
-      "id": "FC-N1-013",
-      "deck": "core",
-      "tags": [
-        "networking",
-        "aws"
-      ],
-      "source": "ANDM prep",
-      "front": "Overlay vs underlay:",
-      "back": "Overlay virtual networks ride an underlay physical/IP fabric \u2014 AWS-scale mental model."
-    },
-    {
-      "id": "FC-N1-014",
-      "deck": "core",
-      "tags": [
-        "networking",
-        "ops"
-      ],
-      "source": "ANDM prep",
-      "front": "A good health signal for a link is NOT only:",
-      "back": "Admin up with no traffic validation or error counters \u2014 Green \u2260 healthy."
-    },
-    {
-      "id": "FC-N2-001",
-      "deck": "core",
-      "tags": [
-        "capacity"
-      ],
-      "source": "JD",
-      "front": "Capacity forecast for Network Core should start from:",
-      "back": "Demand signals (traffic growth, launches) + failure scenarios \u2014 JD: capacity management and forecast planning."
-    },
-    {
-      "id": "FC-N2-002",
-      "deck": "core",
-      "tags": [
-        "change-control"
-      ],
-      "source": "ANDM prep",
-      "front": "Safe change control includes:",
-      "back": "Peer review, canary/rollback, maintenance windows, clear owner \u2014 JD: safely implement change."
-    },
-    {
-      "id": "FC-N2-003",
-      "deck": "core",
-      "tags": [
-        "change-control",
-        "incident"
-      ],
-      "source": "ANDM prep",
-      "front": "Change failure \u2014 first priority:",
-      "back": "Rollback / mitigate customer impact, then analyze \u2014 Bias for Action + Customer Obsession."
-    },
-    {
-      "id": "FC-N2-004",
-      "deck": "core",
-      "tags": [
-        "capacity"
-      ],
-      "source": "JD",
-      "front": "Keeping AWS ahead of demand means:",
-      "back": "Lead indicators and buffer so capacity lands before customer need \u2014 JD language."
-    },
-    {
-      "id": "FC-N2-005",
-      "deck": "core",
-      "tags": [
-        "change-control"
-      ],
-      "source": "ANDM prep",
-      "front": "Maintenance correlation risk:",
-      "back": "Avoid overlapping changes in the same failure domain \u2014 Operational excellence."
-    },
-    {
-      "id": "FC-N2-006",
-      "deck": "core",
-      "tags": [
-        "capacity"
-      ],
-      "source": "ANDM prep",
-      "front": "A capacity model should include:",
-      "back": "Peaks, growth, repair margins, and risk scenarios \u2014 Analytical skills preferred qual."
-    },
-    {
-      "id": "FC-N2-007",
-      "deck": "core",
-      "tags": [
-        "capacity",
-        "lp"
-      ],
-      "source": "ANDM prep",
-      "front": "When forecast is wrong:",
-      "back": "Update the model, communicate risk, and replan \u2014 own the miss \u2014 Earn Trust + Are Right a Lot."
-    },
-    {
-      "id": "FC-N2-008",
-      "deck": "core",
-      "tags": [
-        "automation",
-        "change-control"
-      ],
-      "source": "ANDM prep",
-      "front": "Automation of change reduces risk when:",
-      "back": "It encodes validations and reduces human toil variance \u2014 Invent and Simplify for ops."
-    },
-    {
-      "id": "FC-N2-009",
-      "deck": "core",
-      "tags": [
-        "change-control",
-        "incident"
-      ],
-      "source": "ANDM prep",
-      "front": "Emergency change process exists to:",
-      "back": "Move fast safely under incident pressure with audit trail \u2014 Critical issue management."
-    },
-    {
-      "id": "FC-N2-010",
-      "deck": "core",
-      "tags": [
-        "capacity",
-        "manager"
-      ],
-      "source": "JD",
-      "front": "Planning process contribution (JD) means:",
-      "back": "Credible proposals with data into AWS standard planning \u2014 JD: contribute to AWS standard planning processes."
-    },
-    {
-      "id": "FC-N2-011",
-      "deck": "core",
-      "tags": [
-        "capacity",
-        "metrics"
-      ],
-      "source": "ANDM prep",
-      "front": "Leading indicator of capacity risk:",
-      "back": "Rising utilization + shrinking headroom on critical paths \u2014 Dashboarding techniques."
-    },
-    {
-      "id": "FC-N2-012",
-      "deck": "core",
-      "tags": [
-        "change-control"
-      ],
-      "source": "ANDM prep",
-      "front": "Canary for network changes might mean:",
-      "back": "Limited scope (one device/plane/region) before wider rollout \u2014 Safe deployment pattern."
-    },
-    {
-      "id": "FC-N2-013",
-      "deck": "core",
-      "tags": [
-        "change-control"
-      ],
-      "source": "ANDM prep",
-      "front": "Documentation for changes should capture:",
-      "back": "Intent, steps, validation, rollback \u2014 Continuous improvement of frameworks/docs."
-    },
-    {
-      "id": "FC-N2-014",
-      "deck": "core",
-      "tags": [
-        "capacity",
-        "lp"
-      ],
-      "source": "ANDM prep",
-      "front": "Over-provisioning without analysis is weak because:",
-      "back": "Frugality and accuracy matter \u2014 right-size with data \u2014 Frugality + Are Right a Lot."
-    },
-    {
-      "id": "FC-N3-001",
-      "deck": "core",
-      "tags": [
-        "ops",
-        "metrics"
-      ],
-      "source": "JD",
-      "front": "Operational excellence reporting should track:",
-      "back": "Availability/error budget style impact, change success, MTTR, backlog risk \u2014 JD: manage/track/report ops and network status with metrics."
-    },
-    {
-      "id": "FC-N3-002",
-      "deck": "core",
-      "tags": [
-        "incident"
-      ],
-      "source": "JD",
-      "front": "After mitigating an incident, long-term fix means:",
-      "back": "Root cause with durable prevention \u2014 not ticket ping-pong \u2014 JD: address root cause and avoid recurrence."
-    },
-    {
-      "id": "FC-N3-003",
-      "deck": "core",
-      "tags": [
-        "incident",
-        "ops"
-      ],
-      "source": "ANDM prep",
-      "front": "MTTR improvement usually comes from:",
-      "back": "Better detection, runbooks, automation, and clear ownership \u2014 Ops excellence."
-    },
-    {
-      "id": "FC-N3-004",
-      "deck": "core",
-      "tags": [
-        "metrics"
-      ],
-      "source": "ANDM prep",
-      "front": "Dashboarding anti-pattern:",
-      "back": "Vanity metrics that do not drive action \u2014 JD: metrics and dashboarding techniques."
-    },
-    {
-      "id": "FC-N3-005",
-      "deck": "core",
-      "tags": [
-        "reliability"
-      ],
-      "source": "JD",
-      "front": "Availability risk management includes:",
-      "back": "Known risks tracked with owners and mitigation dates \u2014 JD: manage network issues and availability risks."
-    },
-    {
-      "id": "FC-N3-006",
-      "deck": "core",
-      "tags": [
-        "incident"
-      ],
-      "source": "ANDM prep",
-      "front": "Incident commander role:",
-      "back": "Coordinates mitigation, communication, and roles \u2014 not solo debug everything \u2014 Critical issue management."
-    },
-    {
-      "id": "FC-N3-007",
-      "deck": "core",
-      "tags": [
-        "incident"
-      ],
-      "source": "ANDM prep",
-      "front": "Blameless postmortem goal:",
-      "back": "Systemic learning and prevention \u2014 Highest Standards + learning culture."
-    },
-    {
-      "id": "FC-N3-008",
-      "deck": "core",
-      "tags": [
-        "troubleshooting"
-      ],
-      "source": "ANDM prep",
-      "front": "When synthetic probes are green but customers hurt:",
-      "back": "Probes miss path/region/cohort \u2014 correlate with real traffic \u2014 Dive Deep troubleshooting."
-    },
-    {
-      "id": "FC-N3-009",
-      "deck": "core",
-      "tags": [
-        "incident",
-        "communication"
-      ],
-      "source": "ANDM prep",
-      "front": "SEV communication to stakeholders should be:",
-      "back": "Factual, timed updates with impact and ETA of next update \u2014 Earn Trust under pressure."
-    },
-    {
-      "id": "FC-N3-010",
-      "deck": "core",
-      "tags": [
-        "ops"
-      ],
-      "source": "JD",
-      "front": "Process optimization uses data to:",
-      "back": "Find bottlenecks and remove toil with measured before/after \u2014 JD: process optimization using data."
-    },
-    {
-      "id": "FC-N3-011",
-      "deck": "core",
-      "tags": [
-        "on-call"
-      ],
-      "source": "ANDM prep",
-      "front": "On-call escalation policy should be:",
-      "back": "Clear thresholds and backup paths \u2014 practiced \u2014 Preferred: escalation management."
-    },
-    {
-      "id": "FC-N3-012",
-      "deck": "core",
-      "tags": [
-        "incident",
-        "manager"
-      ],
-      "source": "ANDM prep",
-      "front": "Recurring identical Sev pages indicate:",
-      "back": "Missing durable fix / mechanism \u2014 manager should drive it \u2014 Avoid re-occurrence."
-    },
-    {
-      "id": "FC-N3-013",
-      "deck": "core",
-      "tags": [
-        "ops",
-        "slo"
-      ],
-      "source": "ANDM prep",
-      "front": "Error budget thinking for networks:",
-      "back": "Track customer-impacting unreliability allowance to prioritize work \u2014 Ops excellence language transferable from SRE."
-    },
-    {
-      "id": "FC-N3-014",
-      "deck": "core",
-      "tags": [
-        "incident",
-        "lp"
-      ],
-      "source": "ANDM prep",
-      "front": "During incident, Dive Deep vs mitigate:",
-      "back": "Mitigate first; deepen in parallel once impact controlled \u2014 Amazon Bias for Action + Dive Deep balance."
-    },
-    {
-      "id": "FC-N4-001",
-      "deck": "core",
-      "tags": [
-        "automation"
-      ],
-      "source": "ANDM prep",
-      "front": "Best first automation target in network ops:",
-      "back": "High-frequency, well-understood, error-prone toil with clear validation \u2014 Invent and Simplify."
-    },
-    {
-      "id": "FC-N4-002",
-      "deck": "core",
-      "tags": [
-        "automation",
-        "ops"
-      ],
-      "source": "ANDM prep",
-      "front": "Automation without observability is risky because:",
-      "back": "Failures scale faster and hide \u2014 need metrics/logs/alerts \u2014 Highest Standards."
-    },
-    {
-      "id": "FC-N4-003",
-      "deck": "core",
-      "tags": [
-        "automation"
-      ],
-      "source": "ANDM prep",
-      "front": "IaC / config management helps by:",
-      "back": "Making intended state reviewable, repeatable, and auditable \u2014 Safe implementation at scale."
-    },
-    {
-      "id": "FC-N4-004",
-      "deck": "core",
-      "tags": [
-        "automation",
-        "lp"
-      ],
-      "source": "ANDM prep",
-      "front": "When automation causes an outage:",
-      "back": "Mitigate, disable/auto-gate, fix, add tests \u2014 own it \u2014 Ownership + mechanisms."
-    },
-    {
-      "id": "FC-N4-005",
-      "deck": "core",
-      "tags": [
-        "automation",
-        "ops"
-      ],
-      "source": "ANDM prep",
-      "front": "Process optimization should measure:",
-      "back": "Lead time, error rate, and operator minutes saved \u2014 JD: data and metrics."
-    },
-    {
-      "id": "FC-N4-006",
-      "deck": "core",
-      "tags": [
-        "automation"
-      ],
-      "source": "ANDM prep",
-      "front": "Self-service for partner teams works when:",
-      "back": "Guardrails and quotas prevent unsafe actions \u2014 Synergies with engineering teams."
-    },
-    {
-      "id": "FC-N4-007",
-      "deck": "core",
-      "tags": [
-        "automation"
-      ],
-      "source": "ANDM prep",
-      "front": "Runbook automation maturity:",
-      "back": "Human-executed \u2192 semi-auto \u2192 auto with human approval \u2192 auto with oversight \u2014 Credible continuous improvement."
-    },
-    {
-      "id": "FC-N4-008",
-      "deck": "core",
-      "tags": [
-        "automation",
-        "toil"
-      ],
-      "source": "ANDM prep",
-      "front": "Toil definition (ops):",
-      "back": "Manual, repetitive, automatable, devoid of enduring value \u2014 Useful framing even outside Google SRE."
-    },
-    {
-      "id": "FC-N4-009",
-      "deck": "core",
-      "tags": [
-        "automation"
-      ],
-      "source": "ANDM prep",
-      "front": "Tooling adoption fails when:",
-      "back": "It ignores operator workflow and lacks training \u2014 Improve existing frameworks/tools."
-    },
-    {
-      "id": "FC-N4-010",
-      "deck": "core",
-      "tags": [
-        "automation",
-        "change-control"
-      ],
-      "source": "ANDM prep",
-      "front": "CI for network config should:",
-      "back": "Lint, simulate/validate, and block unsafe diffs \u2014 Safe change at scale."
-    },
-    {
-      "id": "FC-N4-011",
-      "deck": "core",
-      "tags": [
-        "automation",
-        "incident"
-      ],
-      "source": "ANDM prep",
-      "front": "ChatOps for incidents helps when:",
-      "back": "It speeds safe actions with auditability \u2014 Bias for Action with Highest Standards."
-    },
-    {
-      "id": "FC-N4-012",
-      "deck": "core",
-      "tags": [
-        "automation",
-        "lp"
-      ],
-      "source": "ANDM prep",
-      "front": "Building vs buying ops tooling:",
-      "back": "Evaluate against reliability needs, operability, and team skill \u2014 not ideology \u2014 Frugality + Deliver Results."
-    },
-    {
-      "id": "FC-WX-001",
-      "deck": "core",
-      "tags": [
-        "wx",
-        "lp",
-        "loop"
-      ],
-      "source": "Exponent LP guide",
-      "front": "Amazon interviews assess Leadership Principles:",
-      "back": "Across the loop \u2014 including technical conversations \u2014 Exponent/IGotAnOffer: LPs permeate rounds."
-    },
-    {
-      "id": "FC-WX-002",
-      "deck": "core",
-      "tags": [
-        "wx",
-        "loop"
-      ],
-      "source": "LinkedIn NDE reports",
-      "front": "Network Development Engineer loops often include:",
-      "back": "Networking deep-dive on resume projects + LP behavioral (+ sometimes light coding) \u2014 LinkedIn NDE reports: networking + LP + possible coding variance."
-    },
-    {
-      "id": "FC-WX-003",
-      "deck": "core",
-      "tags": [
-        "wx",
-        "manager"
-      ],
-      "source": "JD",
-      "front": "Manager loops differ from IC primarily by:",
-      "back": "More Hire/Develop, org impact, and stakeholder stories \u2014 still technical Dive Deep \u2014 NDM JD emphasizes both technical leadership and people management."
-    },
-    {
-      "id": "FC-WX-004",
-      "deck": "core",
-      "tags": [
-        "wx",
-        "hiring"
-      ],
-      "source": "ANDM prep",
-      "front": "Bar Raiser role is best described as:",
-      "back": "An objective interviewer protecting the hiring bar and LP signal quality \u2014 Amazon hiring mechanism."
-    },
-    {
-      "id": "FC-WX-005",
-      "deck": "core",
-      "tags": [
-        "wx",
-        "dive-deep"
-      ],
-      "source": "JD",
-      "front": "Dive Deep surprise for managers:",
-      "back": "Interviewers may push past high-level slides into mechanisms and metrics \u2014 JD: dive deep with engineers; interviewers test that."
-    },
-    {
-      "id": "FC-WX-006",
-      "deck": "core",
-      "tags": [
-        "wx",
-        "compliance"
-      ],
-      "source": "JD",
-      "front": "AGSVA clearance on an AU Network Core role means:",
-      "back": "Eligibility/suitability for government vetting can be required \u2014 plan accordingly \u2014 Explicit JD requirement for this posting."
-    },
-    {
-      "id": "FC-WX-007",
-      "deck": "core",
-      "tags": [
-        "wx",
-        "loop"
-      ],
-      "source": "ANDM prep",
-      "front": "If recruiter is vague on coding for NDM:",
-      "back": "Ask explicitly what rounds exist: LP, networking deep-dive, coding, bar raiser \u2014 Loop variance is high \u2014 confirm."
-    },
-    {
-      "id": "FC-WX-008",
-      "deck": "core",
-      "tags": [
-        "wx",
-        "star"
-      ],
-      "source": "ANDM prep",
-      "front": "STAR stories that fail Bar Raisers often:",
-      "back": "Hide the candidate's actions in \"we\" and lack metrics \u2014 Common coaching feedback."
-    },
-    {
-      "id": "FC-WX-009",
-      "deck": "core",
-      "tags": [
-        "wx",
-        "customer"
-      ],
-      "source": "JD",
-      "front": "Unique large-customer requirements (JD) imply interviews may probe:",
-      "back": "Handling exceptions without breaking shared platform safety \u2014 Role serves large customers with unique needs."
-    },
-    {
-      "id": "FC-WX-010",
-      "deck": "core",
-      "tags": [
-        "wx",
-        "on-call"
-      ],
-      "source": "ANDM prep",
-      "front": "On-call management questions may ask:",
-      "back": "How you design rotations, escalations, and reduce pages \u2014 Preferred qualifications call this out."
-    },
-    {
-      "id": "FC-WX-011",
-      "deck": "core",
-      "tags": [
-        "wx",
-        "lp"
-      ],
-      "source": "ANDM prep",
-      "front": "Invent and Simplify trap:",
-      "back": "Building a complex custom tool when a standard mechanism exists \u2014 Amazon prefers mechanisms that scale."
-    },
-    {
-      "id": "FC-WX-012",
-      "deck": "core",
-      "tags": [
-        "wx",
-        "lp"
-      ],
-      "source": "ANDM prep",
-      "front": "Deliver Results follow-up you should expect:",
-      "back": "What was your baseline? What did YOU do? What changed quantitatively? \u2014 Bar Raisers probe depth."
-    },
-    {
       "id": "FC-LP-FULL-001",
       "deck": "core",
       "tags": [
-        "lp"
+        "lp",
+        "lp-full"
       ],
       "source": "ANDM prep",
       "front": "Which LP emphasizes mechanisms over good intentions?",
@@ -1352,7 +321,8 @@
       "deck": "core",
       "tags": [
         "lp",
-        "backbone"
+        "backbone",
+        "lp-full"
       ],
       "source": "ANDM prep",
       "front": "\"Disagree and Commit\" requires that after disagreement you:",
@@ -1363,7 +333,8 @@
       "deck": "core",
       "tags": [
         "lp",
-        "invent-simplify"
+        "invent-simplify",
+        "lp-full"
       ],
       "source": "ANDM prep",
       "front": "Invent and Simplify is NOT:",
@@ -1374,7 +345,8 @@
       "deck": "core",
       "tags": [
         "lp",
-        "earn-trust"
+        "earn-trust",
+        "lp-full"
       ],
       "source": "ANDM prep",
       "front": "Earn Trust includes delivering:",
@@ -1386,7 +358,8 @@
       "tags": [
         "lp",
         "dive-deep",
-        "manager"
+        "manager",
+        "lp-full"
       ],
       "source": "ANDM prep",
       "front": "Dive Deep anti-pattern for managers:",
@@ -1398,7 +371,8 @@
       "tags": [
         "lp",
         "bias-for-action",
-        "change-control"
+        "change-control",
+        "lp-full"
       ],
       "source": "ANDM prep",
       "front": "Bias for Action still requires:",
@@ -1409,7 +383,8 @@
       "deck": "core",
       "tags": [
         "lp",
-        "frugality"
+        "frugality",
+        "lp-full"
       ],
       "source": "ANDM prep",
       "front": "Frugality does NOT justify:",
@@ -1420,7 +395,8 @@
       "deck": "core",
       "tags": [
         "lp",
-        "think-big"
+        "think-big",
+        "lp-full"
       ],
       "source": "ANDM prep",
       "front": "Think Big without Deliver Results fails when you:",
@@ -1430,7 +406,8 @@
       "id": "FC-LP-FULL-009",
       "deck": "core",
       "tags": [
-        "lp"
+        "lp",
+        "lp-full"
       ],
       "source": "ANDM prep",
       "front": "Are Right, A Lot includes:",
@@ -1440,7 +417,8 @@
       "id": "FC-LP-FULL-010",
       "deck": "core",
       "tags": [
-        "lp"
+        "lp",
+        "lp-full"
       ],
       "source": "ANDM prep",
       "front": "Learn and Be Curious for network managers:",
@@ -1451,7 +429,8 @@
       "deck": "core",
       "tags": [
         "lp",
-        "on-call"
+        "on-call",
+        "lp-full"
       ],
       "source": "ANDM prep",
       "front": "Earth's Best Employer in a 24x7 network team means:",
@@ -1461,11 +440,1968 @@
       "id": "FC-LP-FULL-012",
       "deck": "core",
       "tags": [
-        "lp"
+        "lp",
+        "lp-full"
       ],
       "source": "ANDM prep",
       "front": "Broad Responsibility example:",
       "back": "Designing change so a failure does not cascade to unrelated customers \u2014 AWS Networking impacts many customers."
+    },
+    {
+      "id": "FC-LP-FULL-013",
+      "deck": "core",
+      "tags": [
+        "lp",
+        "ownership",
+        "lp-full"
+      ],
+      "source": "ANDM prep",
+      "front": "Ownership of a Sev-1 after your shift ends:",
+      "back": "Stay engaged or ensure a clean handoff with context \u2014 do not disappear \u2014 Ownership transcends shift boundaries until ownership is clear."
+    },
+    {
+      "id": "FC-LP-FULL-014",
+      "deck": "core",
+      "tags": [
+        "lp",
+        "customer-obsession",
+        "lp-full"
+      ],
+      "source": "ANDM prep",
+      "front": "Customer Obsession metric for network ops:",
+      "back": "Customer-impacting minutes / error budgets \u2014 not only device uptime \u2014 Customer impact > device green."
+    },
+    {
+      "id": "FC-LP-FULL-015",
+      "deck": "core",
+      "tags": [
+        "lp",
+        "star",
+        "lp-full"
+      ],
+      "source": "ANDM prep",
+      "front": "Deliver Results story needs:",
+      "back": "Baseline, action, and quantified outcome with your role clear \u2014 STAR Results must be concrete."
+    },
+    {
+      "id": "FC-LP-FULL-016",
+      "deck": "core",
+      "tags": [
+        "lp",
+        "hire-develop",
+        "manager",
+        "lp-full"
+      ],
+      "source": "ANDM prep",
+      "front": "Hire and Develop includes performance management when:",
+      "back": "You give timely feedback, clear expectations, and growth plans \u2014 including hard conversations \u2014 JD: performance management and team health."
+    },
+    {
+      "id": "FC-NC-001",
+      "deck": "core",
+      "tags": [
+        "network-core",
+        "org",
+        "nc"
+      ],
+      "source": "ANDM Network Core harvest 2026-07",
+      "front": "In AWS Network Core terms, what does the Systems Development Manager primarily lead?",
+      "back": "System Development Engineers building software that builds/operates/monitors/assures regional network fabrics \u2014 JD: SDM over SysDEs bridging DC ops capabilities with software solutions."
+    },
+    {
+      "id": "FC-NC-002",
+      "deck": "core",
+      "tags": [
+        "network-core",
+        "nde",
+        "nc"
+      ],
+      "source": "ANDM Network Core harvest 2026-07",
+      "front": "Network Development Engineers (NDEs) on Clos/fabric teams typically own:",
+      "back": "Fabric design, routing/availability/compliance, and safe network change at DC scale \u2014 Sibling NDE Clos/ARC JDs: availability, routing, compliance of Clos DC networks."
+    },
+    {
+      "id": "FC-NC-003",
+      "deck": "core",
+      "tags": [
+        "network-core",
+        "sysde",
+        "nc"
+      ],
+      "source": "ANDM Network Core harvest 2026-07",
+      "front": "SysDEs on Core Network / Network Core software planes are closest to:",
+      "back": "SRE-like engineers whose customers are network engineers and the fabric tooling itself \u2014 Public SysDE Core Network JDs: tools/services that build, operate, monitor, assure the AWS network."
+    },
+    {
+      "id": "FC-NC-004",
+      "deck": "core",
+      "tags": [
+        "clos",
+        "fabric",
+        "nc"
+      ],
+      "source": "ANDM Network Core harvest 2026-07",
+      "front": "A Clos / spine-leaf fabric is preferred in large DCs mainly because it:",
+      "back": "Provides scalable, predictable east-west bandwidth with ECMP and limited blast radius per failure \u2014 InterviewStack / Clos design: non-blocking scale-out fabric pattern."
+    },
+    {
+      "id": "FC-NC-005",
+      "deck": "core",
+      "tags": [
+        "clos",
+        "bgp",
+        "nc"
+      ],
+      "source": "ANDM Network Core harvest 2026-07",
+      "front": "Using eBGP as a Clos underlay (RFC 7938-style) primarily buys:",
+      "back": "Simple horizontal scale and ECMP with well-understood failure domains vs complex IGP flooding \u2014 RFC 7938 / Clos BGP underlay pattern common in hyperscale DC fabrics."
+    },
+    {
+      "id": "FC-NC-006",
+      "deck": "core",
+      "tags": [
+        "network-core",
+        "customers",
+        "nc"
+      ],
+      "source": "ANDM Network Core harvest 2026-07",
+      "front": "The primary internal customers of Network Core software are:",
+      "back": "NDEs and DC/network ops who need reliable automation, visibility, and safe change tooling \u2014 SysDE Core Network framing: internal network engineering customers."
+    },
+    {
+      "id": "FC-NC-007",
+      "deck": "core",
+      "tags": [
+        "nfe",
+        "arc",
+        "nc"
+      ],
+      "source": "ANDM Network Core harvest 2026-07",
+      "front": "Availability, Routing, and Compliance (ARC) style fabric work focuses on:",
+      "back": "Keeping Clos networks security-compliant while planned/unplanned events don\u2019t hurt customer performance \u2014 Public NFE/ARC Clos JD language."
+    },
+    {
+      "id": "FC-NC-008",
+      "deck": "core",
+      "tags": [
+        "dclc",
+        "lifecycle",
+        "nc"
+      ],
+      "source": "ANDM Network Core harvest 2026-07",
+      "front": "DC Life Cycle (refresh/turndown) network work succeeds when:",
+      "back": "Processes run safely with no impact to customer traffic and automation reduces manual risk \u2014 DCLC NDE JD: operational excellence during refresh/exit."
+    },
+    {
+      "id": "FC-NC-009",
+      "deck": "core",
+      "tags": [
+        "network-core",
+        "sdm",
+        "nc"
+      ],
+      "source": "ANDM Network Core harvest 2026-07",
+      "front": "As SDM Network Core, Dive Deep during a fabric tool outage means:",
+      "back": "Reading metrics/logs/config diffs with engineers and driving mitigation + durable fix\u2014not only status meetings \u2014 JD: dive into details, make technical contributions, drive reliability."
+    },
+    {
+      "id": "FC-NC-010",
+      "deck": "core",
+      "tags": [
+        "network-core",
+        "scope",
+        "nc"
+      ],
+      "source": "ANDM Network Core harvest 2026-07",
+      "front": "Network Core is NOT primarily about:",
+      "back": "Day-to-day customer VPC architecture consulting as a Solutions Architect \u2014 Role boundary: foundation fabric software plane vs customer SA work."
+    },
+    {
+      "id": "FC-NC-011",
+      "deck": "core",
+      "tags": [
+        "ecmp",
+        "failure",
+        "nc"
+      ],
+      "source": "ANDM Network Core harvest 2026-07",
+      "front": "In a Clos with ECMP, losing one spine typically should:",
+      "back": "Reduce capacity but keep connectivity if remaining paths and hashing still serve flows \u2014 ECMP resilience is a core fabric interview signal."
+    },
+    {
+      "id": "FC-NC-012",
+      "deck": "core",
+      "tags": [
+        "network-core",
+        "uc",
+        "nc"
+      ],
+      "source": "ANDM Network Core harvest 2026-07",
+      "front": "Utility Computing (UC) context for this role means Network Core supports:",
+      "back": "Foundational AWS infrastructure that compute/storage/database services depend on \u2014 JD places the team in UC supporting foundational services."
+    },
+    {
+      "id": "FC-NC-013",
+      "deck": "core",
+      "tags": [
+        "network-core",
+        "roadmap",
+        "nc"
+      ],
+      "source": "ANDM Network Core harvest 2026-07",
+      "front": "A healthy Network Core SDM roadmap balances:",
+      "back": "NDE/ops customer asks, platform reliability debt, and scalable automation investments with clear priority \u2014 JD: roadmaps + operating existing systems at high quality."
+    },
+    {
+      "id": "FC-NC-014",
+      "deck": "core",
+      "tags": [
+        "agsva",
+        "au",
+        "nc"
+      ],
+      "source": "ANDM Network Core harvest 2026-07",
+      "front": "For the AU Systems Development Manager Network Core posting, AGSVA awareness means:",
+      "back": "You must be eligible/able to attain clearance; treat it as a hard process gate, not a trivia quiz \u2014 JD + AGSVA eligibility; keep stories unclassified."
+    },
+    {
+      "id": "FC-NC-015",
+      "deck": "core",
+      "tags": [
+        "blast-radius",
+        "fabric",
+        "nc"
+      ],
+      "source": "ANDM Network Core harvest 2026-07",
+      "front": "When prioritizing a fabric automation bug, the SDM should weigh first:",
+      "back": "Customer-visible blast radius and correlated failure risk across the fabric \u2014 Customer Obsession + Highest Standards on blast radius."
+    },
+    {
+      "id": "FC-NC-016",
+      "deck": "core",
+      "tags": [
+        "network-core",
+        "standards",
+        "nc"
+      ],
+      "source": "ANDM Network Core harvest 2026-07",
+      "front": "Driving organizational standards for resiliency as Network Core SDM looks like:",
+      "back": "Mechanisms: review bars, canary/rollback defaults, SLOs, and shared runbooks\u2014not heroics \u2014 JD: standards for operational excellence and resiliency."
+    },
+    {
+      "id": "FC-SYS-001",
+      "deck": "core",
+      "tags": [
+        "cicd",
+        "network-software",
+        "sys"
+      ],
+      "source": "ANDM Network Core harvest 2026-07",
+      "front": "CI/CD for network automation should emphasize:",
+      "back": "Validated pipelines: lint/unit/integration, staged rollout, and fast rollback of bad configs/code \u2014 SysDE/NDE automation themes + SDM software lifecycle JD."
+    },
+    {
+      "id": "FC-SYS-002",
+      "deck": "core",
+      "tags": [
+        "observability",
+        "sys"
+      ],
+      "source": "ANDM Network Core harvest 2026-07",
+      "front": "A Network Core platform without SLIs/logs/traces is weak because:",
+      "back": "You cannot detect, localize, or prove fixes when automation fails at scale \u2014 Operational excellence for software services."
+    },
+    {
+      "id": "FC-SYS-003",
+      "deck": "core",
+      "tags": [
+        "toil",
+        "automation",
+        "sys"
+      ],
+      "source": "ANDM Network Core harvest 2026-07",
+      "front": "Best first automation target for a SysDE team supporting NDEs:",
+      "back": "High-frequency, well-understood, error-prone toil with clear success checks \u2014 Invent and Simplify; Blind OpEx themes."
+    },
+    {
+      "id": "FC-SYS-004",
+      "deck": "core",
+      "tags": [
+        "rca",
+        "durable-fix",
+        "sys"
+      ],
+      "source": "ANDM Network Core harvest 2026-07",
+      "front": "After a tool causes a fabric impact, Highest Standards means:",
+      "back": "Mitigate, then RCA with mechanism changes so the class of bug cannot recur \u2014 JD preferred: RCA and long-term fixes."
+    },
+    {
+      "id": "FC-SYS-005",
+      "deck": "core",
+      "tags": [
+        "linux",
+        "manager",
+        "sys"
+      ],
+      "source": "ANDM Network Core harvest 2026-07",
+      "front": "As a hands-on SDM, Linux literacy in a SysDE incident means you can:",
+      "back": "Follow host signals (CPU, disk, network, processes/logs) enough to challenge and unblock engineers \u2014 SysDE loops stress Linux triage; SDM must Dive Deep."
+    },
+    {
+      "id": "FC-SYS-006",
+      "deck": "core",
+      "tags": [
+        "code-review",
+        "sys"
+      ],
+      "source": "ANDM Network Core harvest 2026-07",
+      "front": "Code review culture on Network Core software should optimize for:",
+      "back": "Correctness, blast-radius safety, testability, and operability\u2014not rubber stamps \u2014 JD: code reviews, testing, deployment, post-launch monitoring."
+    },
+    {
+      "id": "FC-SYS-007",
+      "deck": "core",
+      "tags": [
+        "canary",
+        "deploy",
+        "sys"
+      ],
+      "source": "ANDM Network Core harvest 2026-07",
+      "front": "Deploying a change to fabric controllers / automation safely usually means:",
+      "back": "Canary/small blast radius, health gates, automatic rollback, and clear ownership \u2014 Change safety transferred from network ops to software plane."
+    },
+    {
+      "id": "FC-SYS-008",
+      "deck": "core",
+      "tags": [
+        "idempotency",
+        "sys"
+      ],
+      "source": "ANDM Network Core harvest 2026-07",
+      "front": "Network automation jobs should be idempotent because:",
+      "back": "Retries and partial failures are common; re-running must not corrupt intended state \u2014 Reliable automation design."
+    },
+    {
+      "id": "FC-SYS-009",
+      "deck": "core",
+      "tags": [
+        "api",
+        "platform",
+        "sys"
+      ],
+      "source": "ANDM Network Core harvest 2026-07",
+      "front": "Preferring APIs/events over SSH snowflake scripts helps Network Core scale by:",
+      "back": "Making intent reviewable, testable, and automatable across a huge device/service fleet \u2014 Invent and Simplify at hyperscale."
+    },
+    {
+      "id": "FC-SYS-010",
+      "deck": "core",
+      "tags": [
+        "oncall",
+        "software",
+        "sys"
+      ],
+      "source": "ANDM Network Core harvest 2026-07",
+      "front": "On-call for a Network Core software service should page on:",
+      "back": "Customer/NDE-impacting symptoms and SLO burn\u2014not every debug log line \u2014 Page hygiene + ownership."
+    },
+    {
+      "id": "FC-SYS-011",
+      "deck": "core",
+      "tags": [
+        "capacity",
+        "software",
+        "sys"
+      ],
+      "source": "ANDM Network Core harvest 2026-07",
+      "front": "Capacity for a network control/ops platform includes:",
+      "back": "Compute/storage/API quotas and dependency limits so growth doesn\u2019t silently break change velocity \u2014 Scalable systems experience from preferred quals."
+    },
+    {
+      "id": "FC-SYS-012",
+      "deck": "core",
+      "tags": [
+        "security",
+        "compliance",
+        "sys"
+      ],
+      "source": "ANDM Network Core harvest 2026-07",
+      "front": "Security/compliance in Network Core tooling means:",
+      "back": "Least privilege, audited changes, and not shipping secrets in repos or logs \u2014 ARC/compliance adjacency + Highest Standards."
+    },
+    {
+      "id": "FC-SYS-013",
+      "deck": "core",
+      "tags": [
+        "feature-flags",
+        "sys"
+      ],
+      "source": "ANDM Network Core harvest 2026-07",
+      "front": "Feature flags / config switches in fabric software help by:",
+      "back": "Decoupling deploy from enablement and enabling rapid disable under impact \u2014 Bias for Action with safety."
+    },
+    {
+      "id": "FC-SYS-014",
+      "deck": "core",
+      "tags": [
+        "dependencies",
+        "sys"
+      ],
+      "source": "ANDM Network Core harvest 2026-07",
+      "front": "When a downstream dependency (auth, queue, DB) flakes, Ownership looks like:",
+      "back": "Protect customers with backoff/failover, escalate with data, and drive durable dependency fixes \u2014 Ownership across boundaries."
+    },
+    {
+      "id": "FC-SYS-015",
+      "deck": "core",
+      "tags": [
+        "testing",
+        "network",
+        "sys"
+      ],
+      "source": "ANDM Network Core harvest 2026-07",
+      "front": "Testing network automation well includes:",
+      "back": "Unit tests plus simulated/lab devices or contract tests before production blast radius \u2014 Quality reviews from JD lifecycle."
+    },
+    {
+      "id": "FC-SYS-016",
+      "deck": "core",
+      "tags": [
+        "sdm",
+        "tech-contribution",
+        "sys"
+      ],
+      "source": "ANDM Network Core harvest 2026-07",
+      "front": "Hands-on technical contribution as Network Core SDM should look like:",
+      "back": "Unblocking design/reviews, pairing on hard incidents, and raising the technical bar\u2014without becoming the sole coder \u2014 JD: hands-on manager who still develops the team."
+    },
+    {
+      "id": "FC-M1-001",
+      "deck": "core",
+      "tags": [
+        "hiring",
+        "sysde",
+        "m1"
+      ],
+      "source": "ANDM Network Core harvest 2026-07",
+      "front": "Hiring SysDEs for Network Core, the strongest bar signal is:",
+      "back": "Systems thinking, coding/automation judgment, and ops ownership under ambiguity \u2014 Retargeted to SysDE plane per JD."
+    },
+    {
+      "id": "FC-M1-002",
+      "deck": "core",
+      "tags": [
+        "hiring",
+        "loop",
+        "m1"
+      ],
+      "source": "ANDM Network Core harvest 2026-07",
+      "front": "A strong SysDE interview loop usually probes:",
+      "back": "Coding/troubleshooting + Linux/networking fundamentals + LPs (confirm exact mix with recruiter) \u2014 Blind/Medium SysDE patterns; WX for SDM coding."
+    },
+    {
+      "id": "FC-M1-003",
+      "deck": "core",
+      "tags": [
+        "hiring",
+        "bar",
+        "m1"
+      ],
+      "source": "ANDM Network Core harvest 2026-07",
+      "front": "Raising the bar means a hire should:",
+      "back": "Strengthen the team on key dimensions versus today\u2019s median\u2014not fill a seat \u2014 Hire and Develop the Best."
+    },
+    {
+      "id": "FC-M1-004",
+      "deck": "core",
+      "tags": [
+        "onboarding",
+        "m1"
+      ],
+      "source": "ANDM Network Core harvest 2026-07",
+      "front": "Onboarding a Network Core SysDE well includes:",
+      "back": "30/60/90 goals, mentor, access, safe early changes, and clear on-call ramp \u2014 Develop the Best."
+    },
+    {
+      "id": "FC-M1-005",
+      "deck": "core",
+      "tags": [
+        "hiring",
+        "shortage",
+        "m1"
+      ],
+      "source": "ANDM Network Core harvest 2026-07",
+      "front": "When headcount is short, best move:",
+      "back": "Clarify must-have skills with data, partner recruiting, keep the bar \u2014 Highest Standards under pressure."
+    },
+    {
+      "id": "FC-M1-006",
+      "deck": "core",
+      "tags": [
+        "hiring",
+        "m1"
+      ],
+      "source": "ANDM prep",
+      "front": "Diversity of experience in hiring means:",
+      "back": "Value non-linear paths when skills transfer \u2014 still assess the bar \u2014 JD encourages diverse experiences while maintaining bar."
+    },
+    {
+      "id": "FC-M1-007",
+      "deck": "core",
+      "tags": [
+        "hiring",
+        "m1"
+      ],
+      "source": "ANDM prep",
+      "front": "Interview debrief best practice:",
+      "back": "Evidence against LPs and technical bar, not gut vibe alone \u2014 Amazon interview culture is evidence-based."
+    },
+    {
+      "id": "FC-M1-008",
+      "deck": "core",
+      "tags": [
+        "hiring",
+        "networking",
+        "m1"
+      ],
+      "source": "ANDM prep",
+      "front": "Technical interview for Network Core should dive into:",
+      "back": "Failure domains, routing, change safety, and past ops incidents \u2014 Role is network engineering + management."
+    },
+    {
+      "id": "FC-M1-009",
+      "deck": "core",
+      "tags": [
+        "hiring",
+        "m1"
+      ],
+      "source": "ANDM prep",
+      "front": "A candidate freezes on Dive Deep. You should:",
+      "back": "Probe with scaffolding questions; note depth limits honestly in debrief \u2014 Assess signal without contaminating the bar."
+    },
+    {
+      "id": "FC-M1-010",
+      "deck": "core",
+      "tags": [
+        "onboarding",
+        "m1"
+      ],
+      "source": "ANDM prep",
+      "front": "Training after hire should emphasize:",
+      "back": "Local runbooks, change process, tools, and escalation paths \u2014 Operational readiness beats cert theater."
+    },
+    {
+      "id": "FC-M1-011",
+      "deck": "core",
+      "tags": [
+        "hiring",
+        "manager",
+        "m1"
+      ],
+      "source": "ANDM prep",
+      "front": "Headcount request is stronger with:",
+      "back": "Workload metrics, risk, and customer impact of understaffing \u2014 Managers use data with leadership."
+    },
+    {
+      "id": "FC-M1-012",
+      "deck": "core",
+      "tags": [
+        "hiring",
+        "m1"
+      ],
+      "source": "ANDM prep",
+      "front": "Intern/junior hire can raise the bar if:",
+      "back": "Growth trajectory and fundamentals are exceptional \u2014 Hire and Develop includes growing talent."
+    },
+    {
+      "id": "FC-M1-013",
+      "deck": "core",
+      "tags": [
+        "hiring",
+        "lp",
+        "m1"
+      ],
+      "source": "ANDM prep",
+      "front": "Rejecting a likable but shallow candidate demonstrates:",
+      "back": "Highest Standards / Hire and Develop the Best \u2014 Bar Raisers watch for lowering the bar."
+    },
+    {
+      "id": "FC-M1-014",
+      "deck": "core",
+      "tags": [
+        "hiring",
+        "m1"
+      ],
+      "source": "ANDM prep",
+      "front": "Loop coordination for hiring includes:",
+      "back": "Clear LP assignment per interviewer and written feedback \u2014 Amazon loop hygiene."
+    },
+    {
+      "id": "FC-M2-001",
+      "deck": "core",
+      "tags": [
+        "performance",
+        "coaching",
+        "m2"
+      ],
+      "source": "ANDM Network Core harvest 2026-07",
+      "front": "Coaching a SysDE missing the bar should include:",
+      "back": "Clear written expectations, examples, support plan, and timeline with consequences \u2014 IGotAnOffer SDM coaching stems."
+    },
+    {
+      "id": "FC-M2-002",
+      "deck": "core",
+      "tags": [
+        "oncall",
+        "m2"
+      ],
+      "source": "ANDM Network Core harvest 2026-07",
+      "front": "Unfair 24\u00d77 load on one engineer is a manager failure because:",
+      "back": "Rotation fairness and page hygiene are mechanisms you own for team health \u2014 Earth's Best Employer + OpEx."
+    },
+    {
+      "id": "FC-M2-003",
+      "deck": "core",
+      "tags": [
+        "high-performer",
+        "m2"
+      ],
+      "source": "ANDM Network Core harvest 2026-07",
+      "front": "Developing a high performer on Network Core looks like:",
+      "back": "Stretch ownership, visibility, and a path to larger scope\u2014not ignoring them \u2014 Hire and Develop."
+    },
+    {
+      "id": "FC-M2-004",
+      "deck": "core",
+      "tags": [
+        "manager",
+        "m2"
+      ],
+      "source": "ANDM prep",
+      "front": "1:1s should cover:",
+      "back": "Growth, blockers, wellbeing, and technical coaching \u2014 not only status \u2014 JD: 1:1s, mentoring soft + technical."
+    },
+    {
+      "id": "FC-M2-005",
+      "deck": "core",
+      "tags": [
+        "incident",
+        "manager",
+        "m2"
+      ],
+      "source": "ANDM prep",
+      "front": "Escalation during critical issue \u2014 manager role:",
+      "back": "Ensure IC/commander clarity, stakeholder updates, and remove blockers \u2014 JD: escalation and critical issue management."
+    },
+    {
+      "id": "FC-M2-006",
+      "deck": "core",
+      "tags": [
+        "ops",
+        "manager",
+        "m2"
+      ],
+      "source": "ANDM prep",
+      "front": "Quality audit of ops means:",
+      "back": "Sample changes/incidents for process adherence and learning \u2014 JD mentions quality audits."
+    },
+    {
+      "id": "FC-M2-007",
+      "deck": "core",
+      "tags": [
+        "on-call",
+        "lp",
+        "m2"
+      ],
+      "source": "ANDM prep",
+      "front": "Burnout signal in network ops teams:",
+      "back": "Rising pages, declining change quality, attrition risk \u2014 act systemically \u2014 Earth's Best Employer + ops excellence."
+    },
+    {
+      "id": "FC-M2-008",
+      "deck": "core",
+      "tags": [
+        "performance",
+        "m2"
+      ],
+      "source": "ANDM prep",
+      "front": "Performance feedback should be:",
+      "back": "Timely, specific, behavioral, with examples \u2014 Earn Trust + Hire and Develop."
+    },
+    {
+      "id": "FC-M2-009",
+      "deck": "core",
+      "tags": [
+        "manager",
+        "roadmap",
+        "m2"
+      ],
+      "source": "ANDM prep",
+      "front": "Project management for the team includes:",
+      "back": "Clear owners, milestones, risks, and reporting to leadership \u2014 JD: roadmaps, goals, progress reporting."
+    },
+    {
+      "id": "FC-M2-010",
+      "deck": "core",
+      "tags": [
+        "manager",
+        "lp",
+        "m2"
+      ],
+      "source": "ANDM prep",
+      "front": "When two engineers conflict on design:",
+      "back": "Facilitate data-driven decision; then disagree-and-commit as a team \u2014 Manager soft skills + Backbone."
+    },
+    {
+      "id": "FC-M2-011",
+      "deck": "core",
+      "tags": [
+        "manager",
+        "m2"
+      ],
+      "source": "ANDM prep",
+      "front": "Training investment is justified when:",
+      "back": "It raises team capability on critical platforms and reduces risk \u2014 JD: training and development."
+    },
+    {
+      "id": "FC-M2-012",
+      "deck": "core",
+      "tags": [
+        "on-call",
+        "m2"
+      ],
+      "source": "ANDM prep",
+      "front": "On-call participation for managers:",
+      "back": "Stay close enough to dive deep and support escalations \u2014 role-appropriate \u2014 Preferred quals: manage on-call and escalation."
+    },
+    {
+      "id": "FC-M2-013",
+      "deck": "core",
+      "tags": [
+        "manager",
+        "m2"
+      ],
+      "source": "ANDM prep",
+      "front": "Team goal setting should be:",
+      "back": "Credible, measurable, aligned to customer/network outcomes \u2014 JD: define and deliver goals; communicate objectives."
+    },
+    {
+      "id": "FC-M2-014",
+      "deck": "core",
+      "tags": [
+        "incident",
+        "manager",
+        "m2"
+      ],
+      "source": "ANDM prep",
+      "front": "After a painful incident, people care looks like:",
+      "back": "Blameless learning + recovery time + systemic fixes \u2014 Combine Highest Standards with Best Employer."
+    },
+    {
+      "id": "FC-M3-001",
+      "deck": "core",
+      "tags": [
+        "stakeholders",
+        "nde",
+        "m3"
+      ],
+      "source": "ANDM Network Core harvest 2026-07",
+      "front": "NDE partners ask for a feature that increases fabric risk. Best SDM response:",
+      "back": "Clarify customer need, propose safer alternatives, and disagree/commit with data\u2014not silent assent \u2014 Backbone + Customer Obsession."
+    },
+    {
+      "id": "FC-M3-002",
+      "deck": "core",
+      "tags": [
+        "roadmap",
+        "m3"
+      ],
+      "source": "ANDM Network Core harvest 2026-07",
+      "front": "When platform debt and NDE feature asks collide, prioritize by:",
+      "back": "Impact on customer/fabric risk and long-term delivery capacity\u2014with transparent tradeoffs \u2014 Deliver Results + Think Big."
+    },
+    {
+      "id": "FC-M3-003",
+      "deck": "core",
+      "tags": [
+        "status",
+        "m3"
+      ],
+      "source": "ANDM Network Core harvest 2026-07",
+      "front": "Stakeholder status for Network Core should include:",
+      "back": "R/Y/G, risks, asks, and customer/fabric impact\u2014not activity theater \u2014 Earn Trust."
+    },
+    {
+      "id": "FC-M3-004",
+      "deck": "core",
+      "tags": [
+        "communication",
+        "m3"
+      ],
+      "source": "ANDM prep",
+      "front": "Complex idea to non-network stakeholders:",
+      "back": "Analogy + impact + decision needed \u2014 then offer deep dive \u2014 Preferred: convey complex ideas clearly."
+    },
+    {
+      "id": "FC-M3-005",
+      "deck": "core",
+      "tags": [
+        "stakeholder",
+        "m3"
+      ],
+      "source": "ANDM prep",
+      "front": "Working with service teams on network dependencies:",
+      "back": "Identify deliverables early; track; communicate slips \u2014 JD: ensure network dependencies identified and delivered."
+    },
+    {
+      "id": "FC-M3-006",
+      "deck": "core",
+      "tags": [
+        "customer",
+        "lp",
+        "m3"
+      ],
+      "source": "ANDM prep",
+      "front": "Conflict between customer ask and safety bar:",
+      "back": "Explain trade-offs; seek safer path that still meets need \u2014 Customer Obsession + Highest Standards."
+    },
+    {
+      "id": "FC-M3-007",
+      "deck": "core",
+      "tags": [
+        "stakeholder",
+        "m3"
+      ],
+      "source": "ANDM prep",
+      "front": "Synergies with other engineering teams:",
+      "back": "Share best practices, reuse tooling, create growth opportunities \u2014 JD: improve synergies and opportunities for engineers."
+    },
+    {
+      "id": "FC-M3-008",
+      "deck": "core",
+      "tags": [
+        "roadmap",
+        "m3"
+      ],
+      "source": "ANDM prep",
+      "front": "Roadmap communication fails when:",
+      "back": "Priorities are unclear and owners missing \u2014 JD: develop and maintain project road maps."
+    },
+    {
+      "id": "FC-M3-009",
+      "deck": "core",
+      "tags": [
+        "communication",
+        "m3"
+      ],
+      "source": "ANDM prep",
+      "front": "Written escalation to directors should include:",
+      "back": "Impact, timeline, mitigation, ask \u2014 Managers escalate with structure."
+    },
+    {
+      "id": "FC-M3-010",
+      "deck": "core",
+      "tags": [
+        "customer",
+        "m3"
+      ],
+      "source": "ANDM prep",
+      "front": "Customer unique requirements (per JD) require:",
+      "back": "Careful scoping, security/compliance checks, and clear delivery plans \u2014 JD: serving large customers with unique requirements."
+    },
+    {
+      "id": "FC-M3-011",
+      "deck": "core",
+      "tags": [
+        "security",
+        "compliance",
+        "m3"
+      ],
+      "source": "ANDM prep",
+      "front": "Compliance/security engagement is:",
+      "back": "Required \u2014 adopt AWS best practices and policies \u2014 JD: compliance with policies and security."
+    },
+    {
+      "id": "FC-M3-012",
+      "deck": "core",
+      "tags": [
+        "wx",
+        "compliance",
+        "m3"
+      ],
+      "source": "JD AGSVA",
+      "front": "AGSVA clearance note for AU roles means:",
+      "back": "Be prepared for government vetting eligibility as a job requirement \u2014 JD requires ability to attain AGSVA clearance."
+    },
+    {
+      "id": "FC-N1-001",
+      "deck": "core",
+      "tags": [
+        "bgp",
+        "policy",
+        "n1"
+      ],
+      "source": "ANDM Network Core harvest 2026-07",
+      "front": "During a Dive Deep, an engineer says 'BGP just picks the shortest path.' Your correction:",
+      "back": "BGP is policy-driven; attributes (local-pref, AS-path, MED, etc.) decide path selection\u2014not simple hop count \u2014 Global NDE prep + InterviewStack: BGP decision process literacy."
+    },
+    {
+      "id": "FC-N1-002",
+      "deck": "core",
+      "tags": [
+        "bgp",
+        "loop-prevention",
+        "n1"
+      ],
+      "source": "ANDM Network Core harvest 2026-07",
+      "front": "A candidate claims iBGP needs no loop prevention. Best pushback:",
+      "back": "iBGP doesn\u2019t re-advertise learned iBGP routes by default\u2014hence route reflectors/confederations and AS-path for eBGP \u2014 NDE Dublin/Jointaro-style BGP depth."
+    },
+    {
+      "id": "FC-N1-003",
+      "deck": "core",
+      "tags": [
+        "ospf",
+        "igp",
+        "n1"
+      ],
+      "source": "ANDM Network Core harvest 2026-07",
+      "front": "When would you prefer an IGP like OSPF/IS-IS inside a domain versus eBGP everywhere?",
+      "back": "When you need fast interior convergence and topology awareness within an AS, accepting different operational tradeoffs than policy-heavy BGP \u2014 Tradeoff thinking over memorization."
+    },
+    {
+      "id": "FC-N1-004",
+      "deck": "core",
+      "tags": [
+        "failure-domain",
+        "n1"
+      ],
+      "source": "ANDM Network Core harvest 2026-07",
+      "front": "Two 'redundant' uplinks share one optical system. As manager you flag:",
+      "back": "Diversity failure: correlated risk means redundancy is partially illusory \u2014 Correlated failure / diversity."
+    },
+    {
+      "id": "FC-N1-005",
+      "deck": "core",
+      "tags": [
+        "ecmp",
+        "hash",
+        "n1"
+      ],
+      "source": "ANDM Network Core harvest 2026-07",
+      "front": "Elephant flows hashing to one ECMP member cause hot spots. Good engineering response:",
+      "back": "Understand flow hashing limits; consider spraying/rehash strategies and capacity headroom\u2014not assume perfect balance \u2014 Clos ECMP operational reality."
+    },
+    {
+      "id": "FC-N1-006",
+      "deck": "core",
+      "tags": [
+        "control-data",
+        "n1"
+      ],
+      "source": "ANDM Network Core harvest 2026-07",
+      "front": "RIB looks healthy but packets blackhole. Most useful mental model:",
+      "back": "Control plane (RIB) can diverge from forwarding/data plane (FIB/hardware)\u2014validate actual forward path \u2014 NDE prep: routing vs forwarding tables."
+    },
+    {
+      "id": "FC-N1-007",
+      "deck": "core",
+      "tags": [
+        "mtu",
+        "n1"
+      ],
+      "source": "ANDM Network Core harvest 2026-07",
+      "front": "Small pings work; large transfers stall mid-TLS. First networking hypothesis:",
+      "back": "MTU/PMTUD black hole\u2014large packets dropped along the path \u2014 Classic Dive Deep symptom."
+    },
+    {
+      "id": "FC-N1-008",
+      "deck": "core",
+      "tags": [
+        "tcp",
+        "n1"
+      ],
+      "source": "ANDM Network Core harvest 2026-07",
+      "front": "Why might TCP throughput stay low on a high-BDP path even with 'green' links?",
+      "back": "Windowing, loss, buffering, and RTT interact\u2014link up \u2260 app goodput \u2014 NDE TCP deep dive themes."
+    },
+    {
+      "id": "FC-N1-009",
+      "deck": "core",
+      "tags": [
+        "convergence",
+        "n1"
+      ],
+      "source": "ANDM Network Core harvest 2026-07",
+      "front": "BFD is often paired with routing to:",
+      "back": "Detect failures faster than hello timers alone, enabling quicker traffic shift\u2014with CPU/false-positive tradeoffs \u2014 InterviewStack mid-level convergence."
+    },
+    {
+      "id": "FC-N1-010",
+      "deck": "core",
+      "tags": [
+        "anycast",
+        "n1"
+      ],
+      "source": "ANDM Network Core harvest 2026-07",
+      "front": "Anycast helps services when:",
+      "back": "Traffic steers to a nearby healthy instance and unhealthy announcements are withdrawn \u2014 Scale pattern with failure semantics."
+    },
+    {
+      "id": "FC-N1-011",
+      "deck": "core",
+      "tags": [
+        "overlay-underlay",
+        "n1"
+      ],
+      "source": "ANDM Network Core harvest 2026-07",
+      "front": "Customer overlay symptoms with healthy underlay metrics suggest:",
+      "back": "Fault may be overlay control plane, encapsulation, or mapping\u2014not only physical links \u2014 AWS-scale mental model."
+    },
+    {
+      "id": "FC-N1-012",
+      "deck": "core",
+      "tags": [
+        "asymmetry",
+        "n1"
+      ],
+      "source": "ANDM Network Core harvest 2026-07",
+      "front": "Stateful midboxes plus asymmetric routing often fail because:",
+      "back": "Return traffic may bypass the state holder that saw the forward flow \u2014 Troubleshooting trap."
+    },
+    {
+      "id": "FC-N1-013",
+      "deck": "core",
+      "tags": [
+        "life-of-packet",
+        "n1"
+      ],
+      "source": "ANDM Network Core harvest 2026-07",
+      "front": "Asking 'life of a packet' from host A to B is valuable because it forces:",
+      "back": "Layered path reasoning: L2/L3 hops, lookups, ACLs, encapsulation, and failure points \u2014 Global NDE Interview Prep staple."
+    },
+    {
+      "id": "FC-N1-014",
+      "deck": "core",
+      "tags": [
+        "hardware",
+        "n1"
+      ],
+      "source": "ANDM Network Core harvest 2026-07",
+      "front": "CAM/TCAM pressure matters operationally because:",
+      "back": "Forwarding/ACL scale limits can cause unexpected drops or slow-path behavior under growth \u2014 NDE hardware literacy signals."
+    },
+    {
+      "id": "FC-N1-015",
+      "deck": "core",
+      "tags": [
+        "health-signals",
+        "n1"
+      ],
+      "source": "ANDM Network Core harvest 2026-07",
+      "front": "Admin-up with zero errors but customers impacted implies:",
+      "back": "Need traffic/error/latency probes\u2014green \u2260 healthy \u2014 Ops excellence."
+    },
+    {
+      "id": "FC-N1-016",
+      "deck": "core",
+      "tags": [
+        "qos",
+        "n1"
+      ],
+      "source": "ANDM Network Core harvest 2026-07",
+      "front": "QoS under congestion is best framed as:",
+      "back": "Prioritization that buys time\u2014not a substitute for capacity and healthy topology \u2014 Manager judgment."
+    },
+    {
+      "id": "FC-N1-017",
+      "deck": "core",
+      "tags": [
+        "flaps",
+        "n1"
+      ],
+      "source": "ANDM Network Core harvest 2026-07",
+      "front": "Route flaps hurt more than a clean fail-over because they:",
+      "back": "Thrash forwarding and burn control-plane CPU repeatedly \u2014 Stability as a goal."
+    },
+    {
+      "id": "FC-N1-018",
+      "deck": "core",
+      "tags": [
+        "telemetry",
+        "n1"
+      ],
+      "source": "ANDM Network Core harvest 2026-07",
+      "front": "Minimum useful fabric telemetry set for Dive Deep:",
+      "back": "Errors/drops, utilization, neighbor/session state, control-plane health, and synthetic probes \u2014 Manager must know good signals."
+    },
+    {
+      "id": "FC-N2-001",
+      "deck": "core",
+      "tags": [
+        "change",
+        "blast-radius",
+        "n2"
+      ],
+      "source": "ANDM Network Core harvest 2026-07",
+      "front": "Two changes touch the same Clos failure domain in one window. Best call:",
+      "back": "Serialize or redesign\u2014overlapping blast radius defeats safe change practice \u2014 Change control at fabric scale."
+    },
+    {
+      "id": "FC-N2-002",
+      "deck": "core",
+      "tags": [
+        "canary",
+        "n2"
+      ],
+      "source": "ANDM Network Core harvest 2026-07",
+      "front": "Canarying a fabric config means:",
+      "back": "Expose a small blast radius first with health gates before wider rollout \u2014 Safety mechanism."
+    },
+    {
+      "id": "FC-N2-003",
+      "deck": "core",
+      "tags": [
+        "rollback",
+        "n2"
+      ],
+      "source": "ANDM Network Core harvest 2026-07",
+      "front": "A change without a tested rollback plan is incomplete because:",
+      "back": "Mitigation speed during impact depends on rehearsed revert/disable paths \u2014 Highest Standards."
+    },
+    {
+      "id": "FC-N2-004",
+      "deck": "core",
+      "tags": [
+        "capacity",
+        "n2"
+      ],
+      "source": "ANDM Network Core harvest 2026-07",
+      "front": "Capacity forecasting for fabrics should include:",
+      "back": "Peak demand, growth, failure scenarios, and repair/lead-time margins \u2014 JD capacity + ops."
+    },
+    {
+      "id": "FC-N2-005",
+      "deck": "core",
+      "tags": [
+        "maintenance",
+        "n2"
+      ],
+      "source": "ANDM Network Core harvest 2026-07",
+      "front": "Maintenance that drains a spine should prove beforehand:",
+      "back": "Remaining ECMP capacity meets SLO under expected load \u2014 Customer impact math."
+    },
+    {
+      "id": "FC-N2-006",
+      "deck": "core",
+      "tags": [
+        "emergency-change",
+        "n2"
+      ],
+      "source": "ANDM Network Core harvest 2026-07",
+      "front": "Emergency change still requires:",
+      "back": "Fast path with audit, clear owner, and follow-up to make it durable/safe \u2014 Bias for Action + Ownership."
+    },
+    {
+      "id": "FC-N2-007",
+      "deck": "core",
+      "tags": [
+        "peer-review",
+        "n2"
+      ],
+      "source": "ANDM Network Core harvest 2026-07",
+      "front": "Peer review of network changes catches:",
+      "back": "Blast radius mistakes, missing validations, and policy errors before production \u2014 Mechanism."
+    },
+    {
+      "id": "FC-N2-008",
+      "deck": "core",
+      "tags": [
+        "freeze",
+        "n2"
+      ],
+      "source": "ANDM Network Core harvest 2026-07",
+      "front": "Change freezes exist to:",
+      "back": "Reduce risk during peak/critical periods\u2014not as a substitute for good engineering year-round \u2014 Risk management."
+    },
+    {
+      "id": "FC-N2-009",
+      "deck": "core",
+      "tags": [
+        "lead-indicators",
+        "n2"
+      ],
+      "source": "ANDM Network Core harvest 2026-07",
+      "front": "Lead indicators for capacity beat lagging tickets because they:",
+      "back": "Trigger expansion before customer pain, not after Sev storms \u2014 Are Right, A Lot / Deliver Results."
+    },
+    {
+      "id": "FC-N2-010",
+      "deck": "core",
+      "tags": [
+        "automation-change",
+        "n2"
+      ],
+      "source": "ANDM Network Core harvest 2026-07",
+      "front": "Automating changes without dry-run/validation increases risk because:",
+      "back": "Software scales mistakes as fast as successes across the fabric \u2014 Automation safety."
+    },
+    {
+      "id": "FC-N2-011",
+      "deck": "core",
+      "tags": [
+        "window",
+        "n2"
+      ],
+      "source": "ANDM Network Core harvest 2026-07",
+      "front": "Picking a change window should consider:",
+      "back": "Customer traffic patterns, dependency freezes, and on-call coverage \u2014 Stakeholder + Customer Obsession."
+    },
+    {
+      "id": "FC-N2-012",
+      "deck": "core",
+      "tags": [
+        "partial-failure",
+        "n2"
+      ],
+      "source": "ANDM Network Core harvest 2026-07",
+      "front": "Designing for partial failure during rollout means:",
+      "back": "Systems degrade gracefully and operators can stop the blast \u2014 Resiliency standards."
+    },
+    {
+      "id": "FC-N2-013",
+      "deck": "core",
+      "tags": [
+        "config-drift",
+        "n2"
+      ],
+      "source": "ANDM Network Core harvest 2026-07",
+      "front": "Config drift between intended and running state is dangerous because:",
+      "back": "Next change assumptions are wrong and incidents become unreproducible \u2014 IaC / reconciliation theme."
+    },
+    {
+      "id": "FC-N2-014",
+      "deck": "core",
+      "tags": [
+        "risk-stacking",
+        "n2"
+      ],
+      "source": "ANDM Network Core harvest 2026-07",
+      "front": "Software deploy + fiber cut + DNS change same hour is risky due to:",
+      "back": "Ambiguous causality and stacked blast radius\u2014harder mitigation \u2014 Ops judgment."
+    },
+    {
+      "id": "FC-N2-015",
+      "deck": "core",
+      "tags": [
+        "spare",
+        "n2"
+      ],
+      "source": "ANDM Network Core harvest 2026-07",
+      "front": "Hot spare / repair pool sizing should reflect:",
+      "back": "Failure rates, lead times, and customer impact of delayed repair \u2014 Capacity + Frugality balance."
+    },
+    {
+      "id": "FC-N2-016",
+      "deck": "core",
+      "tags": [
+        "communication",
+        "n2"
+      ],
+      "source": "ANDM Network Core harvest 2026-07",
+      "front": "Before a risky fabric change, stakeholder communication should include:",
+      "back": "Impact scope, timeline, rollback criteria, and who decides go/no-go \u2014 Earn Trust."
+    },
+    {
+      "id": "FC-N3-001",
+      "deck": "core",
+      "tags": [
+        "incident",
+        "triage",
+        "n3"
+      ],
+      "source": "ANDM Network Core harvest 2026-07",
+      "front": "First question in a Network Core incident:",
+      "back": "What is customer impact (who/how much/since when)\u2014then mitigate \u2014 Customer Obsession triage."
+    },
+    {
+      "id": "FC-N3-002",
+      "deck": "core",
+      "tags": [
+        "mitigate",
+        "n3"
+      ],
+      "source": "ANDM Network Core harvest 2026-07",
+      "front": "Mitigate vs root-cause timing:",
+      "back": "Restore customers first when possible, then Dive Deep for durable fix \u2014 Bias for Action + Ownership."
+    },
+    {
+      "id": "FC-N3-003",
+      "deck": "core",
+      "tags": [
+        "coe",
+        "n3"
+      ],
+      "source": "ANDM Network Core harvest 2026-07",
+      "front": "A good COE / post-incident writeup emphasizes:",
+      "back": "Mechanisms and action items that prevent recurrence\u2014not individual blame \u2014 Highest Standards."
+    },
+    {
+      "id": "FC-N3-004",
+      "deck": "core",
+      "tags": [
+        "metrics",
+        "n3"
+      ],
+      "source": "ANDM Network Core harvest 2026-07",
+      "front": "SLO for a network software control plane might track:",
+      "back": "Success rate/latency of critical ops APIs and change pipeline health tied to fabric safety \u2014 SDM data-driven ops."
+    },
+    {
+      "id": "FC-N3-005",
+      "deck": "core",
+      "tags": [
+        "alert-fatigue",
+        "n3"
+      ],
+      "source": "ANDM Network Core harvest 2026-07",
+      "front": "Alert fatigue is a reliability problem because:",
+      "back": "Real pages get ignored; fix thresholds and symptoms that matter \u2014 OpEx."
+    },
+    {
+      "id": "FC-N3-006",
+      "deck": "core",
+      "tags": [
+        "correlate",
+        "n3"
+      ],
+      "source": "ANDM Network Core harvest 2026-07",
+      "front": "Correlating incidents to recent changes helps because:",
+      "back": "Many outages are self-inflicted; fast rollback beats long theory \u2014 Practical Dive Deep."
+    },
+    {
+      "id": "FC-N3-007",
+      "deck": "core",
+      "tags": [
+        "sev",
+        "n3"
+      ],
+      "source": "ANDM Network Core harvest 2026-07",
+      "front": "Severity should be based on:",
+      "back": "Customer/business impact and urgency\u2014not who yelled loudest \u2014 Are Right, A Lot."
+    },
+    {
+      "id": "FC-N3-008",
+      "deck": "core",
+      "tags": [
+        "comms",
+        "n3"
+      ],
+      "source": "ANDM Network Core harvest 2026-07",
+      "front": "During a Sev, status updates should be:",
+      "back": "Factual, timed, impact-focused, with next update time\u2014even if incomplete \u2014 Earn Trust."
+    },
+    {
+      "id": "FC-N3-009",
+      "deck": "core",
+      "tags": [
+        "runbook",
+        "n3"
+      ],
+      "source": "ANDM Network Core harvest 2026-07",
+      "front": "Runbooks fail when they:",
+      "back": "Are stale, untested, or require tribal knowledge not written down \u2014 Mechanisms."
+    },
+    {
+      "id": "FC-N3-010",
+      "deck": "core",
+      "tags": [
+        "error-budget",
+        "n3"
+      ],
+      "source": "ANDM Network Core harvest 2026-07",
+      "front": "Error budgets help teams by:",
+      "back": "Quantifying reliability vs change velocity tradeoffs with data \u2014 SRE-adjacent judgment for SysDE managers."
+    },
+    {
+      "id": "FC-N3-011",
+      "deck": "core",
+      "tags": [
+        "game-day",
+        "n3"
+      ],
+      "source": "ANDM Network Core harvest 2026-07",
+      "front": "Game days / failure tests matter because:",
+      "back": "They reveal gaps in detection, mitigation, and ownership before real Sevs \u2014 Insist on Highest Standards."
+    },
+    {
+      "id": "FC-N3-012",
+      "deck": "core",
+      "tags": [
+        "handoff",
+        "n3"
+      ],
+      "source": "ANDM Network Core harvest 2026-07",
+      "front": "Incident handoff quality means:",
+      "back": "Clear timeline, hypotheses tried, current blast radius, and next actions \u2014 24x7 team health."
+    },
+    {
+      "id": "FC-N3-013",
+      "deck": "core",
+      "tags": [
+        "customer-impact-minutes",
+        "n3"
+      ],
+      "source": "ANDM Network Core harvest 2026-07",
+      "front": "Measuring customer-impact minutes drives:",
+      "back": "Prioritization of mitigations and investments that actually reduce pain \u2014 Deliver Results with metrics."
+    },
+    {
+      "id": "FC-N3-014",
+      "deck": "core",
+      "tags": [
+        "partial-mitigation",
+        "n3"
+      ],
+      "source": "ANDM Network Core harvest 2026-07",
+      "front": "If full fix is hours away, a partial mitigation is good when:",
+      "back": "It reduces customer pain safely without making diagnosis impossible \u2014 Bias for Action."
+    },
+    {
+      "id": "FC-N3-015",
+      "deck": "core",
+      "tags": [
+        "dependencies",
+        "n3"
+      ],
+      "source": "ANDM Network Core harvest 2026-07",
+      "front": "A fabric looks fine but apps fail: next Dive Deep step:",
+      "back": "Expand scope to dependencies (DNS, auth, overlays, upstream/downstream) with evidence \u2014 Systems thinking."
+    },
+    {
+      "id": "FC-N3-016",
+      "deck": "core",
+      "tags": [
+        "action-items",
+        "n3"
+      ],
+      "source": "ANDM Network Core harvest 2026-07",
+      "front": "Post-incident action items should be:",
+      "back": "Owned, dated, and verified done\u2014prefer prevention over training-only \u2014 Deliver Results."
+    },
+    {
+      "id": "FC-N4-001",
+      "deck": "core",
+      "tags": [
+        "automation",
+        "safety",
+        "n4"
+      ],
+      "source": "ANDM Network Core harvest 2026-07",
+      "front": "Safe network automation requires:",
+      "back": "Pre-checks, bounded blast radius, observability, and human escalation paths \u2014 Harvest SYS/NET."
+    },
+    {
+      "id": "FC-N4-002",
+      "deck": "core",
+      "tags": [
+        "toil",
+        "n4"
+      ],
+      "source": "ANDM Network Core harvest 2026-07",
+      "front": "Measuring toil helps an SDM because:",
+      "back": "It justifies platform investment with data and shows Invent and Simplify progress \u2014 Frugality + Invent."
+    },
+    {
+      "id": "FC-N4-003",
+      "deck": "core",
+      "tags": [
+        "iac",
+        "n4"
+      ],
+      "source": "ANDM Network Core harvest 2026-07",
+      "front": "Intended-state / IaC for network config enables:",
+      "back": "Reviewable, repeatable, auditable changes and drift detection \u2014 Scale mechanism."
+    },
+    {
+      "id": "FC-N4-004",
+      "deck": "core",
+      "tags": [
+        "self-service",
+        "n4"
+      ],
+      "source": "ANDM Network Core harvest 2026-07",
+      "front": "Self-service tooling for NDEs succeeds when:",
+      "back": "Guardrails encode policy so speed doesn\u2019t bypass safety \u2014 Customer Obsession for internal users."
+    },
+    {
+      "id": "FC-N4-005",
+      "deck": "core",
+      "tags": [
+        "false-automation",
+        "n4"
+      ],
+      "source": "ANDM Network Core harvest 2026-07",
+      "front": "A script that 'mostly works' in prod is still a liability when:",
+      "back": "Failure modes are undefined and operators cannot detect partial success \u2014 Highest Standards."
+    },
+    {
+      "id": "FC-N4-006",
+      "deck": "core",
+      "tags": [
+        "human-in-loop",
+        "n4"
+      ],
+      "source": "ANDM Network Core harvest 2026-07",
+      "front": "Keep humans in the loop for:",
+      "back": "High-blast-radius or novel changes until confidence and tests exist \u2014 Risk calibration."
+    },
+    {
+      "id": "FC-N4-007",
+      "deck": "core",
+      "tags": [
+        "metrics-automation",
+        "n4"
+      ],
+      "source": "ANDM Network Core harvest 2026-07",
+      "front": "Automation KPIs worth tracking:",
+      "back": "Success rate, time-to-complete, rollback rate, and escaped defects \u2014 Data-driven SDM."
+    },
+    {
+      "id": "FC-N4-008",
+      "deck": "core",
+      "tags": [
+        "vendor-lock",
+        "n4"
+      ],
+      "source": "ANDM Network Core harvest 2026-07",
+      "front": "When evaluating build vs buy for automation:",
+      "back": "Total cost, operability, security, and fit to Clos/process constraints\u2014not logo shopping \u2014 Are Right, A Lot."
+    },
+    {
+      "id": "FC-N4-009",
+      "deck": "core",
+      "tags": [
+        "secret-mgmt",
+        "n4"
+      ],
+      "source": "ANDM Network Core harvest 2026-07",
+      "front": "Automation credentials should be:",
+      "back": "Short-lived, scoped, rotated, and never committed to git \u2014 Security baseline."
+    },
+    {
+      "id": "FC-N4-010",
+      "deck": "core",
+      "tags": [
+        "progressive",
+        "n4"
+      ],
+      "source": "ANDM Network Core harvest 2026-07",
+      "front": "Progressive delivery of automation features means:",
+      "back": "Enable for a cohort, watch SLOs, then expand\u2014or disable fast \u2014 SYS harvest."
+    },
+    {
+      "id": "FC-N4-011",
+      "deck": "core",
+      "tags": [
+        "ticket-driven",
+        "n4"
+      ],
+      "source": "ANDM Network Core harvest 2026-07",
+      "front": "Ticket-only network ops at AWS scale fails because:",
+      "back": "Human queues don\u2019t scale; mechanisms and self-service do \u2014 Think Big / Invent."
+    },
+    {
+      "id": "FC-N4-012",
+      "deck": "core",
+      "tags": [
+        "test-env",
+        "n4"
+      ],
+      "source": "ANDM Network Core harvest 2026-07",
+      "front": "Without a lab/simulation environment, automation quality suffers because:",
+      "back": "You discover bugs at production blast radius \u2014 Quality reviews."
+    },
+    {
+      "id": "FC-N4-013",
+      "deck": "core",
+      "tags": [
+        "ownership-automation",
+        "n4"
+      ],
+      "source": "ANDM Network Core harvest 2026-07",
+      "front": "Who owns an automation failure in production?",
+      "back": "The owning service team\u2014including SDM accountability for mechanisms\u2014not 'the script' \u2014 Ownership."
+    },
+    {
+      "id": "FC-N4-014",
+      "deck": "core",
+      "tags": [
+        "simplify",
+        "n4"
+      ],
+      "source": "ANDM Network Core harvest 2026-07",
+      "front": "Invent and Simplify applied to network ops prefers:",
+      "back": "Fewer special cases, clearer interfaces, and removing toil at the source \u2014 LP + JD automation."
+    },
+    {
+      "id": "FC-LOOP-001",
+      "deck": "core",
+      "tags": [
+        "loop",
+        "sdm",
+        "loop"
+      ],
+      "source": "ANDM loop map 2026-07",
+      "front": "Official amazon.jobs SDM phone screen is typically structured as:",
+      "back": "~60 minutes split between Leadership Principles and system design (new or existing) \u2014 amazon.jobs SDM Interview Prep."
+    },
+    {
+      "id": "FC-LOOP-002",
+      "deck": "core",
+      "tags": [
+        "loop",
+        "writing",
+        "loop"
+      ],
+      "source": "ANDM loop map 2026-07",
+      "front": "Before the SDM onsite loop, Amazon often requires a writing assessment to evaluate:",
+      "back": "Clarity, ownership, and how you narrate decisions/outcomes with enough detail to defend later \u2014 amazon.jobs + Exponent/HelloInterview SDM guides."
+    },
+    {
+      "id": "FC-LOOP-003",
+      "deck": "core",
+      "tags": [
+        "loop",
+        "onsite",
+        "loop"
+      ],
+      "source": "ANDM loop map 2026-07",
+      "front": "A typical SDM onsite/virtual loop length is:",
+      "back": "About five ~55\u201360 minute interviews in one day (sometimes 5\u20136) \u2014 amazon.jobs SDM prep; Exponent SDM guide."
+    },
+    {
+      "id": "FC-LOOP-004",
+      "deck": "core",
+      "tags": [
+        "loop",
+        "lp",
+        "loop"
+      ],
+      "source": "ANDM loop map 2026-07",
+      "front": "Across the SDM loop, Leadership Principles are usually:",
+      "back": "Probed in every round\u2014interviewers are assigned specific LPs \u2014 HelloInterview manager + amazon.jobs."
+    },
+    {
+      "id": "FC-LOOP-005",
+      "deck": "core",
+      "tags": [
+        "loop",
+        "bar-raiser",
+        "loop"
+      ],
+      "source": "ANDM loop map 2026-07",
+      "front": "On Blind, SDM candidates report that the Bar Raiser:",
+      "back": "Can be the same person as the system design interviewer\u2014treat every round as high-stakes \u2014 Blind: Can System Design Interviewer be the Bar raiser?"
+    },
+    {
+      "id": "FC-LOOP-006",
+      "deck": "core",
+      "tags": [
+        "loop",
+        "people",
+        "loop"
+      ],
+      "source": "ANDM loop map 2026-07",
+      "front": "A people-management loop slot is most likely to dig into:",
+      "back": "Hiring bar, coaching low/high performers, and mechanisms for team health\u2014not heroics \u2014 Exponent SDM people-management round."
+    },
+    {
+      "id": "FC-LOOP-007",
+      "deck": "core",
+      "tags": [
+        "loop",
+        "design",
+        "loop"
+      ],
+      "source": "ANDM loop map 2026-07",
+      "front": "SDM system design differs from IC design mainly because interviewers also want:",
+      "back": "How you lead design reviews, set tradeoffs, and keep operability/ownership clear \u2014 Exponent SDM system design section."
+    },
+    {
+      "id": "FC-LOOP-008",
+      "deck": "core",
+      "tags": [
+        "loop",
+        "example",
+        "loop"
+      ],
+      "source": "ANDM loop map 2026-07",
+      "front": "A real Glassdoor/aggregator SDM behavioral example is closest to:",
+      "back": "Tell me about coaching someone missing the bar / managing a low performer with a timeline \u2014 IGotAnOffer SDM Glassdoor sample stems."
+    },
+    {
+      "id": "FC-LOOP-009",
+      "deck": "core",
+      "tags": [
+        "loop",
+        "writing-defend",
+        "loop"
+      ],
+      "source": "ANDM loop map 2026-07",
+      "front": "Interviewers use your writing sample during the loop to:",
+      "back": "Dive Deep on claims, metrics, and your personal role\u2014so every number must be defensible \u2014 Exponent writing assignment guidance."
+    },
+    {
+      "id": "FC-LOOP-010",
+      "deck": "core",
+      "tags": [
+        "loop",
+        "sysde-adjacent",
+        "loop"
+      ],
+      "source": "ANDM loop map 2026-07",
+      "front": "Reddit/Blind SysDE reports commonly list loop themes of:",
+      "back": "Coding, Linux troubleshooting, networking, system design, OpEx LPs, and a Bar Raiser \u2014 r/cscareerquestionsEU SysDE; Blind SysDE vs SDE."
+    },
+    {
+      "id": "FC-LOOP-011",
+      "deck": "core",
+      "tags": [
+        "loop",
+        "nde-adjacent",
+        "loop"
+      ],
+      "source": "ANDM loop map 2026-07",
+      "front": "Jointaro/Sydney-style NDE loop topics often include:",
+      "back": "TCP windowing, route reflectors, MSS/MTU, automation, plus Ownership/Backbone LP stems \u2014 Jointaro Sydney NDE experience (AU-relevant)."
+    },
+    {
+      "id": "FC-LOOP-012",
+      "deck": "core",
+      "tags": [
+        "loop",
+        "phone-nde",
+        "loop"
+      ],
+      "source": "ANDM loop map 2026-07",
+      "front": "r/networking candidates asking about NDE phone screens are usually told to expect:",
+      "back": "Fundamentals + LP signal at screen; deeper BGP/packet/automation in later loop rounds \u2014 r/networking NDE phone-screen threads + Global NDE prep."
+    },
+    {
+      "id": "FC-LOOP-013",
+      "deck": "core",
+      "tags": [
+        "loop",
+        "outcome",
+        "loop"
+      ],
+      "source": "ANDM loop map 2026-07",
+      "front": "r/amazonemployees reports that failing the SDM bar can still result in:",
+      "back": "An adjacent offer (e.g., TPM) while HM wants to coach toward SDM later\u2014confirm with recruiter \u2014 r/amazonemployees: Interviewed for SDM but offered Sr TPM."
+    },
+    {
+      "id": "FC-LOOP-014",
+      "deck": "core",
+      "tags": [
+        "loop",
+        "coding-sdm",
+        "loop"
+      ],
+      "source": "ANDM loop map 2026-07",
+      "front": "Best default for coding in an SDM Network Core loop:",
+      "back": "Ask the recruiter explicitly; public SDM guides say coding is uncommon vs SysDE IC loops \u2014 IGotAnOffer SDM <6% coding; amazon.jobs emphasizes design."
+    },
+    {
+      "id": "FC-LOOP-015",
+      "deck": "core",
+      "tags": [
+        "loop",
+        "star",
+        "loop"
+      ],
+      "source": "ANDM loop map 2026-07",
+      "front": "Medium SysDE advice that also applies to SDM LP rounds:",
+      "back": "Prepare at least two metric-backed STAR stories per LP and expect deep follow-ups \u2014 Medium SysDE L5 Bellevue writeup."
+    },
+    {
+      "id": "FC-LOOP-016",
+      "deck": "core",
+      "tags": [
+        "loop",
+        "network-core",
+        "loop"
+      ],
+      "source": "ANDM loop map 2026-07",
+      "front": "For Network Core SDM, the design/tech rounds should be ready to discuss:",
+      "back": "Software platforms that build/operate/monitor fabric + Clos/change-safety Dive Deep \u2014 JD + NC module alignment."
+    },
+    {
+      "id": "FC-LOOP-017",
+      "deck": "core",
+      "tags": [
+        "loop",
+        "recruiter",
+        "loop"
+      ],
+      "source": "ANDM loop map 2026-07",
+      "front": "Highest-leverage questions to ask your recruiter before the loop:",
+      "back": "Exact round list, writing deadline, coding yes/no, and any LP/design focus for the team \u2014 Loop variance is the #1 prep risk."
+    },
+    {
+      "id": "FC-LOOP-018",
+      "deck": "core",
+      "tags": [
+        "loop",
+        "agsva",
+        "loop"
+      ],
+      "source": "ANDM loop map 2026-07",
+      "front": "AGSVA clearance for AU Network Core is best treated as:",
+      "back": "A hard eligibility/process gate parallel to interviewing\u2014not a substitute for LP/tech prep \u2014 JD + AGSVA guidance."
+    },
+    {
+      "id": "FC-WX-001",
+      "deck": "core",
+      "tags": [
+        "recruiter",
+        "coding",
+        "wx"
+      ],
+      "source": "ANDM Network Core harvest 2026-07",
+      "front": "For Systems Development Manager Network Core, coding rounds are:",
+      "back": "Possible but uncommon for SDM\u2014confirm with recruiter; SysDE ICs often do get coding \u2014 IGotAnOffer SDM <6% coding; SysDE Blind differs."
+    },
+    {
+      "id": "FC-WX-002",
+      "deck": "core",
+      "tags": [
+        "bar-raiser",
+        "wx"
+      ],
+      "source": "ANDM Network Core harvest 2026-07",
+      "front": "A Bar Raiser is in the loop to:",
+      "back": "Protect the hiring bar independently of team urgency \u2014 Amazon hiring lore."
+    },
+    {
+      "id": "FC-WX-003",
+      "deck": "core",
+      "tags": [
+        "wx",
+        "manager",
+        "wx"
+      ],
+      "source": "JD",
+      "front": "Manager loops differ from IC primarily by:",
+      "back": "More Hire/Develop, org impact, and stakeholder stories \u2014 still technical Dive Deep \u2014 NDM JD emphasizes both technical leadership and people management."
+    },
+    {
+      "id": "FC-WX-004",
+      "deck": "core",
+      "tags": [
+        "wx",
+        "hiring",
+        "wx"
+      ],
+      "source": "ANDM prep",
+      "front": "Bar Raiser role is best described as:",
+      "back": "An objective interviewer protecting the hiring bar and LP signal quality \u2014 Amazon hiring mechanism."
+    },
+    {
+      "id": "FC-WX-005",
+      "deck": "core",
+      "tags": [
+        "wx",
+        "dive-deep",
+        "wx"
+      ],
+      "source": "JD",
+      "front": "Dive Deep surprise for managers:",
+      "back": "Interviewers may push past high-level slides into mechanisms and metrics \u2014 JD: dive deep with engineers; interviewers test that."
+    },
+    {
+      "id": "FC-WX-006",
+      "deck": "core",
+      "tags": [
+        "wx",
+        "compliance",
+        "wx"
+      ],
+      "source": "JD",
+      "front": "AGSVA clearance on an AU Network Core role means:",
+      "back": "Eligibility/suitability for government vetting can be required \u2014 plan accordingly \u2014 Explicit JD requirement for this posting."
+    },
+    {
+      "id": "FC-WX-007",
+      "deck": "core",
+      "tags": [
+        "wx",
+        "loop",
+        "wx"
+      ],
+      "source": "ANDM prep",
+      "front": "If recruiter is vague on coding for NDM:",
+      "back": "Ask explicitly what rounds exist: LP, networking deep-dive, coding, bar raiser \u2014 Loop variance is high \u2014 confirm."
+    },
+    {
+      "id": "FC-WX-008",
+      "deck": "core",
+      "tags": [
+        "wx",
+        "star",
+        "wx"
+      ],
+      "source": "ANDM prep",
+      "front": "STAR stories that fail Bar Raisers often:",
+      "back": "Hide the candidate's actions in \"we\" and lack metrics \u2014 Common coaching feedback."
+    },
+    {
+      "id": "FC-WX-009",
+      "deck": "core",
+      "tags": [
+        "wx",
+        "customer",
+        "wx"
+      ],
+      "source": "JD",
+      "front": "Unique large-customer requirements (JD) imply interviews may probe:",
+      "back": "Handling exceptions without breaking shared platform safety \u2014 Role serves large customers with unique needs."
+    },
+    {
+      "id": "FC-WX-010",
+      "deck": "core",
+      "tags": [
+        "wx",
+        "on-call",
+        "wx"
+      ],
+      "source": "ANDM prep",
+      "front": "On-call management questions may ask:",
+      "back": "How you design rotations, escalations, and reduce pages \u2014 Preferred qualifications call this out."
+    },
+    {
+      "id": "FC-WX-011",
+      "deck": "core",
+      "tags": [
+        "wx",
+        "lp",
+        "wx"
+      ],
+      "source": "ANDM prep",
+      "front": "Invent and Simplify trap:",
+      "back": "Building a complex custom tool when a standard mechanism exists \u2014 Amazon prefers mechanisms that scale."
+    },
+    {
+      "id": "FC-WX-012",
+      "deck": "core",
+      "tags": [
+        "wx",
+        "lp",
+        "wx"
+      ],
+      "source": "ANDM prep",
+      "front": "Deliver Results follow-up you should expect:",
+      "back": "What was your baseline? What did YOU do? What changed quantitatively? \u2014 Bar Raisers probe depth."
     }
   ]
 }

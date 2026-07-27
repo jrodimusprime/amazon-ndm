@@ -5,56 +5,55 @@
       "module": "M3",
       "difficulty": "interview",
       "tags": [
-        "stakeholder",
-        "customer"
+        "stakeholders",
+        "nde"
       ],
-      "source": "JD",
-      "question": "Representing networking to a large customer means:",
+      "source": "ANDM Network Core harvest 2026-07",
+      "question": "NDE partners ask for a feature that increases fabric risk. Best SDM response:",
       "options": [
-        "Translate risk/options clearly; commit to deliverables; follow through",
-        "Hide uncertainty",
-        "Use unexplained jargon only",
-        "Avoid the customer"
+        "Clarify customer need, propose safer alternatives, and disagree/commit with data\u2014not silent assent",
+        "Build exactly as asked with no pushback",
+        "Ignore them",
+        "Escalate without engaging"
       ],
       "correctIndex": 0,
-      "explanation": "JD: represent networking to customers."
+      "explanation": "Backbone + Customer Obsession."
     },
     {
       "id": "M3-002",
       "module": "M3",
       "difficulty": "interview",
       "tags": [
-        "stakeholder"
+        "roadmap"
       ],
-      "source": "ANDM prep",
-      "question": "Cross-team dependency late \u2014 best move:",
+      "source": "ANDM Network Core harvest 2026-07",
+      "question": "When platform debt and NDE feature asks collide, prioritize by:",
       "options": [
-        "Surface early with impact, propose options, escalate with data if needed",
-        "Surprise leadership at the deadline",
-        "Silent wait",
-        "Blame publicly in Slack"
+        "Impact on customer/fabric risk and long-term delivery capacity\u2014with transparent tradeoffs",
+        "Whoever emails most",
+        "Newest idea always",
+        "Avoid deciding"
       ],
       "correctIndex": 0,
-      "explanation": "Earn Trust + Deliver Results."
+      "explanation": "Deliver Results + Think Big."
     },
     {
       "id": "M3-003",
       "module": "M3",
       "difficulty": "interview",
       "tags": [
-        "stakeholder",
-        "manager"
+        "status"
       ],
-      "source": "ANDM prep",
-      "question": "Status to leadership should be:",
+      "source": "ANDM Network Core harvest 2026-07",
+      "question": "Stakeholder status for Network Core should include:",
       "options": [
-        "Concise: green/yellow/red, risks, asks, customer impact",
-        "50-page raw logs",
-        "Only good news",
-        "No metrics"
+        "R/Y/G, risks, asks, and customer/fabric impact\u2014not activity theater",
+        "Only story points burned",
+        "Only emoji",
+        "Silence until launch"
       ],
       "correctIndex": 0,
-      "explanation": "JD: reporting progress to leadership."
+      "explanation": "Earn Trust."
     },
     {
       "id": "M3-004",

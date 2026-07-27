@@ -5,55 +5,55 @@
       "module": "N2",
       "difficulty": "interview",
       "tags": [
-        "capacity"
+        "change",
+        "blast-radius"
       ],
-      "source": "JD",
-      "question": "Capacity forecast for Network Core should start from:",
+      "source": "ANDM Network Core harvest 2026-07",
+      "question": "Two changes touch the same Clos failure domain in one window. Best call:",
       "options": [
-        "Demand signals (traffic growth, launches) + failure scenarios",
-        "Guessing last year +10%",
-        "Ignoring peaks",
-        "Only average traffic"
+        "Serialize or redesign\u2014overlapping blast radius defeats safe change practice",
+        "Parallelize for speed always",
+        "Skip peer review",
+        "Disable monitoring during both"
       ],
       "correctIndex": 0,
-      "explanation": "JD: capacity management and forecast planning."
+      "explanation": "Change control at fabric scale."
     },
     {
       "id": "N2-002",
       "module": "N2",
       "difficulty": "interview",
       "tags": [
-        "change-control"
+        "canary"
       ],
-      "source": "ANDM prep",
-      "question": "Safe change control includes:",
+      "source": "ANDM Network Core harvest 2026-07",
+      "question": "Canarying a fabric config means:",
       "options": [
-        "Peer review, canary/rollback, maintenance windows, clear owner",
-        "Friday 5pm big-bang with no rollback",
-        "No documentation",
-        "Production-first testing"
+        "Expose a small blast radius first with health gates before wider rollout",
+        "Ship globally in one push",
+        "Only update docs",
+        "Canary birds in the aisle"
       ],
       "correctIndex": 0,
-      "explanation": "JD: safely implement change."
+      "explanation": "Safety mechanism."
     },
     {
       "id": "N2-003",
       "module": "N2",
       "difficulty": "interview",
       "tags": [
-        "change-control",
-        "incident"
+        "rollback"
       ],
-      "source": "ANDM prep",
-      "question": "Change failure \u2014 first priority:",
+      "source": "ANDM Network Core harvest 2026-07",
+      "question": "A change without a tested rollback plan is incomplete because:",
       "options": [
-        "Rollback / mitigate customer impact, then analyze",
-        "Root-cause for hours first",
-        "Delete logs",
-        "Blame silently"
+        "Mitigation speed during impact depends on rehearsed revert/disable paths",
+        "Rollback is never needed if CI is green",
+        "Forward-only is an Amazon LP",
+        "Configs cannot revert"
       ],
       "correctIndex": 0,
-      "explanation": "Bias for Action + Customer Obsession."
+      "explanation": "Highest Standards."
     },
     {
       "id": "N2-004",
@@ -62,239 +62,232 @@
       "tags": [
         "capacity"
       ],
-      "source": "JD",
-      "question": "Keeping AWS ahead of demand means:",
+      "source": "ANDM Network Core harvest 2026-07",
+      "question": "Capacity forecasting for fabrics should include:",
       "options": [
-        "Lead indicators and buffer so capacity lands before customer need",
-        "React only after saturation",
-        "Never add capacity",
-        "Only add after outages"
+        "Peak demand, growth, failure scenarios, and repair/lead-time margins",
+        "Average idle only",
+        "Only last week\u2019s mean",
+        "Ignore failures"
       ],
       "correctIndex": 0,
-      "explanation": "JD language."
+      "explanation": "JD capacity + ops."
     },
     {
       "id": "N2-005",
       "module": "N2",
       "difficulty": "interview",
       "tags": [
-        "change-control"
+        "maintenance"
       ],
-      "source": "ANDM prep",
-      "question": "Maintenance correlation risk:",
+      "source": "ANDM Network Core harvest 2026-07",
+      "question": "Maintenance that drains a spine should prove beforehand:",
       "options": [
-        "Avoid overlapping changes in the same failure domain",
-        "Change everything everywhere at once",
-        "Disable monitoring during change",
-        "Skip validation"
+        "Remaining ECMP capacity meets SLO under expected load",
+        "No one will notice regardless",
+        "Only DNS TTLs",
+        "Customer emails approve silence"
       ],
       "correctIndex": 0,
-      "explanation": "Operational excellence."
+      "explanation": "Customer impact math."
     },
     {
       "id": "N2-006",
       "module": "N2",
       "difficulty": "interview",
       "tags": [
-        "capacity"
+        "emergency-change"
       ],
-      "source": "ANDM prep",
-      "question": "A capacity model should include:",
+      "source": "ANDM Network Core harvest 2026-07",
+      "question": "Emergency change still requires:",
       "options": [
-        "Peaks, growth, repair margins, and risk scenarios",
-        "Average only",
-        "Port counts without traffic",
-        "Headcount only"
+        "Fast path with audit, clear owner, and follow-up to make it durable/safe",
+        "No ticket and no review ever",
+        "Waiting for next quarter planning",
+        "Posting memes"
       ],
       "correctIndex": 0,
-      "explanation": "Analytical skills preferred qual."
+      "explanation": "Bias for Action + Ownership."
     },
     {
       "id": "N2-007",
       "module": "N2",
       "difficulty": "interview",
       "tags": [
-        "capacity",
-        "lp"
+        "peer-review"
       ],
-      "source": "ANDM prep",
-      "question": "When forecast is wrong:",
+      "source": "ANDM Network Core harvest 2026-07",
+      "question": "Peer review of network changes catches:",
       "options": [
-        "Update the model, communicate risk, and replan \u2014 own the miss",
-        "Hide it",
-        "Blame finance only",
-        "Never forecast again"
+        "Blast radius mistakes, missing validations, and policy errors before production",
+        "Only grammar in descriptions",
+        "Nothing useful",
+        "Only vacation schedules"
       ],
       "correctIndex": 0,
-      "explanation": "Earn Trust + Are Right a Lot."
+      "explanation": "Mechanism."
     },
     {
       "id": "N2-008",
       "module": "N2",
       "difficulty": "interview",
       "tags": [
-        "automation",
-        "change-control"
+        "freeze"
       ],
-      "source": "ANDM prep",
-      "question": "Automation of change reduces risk when:",
+      "source": "ANDM Network Core harvest 2026-07",
+      "question": "Change freezes exist to:",
       "options": [
-        "It encodes validations and reduces human toil variance",
-        "It removes all approvals forever with no tests",
-        "It is unlogged",
-        "It cannot rollback"
+        "Reduce risk during peak/critical periods\u2014not as a substitute for good engineering year-round",
+        "Halt all learning forever",
+        "Punish teams randomly",
+        "Avoid documentation"
       ],
       "correctIndex": 0,
-      "explanation": "Invent and Simplify for ops."
+      "explanation": "Risk management."
     },
     {
       "id": "N2-009",
       "module": "N2",
       "difficulty": "interview",
       "tags": [
-        "change-control",
-        "incident"
+        "lead-indicators"
       ],
-      "source": "ANDM prep",
-      "question": "Emergency change process exists to:",
+      "source": "ANDM Network Core harvest 2026-07",
+      "question": "Lead indicators for capacity beat lagging tickets because they:",
       "options": [
-        "Move fast safely under incident pressure with audit trail",
-        "Bypass all judgment",
-        "Avoid documentation forever",
-        "Skip communication"
+        "Trigger expansion before customer pain, not after Sev storms",
+        "Are harder and thus ignored",
+        "Replace all monitoring",
+        "Only help finance"
       ],
       "correctIndex": 0,
-      "explanation": "Critical issue management."
+      "explanation": "Are Right, A Lot / Deliver Results."
     },
     {
       "id": "N2-010",
       "module": "N2",
       "difficulty": "interview",
       "tags": [
-        "capacity",
-        "manager"
+        "automation-change"
       ],
-      "source": "JD",
-      "question": "Planning process contribution (JD) means:",
+      "source": "ANDM Network Core harvest 2026-07",
+      "question": "Automating changes without dry-run/validation increases risk because:",
       "options": [
-        "Credible proposals with data into AWS standard planning",
-        "Verbal ideas only in hallways",
-        "Avoid planning forums",
-        "Only escalate panic"
+        "Software scales mistakes as fast as successes across the fabric",
+        "Automation never errs",
+        "Humans prefer surprise outages",
+        "Validation slows only docs"
       ],
       "correctIndex": 0,
-      "explanation": "JD: contribute to AWS standard planning processes."
+      "explanation": "Automation safety."
     },
     {
       "id": "N2-011",
       "module": "N2",
       "difficulty": "interview",
       "tags": [
-        "capacity",
-        "metrics"
+        "window"
       ],
-      "source": "ANDM prep",
-      "question": "Leading indicator of capacity risk:",
+      "source": "ANDM Network Core harvest 2026-07",
+      "question": "Picking a change window should consider:",
       "options": [
-        "Rising utilization + shrinking headroom on critical paths",
-        "Green logos on status page alone",
-        "Number of meetings",
-        "Cable inventory aesthetics"
+        "Customer traffic patterns, dependency freezes, and on-call coverage",
+        "Only engineer convenience",
+        "Random roulette",
+        "Never telling partners"
       ],
       "correctIndex": 0,
-      "explanation": "Dashboarding techniques."
+      "explanation": "Stakeholder + Customer Obsession."
     },
     {
       "id": "N2-012",
       "module": "N2",
       "difficulty": "interview",
       "tags": [
-        "change-control"
+        "partial-failure"
       ],
-      "source": "ANDM prep",
-      "question": "Canary for network changes might mean:",
+      "source": "ANDM Network Core harvest 2026-07",
+      "question": "Designing for partial failure during rollout means:",
       "options": [
-        "Limited scope (one device/plane/region) before wider rollout",
-        "All regions simultaneously",
-        "Customers as the only canary",
-        "No monitoring"
+        "Systems degrade gracefully and operators can stop the blast",
+        "All-or-nothing only",
+        "No health checks",
+        "Silent continue always"
       ],
       "correctIndex": 0,
-      "explanation": "Safe deployment pattern."
+      "explanation": "Resiliency standards."
     },
     {
       "id": "N2-013",
       "module": "N2",
       "difficulty": "interview",
       "tags": [
-        "change-control"
+        "config-drift"
       ],
-      "source": "ANDM prep",
-      "question": "Documentation for changes should capture:",
+      "source": "ANDM Network Core harvest 2026-07",
+      "question": "Config drift between intended and running state is dangerous because:",
       "options": [
-        "Intent, steps, validation, rollback",
-        "Nothing",
-        "Only the ticket ID",
-        "Secret tribal knowledge"
+        "Next change assumptions are wrong and incidents become unreproducible",
+        "Drift improves security",
+        "Intended state is useless",
+        "Only aesthetics suffer"
       ],
       "correctIndex": 0,
-      "explanation": "Continuous improvement of frameworks/docs."
+      "explanation": "IaC / reconciliation theme."
     },
     {
       "id": "N2-014",
       "module": "N2",
       "difficulty": "interview",
       "tags": [
-        "capacity",
-        "lp"
+        "risk-stacking"
       ],
-      "source": "ANDM prep",
-      "question": "Over-provisioning without analysis is weak because:",
+      "source": "ANDM Network Core harvest 2026-07",
+      "question": "Software deploy + fiber cut + DNS change same hour is risky due to:",
       "options": [
-        "Frugality and accuracy matter \u2014 right-size with data",
-        "Capacity never costs money",
-        "More is always safer without tradeoffs",
-        "Forecasts are illegal"
+        "Ambiguous causality and stacked blast radius\u2014harder mitigation",
+        "Efficient multitasking always",
+        "Amazon requiring simultaneous risk",
+        "Monitoring liking chaos"
       ],
       "correctIndex": 0,
-      "explanation": "Frugality + Are Right a Lot."
+      "explanation": "Ops judgment."
     },
     {
       "id": "N2-015",
       "module": "N2",
       "difficulty": "interview",
       "tags": [
-        "change-control"
+        "spare"
       ],
-      "source": "ANDM prep",
-      "question": "Vendor software upgrade risk is managed by:",
+      "source": "ANDM Network Core harvest 2026-07",
+      "question": "Hot spare / repair pool sizing should reflect:",
       "options": [
-        "Staged rollout, known-issue review, and rollback plan",
-        "Big-bang all devices",
-        "Trust marketing notes only",
-        "Upgrade during peak without watch"
+        "Failure rates, lead times, and customer impact of delayed repair",
+        "Zero because Clos never fails",
+        "Only purchase price",
+        "Executive preference alone"
       ],
       "correctIndex": 0,
-      "explanation": "Implementation at scale."
+      "explanation": "Capacity + Frugality balance."
     },
     {
       "id": "N2-016",
       "module": "N2",
       "difficulty": "interview",
       "tags": [
-        "capacity",
-        "reliability"
+        "communication"
       ],
-      "source": "ANDM prep",
-      "question": "Capacity vs reliability trade-off example:",
+      "source": "ANDM Network Core harvest 2026-07",
+      "question": "Before a risky fabric change, stakeholder communication should include:",
       "options": [
-        "Accepting risk on a secondary path while protecting primary SLO paths",
-        "Turning off redundancy to save cost silently",
-        "Ignoring customer SLAs",
-        "Never measuring"
+        "Impact scope, timeline, rollback criteria, and who decides go/no-go",
+        "Silence until Sev-1",
+        "Only emoji status",
+        "Post-facto surprise"
       ],
       "correctIndex": 0,
-      "explanation": "Managers negotiate trade-offs explicitly."
+      "explanation": "Earn Trust."
     }
   ]
 }

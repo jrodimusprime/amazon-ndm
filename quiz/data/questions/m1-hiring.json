@@ -6,36 +6,37 @@
       "difficulty": "interview",
       "tags": [
         "hiring",
-        "manager"
+        "sysde"
       ],
-      "source": "JD; Amazon hiring",
-      "question": "As NDM hiring network engineers, the strongest signal is:",
+      "source": "ANDM Network Core harvest 2026-07",
+      "question": "Hiring SysDEs for Network Core, the strongest bar signal is:",
       "options": [
-        "Systems thinking, debugging approach, and ops judgment under ambiguity",
-        "Maximum certifications with no production stories",
-        "Willingness to never automate",
-        "Only vendor training hours"
+        "Systems thinking, coding/automation judgment, and ops ownership under ambiguity",
+        "Maximum certs with no production stories",
+        "Refusal to automate",
+        "Only soft skills with no technical depth"
       ],
       "correctIndex": 0,
-      "explanation": "Aligned with JD + Amazon hiring bar culture."
+      "explanation": "Retargeted to SysDE plane per JD."
     },
     {
       "id": "M1-002",
       "module": "M1",
       "difficulty": "interview",
       "tags": [
-        "hiring"
+        "hiring",
+        "loop"
       ],
-      "source": "ANDM prep",
-      "question": "Phone screen for NDE should include:",
+      "source": "ANDM Network Core harvest 2026-07",
+      "question": "A strong SysDE interview loop usually probes:",
       "options": [
-        "Technical depth + LP probe + communication clarity",
+        "Coding/troubleshooting + Linux/networking fundamentals + LPs (confirm exact mix with recruiter)",
         "Culture chat only",
-        "LeetCode hard only for all candidates",
-        "Salary negotiation only"
+        "Hard LeetCode only with no systems",
+        "Salary only"
       ],
       "correctIndex": 0,
-      "explanation": "JD: participate in phone screens and interviews."
+      "explanation": "Blind/Medium SysDE patterns; WX for SDM coding."
     },
     {
       "id": "M1-003",
@@ -43,55 +44,55 @@
       "difficulty": "interview",
       "tags": [
         "hiring",
-        "lp"
+        "bar"
       ],
-      "source": "ANDM prep",
+      "source": "ANDM Network Core harvest 2026-07",
       "question": "Raising the bar means a hire should:",
       "options": [
-        "Be stronger than 50% of current team in the role's key dimensions",
-        "Be average to keep peace",
+        "Strengthen the team on key dimensions versus today\u2019s median\u2014not fill a seat",
         "Match the weakest engineer",
-        "Never exceed the manager"
+        "Never exceed the manager",
+        "Optimize only for speed-to-offer"
       ],
       "correctIndex": 0,
-      "explanation": "Amazon Hire and Develop the Best."
+      "explanation": "Hire and Develop the Best."
     },
     {
       "id": "M1-004",
       "module": "M1",
       "difficulty": "interview",
       "tags": [
-        "hiring",
         "onboarding"
       ],
-      "source": "ANDM prep",
-      "question": "Onboarding a new network engineer well includes:",
+      "source": "ANDM Network Core harvest 2026-07",
+      "question": "Onboarding a Network Core SysDE well includes:",
       "options": [
-        "Clear 30/60/90 goals, mentor, access, and safe early change practice",
-        "Throw them into Sev-1 alone day one",
-        "No documentation",
-        "Skip introductions to partner teams"
+        "30/60/90 goals, mentor, access, safe early changes, and clear on-call ramp",
+        "Sev-1 solo on day one",
+        "No docs",
+        "Skip partner NDE intros"
       ],
       "correctIndex": 0,
-      "explanation": "JD: ensure new hire onboarding and training."
+      "explanation": "Develop the Best."
     },
     {
       "id": "M1-005",
       "module": "M1",
       "difficulty": "interview",
       "tags": [
-        "hiring"
+        "hiring",
+        "shortage"
       ],
-      "source": "ANDM prep",
-      "question": "When staffing is short, best hiring move:",
+      "source": "ANDM Network Core harvest 2026-07",
+      "question": "When headcount is short, best move:",
       "options": [
-        "Define role gaps with data, partner with recruiting, keep the bar",
+        "Clarify must-have skills with data, partner recruiting, keep the bar",
         "Panic-hire anyone",
         "Stop interviewing",
-        "Only hire contractors forever without plan"
+        "Lower the bar silently"
       ],
       "correctIndex": 0,
-      "explanation": "JD: identify hiring needs with recruiting."
+      "explanation": "Highest Standards under pressure."
     },
     {
       "id": "M1-006",

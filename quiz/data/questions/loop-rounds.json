@@ -1,0 +1,346 @@
+{
+  "questions": [
+    {
+      "id": "LOOP-001",
+      "module": "LOOP",
+      "difficulty": "interview",
+      "tags": [
+        "loop",
+        "sdm"
+      ],
+      "source": "ANDM loop map 2026-07",
+      "question": "Official amazon.jobs SDM phone screen is typically structured as:",
+      "options": [
+        "~60 minutes split between Leadership Principles and system design (new or existing)",
+        "Only LeetCode hard for three hours",
+        "Only compensation negotiation",
+        "Only a personality quiz"
+      ],
+      "correctIndex": 0,
+      "explanation": "amazon.jobs SDM Interview Prep."
+    },
+    {
+      "id": "LOOP-002",
+      "module": "LOOP",
+      "difficulty": "interview",
+      "tags": [
+        "loop",
+        "writing"
+      ],
+      "source": "ANDM loop map 2026-07",
+      "question": "Before the SDM onsite loop, Amazon often requires a writing assessment to evaluate:",
+      "options": [
+        "Clarity, ownership, and how you narrate decisions/outcomes with enough detail to defend later",
+        "Handwriting neatness only",
+        "Poetry skill",
+        "Whether you can write BGP configs by hand"
+      ],
+      "correctIndex": 0,
+      "explanation": "amazon.jobs + Exponent/HelloInterview SDM guides."
+    },
+    {
+      "id": "LOOP-003",
+      "module": "LOOP",
+      "difficulty": "interview",
+      "tags": [
+        "loop",
+        "onsite"
+      ],
+      "source": "ANDM loop map 2026-07",
+      "question": "A typical SDM onsite/virtual loop length is:",
+      "options": [
+        "About five ~55\u201360 minute interviews in one day (sometimes 5\u20136)",
+        "A single 15-minute chat",
+        "Twenty coding rounds only",
+        "No interviews after the phone screen"
+      ],
+      "correctIndex": 0,
+      "explanation": "amazon.jobs SDM prep; Exponent SDM guide."
+    },
+    {
+      "id": "LOOP-004",
+      "module": "LOOP",
+      "difficulty": "interview",
+      "tags": [
+        "loop",
+        "lp"
+      ],
+      "source": "ANDM loop map 2026-07",
+      "question": "Across the SDM loop, Leadership Principles are usually:",
+      "options": [
+        "Probed in every round\u2014interviewers are assigned specific LPs",
+        "Only asked in HR",
+        "Optional if design goes well",
+        "Replaced by brain teasers"
+      ],
+      "correctIndex": 0,
+      "explanation": "HelloInterview manager + amazon.jobs."
+    },
+    {
+      "id": "LOOP-005",
+      "module": "LOOP",
+      "difficulty": "interview",
+      "tags": [
+        "loop",
+        "bar-raiser"
+      ],
+      "source": "ANDM loop map 2026-07",
+      "question": "On Blind, SDM candidates report that the Bar Raiser:",
+      "options": [
+        "Can be the same person as the system design interviewer\u2014treat every round as high-stakes",
+        "Is always a separate silent observer who never asks questions",
+        "Only joins after the offer",
+        "Only cares about salary bands"
+      ],
+      "correctIndex": 0,
+      "explanation": "Blind: Can System Design Interviewer be the Bar raiser?"
+    },
+    {
+      "id": "LOOP-006",
+      "module": "LOOP",
+      "difficulty": "interview",
+      "tags": [
+        "loop",
+        "people"
+      ],
+      "source": "ANDM loop map 2026-07",
+      "question": "A people-management loop slot is most likely to dig into:",
+      "options": [
+        "Hiring bar, coaching low/high performers, and mechanisms for team health\u2014not heroics",
+        "Only vendor SKUs",
+        "Only DNS record types",
+        "Only stock vesting math"
+      ],
+      "correctIndex": 0,
+      "explanation": "Exponent SDM people-management round."
+    },
+    {
+      "id": "LOOP-007",
+      "module": "LOOP",
+      "difficulty": "interview",
+      "tags": [
+        "loop",
+        "design"
+      ],
+      "source": "ANDM loop map 2026-07",
+      "question": "SDM system design differs from IC design mainly because interviewers also want:",
+      "options": [
+        "How you lead design reviews, set tradeoffs, and keep operability/ownership clear",
+        "Only perfect low-level code",
+        "No discussion of failure modes",
+        "Marketing slogans"
+      ],
+      "correctIndex": 0,
+      "explanation": "Exponent SDM system design section."
+    },
+    {
+      "id": "LOOP-008",
+      "module": "LOOP",
+      "difficulty": "interview",
+      "tags": [
+        "loop",
+        "example"
+      ],
+      "source": "ANDM loop map 2026-07",
+      "question": "A real Glassdoor/aggregator SDM behavioral example is closest to:",
+      "options": [
+        "Tell me about coaching someone missing the bar / managing a low performer with a timeline",
+        "Solve Sudoku on a whiteboard",
+        "Name every AWS SKU",
+        "Recite Bezos letters verbatim with no story"
+      ],
+      "correctIndex": 0,
+      "explanation": "IGotAnOffer SDM Glassdoor sample stems."
+    },
+    {
+      "id": "LOOP-009",
+      "module": "LOOP",
+      "difficulty": "interview",
+      "tags": [
+        "loop",
+        "writing-defend"
+      ],
+      "source": "ANDM loop map 2026-07",
+      "question": "Interviewers use your writing sample during the loop to:",
+      "options": [
+        "Dive Deep on claims, metrics, and your personal role\u2014so every number must be defensible",
+        "Ignore it completely",
+        "Grade grammar only with a red pen",
+        "Replace the Bar Raiser"
+      ],
+      "correctIndex": 0,
+      "explanation": "Exponent writing assignment guidance."
+    },
+    {
+      "id": "LOOP-010",
+      "module": "LOOP",
+      "difficulty": "interview",
+      "tags": [
+        "loop",
+        "sysde-adjacent"
+      ],
+      "source": "ANDM loop map 2026-07",
+      "question": "Reddit/Blind SysDE reports commonly list loop themes of:",
+      "options": [
+        "Coding, Linux troubleshooting, networking, system design, OpEx LPs, and a Bar Raiser",
+        "Only PowerPoint design",
+        "Only retail floor ops",
+        "No behavioral questions"
+      ],
+      "correctIndex": 0,
+      "explanation": "r/cscareerquestionsEU SysDE; Blind SysDE vs SDE."
+    },
+    {
+      "id": "LOOP-011",
+      "module": "LOOP",
+      "difficulty": "interview",
+      "tags": [
+        "loop",
+        "nde-adjacent"
+      ],
+      "source": "ANDM loop map 2026-07",
+      "question": "Jointaro/Sydney-style NDE loop topics often include:",
+      "options": [
+        "TCP windowing, route reflectors, MSS/MTU, automation, plus Ownership/Backbone LP stems",
+        "Only CSS animations",
+        "Only payroll tax",
+        "Only mobile UI kits"
+      ],
+      "correctIndex": 0,
+      "explanation": "Jointaro Sydney NDE experience (AU-relevant)."
+    },
+    {
+      "id": "LOOP-012",
+      "module": "LOOP",
+      "difficulty": "interview",
+      "tags": [
+        "loop",
+        "phone-nde"
+      ],
+      "source": "ANDM loop map 2026-07",
+      "question": "r/networking candidates asking about NDE phone screens are usually told to expect:",
+      "options": [
+        "Fundamentals + LP signal at screen; deeper BGP/packet/automation in later loop rounds",
+        "Full Clos redesign in the first 10 minutes always",
+        "No technical content until day 90",
+        "Only culture fit memes"
+      ],
+      "correctIndex": 0,
+      "explanation": "r/networking NDE phone-screen threads + Global NDE prep."
+    },
+    {
+      "id": "LOOP-013",
+      "module": "LOOP",
+      "difficulty": "interview",
+      "tags": [
+        "loop",
+        "outcome"
+      ],
+      "source": "ANDM loop map 2026-07",
+      "question": "r/amazonemployees reports that failing the SDM bar can still result in:",
+      "options": [
+        "An adjacent offer (e.g., TPM) while HM wants to coach toward SDM later\u2014confirm with recruiter",
+        "Automatic L10 promotion",
+        "Lifetime interview ban in all cases",
+        "Immediate clearance grant"
+      ],
+      "correctIndex": 0,
+      "explanation": "r/amazonemployees: Interviewed for SDM but offered Sr TPM."
+    },
+    {
+      "id": "LOOP-014",
+      "module": "LOOP",
+      "difficulty": "interview",
+      "tags": [
+        "loop",
+        "coding-sdm"
+      ],
+      "source": "ANDM loop map 2026-07",
+      "question": "Best default for coding in an SDM Network Core loop:",
+      "options": [
+        "Ask the recruiter explicitly; public SDM guides say coding is uncommon vs SysDE IC loops",
+        "Spend 100% of prep on Contests only",
+        "Assume zero technical content",
+        "Refuse all design questions"
+      ],
+      "correctIndex": 0,
+      "explanation": "IGotAnOffer SDM <6% coding; amazon.jobs emphasizes design."
+    },
+    {
+      "id": "LOOP-015",
+      "module": "LOOP",
+      "difficulty": "interview",
+      "tags": [
+        "loop",
+        "star"
+      ],
+      "source": "ANDM loop map 2026-07",
+      "question": "Medium SysDE advice that also applies to SDM LP rounds:",
+      "options": [
+        "Prepare at least two metric-backed STAR stories per LP and expect deep follow-ups",
+        "One vague story for all 16 LPs",
+        "Never use numbers",
+        "Only discuss failures of other teams"
+      ],
+      "correctIndex": 0,
+      "explanation": "Medium SysDE L5 Bellevue writeup."
+    },
+    {
+      "id": "LOOP-016",
+      "module": "LOOP",
+      "difficulty": "interview",
+      "tags": [
+        "loop",
+        "network-core"
+      ],
+      "source": "ANDM loop map 2026-07",
+      "question": "For Network Core SDM, the design/tech rounds should be ready to discuss:",
+      "options": [
+        "Software platforms that build/operate/monitor fabric + Clos/change-safety Dive Deep",
+        "Only consumer Alexa skill UX",
+        "Only grocery logistics",
+        "Only ad click prediction"
+      ],
+      "correctIndex": 0,
+      "explanation": "JD + NC module alignment."
+    },
+    {
+      "id": "LOOP-017",
+      "module": "LOOP",
+      "difficulty": "interview",
+      "tags": [
+        "loop",
+        "recruiter"
+      ],
+      "source": "ANDM loop map 2026-07",
+      "question": "Highest-leverage questions to ask your recruiter before the loop:",
+      "options": [
+        "Exact round list, writing deadline, coding yes/no, and any LP/design focus for the team",
+        "Only the cafeteria menu",
+        "Only badge color",
+        "Nothing\u2014surprise is better"
+      ],
+      "correctIndex": 0,
+      "explanation": "Loop variance is the #1 prep risk."
+    },
+    {
+      "id": "LOOP-018",
+      "module": "LOOP",
+      "difficulty": "interview",
+      "tags": [
+        "loop",
+        "agsva"
+      ],
+      "source": "ANDM loop map 2026-07",
+      "question": "AGSVA clearance for AU Network Core is best treated as:",
+      "options": [
+        "A hard eligibility/process gate parallel to interviewing\u2014not a substitute for LP/tech prep",
+        "A trivia quiz inside the Bar Raiser",
+        "Optional branding on the JD",
+        "Something to discuss with classified details in STAR stories"
+      ],
+      "correctIndex": 0,
+      "explanation": "JD + AGSVA guidance."
+    }
+  ]
+}

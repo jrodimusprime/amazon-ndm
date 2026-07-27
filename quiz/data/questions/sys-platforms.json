@@ -1,0 +1,303 @@
+{
+  "questions": [
+    {
+      "id": "SYS-001",
+      "module": "SYS",
+      "difficulty": "interview",
+      "tags": [
+        "cicd",
+        "network-software"
+      ],
+      "source": "ANDM Network Core harvest 2026-07",
+      "question": "CI/CD for network automation should emphasize:",
+      "options": [
+        "Validated pipelines: lint/unit/integration, staged rollout, and fast rollback of bad configs/code",
+        "Pushing untested scripts straight to production fabric",
+        "Never reviewing code because speed",
+        "Only manual USB sneaker-net forever"
+      ],
+      "correctIndex": 0,
+      "explanation": "SysDE/NDE automation themes + SDM software lifecycle JD."
+    },
+    {
+      "id": "SYS-002",
+      "module": "SYS",
+      "difficulty": "interview",
+      "tags": [
+        "observability"
+      ],
+      "source": "ANDM Network Core harvest 2026-07",
+      "question": "A Network Core platform without SLIs/logs/traces is weak because:",
+      "options": [
+        "You cannot detect, localize, or prove fixes when automation fails at scale",
+        "Observability is only for mobile apps",
+        "Metrics replace the need for ownership",
+        "Logs are illegal in AWS"
+      ],
+      "correctIndex": 0,
+      "explanation": "Operational excellence for software services."
+    },
+    {
+      "id": "SYS-003",
+      "module": "SYS",
+      "difficulty": "interview",
+      "tags": [
+        "toil",
+        "automation"
+      ],
+      "source": "ANDM Network Core harvest 2026-07",
+      "question": "Best first automation target for a SysDE team supporting NDEs:",
+      "options": [
+        "High-frequency, well-understood, error-prone toil with clear success checks",
+        "The rarest artisanal one-off with no validation path",
+        "Silent production mutations with no audit",
+        "Deleting monitoring to reduce pages"
+      ],
+      "correctIndex": 0,
+      "explanation": "Invent and Simplify; Blind OpEx themes."
+    },
+    {
+      "id": "SYS-004",
+      "module": "SYS",
+      "difficulty": "interview",
+      "tags": [
+        "rca",
+        "durable-fix"
+      ],
+      "source": "ANDM Network Core harvest 2026-07",
+      "question": "After a tool causes a fabric impact, Highest Standards means:",
+      "options": [
+        "Mitigate, then RCA with mechanism changes so the class of bug cannot recur",
+        "Restart once and close with no writeup",
+        "Blame the on-call personally and move on",
+        "Disable all alerts permanently"
+      ],
+      "correctIndex": 0,
+      "explanation": "JD preferred: RCA and long-term fixes."
+    },
+    {
+      "id": "SYS-005",
+      "module": "SYS",
+      "difficulty": "interview",
+      "tags": [
+        "linux",
+        "manager"
+      ],
+      "source": "ANDM Network Core harvest 2026-07",
+      "question": "As a hands-on SDM, Linux literacy in a SysDE incident means you can:",
+      "options": [
+        "Follow host signals (CPU, disk, network, processes/logs) enough to challenge and unblock engineers",
+        "Memorize every man page without asking questions",
+        "Refuse to look at terminals",
+        "Only discuss sprint points"
+      ],
+      "correctIndex": 0,
+      "explanation": "SysDE loops stress Linux triage; SDM must Dive Deep."
+    },
+    {
+      "id": "SYS-006",
+      "module": "SYS",
+      "difficulty": "interview",
+      "tags": [
+        "code-review"
+      ],
+      "source": "ANDM Network Core harvest 2026-07",
+      "question": "Code review culture on Network Core software should optimize for:",
+      "options": [
+        "Correctness, blast-radius safety, testability, and operability\u2014not rubber stamps",
+        "Approving within 30 seconds always",
+        "Blocking all merges forever",
+        "Reviewing only variable names"
+      ],
+      "correctIndex": 0,
+      "explanation": "JD: code reviews, testing, deployment, post-launch monitoring."
+    },
+    {
+      "id": "SYS-007",
+      "module": "SYS",
+      "difficulty": "interview",
+      "tags": [
+        "canary",
+        "deploy"
+      ],
+      "source": "ANDM Network Core harvest 2026-07",
+      "question": "Deploying a change to fabric controllers / automation safely usually means:",
+      "options": [
+        "Canary/small blast radius, health gates, automatic rollback, and clear ownership",
+        "Global simultaneous push for efficiency",
+        "Deploy Friday night with no on-call",
+        "Skip tests if CI is red"
+      ],
+      "correctIndex": 0,
+      "explanation": "Change safety transferred from network ops to software plane."
+    },
+    {
+      "id": "SYS-008",
+      "module": "SYS",
+      "difficulty": "interview",
+      "tags": [
+        "idempotency"
+      ],
+      "source": "ANDM Network Core harvest 2026-07",
+      "question": "Network automation jobs should be idempotent because:",
+      "options": [
+        "Retries and partial failures are common; re-running must not corrupt intended state",
+        "Idempotency slows everything with no benefit",
+        "Devices never need reconciliation",
+        "Only humans can be idempotent"
+      ],
+      "correctIndex": 0,
+      "explanation": "Reliable automation design."
+    },
+    {
+      "id": "SYS-009",
+      "module": "SYS",
+      "difficulty": "interview",
+      "tags": [
+        "api",
+        "platform"
+      ],
+      "source": "ANDM Network Core harvest 2026-07",
+      "question": "Preferring APIs/events over SSH snowflake scripts helps Network Core scale by:",
+      "options": [
+        "Making intent reviewable, testable, and automatable across a huge device/service fleet",
+        "Making debugging impossible",
+        "Removing need for authentication",
+        "Guaranteeing zero bugs"
+      ],
+      "correctIndex": 0,
+      "explanation": "Invent and Simplify at hyperscale."
+    },
+    {
+      "id": "SYS-010",
+      "module": "SYS",
+      "difficulty": "interview",
+      "tags": [
+        "oncall",
+        "software"
+      ],
+      "source": "ANDM Network Core harvest 2026-07",
+      "question": "On-call for a Network Core software service should page on:",
+      "options": [
+        "Customer/NDE-impacting symptoms and SLO burn\u2014not every debug log line",
+        "Every INFO log",
+        "Only calendar reminders",
+        "Never, because software never fails"
+      ],
+      "correctIndex": 0,
+      "explanation": "Page hygiene + ownership."
+    },
+    {
+      "id": "SYS-011",
+      "module": "SYS",
+      "difficulty": "interview",
+      "tags": [
+        "capacity",
+        "software"
+      ],
+      "source": "ANDM Network Core harvest 2026-07",
+      "question": "Capacity for a network control/ops platform includes:",
+      "options": [
+        "Compute/storage/API quotas and dependency limits so growth doesn\u2019t silently break change velocity",
+        "Only switchport counts",
+        "Only HR headcount",
+        "Nothing\u2014platforms are infinite"
+      ],
+      "correctIndex": 0,
+      "explanation": "Scalable systems experience from preferred quals."
+    },
+    {
+      "id": "SYS-012",
+      "module": "SYS",
+      "difficulty": "interview",
+      "tags": [
+        "security",
+        "compliance"
+      ],
+      "source": "ANDM Network Core harvest 2026-07",
+      "question": "Security/compliance in Network Core tooling means:",
+      "options": [
+        "Least privilege, audited changes, and not shipping secrets in repos or logs",
+        "Sharing root passwords in chat for speed",
+        "Disabling auth on internal tools",
+        "Ignoring ARC/compliance partners"
+      ],
+      "correctIndex": 0,
+      "explanation": "ARC/compliance adjacency + Highest Standards."
+    },
+    {
+      "id": "SYS-013",
+      "module": "SYS",
+      "difficulty": "interview",
+      "tags": [
+        "feature-flags"
+      ],
+      "source": "ANDM Network Core harvest 2026-07",
+      "question": "Feature flags / config switches in fabric software help by:",
+      "options": [
+        "Decoupling deploy from enablement and enabling rapid disable under impact",
+        "Replacing testing entirely",
+        "Making rollbacks impossible",
+        "Hiding ownership"
+      ],
+      "correctIndex": 0,
+      "explanation": "Bias for Action with safety."
+    },
+    {
+      "id": "SYS-014",
+      "module": "SYS",
+      "difficulty": "interview",
+      "tags": [
+        "dependencies"
+      ],
+      "source": "ANDM Network Core harvest 2026-07",
+      "question": "When a downstream dependency (auth, queue, DB) flakes, Ownership looks like:",
+      "options": [
+        "Protect customers with backoff/failover, escalate with data, and drive durable dependency fixes",
+        "Saying 'not my job' and closing the ticket",
+        "Paging randomly without evidence",
+        "Rewriting LPs"
+      ],
+      "correctIndex": 0,
+      "explanation": "Ownership across boundaries."
+    },
+    {
+      "id": "SYS-015",
+      "module": "SYS",
+      "difficulty": "interview",
+      "tags": [
+        "testing",
+        "network"
+      ],
+      "source": "ANDM Network Core harvest 2026-07",
+      "question": "Testing network automation well includes:",
+      "options": [
+        "Unit tests plus simulated/lab devices or contract tests before production blast radius",
+        "Only testing in production on Friday",
+        "Never simulating failures",
+        "Skipping validation if syntax parses"
+      ],
+      "correctIndex": 0,
+      "explanation": "Quality reviews from JD lifecycle."
+    },
+    {
+      "id": "SYS-016",
+      "module": "SYS",
+      "difficulty": "interview",
+      "tags": [
+        "sdm",
+        "tech-contribution"
+      ],
+      "source": "ANDM Network Core harvest 2026-07",
+      "question": "Hands-on technical contribution as Network Core SDM should look like:",
+      "options": [
+        "Unblocking design/reviews, pairing on hard incidents, and raising the technical bar\u2014without becoming the sole coder",
+        "Writing 100% of production code alone forever",
+        "Never opening a diff",
+        "Only scheduling meetings"
+      ],
+      "correctIndex": 0,
+      "explanation": "JD: hands-on manager who still develops the team."
+    }
+  ]
+}

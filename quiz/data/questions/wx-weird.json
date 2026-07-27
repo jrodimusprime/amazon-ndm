@@ -5,39 +5,37 @@
       "module": "WX",
       "difficulty": "interview",
       "tags": [
-        "wx",
-        "lp",
-        "loop"
+        "recruiter",
+        "coding"
       ],
-      "source": "Exponent LP guide",
-      "question": "Amazon interviews assess Leadership Principles:",
+      "source": "ANDM Network Core harvest 2026-07",
+      "question": "For Systems Development Manager Network Core, coding rounds are:",
       "options": [
-        "Across the loop \u2014 including technical conversations",
-        "Only in a single HR screen",
-        "Never for managers",
-        "Only via written essay"
+        "Possible but uncommon for SDM\u2014confirm with recruiter; SysDE ICs often do get coding",
+        "Guaranteed LeetCode hard every loop",
+        "Never part of Amazon interviews",
+        "Replaced entirely by crossword puzzles"
       ],
       "correctIndex": 0,
-      "explanation": "Exponent/IGotAnOffer: LPs permeate rounds."
+      "explanation": "IGotAnOffer SDM <6% coding; SysDE Blind differs."
     },
     {
       "id": "WX-002",
       "module": "WX",
       "difficulty": "interview",
       "tags": [
-        "wx",
-        "loop"
+        "bar-raiser"
       ],
-      "source": "LinkedIn NDE reports",
-      "question": "Network Development Engineer loops often include:",
+      "source": "ANDM Network Core harvest 2026-07",
+      "question": "A Bar Raiser is in the loop to:",
       "options": [
-        "Networking deep-dive on resume projects + LP behavioral (+ sometimes light coding)",
-        "Only LeetCode hard for 5 hours",
-        "No technical questions",
-        "Only whiteboard art"
+        "Protect the hiring bar independently of team urgency",
+        "Lower the bar to fill headcount",
+        "Only discuss compensation",
+        "Skip LPs"
       ],
       "correctIndex": 0,
-      "explanation": "LinkedIn NDE reports: networking + LP + possible coding variance."
+      "explanation": "Amazon hiring lore."
     },
     {
       "id": "WX-003",

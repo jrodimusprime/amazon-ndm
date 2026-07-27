@@ -5,260 +5,253 @@
       "module": "N4",
       "difficulty": "interview",
       "tags": [
-        "automation"
+        "automation",
+        "safety"
       ],
-      "source": "ANDM prep",
-      "question": "Best first automation target in network ops:",
+      "source": "ANDM Network Core harvest 2026-07",
+      "question": "Safe network automation requires:",
       "options": [
-        "High-frequency, well-understood, error-prone toil with clear validation",
-        "Rare one-off artisanal tasks only",
-        "Unvalidated production mutations",
-        "Documentation deletion"
+        "Pre-checks, bounded blast radius, observability, and human escalation paths",
+        "Unattended global writes",
+        "No logging",
+        "Disabling auth"
       ],
       "correctIndex": 0,
-      "explanation": "Invent and Simplify."
+      "explanation": "Harvest SYS/NET."
     },
     {
       "id": "N4-002",
       "module": "N4",
       "difficulty": "interview",
       "tags": [
-        "automation",
-        "ops"
+        "toil"
       ],
-      "source": "ANDM prep",
-      "question": "Automation without observability is risky because:",
+      "source": "ANDM Network Core harvest 2026-07",
+      "question": "Measuring toil helps an SDM because:",
       "options": [
-        "Failures scale faster and hide \u2014 need metrics/logs/alerts",
-        "Automation never fails",
-        "Logs are optional",
-        "Humans prefer surprise"
+        "It justifies platform investment with data and shows Invent and Simplify progress",
+        "Toil is a badge of honor",
+        "Only headcount fixes toil",
+        "Toil cannot be measured"
       ],
       "correctIndex": 0,
-      "explanation": "Highest Standards."
+      "explanation": "Frugality + Invent."
     },
     {
       "id": "N4-003",
       "module": "N4",
       "difficulty": "interview",
       "tags": [
-        "automation"
+        "iac"
       ],
-      "source": "ANDM prep",
-      "question": "IaC / config management helps by:",
+      "source": "ANDM Network Core harvest 2026-07",
+      "question": "Intended-state / IaC for network config enables:",
       "options": [
-        "Making intended state reviewable, repeatable, and auditable",
-        "Removing need for peer review",
-        "Guaranteeing zero outages alone",
-        "Replacing capacity planning"
+        "Reviewable, repeatable, auditable changes and drift detection",
+        "No need for peer review",
+        "Zero outages automatically",
+        "Skipping capacity plans"
       ],
       "correctIndex": 0,
-      "explanation": "Safe implementation at scale."
+      "explanation": "Scale mechanism."
     },
     {
       "id": "N4-004",
       "module": "N4",
       "difficulty": "interview",
       "tags": [
-        "automation",
-        "lp"
+        "self-service"
       ],
-      "source": "ANDM prep",
-      "question": "When automation causes an outage:",
+      "source": "ANDM Network Core harvest 2026-07",
+      "question": "Self-service tooling for NDEs succeeds when:",
       "options": [
-        "Mitigate, disable/auto-gate, fix, add tests \u2014 own it",
-        "Hide the tool",
-        "Ban all automation forever",
-        "Blame the newest hire only"
+        "Guardrails encode policy so speed doesn\u2019t bypass safety",
+        "Anyone can do anything with root",
+        "Tickets replace all APIs",
+        "Docs are secret"
       ],
       "correctIndex": 0,
-      "explanation": "Ownership + mechanisms."
+      "explanation": "Customer Obsession for internal users."
     },
     {
       "id": "N4-005",
       "module": "N4",
       "difficulty": "interview",
       "tags": [
-        "automation",
-        "ops"
+        "false-automation"
       ],
-      "source": "ANDM prep",
-      "question": "Process optimization should measure:",
+      "source": "ANDM Network Core harvest 2026-07",
+      "question": "A script that 'mostly works' in prod is still a liability when:",
       "options": [
-        "Lead time, error rate, and operator minutes saved",
-        "Slide count",
-        "Meeting count alone",
-        "Lines of YAML only"
+        "Failure modes are undefined and operators cannot detect partial success",
+        "It saved five minutes once",
+        "It has a cool name",
+        "CI never ran"
       ],
       "correctIndex": 0,
-      "explanation": "JD: data and metrics."
+      "explanation": "Highest Standards."
     },
     {
       "id": "N4-006",
       "module": "N4",
       "difficulty": "interview",
       "tags": [
-        "automation"
+        "human-in-loop"
       ],
-      "source": "ANDM prep",
-      "question": "Self-service for partner teams works when:",
+      "source": "ANDM Network Core harvest 2026-07",
+      "question": "Keep humans in the loop for:",
       "options": [
-        "Guardrails and quotas prevent unsafe actions",
-        "Everything is wide open",
-        "No documentation",
-        "Only managers can click"
+        "High-blast-radius or novel changes until confidence and tests exist",
+        "Every traceroute forever",
+        "Never\u2014full autonomy day one",
+        "Only executive approvals"
       ],
       "correctIndex": 0,
-      "explanation": "Synergies with engineering teams."
+      "explanation": "Risk calibration."
     },
     {
       "id": "N4-007",
       "module": "N4",
       "difficulty": "interview",
       "tags": [
-        "automation"
+        "metrics-automation"
       ],
-      "source": "ANDM prep",
-      "question": "Runbook automation maturity:",
+      "source": "ANDM Network Core harvest 2026-07",
+      "question": "Automation KPIs worth tracking:",
       "options": [
-        "Human-executed \u2192 semi-auto \u2192 auto with human approval \u2192 auto with oversight",
-        "Jump to fully autonomous on day one for Sev-1 paths",
-        "Never automate",
-        "Automate only emails"
+        "Success rate, time-to-complete, rollback rate, and escaped defects",
+        "Only number of scripts",
+        "Only stars on GitHub",
+        "Only author count"
       ],
       "correctIndex": 0,
-      "explanation": "Credible continuous improvement."
+      "explanation": "Data-driven SDM."
     },
     {
       "id": "N4-008",
       "module": "N4",
       "difficulty": "interview",
       "tags": [
-        "automation",
-        "toil"
+        "vendor-lock"
       ],
-      "source": "ANDM prep",
-      "question": "Toil definition (ops):",
+      "source": "ANDM Network Core harvest 2026-07",
+      "question": "When evaluating build vs buy for automation:",
       "options": [
-        "Manual, repetitive, automatable, devoid of enduring value",
-        "All engineering",
-        "Only customer meetings",
-        "Only hiring"
+        "Total cost, operability, security, and fit to Clos/process constraints\u2014not logo shopping",
+        "Always buy",
+        "Always build",
+        "Pick the longest RFP"
       ],
       "correctIndex": 0,
-      "explanation": "Useful framing even outside Google SRE."
+      "explanation": "Are Right, A Lot."
     },
     {
       "id": "N4-009",
       "module": "N4",
       "difficulty": "interview",
       "tags": [
-        "automation"
+        "secret-mgmt"
       ],
-      "source": "ANDM prep",
-      "question": "Tooling adoption fails when:",
+      "source": "ANDM Network Core harvest 2026-07",
+      "question": "Automation credentials should be:",
       "options": [
-        "It ignores operator workflow and lacks training",
-        "It reduces clicks with training",
-        "It has clear owners",
-        "It is measured"
+        "Short-lived, scoped, rotated, and never committed to git",
+        "Embedded in repos for convenience",
+        "Shared root passwords",
+        "Printed on posters"
       ],
       "correctIndex": 0,
-      "explanation": "Improve existing frameworks/tools."
+      "explanation": "Security baseline."
     },
     {
       "id": "N4-010",
       "module": "N4",
       "difficulty": "interview",
       "tags": [
-        "automation",
-        "change-control"
+        "progressive"
       ],
-      "source": "ANDM prep",
-      "question": "CI for network config should:",
+      "source": "ANDM Network Core harvest 2026-07",
+      "question": "Progressive delivery of automation features means:",
       "options": [
-        "Lint, simulate/validate, and block unsafe diffs",
-        "Push directly to prod from laptops",
-        "Skip tests",
-        "Allow unsigned changes from anywhere"
+        "Enable for a cohort, watch SLOs, then expand\u2014or disable fast",
+        "Big-bang mandatory overnight",
+        "No flags ever",
+        "Email-only rollout"
       ],
       "correctIndex": 0,
-      "explanation": "Safe change at scale."
+      "explanation": "SYS harvest."
     },
     {
       "id": "N4-011",
       "module": "N4",
       "difficulty": "interview",
       "tags": [
-        "automation",
-        "incident"
+        "ticket-driven"
       ],
-      "source": "ANDM prep",
-      "question": "ChatOps for incidents helps when:",
+      "source": "ANDM Network Core harvest 2026-07",
+      "question": "Ticket-only network ops at AWS scale fails because:",
       "options": [
-        "It speeds safe actions with auditability",
-        "It encourages unreviewed destructive commands",
-        "It replaces IC role",
-        "It is unlogged"
+        "Human queues don\u2019t scale; mechanisms and self-service do",
+        "Tickets are illegal",
+        "Automation is slower always",
+        "NDEs prefer chaos"
       ],
       "correctIndex": 0,
-      "explanation": "Bias for Action with Highest Standards."
+      "explanation": "Think Big / Invent."
     },
     {
       "id": "N4-012",
       "module": "N4",
       "difficulty": "interview",
       "tags": [
-        "automation",
-        "lp"
+        "test-env"
       ],
-      "source": "ANDM prep",
-      "question": "Building vs buying ops tooling:",
+      "source": "ANDM Network Core harvest 2026-07",
+      "question": "Without a lab/simulation environment, automation quality suffers because:",
       "options": [
-        "Evaluate against reliability needs, operability, and team skill \u2014 not ideology",
-        "Always build",
-        "Always buy most expensive",
-        "Never evaluate"
+        "You discover bugs at production blast radius",
+        "Labs are only for interns",
+        "Production is the only truth worth testing",
+        "Devices cannot be mocked"
       ],
       "correctIndex": 0,
-      "explanation": "Frugality + Deliver Results."
+      "explanation": "Quality reviews."
     },
     {
       "id": "N4-013",
       "module": "N4",
       "difficulty": "interview",
       "tags": [
-        "ops"
+        "ownership-automation"
       ],
-      "source": "ANDM prep",
-      "question": "Documentation as a product means:",
+      "source": "ANDM Network Core harvest 2026-07",
+      "question": "Who owns an automation failure in production?",
       "options": [
-        "Owned, reviewed, and updated with the system",
-        "Write once abandon",
-        "Only in private DMs",
-        "Oral tradition only"
+        "The owning service team\u2014including SDM accountability for mechanisms\u2014not 'the script'",
+        "Nobody",
+        "Only the last commit author forever",
+        "Only HR"
       ],
       "correctIndex": 0,
-      "explanation": "JD: improve documentation."
+      "explanation": "Ownership."
     },
     {
       "id": "N4-014",
       "module": "N4",
       "difficulty": "interview",
       "tags": [
-        "automation",
-        "manager"
+        "simplify"
       ],
-      "source": "ANDM prep",
-      "question": "Manager contribution to automation:",
+      "source": "ANDM Network Core harvest 2026-07",
+      "question": "Invent and Simplify applied to network ops prefers:",
       "options": [
-        "Prioritize the roadmap, protect engineering time, remove blockers",
-        "Write all code alone secretly",
-        "Forbid automation",
-        "Only ask for status"
+        "Fewer special cases, clearer interfaces, and removing toil at the source",
+        "More unique snowflake scripts",
+        "More manual gates for every ping",
+        "Complexity as a moat"
       ],
       "correctIndex": 0,
-      "explanation": "Technical leader + people leader."
+      "explanation": "LP + JD automation."
     }
   ]
 }

@@ -5,56 +5,55 @@
       "module": "N3",
       "difficulty": "interview",
       "tags": [
-        "ops",
-        "metrics"
+        "incident",
+        "triage"
       ],
-      "source": "JD",
-      "question": "Operational excellence reporting should track:",
+      "source": "ANDM Network Core harvest 2026-07",
+      "question": "First question in a Network Core incident:",
       "options": [
-        "Availability/error budget style impact, change success, MTTR, backlog risk",
-        "Only ticket count",
-        "Only LOE hours",
-        "Only device uptime ignoring customers"
+        "What is customer impact (who/how much/since when)\u2014then mitigate",
+        "Who to blame in email",
+        "Which LP to quote",
+        "Whether the hostname is pretty"
       ],
       "correctIndex": 0,
-      "explanation": "JD: manage/track/report ops and network status with metrics."
+      "explanation": "Customer Obsession triage."
     },
     {
       "id": "N3-002",
       "module": "N3",
       "difficulty": "interview",
       "tags": [
-        "incident"
+        "mitigate"
       ],
-      "source": "JD",
-      "question": "After mitigating an incident, long-term fix means:",
+      "source": "ANDM Network Core harvest 2026-07",
+      "question": "Mitigate vs root-cause timing:",
       "options": [
-        "Root cause with durable prevention \u2014 not ticket ping-pong",
-        "Close when green temporarily",
-        "Reboot forever",
-        "Mute alerts"
+        "Restore customers first when possible, then Dive Deep for durable fix",
+        "Always finish full RCA before any mitigation",
+        "Never mitigate",
+        "Only reboot randomly"
       ],
       "correctIndex": 0,
-      "explanation": "JD: address root cause and avoid recurrence."
+      "explanation": "Bias for Action + Ownership."
     },
     {
       "id": "N3-003",
       "module": "N3",
       "difficulty": "interview",
       "tags": [
-        "incident",
-        "ops"
+        "coe"
       ],
-      "source": "ANDM prep",
-      "question": "MTTR improvement usually comes from:",
+      "source": "ANDM Network Core harvest 2026-07",
+      "question": "A good COE / post-incident writeup emphasizes:",
       "options": [
-        "Better detection, runbooks, automation, and clear ownership",
-        "More meetings during outages",
-        "Hiding status",
-        "Disabling pages"
+        "Mechanisms and action items that prevent recurrence\u2014not individual blame",
+        "Naming and shaming",
+        "Hiding timelines",
+        "Closing with no owners"
       ],
       "correctIndex": 0,
-      "explanation": "Ops excellence."
+      "explanation": "Highest Standards."
     },
     {
       "id": "N3-004",
@@ -63,237 +62,232 @@
       "tags": [
         "metrics"
       ],
-      "source": "ANDM prep",
-      "question": "Dashboarding anti-pattern:",
+      "source": "ANDM Network Core harvest 2026-07",
+      "question": "SLO for a network software control plane might track:",
       "options": [
-        "Vanity metrics that do not drive action",
-        "SLO burn and top talkers",
-        "Error budgets",
-        "Change failure rate"
+        "Success rate/latency of critical ops APIs and change pipeline health tied to fabric safety",
+        "Only lines of code",
+        "Only meeting attendance",
+        "Only coffee spend"
       ],
       "correctIndex": 0,
-      "explanation": "JD: metrics and dashboarding techniques."
+      "explanation": "SDM data-driven ops."
     },
     {
       "id": "N3-005",
       "module": "N3",
       "difficulty": "interview",
       "tags": [
-        "reliability"
+        "alert-fatigue"
       ],
-      "source": "JD",
-      "question": "Availability risk management includes:",
+      "source": "ANDM Network Core harvest 2026-07",
+      "question": "Alert fatigue is a reliability problem because:",
       "options": [
-        "Known risks tracked with owners and mitigation dates",
-        "Hoping nothing fails",
-        "Secret risk lists",
-        "Only insurance"
+        "Real pages get ignored; fix thresholds and symptoms that matter",
+        "More pages always mean better ops",
+        "Silence all alerts forever",
+        "Paging is optional theater"
       ],
       "correctIndex": 0,
-      "explanation": "JD: manage network issues and availability risks."
+      "explanation": "OpEx."
     },
     {
       "id": "N3-006",
       "module": "N3",
       "difficulty": "interview",
       "tags": [
-        "incident"
+        "correlate"
       ],
-      "source": "ANDM prep",
-      "question": "Incident commander role:",
+      "source": "ANDM Network Core harvest 2026-07",
+      "question": "Correlating incidents to recent changes helps because:",
       "options": [
-        "Coordinates mitigation, communication, and roles \u2014 not solo debug everything",
-        "Silences everyone",
-        "Only takes notes after",
-        "Leaves channel"
+        "Many outages are self-inflicted; fast rollback beats long theory",
+        "Changes never cause outages",
+        "Correlation proves root cause alone always",
+        "Ignore deploy history"
       ],
       "correctIndex": 0,
-      "explanation": "Critical issue management."
+      "explanation": "Practical Dive Deep."
     },
     {
       "id": "N3-007",
       "module": "N3",
       "difficulty": "interview",
       "tags": [
-        "incident"
+        "sev"
       ],
-      "source": "ANDM prep",
-      "question": "Blameless postmortem goal:",
+      "source": "ANDM Network Core harvest 2026-07",
+      "question": "Severity should be based on:",
       "options": [
-        "Systemic learning and prevention",
-        "HR punishment record",
-        "Public shaming",
-        "Skip actions"
+        "Customer/business impact and urgency\u2014not who yelled loudest",
+        "Ticket age only",
+        "Engineer title",
+        "Random dice"
       ],
       "correctIndex": 0,
-      "explanation": "Highest Standards + learning culture."
+      "explanation": "Are Right, A Lot."
     },
     {
       "id": "N3-008",
       "module": "N3",
       "difficulty": "interview",
       "tags": [
-        "troubleshooting"
+        "comms"
       ],
-      "source": "ANDM prep",
-      "question": "When synthetic probes are green but customers hurt:",
+      "source": "ANDM Network Core harvest 2026-07",
+      "question": "During a Sev, status updates should be:",
       "options": [
-        "Probes miss path/region/cohort \u2014 correlate with real traffic",
-        "Customers are wrong",
-        "Ignore",
-        "Disable customer tickets"
+        "Factual, timed, impact-focused, with next update time\u2014even if incomplete",
+        "Silent until perfect RCA",
+        "Speculative blame",
+        "Only internal memes"
       ],
       "correctIndex": 0,
-      "explanation": "Dive Deep troubleshooting."
+      "explanation": "Earn Trust."
     },
     {
       "id": "N3-009",
       "module": "N3",
       "difficulty": "interview",
       "tags": [
-        "incident",
-        "communication"
+        "runbook"
       ],
-      "source": "ANDM prep",
-      "question": "SEV communication to stakeholders should be:",
+      "source": "ANDM Network Core harvest 2026-07",
+      "question": "Runbooks fail when they:",
       "options": [
-        "Factual, timed updates with impact and ETA of next update",
-        "Silence until RCA complete",
-        "Blame names",
-        "Speculation as fact"
+        "Are stale, untested, or require tribal knowledge not written down",
+        "Exist at all",
+        "Include commands",
+        "Mention rollback"
       ],
       "correctIndex": 0,
-      "explanation": "Earn Trust under pressure."
+      "explanation": "Mechanisms."
     },
     {
       "id": "N3-010",
       "module": "N3",
       "difficulty": "interview",
       "tags": [
-        "ops"
+        "error-budget"
       ],
-      "source": "JD",
-      "question": "Process optimization uses data to:",
+      "source": "ANDM Network Core harvest 2026-07",
+      "question": "Error budgets help teams by:",
       "options": [
-        "Find bottlenecks and remove toil with measured before/after",
-        "Add steps randomly",
-        "Ignore metrics",
-        "Optimize only PowerPoint"
+        "Quantifying reliability vs change velocity tradeoffs with data",
+        "Banning all changes",
+        "Replacing monitoring",
+        "Measuring only happiness"
       ],
       "correctIndex": 0,
-      "explanation": "JD: process optimization using data."
+      "explanation": "SRE-adjacent judgment for SysDE managers."
     },
     {
       "id": "N3-011",
       "module": "N3",
       "difficulty": "interview",
       "tags": [
-        "on-call"
+        "game-day"
       ],
-      "source": "ANDM prep",
-      "question": "On-call escalation policy should be:",
+      "source": "ANDM Network Core harvest 2026-07",
+      "question": "Game days / failure tests matter because:",
       "options": [
-        "Clear thresholds and backup paths \u2014 practiced",
-        "Tribal only",
-        "Never escalate",
-        "Escalate everything instantly with no triage"
+        "They reveal gaps in detection, mitigation, and ownership before real Sevs",
+        "They waste time vs hoping",
+        "Production never fails",
+        "Only chaos without learning"
       ],
       "correctIndex": 0,
-      "explanation": "Preferred: escalation management."
+      "explanation": "Insist on Highest Standards."
     },
     {
       "id": "N3-012",
       "module": "N3",
       "difficulty": "interview",
       "tags": [
-        "incident",
-        "manager"
+        "handoff"
       ],
-      "source": "ANDM prep",
-      "question": "Recurring identical Sev pages indicate:",
+      "source": "ANDM Network Core harvest 2026-07",
+      "question": "Incident handoff quality means:",
       "options": [
-        "Missing durable fix / mechanism \u2014 manager should drive it",
-        "Normal business",
-        "Need more mute rules only",
-        "Hire only"
+        "Clear timeline, hypotheses tried, current blast radius, and next actions",
+        "Dumping a Slack backlog",
+        "Going offline silently",
+        "Restarting severity randomly"
       ],
       "correctIndex": 0,
-      "explanation": "Avoid re-occurrence."
+      "explanation": "24x7 team health."
     },
     {
       "id": "N3-013",
       "module": "N3",
       "difficulty": "interview",
       "tags": [
-        "ops",
-        "slo"
+        "customer-impact-minutes"
       ],
-      "source": "ANDM prep",
-      "question": "Error budget thinking for networks:",
+      "source": "ANDM Network Core harvest 2026-07",
+      "question": "Measuring customer-impact minutes drives:",
       "options": [
-        "Track customer-impacting unreliability allowance to prioritize work",
-        "Never launch changes",
-        "Ignore SLOs",
-        "Only use device ping"
+        "Prioritization of mitigations and investments that actually reduce pain",
+        "Vanity charts only",
+        "Ignoring external customers",
+        "Longer meetings"
       ],
       "correctIndex": 0,
-      "explanation": "Ops excellence language transferable from SRE."
+      "explanation": "Deliver Results with metrics."
     },
     {
       "id": "N3-014",
       "module": "N3",
       "difficulty": "interview",
       "tags": [
-        "incident",
-        "lp"
+        "partial-mitigation"
       ],
-      "source": "ANDM prep",
-      "question": "During incident, Dive Deep vs mitigate:",
+      "source": "ANDM Network Core harvest 2026-07",
+      "question": "If full fix is hours away, a partial mitigation is good when:",
       "options": [
-        "Mitigate first; deepen in parallel once impact controlled",
-        "Deep forever before mitigate",
-        "Neither",
-        "Only mitigate never learn"
+        "It reduces customer pain safely without making diagnosis impossible",
+        "It hides all telemetry",
+        "It doubles blast radius",
+        "It is undocumented forever"
       ],
       "correctIndex": 0,
-      "explanation": "Amazon Bias for Action + Dive Deep balance."
+      "explanation": "Bias for Action."
     },
     {
       "id": "N3-015",
       "module": "N3",
       "difficulty": "interview",
       "tags": [
-        "manager",
-        "metrics"
+        "dependencies"
       ],
-      "source": "ANDM prep",
-      "question": "Ops status report for leadership weekly should highlight:",
+      "source": "ANDM Network Core harvest 2026-07",
+      "question": "A fabric looks fine but apps fail: next Dive Deep step:",
       "options": [
-        "Customer impact, top risks, capacity, hiring \u2014 actionable",
-        "Raw syslog dump",
-        "Only celebrations",
-        "No asks"
+        "Expand scope to dependencies (DNS, auth, overlays, upstream/downstream) with evidence",
+        "Declare network innocent forever without data",
+        "Only reboot BGP speakers",
+        "Close as user error"
       ],
       "correctIndex": 0,
-      "explanation": "Represent status to leadership."
+      "explanation": "Systems thinking."
     },
     {
       "id": "N3-016",
       "module": "N3",
       "difficulty": "interview",
       "tags": [
-        "ops"
+        "action-items"
       ],
-      "source": "JD",
-      "question": "Continuous improvement example:",
+      "source": "ANDM Network Core harvest 2026-07",
+      "question": "Post-incident action items should be:",
       "options": [
-        "Turn incident learnings into automation and standard process updates",
-        "Write a wiki and never revisit",
-        "Add blame",
-        "Increase toil"
+        "Owned, dated, and verified done\u2014prefer prevention over training-only",
+        "Optional suggestions",
+        "Assigned to 'the team' with no owner",
+        "Deleted after the call"
       ],
       "correctIndex": 0,
-      "explanation": "JD: continuous improvement of frameworks/tools/processes."
+      "explanation": "Deliver Results."
     }
   ]
 }

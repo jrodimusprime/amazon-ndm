@@ -6,56 +6,54 @@
       "difficulty": "interview",
       "tags": [
         "performance",
-        "manager"
+        "coaching"
       ],
-      "source": "Amazon SDM patterns",
-      "question": "High performer vs low performer management:",
+      "source": "ANDM Network Core harvest 2026-07",
+      "question": "Coaching a SysDE missing the bar should include:",
       "options": [
-        "Stretch and visibility for high; clear expectations, coaching, and timelines for low",
-        "Treat identically always",
-        "Ignore low performers",
-        "Punish high performers with all pages"
+        "Clear written expectations, examples, support plan, and timeline with consequences",
+        "Vague hints in standup only",
+        "Public shaming",
+        "Immediate PIP without feedback"
       ],
       "correctIndex": 0,
-      "explanation": "Classic manager LP interview; also GSRE C5 parallel."
+      "explanation": "IGotAnOffer SDM coaching stems."
     },
     {
       "id": "M2-002",
       "module": "M2",
       "difficulty": "interview",
       "tags": [
-        "on-call",
-        "manager"
+        "oncall"
       ],
-      "source": "ANDM prep",
-      "question": "24x7 rotation health requires:",
+      "source": "ANDM Network Core harvest 2026-07",
+      "question": "Unfair 24\u00d77 load on one engineer is a manager failure because:",
       "options": [
-        "Fair schedules, alert hygiene, and tracking load per engineer",
-        "Heroics culture",
-        "Unlimited pages",
-        "No handoffs"
+        "Rotation fairness and page hygiene are mechanisms you own for team health",
+        "Heroics prove dedication",
+        "Burnout improves quality",
+        "On-call is optional theater"
       ],
       "correctIndex": 0,
-      "explanation": "JD: day-to-day oversight of effective 24x7 rotation."
+      "explanation": "Earth's Best Employer + OpEx."
     },
     {
       "id": "M2-003",
       "module": "M2",
       "difficulty": "interview",
       "tags": [
-        "on-call",
-        "ops"
+        "high-performer"
       ],
-      "source": "ANDM prep",
-      "question": "Chronic noisy alerts \u2014 manager action:",
+      "source": "ANDM Network Core harvest 2026-07",
+      "question": "Developing a high performer on Network Core looks like:",
       "options": [
-        "Drive engineering to fix signal quality; measure pages reduced",
-        "Tell people to mute forever",
-        "Add more people only",
-        "Ignore"
+        "Stretch ownership, visibility, and a path to larger scope\u2014not ignoring them",
+        "Only giving them more pages",
+        "Hiding them from promo",
+        "Blocking mobility"
       ],
       "correctIndex": 0,
-      "explanation": "Operational excellence over coping."
+      "explanation": "Hire and Develop."
     },
     {
       "id": "M2-004",

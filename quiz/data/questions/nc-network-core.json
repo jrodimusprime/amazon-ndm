@@ -1,0 +1,308 @@
+{
+  "questions": [
+    {
+      "id": "NC-001",
+      "module": "NC",
+      "difficulty": "interview",
+      "tags": [
+        "network-core",
+        "org"
+      ],
+      "source": "ANDM Network Core harvest 2026-07",
+      "question": "In AWS Network Core terms, what does the Systems Development Manager primarily lead?",
+      "options": [
+        "System Development Engineers building software that builds/operates/monitors/assures regional network fabrics",
+        "Only customer VPC Solutions Architects",
+        "Only physical cable plant technicians with no software",
+        "Only marketing for Direct Connect"
+      ],
+      "correctIndex": 0,
+      "explanation": "JD: SDM over SysDEs bridging DC ops capabilities with software solutions."
+    },
+    {
+      "id": "NC-002",
+      "module": "NC",
+      "difficulty": "interview",
+      "tags": [
+        "network-core",
+        "nde"
+      ],
+      "source": "ANDM Network Core harvest 2026-07",
+      "question": "Network Development Engineers (NDEs) on Clos/fabric teams typically own:",
+      "options": [
+        "Fabric design, routing/availability/compliance, and safe network change at DC scale",
+        "Only React front-ends",
+        "Only payroll systems",
+        "Only S3 object APIs"
+      ],
+      "correctIndex": 0,
+      "explanation": "Sibling NDE Clos/ARC JDs: availability, routing, compliance of Clos DC networks."
+    },
+    {
+      "id": "NC-003",
+      "module": "NC",
+      "difficulty": "interview",
+      "tags": [
+        "network-core",
+        "sysde"
+      ],
+      "source": "ANDM Network Core harvest 2026-07",
+      "question": "SysDEs on Core Network / Network Core software planes are closest to:",
+      "options": [
+        "SRE-like engineers whose customers are network engineers and the fabric tooling itself",
+        "Retail store associates",
+        "External enterprise account managers only",
+        "GPU model trainers only"
+      ],
+      "correctIndex": 0,
+      "explanation": "Public SysDE Core Network JDs: tools/services that build, operate, monitor, assure the AWS network."
+    },
+    {
+      "id": "NC-004",
+      "module": "NC",
+      "difficulty": "interview",
+      "tags": [
+        "clos",
+        "fabric"
+      ],
+      "source": "ANDM Network Core harvest 2026-07",
+      "question": "A Clos / spine-leaf fabric is preferred in large DCs mainly because it:",
+      "options": [
+        "Provides scalable, predictable east-west bandwidth with ECMP and limited blast radius per failure",
+        "Eliminates the need for any routing protocol",
+        "Guarantees zero packet loss forever without ops",
+        "Only works for Wi-Fi campuses"
+      ],
+      "correctIndex": 0,
+      "explanation": "InterviewStack / Clos design: non-blocking scale-out fabric pattern."
+    },
+    {
+      "id": "NC-005",
+      "module": "NC",
+      "difficulty": "interview",
+      "tags": [
+        "clos",
+        "bgp"
+      ],
+      "source": "ANDM Network Core harvest 2026-07",
+      "question": "Using eBGP as a Clos underlay (RFC 7938-style) primarily buys:",
+      "options": [
+        "Simple horizontal scale and ECMP with well-understood failure domains vs complex IGP flooding",
+        "Automatic TLS termination",
+        "Free CDN capacity",
+        "Removal of all monitoring needs"
+      ],
+      "correctIndex": 0,
+      "explanation": "RFC 7938 / Clos BGP underlay pattern common in hyperscale DC fabrics."
+    },
+    {
+      "id": "NC-006",
+      "module": "NC",
+      "difficulty": "interview",
+      "tags": [
+        "network-core",
+        "customers"
+      ],
+      "source": "ANDM Network Core harvest 2026-07",
+      "question": "The primary internal customers of Network Core software are:",
+      "options": [
+        "NDEs and DC/network ops who need reliable automation, visibility, and safe change tooling",
+        "Only end-consumers shopping on amazon.com",
+        "Only third-party phone OEMs",
+        "Only external ISP NOCs"
+      ],
+      "correctIndex": 0,
+      "explanation": "SysDE Core Network framing: internal network engineering customers."
+    },
+    {
+      "id": "NC-007",
+      "module": "NC",
+      "difficulty": "interview",
+      "tags": [
+        "nfe",
+        "arc"
+      ],
+      "source": "ANDM Network Core harvest 2026-07",
+      "question": "Availability, Routing, and Compliance (ARC) style fabric work focuses on:",
+      "options": [
+        "Keeping Clos networks security-compliant while planned/unplanned events don\u2019t hurt customer performance",
+        "Writing mobile ads",
+        "Designing Kindle UI themes",
+        "Managing retail inventory only"
+      ],
+      "correctIndex": 0,
+      "explanation": "Public NFE/ARC Clos JD language."
+    },
+    {
+      "id": "NC-008",
+      "module": "NC",
+      "difficulty": "interview",
+      "tags": [
+        "dclc",
+        "lifecycle"
+      ],
+      "source": "ANDM Network Core harvest 2026-07",
+      "question": "DC Life Cycle (refresh/turndown) network work succeeds when:",
+      "options": [
+        "Processes run safely with no impact to customer traffic and automation reduces manual risk",
+        "Devices are yanked without coordination",
+        "Only Excel trackers matter, not validation",
+        "Customer impact is accepted as inevitable"
+      ],
+      "correctIndex": 0,
+      "explanation": "DCLC NDE JD: operational excellence during refresh/exit."
+    },
+    {
+      "id": "NC-009",
+      "module": "NC",
+      "difficulty": "interview",
+      "tags": [
+        "network-core",
+        "sdm"
+      ],
+      "source": "ANDM Network Core harvest 2026-07",
+      "question": "As SDM Network Core, Dive Deep during a fabric tool outage means:",
+      "options": [
+        "Reading metrics/logs/config diffs with engineers and driving mitigation + durable fix\u2014not only status meetings",
+        "Delegating forever without understanding mechanisms",
+        "Waiting for customers to file public tweets",
+        "Rewriting the LP wiki"
+      ],
+      "correctIndex": 0,
+      "explanation": "JD: dive into details, make technical contributions, drive reliability."
+    },
+    {
+      "id": "NC-010",
+      "module": "NC",
+      "difficulty": "interview",
+      "tags": [
+        "network-core",
+        "scope"
+      ],
+      "source": "ANDM Network Core harvest 2026-07",
+      "question": "Network Core is NOT primarily about:",
+      "options": [
+        "Day-to-day customer VPC architecture consulting as a Solutions Architect",
+        "Software platforms for regional fabric build/ops/monitor/assure",
+        "Partnering with NDEs on operability",
+        "Raising standards for change safety tooling"
+      ],
+      "correctIndex": 0,
+      "explanation": "Role boundary: foundation fabric software plane vs customer SA work."
+    },
+    {
+      "id": "NC-011",
+      "module": "NC",
+      "difficulty": "interview",
+      "tags": [
+        "ecmp",
+        "failure"
+      ],
+      "source": "ANDM Network Core harvest 2026-07",
+      "question": "In a Clos with ECMP, losing one spine typically should:",
+      "options": [
+        "Reduce capacity but keep connectivity if remaining paths and hashing still serve flows",
+        "Black-hole the entire region permanently by design",
+        "Require manual IP renumbering of every host",
+        "Disable BGP worldwide"
+      ],
+      "correctIndex": 0,
+      "explanation": "ECMP resilience is a core fabric interview signal."
+    },
+    {
+      "id": "NC-012",
+      "module": "NC",
+      "difficulty": "interview",
+      "tags": [
+        "network-core",
+        "uc"
+      ],
+      "source": "ANDM Network Core harvest 2026-07",
+      "question": "Utility Computing (UC) context for this role means Network Core supports:",
+      "options": [
+        "Foundational AWS infrastructure that compute/storage/database services depend on",
+        "Only Alexa skill marketing",
+        "Only Twitch esports brackets",
+        "Only Whole Foods POS themes"
+      ],
+      "correctIndex": 0,
+      "explanation": "JD places the team in UC supporting foundational services."
+    },
+    {
+      "id": "NC-013",
+      "module": "NC",
+      "difficulty": "interview",
+      "tags": [
+        "network-core",
+        "roadmap"
+      ],
+      "source": "ANDM Network Core harvest 2026-07",
+      "question": "A healthy Network Core SDM roadmap balances:",
+      "options": [
+        "NDE/ops customer asks, platform reliability debt, and scalable automation investments with clear priority",
+        "Only vanity features with no operability",
+        "Never saying no to any request",
+        "Ignoring incidents to ship slides"
+      ],
+      "correctIndex": 0,
+      "explanation": "JD: roadmaps + operating existing systems at high quality."
+    },
+    {
+      "id": "NC-014",
+      "module": "NC",
+      "difficulty": "interview",
+      "tags": [
+        "agsva",
+        "au"
+      ],
+      "source": "ANDM Network Core harvest 2026-07",
+      "question": "For the AU Systems Development Manager Network Core posting, AGSVA awareness means:",
+      "options": [
+        "You must be eligible/able to attain clearance; treat it as a hard process gate, not a trivia quiz",
+        "Clearance replaces all technical interviews",
+        "Foreign classified details should be discussed in STAR stories",
+        "AGSVA is optional branding only"
+      ],
+      "correctIndex": 0,
+      "explanation": "JD + AGSVA eligibility; keep stories unclassified."
+    },
+    {
+      "id": "NC-015",
+      "module": "NC",
+      "difficulty": "interview",
+      "tags": [
+        "blast-radius",
+        "fabric"
+      ],
+      "source": "ANDM Network Core harvest 2026-07",
+      "question": "When prioritizing a fabric automation bug, the SDM should weigh first:",
+      "options": [
+        "Customer-visible blast radius and correlated failure risk across the fabric",
+        "Only whether the ticket is old",
+        "Only the author\u2019s job level",
+        "Whether the bug title uses emoji"
+      ],
+      "correctIndex": 0,
+      "explanation": "Customer Obsession + Highest Standards on blast radius."
+    },
+    {
+      "id": "NC-016",
+      "module": "NC",
+      "difficulty": "interview",
+      "tags": [
+        "network-core",
+        "standards"
+      ],
+      "source": "ANDM Network Core harvest 2026-07",
+      "question": "Driving organizational standards for resiliency as Network Core SDM looks like:",
+      "options": [
+        "Mechanisms: review bars, canary/rollback defaults, SLOs, and shared runbooks\u2014not heroics",
+        "Asking people to try harder without tools",
+        "Banning all changes forever",
+        "Outsourcing ownership of every Sev"
+      ],
+      "correctIndex": 0,
+      "explanation": "JD: standards for operational excellence and resiliency."
+    }
+  ]
+}
