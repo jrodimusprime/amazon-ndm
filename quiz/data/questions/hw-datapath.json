@@ -1,0 +1,959 @@
+{
+  "questions": [
+    {
+      "id": "HW-001",
+      "module": "HW",
+      "difficulty": "interview",
+      "tags": [
+        "1u",
+        "2u",
+        "form-factor"
+      ],
+      "source": "ANDM hardware datapath glossary 2026-07",
+      "question": "In networking, 1U and 2U primarily describe:",
+      "options": [
+        "Rack height of a fixed switch (1 or 2 rack units)\u2014affecting port density, power, and cooling in a rack",
+        "BGP AS number sizes",
+        "Buffer depth in gigabytes",
+        "OSPF area IDs"
+      ],
+      "correctIndex": 0,
+      "explanation": "Pizza-box leaves are commonly 1U; denser systems may be 2U."
+    },
+    {
+      "id": "HW-002",
+      "module": "HW",
+      "difficulty": "interview",
+      "tags": [
+        "port-density",
+        "1u"
+      ],
+      "source": "ANDM hardware datapath glossary 2026-07",
+      "question": "High port density in a 1U pizza-box matters at scale because:",
+      "options": [
+        "More servers per rack switch reduces tiers/cost\u2014but raises power, thermals, and blast radius of one box",
+        "Density has no operational downside",
+        "1U cannot run L3",
+        "Density replaces the need for redundancy"
+      ],
+      "correctIndex": 0,
+      "explanation": "Design tradeoff: density vs failure domain and power."
+    },
+    {
+      "id": "HW-003",
+      "module": "HW",
+      "difficulty": "interview",
+      "tags": [
+        "redundant-power",
+        "fru"
+      ],
+      "source": "ANDM hardware datapath glossary 2026-07",
+      "question": "Redundant power supplies / hot-swap FRUs improve platform reliability by:",
+      "options": [
+        "Surviving PSU failure and enabling field replacement without full chassis loss\u2014when designed and monitored correctly",
+        "Removing the need for dual uplinks",
+        "Eliminating all outages",
+        "Only improving LED aesthetics"
+      ],
+      "correctIndex": 0,
+      "explanation": "Hardware HA mechanisms."
+    },
+    {
+      "id": "HW-004",
+      "module": "HW",
+      "difficulty": "interview",
+      "tags": [
+        "airflow",
+        "ops"
+      ],
+      "source": "ANDM hardware datapath glossary 2026-07",
+      "question": "Front-to-back airflow and rack orientation matter because:",
+      "options": [
+        "Mismatched airflow causes thermal throttling/failures that look like 'random' packet loss or reloads",
+        "Airflow only affects cable color",
+        "Switches do not generate heat",
+        "Only servers need cooling"
+      ],
+      "correctIndex": 0,
+      "explanation": "Physical ops is part of platform sustainability."
+    },
+    {
+      "id": "HW-005",
+      "module": "HW",
+      "difficulty": "interview",
+      "tags": [
+        "chassis",
+        "modular",
+        "supervisor"
+      ],
+      "source": "ANDM hardware datapath glossary 2026-07",
+      "question": "In a modular chassis, the supervisor engine typically owns:",
+      "options": [
+        "Control-plane functions (routing protocols, management) while line cards forward most data-plane traffic in hardware",
+        "Only PoE for cameras",
+        "Only the LCD screen",
+        "All packet forwarding exclusively in software forever"
+      ],
+      "correctIndex": 0,
+      "explanation": "Supervisor = control; line cards + fabric = forwarding path."
+    },
+    {
+      "id": "HW-006",
+      "module": "HW",
+      "difficulty": "interview",
+      "tags": [
+        "line-cards",
+        "chassis"
+      ],
+      "source": "ANDM hardware datapath glossary 2026-07",
+      "question": "Line cards in a chassis primarily provide:",
+      "options": [
+        "Port interfaces and local packet processing/lookup toward the fabric\u2014scaling port count modularly",
+        "Only redundant power",
+        "Only the BGP process",
+        "DNS recursion"
+      ],
+      "correctIndex": 0,
+      "explanation": "Modular architecture = insert line cards for density."
+    },
+    {
+      "id": "HW-007",
+      "module": "HW",
+      "difficulty": "interview",
+      "tags": [
+        "chassis",
+        "fabric-module"
+      ],
+      "source": "ANDM hardware datapath glossary 2026-07",
+      "question": "Chassis fabric modules / backplane exist to:",
+      "options": [
+        "Switch cells/packets between line cards at high bandwidth with scheduling to avoid internal congestion",
+        "Store customer objects like S3",
+        "Replace optics entirely",
+        "Run the hypervisor"
+      ],
+      "correctIndex": 0,
+      "explanation": "Internal fabric is the chassis datapath."
+    },
+    {
+      "id": "HW-008",
+      "module": "HW",
+      "difficulty": "interview",
+      "tags": [
+        "pizza-box",
+        "fixed"
+      ],
+      "source": "ANDM hardware datapath glossary 2026-07",
+      "question": "A fixed-configuration pizza-box differs from a modular chassis mainly by:",
+      "options": [
+        "Non-expandable integrated ports/ASICs in one box vs slot-based supervisors/line cards/fabric",
+        "Inability to speak BGP",
+        "Never having redundant PSUs",
+        "Only supporting OSPF"
+      ],
+      "correctIndex": 0,
+      "explanation": "Fixed vs modular form factors."
+    },
+    {
+      "id": "HW-009",
+      "module": "HW",
+      "difficulty": "interview",
+      "tags": [
+        "supervisor",
+        "redundancy"
+      ],
+      "source": "ANDM hardware datapath glossary 2026-07",
+      "question": "Dual supervisors with failover aim to:",
+      "options": [
+        "Keep control plane available through supervisor failure\u2014ideally with minimal forwarding disruption if NSF/NSR/ISSU capabilities exist",
+        "Double the data-plane bandwidth automatically",
+        "Remove need for line cards",
+        "Disable routing protocols"
+      ],
+      "correctIndex": 0,
+      "explanation": "Control-plane HA; forwarding continuity depends on platform features."
+    },
+    {
+      "id": "HW-010",
+      "module": "HW",
+      "difficulty": "interview",
+      "tags": [
+        "control-plane",
+        "data-plane",
+        "forwarding-plane"
+      ],
+      "source": "ANDM hardware datapath glossary 2026-07",
+      "question": "Best distinction among planes:",
+      "options": [
+        "Control plane computes reachability (RIB); forwarding/data plane uses hardware tables (FIB/adjacency) to move packets",
+        "They are three names for SNMP only",
+        "Forwarding plane only runs OSPF hellos",
+        "Data plane stores the running-config"
+      ],
+      "correctIndex": 0,
+      "explanation": "Interview staple: control vs forwarding/data plane."
+    },
+    {
+      "id": "HW-011",
+      "module": "HW",
+      "difficulty": "interview",
+      "tags": [
+        "rib",
+        "fib",
+        "forwarding-table"
+      ],
+      "source": "ANDM hardware datapath glossary 2026-07",
+      "question": "RIB vs FIB (forwarding table):",
+      "options": [
+        "RIB holds routing-protocol knowledge; FIB/hardware forwarding table is what the ASIC uses for lookups",
+        "They are always byte-identical with no install filters",
+        "FIB only stores MAC addresses",
+        "RIB is only on the optics"
+      ],
+      "correctIndex": 0,
+      "explanation": "Policy/NH issues can leave RIB\u2260FIB behavior."
+    },
+    {
+      "id": "HW-012",
+      "module": "HW",
+      "difficulty": "interview",
+      "tags": [
+        "asic"
+      ],
+      "source": "ANDM hardware datapath glossary 2026-07",
+      "question": "A switch ASIC\u2019s job in the forwarding plane is to:",
+      "options": [
+        "Perform high-speed parse, lookup, buffer/schedule, and rewrite in hardware so most packets never hit the CPU",
+        "Replace the need for fiber",
+        "Only run Python scripts",
+        "Store petabytes of objects"
+      ],
+      "correctIndex": 0,
+      "explanation": "ASICs = merchant or custom silicon pipelines."
+    },
+    {
+      "id": "HW-013",
+      "module": "HW",
+      "difficulty": "interview",
+      "tags": [
+        "merchant",
+        "whitebox",
+        "sonic"
+      ],
+      "source": "ANDM hardware datapath glossary 2026-07",
+      "question": "Merchant silicon + whitebox/SONiC-style platforms emphasize:",
+      "options": [
+        "Standard ASICs with open/disaggregated NOS options\u2014ops must own integration, imaging, and support models",
+        "Only proprietary fixed software forever",
+        "No need for routing protocols",
+        "Removing ASICs entirely"
+      ],
+      "correctIndex": 0,
+      "explanation": "Platform selection includes NOS/silicon model."
+    },
+    {
+      "id": "HW-014",
+      "module": "HW",
+      "difficulty": "interview",
+      "tags": [
+        "tcam",
+        "cam",
+        "lookup"
+      ],
+      "source": "ANDM hardware datapath glossary 2026-07",
+      "question": "CAM/TCAM matter in platforms because:",
+      "options": [
+        "They enable fast exact/ternary lookups (MAC, routes, ACLs)\u2014capacity limits become scale/feature constraints",
+        "They only cool the chassis",
+        "They store full packet payloads",
+        "They replace BGP"
+      ],
+      "correctIndex": 0,
+      "explanation": "Lookup resource = real design limit."
+    },
+    {
+      "id": "HW-015",
+      "module": "HW",
+      "difficulty": "interview",
+      "tags": [
+        "mac",
+        "l2"
+      ],
+      "source": "ANDM hardware datapath glossary 2026-07",
+      "question": "MAC learning/forwarding on a switch:",
+      "options": [
+        "Maps source MACs to ports/tunnels and forwards/floods based on destination MAC\u2014bridging domain design affects blast radius",
+        "MAC is only used by BGP",
+        "MAC tables are infinite and never age",
+        "Rewriting IP TTL updates the MAC table"
+      ],
+      "correctIndex": 0,
+      "explanation": "L2 fundamentals still appear in fabric edge/host attachment."
+    },
+    {
+      "id": "HW-016",
+      "module": "HW",
+      "difficulty": "interview",
+      "tags": [
+        "arp"
+      ],
+      "source": "ANDM hardware datapath glossary 2026-07",
+      "question": "ARP\u2019s role in packet delivery on Ethernet/IP is:",
+      "options": [
+        "Resolve next-hop IP to MAC so L2 can deliver the frame toward the next hop",
+        "Encrypt the payload",
+        "Compute OSPF cost",
+        "Allocate ASNs"
+      ],
+      "correctIndex": 0,
+      "explanation": "Control-adjacent discovery for forwarding."
+    },
+    {
+      "id": "HW-017",
+      "module": "HW",
+      "difficulty": "interview",
+      "tags": [
+        "packet-flow",
+        "lookup",
+        "rewrite",
+        "ttl"
+      ],
+      "source": "ANDM hardware datapath glossary 2026-07",
+      "question": "A typical L3 hop rewrite includes:",
+      "options": [
+        "Decrement TTL (or hop limit), update L2 header to next-hop MAC, and transmit on the chosen egress\u2014after FIB lookup",
+        "Increment TTL forever",
+        "Strip IP and send raw TCP only",
+        "Change the source IP randomly each hop"
+      ],
+      "correctIndex": 0,
+      "explanation": "Lookup \u2192 rewrite \u2192 TTL is core packet-flow literacy."
+    },
+    {
+      "id": "HW-018",
+      "module": "HW",
+      "difficulty": "interview",
+      "tags": [
+        "ttl"
+      ],
+      "source": "ANDM hardware datapath glossary 2026-07",
+      "question": "TTL/hop-limit exists primarily to:",
+      "options": [
+        "Bound forwarding loops by expiring packets that circulate too long",
+        "Measure buffer depth",
+        "Authenticate BGP peers",
+        "Set the MAC age timer"
+      ],
+      "correctIndex": 0,
+      "explanation": "Loop safety in the data plane."
+    },
+    {
+      "id": "HW-019",
+      "module": "HW",
+      "difficulty": "interview",
+      "tags": [
+        "cut-through",
+        "store-forward"
+      ],
+      "source": "ANDM hardware datapath glossary 2026-07",
+      "question": "Cut-through forwarding can start egress earlier than store-and-forward, but:",
+      "options": [
+        "Speed mismatch, errors, or feature needs often force store-and-forward behavior\u2014latency wins are situational",
+        "Cut-through always checks FCS first",
+        "Store-and-forward never buffers",
+        "Only chassis support cut-through"
+      ],
+      "correctIndex": 0,
+      "explanation": "Platform packet-flow nuance."
+    },
+    {
+      "id": "HW-020",
+      "module": "HW",
+      "difficulty": "interview",
+      "tags": [
+        "copp",
+        "control-plane"
+      ],
+      "source": "ANDM hardware datapath glossary 2026-07",
+      "question": "Control-plane policing (CoPP) protects platforms by:",
+      "options": [
+        "Rate-limiting/filtering traffic punted to the CPU so floods don\u2019t melt routing/management",
+        "Increasing data-plane buffers infinitely",
+        "Disabling all hellos",
+        "Replacing ACLs on the ASIC"
+      ],
+      "correctIndex": 0,
+      "explanation": "Keep forwarding in ASIC; protect supervisors/CPU."
+    },
+    {
+      "id": "HW-021",
+      "module": "HW",
+      "difficulty": "interview",
+      "tags": [
+        "bgp",
+        "routing"
+      ],
+      "source": "ANDM hardware datapath glossary 2026-07",
+      "question": "In large-scale DC fabrics, BGP is often preferred as underlay because:",
+      "options": [
+        "Policy control, horizontal scale, and ECMP friendliness (e.g., eBGP per leaf) versus IGP flooding limits",
+        "BGP cannot do ECMP",
+        "BGP only works on the public internet",
+        "BGP replaces Ethernet"
+      ],
+      "correctIndex": 0,
+      "explanation": "RFC 7938-style DC BGP."
+    },
+    {
+      "id": "HW-022",
+      "module": "HW",
+      "difficulty": "interview",
+      "tags": [
+        "ospf",
+        "isis",
+        "igp"
+      ],
+      "source": "ANDM hardware datapath glossary 2026-07",
+      "question": "OSPF/IS-IS as IGPs are typically stronger when you need:",
+      "options": [
+        "Fast interior topology awareness within an AS\u2014with area/scaling design\u2014versus policy-heavy interdomain BGP",
+        "Only encrypting packets",
+        "WAN-only with no LAN use ever",
+        "Replacing the FIB"
+      ],
+      "correctIndex": 0,
+      "explanation": "Protocol selection by role."
+    },
+    {
+      "id": "HW-023",
+      "module": "HW",
+      "difficulty": "interview",
+      "tags": [
+        "ecmp",
+        "hash"
+      ],
+      "source": "ANDM hardware datapath glossary 2026-07",
+      "question": "ECMP forwarding depends on:",
+      "options": [
+        "Multiple equal-cost next hops installed in the FIB and a hash over flow keys to pick a member",
+        "Randomly dropping half of packets",
+        "Only OSPF Hello intervals",
+        "MAC learning exclusively"
+      ],
+      "correctIndex": 0,
+      "explanation": "Data-plane load-sharing."
+    },
+    {
+      "id": "HW-024",
+      "module": "HW",
+      "difficulty": "interview",
+      "tags": [
+        "bfd",
+        "convergence"
+      ],
+      "source": "ANDM hardware datapath glossary 2026-07",
+      "question": "BFD aids routing reliability by:",
+      "options": [
+        "Detecting path failure faster than protocol hellos alone\u2014enabling quicker withdrawal/shift with false-positive tradeoffs",
+        "Deepening buffers",
+        "Assigning MAC addresses",
+        "Compressing TCAM"
+      ],
+      "correctIndex": 0,
+      "explanation": "Control-plane + detection."
+    },
+    {
+      "id": "HW-025",
+      "module": "HW",
+      "difficulty": "interview",
+      "tags": [
+        "convergence",
+        "nsr",
+        "graceful-restart"
+      ],
+      "source": "ANDM hardware datapath glossary 2026-07",
+      "question": "Graceful restart / NSR features target:",
+      "options": [
+        "Reducing forwarding disruption during control-plane restarts/failover when peers/helpers cooperate",
+        "Faster optics only",
+        "Larger shallow buffers",
+        "Disabling the FIB during upgrades"
+      ],
+      "correctIndex": 0,
+      "explanation": "Hitless-ish control events."
+    },
+    {
+      "id": "HW-026",
+      "module": "HW",
+      "difficulty": "interview",
+      "tags": [
+        "issu"
+      ],
+      "source": "ANDM hardware datapath glossary 2026-07",
+      "question": "ISSU / hitless upgrade aspirations matter operationally because:",
+      "options": [
+        "Software upgrades are a major planned risk; platforms that preserve forwarding during upgrade reduce impact",
+        "Upgrades never affect traffic",
+        "ISSU replaces capacity planning",
+        "Only applies to Wi-Fi"
+      ],
+      "correctIndex": 0,
+      "explanation": "Deployment mechanism on platforms."
+    },
+    {
+      "id": "HW-027",
+      "module": "HW",
+      "difficulty": "interview",
+      "tags": [
+        "shallow-buffer",
+        "latency"
+      ],
+      "source": "ANDM hardware datapath glossary 2026-07",
+      "question": "Shallow buffers favor low latency and high radix, but under congestion they:",
+      "options": [
+        "Overflow quickly \u2192 drop or assert backpressure\u2014so topology and congestion control must share the load",
+        "Expand to seconds of buffering automatically",
+        "Never drop",
+        "Disable TCP"
+      ],
+      "correctIndex": 0,
+      "explanation": "Shallow = small on-chip."
+    },
+    {
+      "id": "HW-028",
+      "module": "HW",
+      "difficulty": "interview",
+      "tags": [
+        "deep-buffer",
+        "congestion"
+      ],
+      "source": "ANDM hardware datapath glossary 2026-07",
+      "question": "Deep buffers absorb bursts better but risk:",
+      "options": [
+        "Higher latency and bufferbloat if queues grow large\u2014TCP may slow only after long standing queues",
+        "Always lower latency than shallow",
+        "Zero power cost",
+        "Eliminating PFC needs forever with no tradeoffs"
+      ],
+      "correctIndex": 0,
+      "explanation": "Deep \u2260 free lunch."
+    },
+    {
+      "id": "HW-029",
+      "module": "HW",
+      "difficulty": "interview",
+      "tags": [
+        "bufferbloat"
+      ],
+      "source": "ANDM hardware datapath glossary 2026-07",
+      "question": "Bufferbloat refers to:",
+      "options": [
+        "Excessively large standing queues that inflate latency/jitter even when 'no drops' look healthy",
+        "Having zero buffers on a switch",
+        "Only optical attenuation",
+        "BGP path hunting"
+      ],
+      "correctIndex": 0,
+      "explanation": "Reliability of platforms includes latency under load."
+    },
+    {
+      "id": "HW-030",
+      "module": "HW",
+      "difficulty": "interview",
+      "tags": [
+        "congestion",
+        "packet-loss"
+      ],
+      "source": "ANDM hardware datapath glossary 2026-07",
+      "question": "Packet loss from congestion on oversubscribed or shallow paths typically causes:",
+      "options": [
+        "TCP retransmits/throughput collapse and app timeouts\u2014platforms need detection and capacity/QoS responses",
+        "Improved goodput always",
+        "Only DNS failures",
+        "Automatic ASN changes"
+      ],
+      "correctIndex": 0,
+      "explanation": "Loss is a customer signal."
+    },
+    {
+      "id": "HW-031",
+      "module": "HW",
+      "difficulty": "interview",
+      "tags": [
+        "tcp",
+        "congestion-control"
+      ],
+      "source": "ANDM hardware datapath glossary 2026-07",
+      "question": "TCP congestion control reacts to loss/ECN by:",
+      "options": [
+        "Reducing sending rate\u2014so fabric drops/marks directly shape application throughput and latency",
+        "Ignoring all network signals",
+        "Only using UDP behaviors",
+        "Rewriting MAC tables"
+      ],
+      "correctIndex": 0,
+      "explanation": "End-to-end meets fabric design."
+    },
+    {
+      "id": "HW-032",
+      "module": "HW",
+      "difficulty": "interview",
+      "tags": [
+        "pfc",
+        "congestion-control"
+      ],
+      "source": "ANDM hardware datapath glossary 2026-07",
+      "question": "Priority Flow Control (PFC) tries to:",
+      "options": [
+        "Pause traffic classes to avoid drops (lossless-ish)\u2014but can cause HOL blocking/deadlock if misused at scale",
+        "Always improve WAN TCP without risk",
+        "Replace BGP",
+        "Deepen buffers infinitely"
+      ],
+      "correctIndex": 0,
+      "explanation": "PFC is powerful and dangerous."
+    },
+    {
+      "id": "HW-033",
+      "module": "HW",
+      "difficulty": "interview",
+      "tags": [
+        "ecn",
+        "dcqcn"
+      ],
+      "source": "ANDM hardware datapath glossary 2026-07",
+      "question": "ECN / DCQCN-style congestion control helps shallow fabrics by:",
+      "options": [
+        "Marking/reacting before queues fully overflow\u2014keeping latency and drops lower when endpoints cooperate",
+        "Removing the need for any capacity",
+        "Only working offline",
+        "Disabling ECMP"
+      ],
+      "correctIndex": 0,
+      "explanation": "Congestion control protocols complement buffers."
+    },
+    {
+      "id": "HW-034",
+      "module": "HW",
+      "difficulty": "interview",
+      "tags": [
+        "microburst"
+      ],
+      "source": "ANDM hardware datapath glossary 2026-07",
+      "question": "Microbursts matter even when average utilization looks fine because:",
+      "options": [
+        "Short peaks exceed shallow buffers and cause loss/ECN while averages stay green",
+        "Averages always equal peaks",
+        "Only deep buffers see microbursts",
+        "Microbursts ignore ASICs"
+      ],
+      "correctIndex": 0,
+      "explanation": "Telemetry must catch peaks."
+    },
+    {
+      "id": "HW-035",
+      "module": "HW",
+      "difficulty": "interview",
+      "tags": [
+        "wred",
+        "tail-drop",
+        "admission"
+      ],
+      "source": "ANDM hardware datapath glossary 2026-07",
+      "question": "Tail-drop vs WRED/ECN marking strategies differ in that:",
+      "options": [
+        "Tail-drop drops at full queue; WRED/ECN can signal earlier to smooth TCP and avoid synchronized collapses",
+        "WRED increases TTL",
+        "Tail-drop only happens in OSPF",
+        "They are identical to ARP"
+      ],
+      "correctIndex": 0,
+      "explanation": "Queue management mechanisms."
+    },
+    {
+      "id": "HW-036",
+      "module": "HW",
+      "difficulty": "interview",
+      "tags": [
+        "shared-buffer",
+        "dedicated-buffer"
+      ],
+      "source": "ANDM hardware datapath glossary 2026-07",
+      "question": "Shared vs dedicated buffer pools trade:",
+      "options": [
+        "Efficiency under uneven load (shared) versus isolation guarantees (dedicated)\u2014mis-sizing causes unfair drops",
+        "No operational difference",
+        "Dedicated buffers remove ASICs",
+        "Shared buffers forbid congestion"
+      ],
+      "correctIndex": 0,
+      "explanation": "MMU architecture interview topic."
+    },
+    {
+      "id": "HW-037",
+      "module": "HW",
+      "difficulty": "interview",
+      "tags": [
+        "oversubscribed",
+        "links"
+      ],
+      "source": "ANDM hardware datapath glossary 2026-07",
+      "question": "An oversubscribed link/tier means:",
+      "options": [
+        "Potential demand exceeds provisioned bandwidth\u2014contention appears under correlated load or failure",
+        "Bandwidth always exceeds demand 10\u00d7",
+        "Links cannot fail",
+        "Only a naming convention"
+      ],
+      "correctIndex": 0,
+      "explanation": "Design must state oversub ratios explicitly."
+    },
+    {
+      "id": "HW-038",
+      "module": "HW",
+      "difficulty": "interview",
+      "tags": [
+        "non-blocking",
+        "clos"
+      ],
+      "source": "ANDM hardware datapath glossary 2026-07",
+      "question": "A non-blocking Clos ideal means:",
+      "options": [
+        "Any idle input can reach any idle output at line rate given enough fabric capacity\u2014real designs approximate with oversub choices",
+        "Packets never need routing",
+        "No buffers are ever used",
+        "Only one path exists"
+      ],
+      "correctIndex": 0,
+      "explanation": "Theory vs practice."
+    },
+    {
+      "id": "HW-039",
+      "module": "HW",
+      "difficulty": "interview",
+      "tags": [
+        "lacp",
+        "lag"
+      ],
+      "source": "ANDM hardware datapath glossary 2026-07",
+      "question": "LACP/LAG is used to:",
+      "options": [
+        "Bundle links for capacity and some redundancy with member hashing\u2014still watch hash polarization and member failure",
+        "Replace all routing protocols",
+        "Assign IP TTLs",
+        "Deepen TCAM"
+      ],
+      "correctIndex": 0,
+      "explanation": "Common host/leaf attachment mechanism."
+    },
+    {
+      "id": "HW-040",
+      "module": "HW",
+      "difficulty": "interview",
+      "tags": [
+        "mlag",
+        "dual-homing"
+      ],
+      "source": "ANDM hardware datapath glossary 2026-07",
+      "question": "MLAG / dual-homed ToR pairs aim to:",
+      "options": [
+        "Let hosts dual-attach across two switches without a single ToR as hard SPOF\u2014when peer-link and consistency are solid",
+        "Merge two AZs into one failure domain intentionally",
+        "Disable STP forever without design",
+        "Remove the need for uplinks"
+      ],
+      "correctIndex": 0,
+      "explanation": "Attachment redundancy pattern."
+    },
+    {
+      "id": "HW-041",
+      "module": "HW",
+      "difficulty": "interview",
+      "tags": [
+        "tor",
+        "eor"
+      ],
+      "source": "ANDM hardware datapath glossary 2026-07",
+      "question": "ToR vs EoR/MoR placement is a platform/ops choice about:",
+      "options": [
+        "Cable length, failure domain size, port utilization, and how you roll upgrades\u2014tradeoffs, not one true religion",
+        "Only aesthetics",
+        "ToR cannot speak BGP",
+        "EoR forbids pizza-boxes"
+      ],
+      "correctIndex": 0,
+      "explanation": "Large-scale environment design."
+    },
+    {
+      "id": "HW-042",
+      "module": "HW",
+      "difficulty": "interview",
+      "tags": [
+        "breakout",
+        "serdes"
+      ],
+      "source": "ANDM hardware datapath glossary 2026-07",
+      "question": "Breakout (e.g., 400G\u21924\u00d7100G) and SerDes lanes matter because:",
+      "options": [
+        "They change effective port count, oversub, and failure granularity\u2014mis-cabling breaks designs",
+        "Breakout only changes LED color",
+        "SerDes replaces routing",
+        "Breakout removes the need for FIB"
+      ],
+      "correctIndex": 0,
+      "explanation": "Physical + logical platform literacy."
+    },
+    {
+      "id": "HW-043",
+      "module": "HW",
+      "difficulty": "interview",
+      "tags": [
+        "fec",
+        "optics"
+      ],
+      "source": "ANDM hardware datapath glossary 2026-07",
+      "question": "FEC on high-speed links is used to:",
+      "options": [
+        "Correct bit errors so higher lane rates stay reliable\u2014adding a small latency cost",
+        "Compress BGP updates",
+        "Allocate MAC addresses",
+        "Increase shallow buffers"
+      ],
+      "correctIndex": 0,
+      "explanation": "Optics/ASIC link reliability."
+    },
+    {
+      "id": "HW-044",
+      "module": "HW",
+      "difficulty": "interview",
+      "tags": [
+        "jumbo",
+        "mtu"
+      ],
+      "source": "ANDM hardware datapath glossary 2026-07",
+      "question": "Jumbo frames / MTU consistency matters because:",
+      "options": [
+        "MTU mismatches cause black holes or fragmentation pain across the fabric and overlays",
+        "Larger MTU always disables TCP",
+        "MTU only applies to Wi-Fi",
+        "TTL replaces MTU"
+      ],
+      "correctIndex": 0,
+      "explanation": "Classic Dive Deep symptom class."
+    },
+    {
+      "id": "HW-045",
+      "module": "HW",
+      "difficulty": "interview",
+      "tags": [
+        "underlay",
+        "overlay",
+        "vxlan"
+      ],
+      "source": "ANDM hardware datapath glossary 2026-07",
+      "question": "Underlay vs overlay in cloud fabrics:",
+      "options": [
+        "Underlay provides IP multipath among switches; overlays (e.g., VXLAN) carry tenant networks on top\u2014faults can be either layer",
+        "Overlay replaces physics",
+        "Underlay is only Spanning Tree",
+        "They never interact"
+      ],
+      "correctIndex": 0,
+      "explanation": "Platforms must forward both correctly."
+    },
+    {
+      "id": "HW-046",
+      "module": "HW",
+      "difficulty": "interview",
+      "tags": [
+        "elephant",
+        "mice"
+      ],
+      "source": "ANDM hardware datapath glossary 2026-07",
+      "question": "Elephant vs mice flows affect ECMP/hash designs because:",
+      "options": [
+        "Few long-lived elephants can polarize and congest a member while mice suffer\u2014hashing and spraying strategies matter",
+        "All flows are equal size always",
+        "Only OSPF sees elephants",
+        "Mice disable ASICs"
+      ],
+      "correctIndex": 0,
+      "explanation": "Traffic reality on platforms."
+    },
+    {
+      "id": "HW-047",
+      "module": "HW",
+      "difficulty": "interview",
+      "tags": [
+        "incast"
+      ],
+      "source": "ANDM hardware datapath glossary 2026-07",
+      "question": "Many-to-one incast into a shallow-buffered egress is dangerous because:",
+      "options": [
+        "Aggregate arrival rate exceeds drain + buffer \u2192 loss/PFC storms impacting innocent flows",
+        "Incast only helps throughput",
+        "Deep buffers forbid incast",
+        "BGP prevents incast"
+      ],
+      "correctIndex": 0,
+      "explanation": "Congestion pattern interviewers love."
+    },
+    {
+      "id": "HW-048",
+      "module": "HW",
+      "difficulty": "interview",
+      "tags": [
+        "mechanisms",
+        "golden-config"
+      ],
+      "source": "ANDM hardware datapath glossary 2026-07",
+      "question": "An engineering mechanism for consistent platforms at scale is:",
+      "options": [
+        "Role-based golden configs/images and automated conformance\u2014so pizza-box fleets stay identical and reviewable",
+        "Unique CLI art per device",
+        "No inventory of ASICs/roles",
+        "Verbal-only standards"
+      ],
+      "correctIndex": 0,
+      "explanation": "Mechanisms > heroics."
+    },
+    {
+      "id": "HW-049",
+      "module": "HW",
+      "difficulty": "interview",
+      "tags": [
+        "voq",
+        "hol"
+      ],
+      "source": "ANDM hardware datapath glossary 2026-07",
+      "question": "VOQ architectures reduce head-of-line blocking by:",
+      "options": [
+        "Queuing per destination so a hot egress less often stalls unrelated traffic across a chassis fabric",
+        "Removing all queues",
+        "Only counting MAC entries",
+        "Disabling the supervisor"
+      ],
+      "correctIndex": 0,
+      "explanation": "Chassis datapath sophistication."
+    },
+    {
+      "id": "HW-050",
+      "module": "HW",
+      "difficulty": "interview",
+      "tags": [
+        "network-platforms",
+        "selection"
+      ],
+      "source": "ANDM hardware datapath glossary 2026-07",
+      "question": "Selecting network platforms for large-scale environments should explicitly weigh:",
+      "options": [
+        "Form factor (1U/2U/chassis), ASIC/buffer model, port density, HA features, and ops mechanisms\u2014not datasheet peak Gbps alone",
+        "Only the marketing slide peak",
+        "Only the paint color",
+        "Only the number of RJ45 serial ports"
+      ],
+      "correctIndex": 0,
+      "explanation": "Capstone: design principles \u2192 reasonable platforms."
+    }
+  ]
+}

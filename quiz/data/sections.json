@@ -41,11 +41,19 @@
       "priority": 1
     },
     {
+      "id": "HW",
+      "title": "Hardware datapath \u2014 RU, ASICs, planes, buffers, protocols",
+      "questionCount": 50,
+      "dataFile": "questions/hw-datapath.json",
+      "buildOrder": 6,
+      "priority": 1
+    },
+    {
       "id": "SYS",
       "title": "Network software platforms & SysDE ops",
       "questionCount": 16,
       "dataFile": "questions/sys-platforms.json",
-      "buildOrder": 6,
+      "buildOrder": 7,
       "priority": 1
     },
     {
@@ -53,7 +61,7 @@
       "title": "Hiring & developing SysDEs",
       "questionCount": 14,
       "dataFile": "questions/m1-hiring.json",
-      "buildOrder": 7,
+      "buildOrder": 8,
       "priority": 1
     },
     {
@@ -61,7 +69,7 @@
       "title": "Performance, team health & 24x7 rotation",
       "questionCount": 14,
       "dataFile": "questions/m2-performance.json",
-      "buildOrder": 8,
+      "buildOrder": 9,
       "priority": 1
     },
     {
@@ -69,7 +77,7 @@
       "title": "Stakeholders, roadmaps & partners",
       "questionCount": 12,
       "dataFile": "questions/m3-stakeholders.json",
-      "buildOrder": 9,
+      "buildOrder": 10,
       "priority": 2
     },
     {
@@ -77,7 +85,7 @@
       "title": "Fabric & protocol Dive Deep",
       "questionCount": 18,
       "dataFile": "questions/n1-fundamentals.json",
-      "buildOrder": 10,
+      "buildOrder": 11,
       "priority": 1
     },
     {
@@ -85,7 +93,7 @@
       "title": "Capacity, forecast & change control",
       "questionCount": 16,
       "dataFile": "questions/n2-capacity-change.json",
-      "buildOrder": 11,
+      "buildOrder": 12,
       "priority": 1
     },
     {
@@ -93,7 +101,7 @@
       "title": "Ops excellence \u2014 metrics & incidents",
       "questionCount": 16,
       "dataFile": "questions/n3-ops-incidents.json",
-      "buildOrder": 12,
+      "buildOrder": 13,
       "priority": 1
     },
     {
@@ -101,7 +109,7 @@
       "title": "Automation & process optimization",
       "questionCount": 14,
       "dataFile": "questions/n4-automation.json",
-      "buildOrder": 13,
+      "buildOrder": 14,
       "priority": 2
     },
     {
@@ -109,7 +117,7 @@
       "title": "Interview loop map \u2014 rounds & examples",
       "questionCount": 18,
       "dataFile": "questions/loop-rounds.json",
-      "buildOrder": 14,
+      "buildOrder": 15,
       "priority": 1
     },
     {
@@ -117,7 +125,7 @@
       "title": "Weird & unexpected Amazon SDM cases",
       "questionCount": 12,
       "dataFile": "questions/wx-weird.json",
-      "buildOrder": 15,
+      "buildOrder": 16,
       "priority": 2
     }
   ],
@@ -130,6 +138,7 @@
         "NC",
         "FAB",
         "PLAT",
+        "HW",
         "SYS",
         "M1",
         "M2",
@@ -151,6 +160,7 @@
         "NC",
         "FAB",
         "PLAT",
+        "HW",
         "SYS",
         "M1",
         "M2",
