@@ -23,6 +23,7 @@ Vanilla HTML/CSS/JS (no build). Progress in `localStorage` (`andm-quiz-v1`, `and
 | HW | Hardware datapath — RU, ASICs, planes, buffers, protocols |
 | SYS | Network software platforms, CI/CD, RCA |
 | M1–M3 | Hiring SysDEs, performance/on-call, stakeholders |
+| OSI | OSI 7-layer model |
 | N1–N4 | Fabric Dive Deep, capacity/change, ops, automation |
 | LOOP | Interview stages + examples from Reddit/Blind/others |
 | WX | Loop quirks, AGSVA, Bar Raiser |

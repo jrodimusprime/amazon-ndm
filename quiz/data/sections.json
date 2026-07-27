@@ -81,11 +81,19 @@
       "priority": 2
     },
     {
+      "id": "OSI",
+      "title": "OSI 7-layer model",
+      "questionCount": 12,
+      "dataFile": "questions/osi-model.json",
+      "buildOrder": 11,
+      "priority": 2
+    },
+    {
       "id": "N1",
       "title": "Fabric & protocol Dive Deep",
       "questionCount": 18,
       "dataFile": "questions/n1-fundamentals.json",
-      "buildOrder": 11,
+      "buildOrder": 12,
       "priority": 1
     },
     {
@@ -93,7 +101,7 @@
       "title": "Capacity, forecast & change control",
       "questionCount": 16,
       "dataFile": "questions/n2-capacity-change.json",
-      "buildOrder": 12,
+      "buildOrder": 13,
       "priority": 1
     },
     {
@@ -101,7 +109,7 @@
       "title": "Ops excellence \u2014 metrics & incidents",
       "questionCount": 16,
       "dataFile": "questions/n3-ops-incidents.json",
-      "buildOrder": 13,
+      "buildOrder": 14,
       "priority": 1
     },
     {
@@ -109,7 +117,7 @@
       "title": "Automation & process optimization",
       "questionCount": 14,
       "dataFile": "questions/n4-automation.json",
-      "buildOrder": 14,
+      "buildOrder": 15,
       "priority": 2
     },
     {
@@ -117,7 +125,7 @@
       "title": "Interview loop map \u2014 rounds & examples",
       "questionCount": 18,
       "dataFile": "questions/loop-rounds.json",
-      "buildOrder": 15,
+      "buildOrder": 16,
       "priority": 1
     },
     {
@@ -125,7 +133,7 @@
       "title": "Weird & unexpected Amazon SDM cases",
       "questionCount": 12,
       "dataFile": "questions/wx-weird.json",
-      "buildOrder": 16,
+      "buildOrder": 17,
       "priority": 2
     }
   ],
@@ -143,6 +151,7 @@
         "M1",
         "M2",
         "M3",
+        "OSI",
         "N1",
         "N2",
         "N3",
@@ -165,6 +174,7 @@
         "M1",
         "M2",
         "M3",
+        "OSI",
         "N1",
         "N2",
         "N3",

@@ -2788,6 +2788,150 @@
       "back": "Be prepared for government vetting eligibility as a job requirement \u2014 JD requires ability to attain AGSVA clearance."
     },
     {
+      "id": "FC-OSI-001",
+      "deck": "core",
+      "tags": [
+        "osi",
+        "layers",
+        "osi"
+      ],
+      "source": "ANDM OSI model 2026-07",
+      "front": "The OSI model has how many layers, bottom to top?",
+      "back": "7 \u2014 Physical, Data Link, Network, Transport, Session, Presentation, Application \u2014 Classic 7-layer OSI stack."
+    },
+    {
+      "id": "FC-OSI-002",
+      "deck": "core",
+      "tags": [
+        "osi",
+        "l1",
+        "osi"
+      ],
+      "source": "ANDM OSI model 2026-07",
+      "front": "OSI Layer 1 (Physical) is concerned with:",
+      "back": "Bits on the wire/fiber/radio \u2014 signaling, connectors, media, raw transmission \u2014 L1 = physical media and signaling."
+    },
+    {
+      "id": "FC-OSI-003",
+      "deck": "core",
+      "tags": [
+        "osi",
+        "l2",
+        "osi"
+      ],
+      "source": "ANDM OSI model 2026-07",
+      "front": "OSI Layer 2 (Data Link) typically handles:",
+      "back": "Framing, MAC addressing, switching/bridging within a broadcast domain \u2014 L2 = frames, MAC, switches."
+    },
+    {
+      "id": "FC-OSI-004",
+      "deck": "core",
+      "tags": [
+        "osi",
+        "l3",
+        "osi"
+      ],
+      "source": "ANDM OSI model 2026-07",
+      "front": "OSI Layer 3 (Network) is where you primarily find:",
+      "back": "Logical addressing and routing (IP, routers/L3 switches, FIB lookups) \u2014 L3 = packets, IP, routing."
+    },
+    {
+      "id": "FC-OSI-005",
+      "deck": "core",
+      "tags": [
+        "osi",
+        "l4",
+        "osi"
+      ],
+      "source": "ANDM OSI model 2026-07",
+      "front": "OSI Layer 4 (Transport) is best associated with:",
+      "back": "End-to-end delivery semantics \u2014 e.g. TCP reliability/ports or UDP datagrams \u2014 L4 = TCP/UDP (in practice)."
+    },
+    {
+      "id": "FC-OSI-006",
+      "deck": "core",
+      "tags": [
+        "osi",
+        "l5-l7",
+        "osi"
+      ],
+      "source": "ANDM OSI model 2026-07",
+      "front": "OSI Layers 5\u20137 (Session, Presentation, Application) roughly cover:",
+      "back": "Dialog/session control, data representation/encoding, and end-user network applications/protocols \u2014 Upper layers \u2014 often collapsed in TCP/IP mental models."
+    },
+    {
+      "id": "FC-OSI-007",
+      "deck": "core",
+      "tags": [
+        "osi",
+        "tcpip",
+        "osi"
+      ],
+      "source": "ANDM OSI model 2026-07",
+      "front": "How does the practical TCP/IP model relate to OSI?",
+      "back": "TCP/IP collapses some OSI layers (e.g. L5\u2013L7 into Application; Link often covers L1\u2013L2) but the OSI names still help locate faults \u2014 Interviewers want mapping literacy, not pedantry."
+    },
+    {
+      "id": "FC-OSI-008",
+      "deck": "core",
+      "tags": [
+        "osi",
+        "troubleshoot",
+        "osi"
+      ],
+      "source": "ANDM OSI model 2026-07",
+      "front": "A useful OSI troubleshooting habit is:",
+      "back": "Start from symptoms and test bottom-up or top-down systematically (L1 link \u2192 L2/L3 reachability \u2192 L4 ports \u2192 app) \u2014 Layered isolation speeds Dive Deep."
+    },
+    {
+      "id": "FC-OSI-009",
+      "deck": "core",
+      "tags": [
+        "osi",
+        "switch-router",
+        "osi"
+      ],
+      "source": "ANDM OSI model 2026-07",
+      "front": "An L2 switch vs L3 router/switch in OSI terms:",
+      "back": "L2 switch forwards on MAC (Data Link); L3 device routes on IP (Network)\u2014many 'L3 switches' do both in ASICs \u2014 Platform roles map to layers."
+    },
+    {
+      "id": "FC-OSI-010",
+      "deck": "core",
+      "tags": [
+        "osi",
+        "life-of-packet",
+        "osi"
+      ],
+      "source": "ANDM OSI model 2026-07",
+      "front": "In 'life of a packet' terms, crossing a router hop mainly exercises which OSI layers?",
+      "back": "L3 decision (IP/FIB) plus L2 rewrite toward the next hop on the egress media (and L1 on the wire) \u2014 Tie OSI to fabric packet flow."
+    },
+    {
+      "id": "FC-OSI-011",
+      "deck": "core",
+      "tags": [
+        "osi",
+        "encapsulation",
+        "osi"
+      ],
+      "source": "ANDM OSI model 2026-07",
+      "front": "Encapsulation moving down the OSI stack means:",
+      "back": "Higher-layer PDUs get headers (and sometimes trailers) from lower layers \u2014 e.g. TCP segment in IP packet in Ethernet frame \u2014 PDU nesting is core OSI literacy."
+    },
+    {
+      "id": "FC-OSI-012",
+      "deck": "core",
+      "tags": [
+        "osi",
+        "examples",
+        "osi"
+      ],
+      "source": "ANDM OSI model 2026-07",
+      "front": "Which mapping is most accurate?",
+      "back": "Ethernet/MAC \u2248 L2; IP/ICMP \u2248 L3; TCP/UDP \u2248 L4; HTTP/DNS/TLS\u2248 upper layers (L5\u2013L7 in OSI terms) \u2014 Concrete protocol \u2194 layer mapping."
+    },
+    {
       "id": "FC-N1-001",
       "deck": "core",
       "tags": [

@@ -1,0 +1,232 @@
+{
+  "questions": [
+    {
+      "id": "OSI-001",
+      "module": "OSI",
+      "difficulty": "foundational",
+      "tags": [
+        "osi",
+        "layers"
+      ],
+      "source": "ANDM OSI model 2026-07",
+      "question": "The OSI model has how many layers, bottom to top?",
+      "options": [
+        "7 \u2014 Physical, Data Link, Network, Transport, Session, Presentation, Application",
+        "4 \u2014 only TCP/IP layers",
+        "5 \u2014 Physical through Session only",
+        "12 \u2014 one per BGP attribute"
+      ],
+      "correctIndex": 0,
+      "explanation": "Classic 7-layer OSI stack."
+    },
+    {
+      "id": "OSI-002",
+      "module": "OSI",
+      "difficulty": "foundational",
+      "tags": [
+        "osi",
+        "l1"
+      ],
+      "source": "ANDM OSI model 2026-07",
+      "question": "OSI Layer 1 (Physical) is concerned with:",
+      "options": [
+        "Bits on the wire/fiber/radio \u2014 signaling, connectors, media, raw transmission",
+        "IP addressing and routing only",
+        "TCP windowing only",
+        "HTTP headers only"
+      ],
+      "correctIndex": 0,
+      "explanation": "L1 = physical media and signaling."
+    },
+    {
+      "id": "OSI-003",
+      "module": "OSI",
+      "difficulty": "foundational",
+      "tags": [
+        "osi",
+        "l2"
+      ],
+      "source": "ANDM OSI model 2026-07",
+      "question": "OSI Layer 2 (Data Link) typically handles:",
+      "options": [
+        "Framing, MAC addressing, switching/bridging within a broadcast domain",
+        "End-to-end TCP reliability only",
+        "AS-path policy only",
+        "TLS certificates only"
+      ],
+      "correctIndex": 0,
+      "explanation": "L2 = frames, MAC, switches."
+    },
+    {
+      "id": "OSI-004",
+      "module": "OSI",
+      "difficulty": "foundational",
+      "tags": [
+        "osi",
+        "l3"
+      ],
+      "source": "ANDM OSI model 2026-07",
+      "question": "OSI Layer 3 (Network) is where you primarily find:",
+      "options": [
+        "Logical addressing and routing (IP, routers/L3 switches, FIB lookups)",
+        "Only MAC learning",
+        "Only SMTP",
+        "Only CRC on copper pairs"
+      ],
+      "correctIndex": 0,
+      "explanation": "L3 = packets, IP, routing."
+    },
+    {
+      "id": "OSI-005",
+      "module": "OSI",
+      "difficulty": "foundational",
+      "tags": [
+        "osi",
+        "l4"
+      ],
+      "source": "ANDM OSI model 2026-07",
+      "question": "OSI Layer 4 (Transport) is best associated with:",
+      "options": [
+        "End-to-end delivery semantics \u2014 e.g. TCP reliability/ports or UDP datagrams",
+        "Only fiber wavelengths",
+        "Only ARP",
+        "Only Spanning Tree"
+      ],
+      "correctIndex": 0,
+      "explanation": "L4 = TCP/UDP (in practice)."
+    },
+    {
+      "id": "OSI-006",
+      "module": "OSI",
+      "difficulty": "foundational",
+      "tags": [
+        "osi",
+        "l5-l7"
+      ],
+      "source": "ANDM OSI model 2026-07",
+      "question": "OSI Layers 5\u20137 (Session, Presentation, Application) roughly cover:",
+      "options": [
+        "Dialog/session control, data representation/encoding, and end-user network applications/protocols",
+        "Only Ethernet PHY",
+        "Only ECMP hashing inside ASICs",
+        "Only chassis fabric credits"
+      ],
+      "correctIndex": 0,
+      "explanation": "Upper layers \u2014 often collapsed in TCP/IP mental models."
+    },
+    {
+      "id": "OSI-007",
+      "module": "OSI",
+      "difficulty": "foundational",
+      "tags": [
+        "osi",
+        "tcpip"
+      ],
+      "source": "ANDM OSI model 2026-07",
+      "question": "How does the practical TCP/IP model relate to OSI?",
+      "options": [
+        "TCP/IP collapses some OSI layers (e.g. L5\u2013L7 into Application; Link often covers L1\u2013L2) but the OSI names still help locate faults",
+        "They are identical layer-for-layer always",
+        "TCP/IP has 7 identical layers with the same names",
+        "OSI replaced TCP/IP on the internet"
+      ],
+      "correctIndex": 0,
+      "explanation": "Interviewers want mapping literacy, not pedantry."
+    },
+    {
+      "id": "OSI-008",
+      "module": "OSI",
+      "difficulty": "foundational",
+      "tags": [
+        "osi",
+        "troubleshoot"
+      ],
+      "source": "ANDM OSI model 2026-07",
+      "question": "A useful OSI troubleshooting habit is:",
+      "options": [
+        "Start from symptoms and test bottom-up or top-down systematically (L1 link \u2192 L2/L3 reachability \u2192 L4 ports \u2192 app)",
+        "Only ever look at Layer 7 first and stop",
+        "Ignore Physical because bits never fail",
+        "Skip L3 if ping works once"
+      ],
+      "correctIndex": 0,
+      "explanation": "Layered isolation speeds Dive Deep."
+    },
+    {
+      "id": "OSI-009",
+      "module": "OSI",
+      "difficulty": "interview",
+      "tags": [
+        "osi",
+        "switch-router"
+      ],
+      "source": "ANDM OSI model 2026-07",
+      "question": "An L2 switch vs L3 router/switch in OSI terms:",
+      "options": [
+        "L2 switch forwards on MAC (Data Link); L3 device routes on IP (Network)\u2014many 'L3 switches' do both in ASICs",
+        "Routers only operate at Layer 1",
+        "Switches never use MAC addresses",
+        "L3 devices cannot have Ethernet ports"
+      ],
+      "correctIndex": 0,
+      "explanation": "Platform roles map to layers."
+    },
+    {
+      "id": "OSI-010",
+      "module": "OSI",
+      "difficulty": "interview",
+      "tags": [
+        "osi",
+        "life-of-packet"
+      ],
+      "source": "ANDM OSI model 2026-07",
+      "question": "In 'life of a packet' terms, crossing a router hop mainly exercises which OSI layers?",
+      "options": [
+        "L3 decision (IP/FIB) plus L2 rewrite toward the next hop on the egress media (and L1 on the wire)",
+        "Only Layer 7 HTTP parsing on every hop",
+        "Only Session layer tokens",
+        "Only Presentation ASN.1 on the spine"
+      ],
+      "correctIndex": 0,
+      "explanation": "Tie OSI to fabric packet flow."
+    },
+    {
+      "id": "OSI-011",
+      "module": "OSI",
+      "difficulty": "interview",
+      "tags": [
+        "osi",
+        "encapsulation"
+      ],
+      "source": "ANDM OSI model 2026-07",
+      "question": "Encapsulation moving down the OSI stack means:",
+      "options": [
+        "Higher-layer PDUs get headers (and sometimes trailers) from lower layers \u2014 e.g. TCP segment in IP packet in Ethernet frame",
+        "Removing all headers before transmit",
+        "Only compressing with gzip at L1",
+        "Incrementing TTL at L7"
+      ],
+      "correctIndex": 0,
+      "explanation": "PDU nesting is core OSI literacy."
+    },
+    {
+      "id": "OSI-012",
+      "module": "OSI",
+      "difficulty": "interview",
+      "tags": [
+        "osi",
+        "examples"
+      ],
+      "source": "ANDM OSI model 2026-07",
+      "question": "Which mapping is most accurate?",
+      "options": [
+        "Ethernet/MAC \u2248 L2; IP/ICMP \u2248 L3; TCP/UDP \u2248 L4; HTTP/DNS/TLS\u2248 upper layers (L5\u2013L7 in OSI terms)",
+        "BGP \u2248 Layer 1 Physical only",
+        "Fiber \u2248 Layer 4 Transport only",
+        "ARP \u2248 Layer 7 Application only"
+      ],
+      "correctIndex": 0,
+      "explanation": "Concrete protocol \u2194 layer mapping."
+    }
+  ]
+}
