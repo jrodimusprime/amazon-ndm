@@ -1,0 +1,459 @@
+{
+  "questions": [
+    {
+      "id": "PLAT-001",
+      "module": "PLAT",
+      "difficulty": "interview",
+      "tags": [
+        "design",
+        "platform-select"
+      ],
+      "source": "ANDM platform architecture 2026-07",
+      "question": "Selecting a reasonable switch platform for a large-scale Clos leaf role usually prioritizes:",
+      "options": [
+        "High radix, predictable low latency, shallow-to-moderate buffers, and economics at massive port counts",
+        "Maximum deep buffer and chassis complexity on every ToR regardless of cost",
+        "Only enterprise campus PoE features",
+        "A single low-radix chassis for every rack"
+      ],
+      "correctIndex": 0,
+      "explanation": "Leaf: scale-out pizza-box / fixed form-factor ASICs; topology + ECMP absorb bursts."
+    },
+    {
+      "id": "PLAT-002",
+      "module": "PLAT",
+      "difficulty": "interview",
+      "tags": [
+        "design",
+        "platform-select"
+      ],
+      "source": "ANDM platform architecture 2026-07",
+      "question": "A deep-buffer or chassis platform is more justified when the role faces:",
+      "options": [
+        "Bursty fan-in, speed mismatch, long-RTT/DCI, or aggregation where microbursts would drop on shallow silicon",
+        "Only idle lab traffic with perfect pacing",
+        "Wi-Fi access points exclusively",
+        "Situations where latency must always be minimized and bursts never occur"
+      ],
+      "correctIndex": 0,
+      "explanation": "Match buffer architecture to traffic reality\u2014not prestige SKUs."
+    },
+    {
+      "id": "PLAT-003",
+      "module": "PLAT",
+      "difficulty": "interview",
+      "tags": [
+        "design",
+        "principles"
+      ],
+      "source": "ANDM platform architecture 2026-07",
+      "question": "A core large-scale design principle when choosing platforms is:",
+      "options": [
+        "Fit silicon/form-factor to the tier\u2019s job (leaf vs spine vs edge) under failure and growth assumptions\u2014not one box for all roles",
+        "Always buy the most expensive chassis",
+        "Ignore oversubscription math",
+        "Optimize only for GUI cosmetics"
+      ],
+      "correctIndex": 0,
+      "explanation": "Design principles \u2192 platform selection."
+    },
+    {
+      "id": "PLAT-004",
+      "module": "PLAT",
+      "difficulty": "interview",
+      "tags": [
+        "pizza-box",
+        "chassis"
+      ],
+      "source": "ANDM platform architecture 2026-07",
+      "question": "A pizza-box (fixed form-factor) switch is typically:",
+      "options": [
+        "A self-contained 1\u20132RU system with onboard ASICs/ports\u2014simple to deploy and replace at leaf scale",
+        "Always a multi-slot modular chassis with fabric cards",
+        "Only a server without networking",
+        "Unable to run L3"
+      ],
+      "correctIndex": 0,
+      "explanation": "Pizza-box = fixed box; chassis = modular slots."
+    },
+    {
+      "id": "PLAT-005",
+      "module": "PLAT",
+      "difficulty": "interview",
+      "tags": [
+        "chassis",
+        "architecture"
+      ],
+      "source": "ANDM platform architecture 2026-07",
+      "question": "In a modular chassis, packet flow commonly involves:",
+      "options": [
+        "Ingress line card \u2192 fabric/backplane \u2192 egress line card, with scheduling/VOQ credit systems to avoid fabric congestion",
+        "Only a single shared cable with no internal fabric",
+        "Packets skipping the chassis entirely",
+        "USB sneaker-net between cards"
+      ],
+      "correctIndex": 0,
+      "explanation": "Chassis packet path: linecard + fabric modules."
+    },
+    {
+      "id": "PLAT-006",
+      "module": "PLAT",
+      "difficulty": "interview",
+      "tags": [
+        "chassis",
+        "pizza-box",
+        "ops"
+      ],
+      "source": "ANDM platform architecture 2026-07",
+      "question": "Operational tradeoff of chassis vs pizza-box at hyperscale:",
+      "options": [
+        "Chassis concentrate blast radius and complexity but can densify ports; pizza-boxes fail smaller and replace faster as a fleet",
+        "Chassis always have smaller blast radius",
+        "Pizza-boxes cannot be monitored",
+        "There is no operational difference"
+      ],
+      "correctIndex": 0,
+      "explanation": "Platform choice is also an ops/reliability choice."
+    },
+    {
+      "id": "PLAT-007",
+      "module": "PLAT",
+      "difficulty": "interview",
+      "tags": [
+        "packet-flow",
+        "lookup"
+      ],
+      "source": "ANDM platform architecture 2026-07",
+      "question": "Life of a packet on a modern L3 leaf (simplified) is closest to:",
+      "options": [
+        "Receive \u2192 parse/lookup (L2/L3/ACL) \u2192 buffer/schedule if needed \u2192 rewrite/TTL \u2192 transmit on chosen ECMP member",
+        "Only DNS then drop",
+        "Always software-forward on the CPU for every packet",
+        "Encrypt then ignore the FIB"
+      ],
+      "correctIndex": 0,
+      "explanation": "Pipeline literacy interviewers expect."
+    },
+    {
+      "id": "PLAT-008",
+      "module": "PLAT",
+      "difficulty": "interview",
+      "tags": [
+        "cut-through",
+        "store-forward"
+      ],
+      "source": "ANDM platform architecture 2026-07",
+      "question": "Store-and-forward vs cut-through forwarding:",
+      "options": [
+        "Store-and-forward buffers the frame (often with FCS check) before send; cut-through can start earlier for lower latency but with tradeoffs",
+        "Cut-through always validates the full FCS first",
+        "Store-and-forward never buffers",
+        "They are identical on all ASICs always"
+      ],
+      "correctIndex": 0,
+      "explanation": "Mode depends on speed mismatch, features, and congestion."
+    },
+    {
+      "id": "PLAT-009",
+      "module": "PLAT",
+      "difficulty": "interview",
+      "tags": [
+        "shallow-buffer"
+      ],
+      "source": "ANDM platform architecture 2026-07",
+      "question": "Shallow-buffer switch ASICs typically:",
+      "options": [
+        "Keep small fast on-chip buffers\u2014low latency/high radix; rely on topology + endpoint congestion control for bursts",
+        "Hold seconds of every port in HBM by default",
+        "Eliminate the need for ECMP",
+        "Only work on the WAN edge"
+      ],
+      "correctIndex": 0,
+      "explanation": "Tomahawk/Trident-class shallow shared buffer model."
+    },
+    {
+      "id": "PLAT-010",
+      "module": "PLAT",
+      "difficulty": "interview",
+      "tags": [
+        "deep-buffer"
+      ],
+      "source": "ANDM platform architecture 2026-07",
+      "question": "Deep-buffer platforms primarily buy you:",
+      "options": [
+        "Burst absorption (often with large off-chip memory / VOQ) at the cost of latency, power, and $/port",
+        "Always lower latency than shallow leaves",
+        "Infinite lossless behavior with zero congestion control",
+        "Free optics"
+      ],
+      "correctIndex": 0,
+      "explanation": "Jericho-class deep buffer tradeoff."
+    },
+    {
+      "id": "PLAT-011",
+      "module": "PLAT",
+      "difficulty": "interview",
+      "tags": [
+        "shallow-buffer",
+        "deep-buffer",
+        "design"
+      ],
+      "source": "ANDM platform architecture 2026-07",
+      "question": "Putting deep-buffer silicon on every short-reach compute leaf 'just in case' is often wrong because:",
+      "options": [
+        "You pay latency/power/cost where a non-blocking Clos + shallow leaf + good congestion control is the intended design",
+        "Deep buffer always improves leaf latency",
+        "Shallow leaves cannot run BGP",
+        "Leaves never see microbursts of any kind"
+      ],
+      "correctIndex": 0,
+      "explanation": "Reasonable platform selection = role-appropriate."
+    },
+    {
+      "id": "PLAT-012",
+      "module": "PLAT",
+      "difficulty": "interview",
+      "tags": [
+        "incast",
+        "buffer"
+      ],
+      "source": "ANDM platform architecture 2026-07",
+      "question": "Incast (many-to-one fan-in) stresses shallow buffers because:",
+      "options": [
+        "Many ingress flows simultaneously target one egress\u2014queue builds faster than small on-chip buffers can absorb",
+        "Incast only affects DNS",
+        "Shallow buffers grow automatically to terabytes",
+        "ECMP removes all incast"
+      ],
+      "correctIndex": 0,
+      "explanation": "Classic DC congestion pattern; ECN/PFC/endpoint pacing matter."
+    },
+    {
+      "id": "PLAT-013",
+      "module": "PLAT",
+      "difficulty": "interview",
+      "tags": [
+        "voq",
+        "chassis"
+      ],
+      "source": "ANDM platform architecture 2026-07",
+      "question": "Virtual Output Queues (VOQ) in deep/chassis designs help by:",
+      "options": [
+        "Queuing per destination so a congested egress less often head-of-line-blocks unrelated traffic across the fabric",
+        "Removing the need for any buffering",
+        "Only counting SNMP packets",
+        "Replacing routing protocols"
+      ],
+      "correctIndex": 0,
+      "explanation": "VOQ credit/scheduling is a chassis reliability/performance tool."
+    },
+    {
+      "id": "PLAT-014",
+      "module": "PLAT",
+      "difficulty": "interview",
+      "tags": [
+        "hol-blocking"
+      ],
+      "source": "ANDM platform architecture 2026-07",
+      "question": "Head-of-line blocking is a reliability/performance concern when:",
+      "options": [
+        "A packet stuck for a congested destination delays other packets sharing the same queue/path resources",
+        "All queues are perfectly isolated forever",
+        "Only happens on Wi-Fi",
+        "It improves ECMP"
+      ],
+      "correctIndex": 0,
+      "explanation": "Why queue architecture and drop location matter."
+    },
+    {
+      "id": "PLAT-015",
+      "module": "PLAT",
+      "difficulty": "interview",
+      "tags": [
+        "ecn",
+        "pfc"
+      ],
+      "source": "ANDM platform architecture 2026-07",
+      "question": "With shallow-buffer fabrics, ECN (and carefully designed PFC where used) matter because:",
+      "options": [
+        "They signal or pause congestion before tiny buffers overflow\u2014buffers alone are not the whole reliability story",
+        "They replace the need for capacity planning",
+        "PFC has no deadlock risk ever",
+        "ECN only works on dial-up"
+      ],
+      "correctIndex": 0,
+      "explanation": "Congestion control complements shallow silicon."
+    },
+    {
+      "id": "PLAT-016",
+      "module": "PLAT",
+      "difficulty": "interview",
+      "tags": [
+        "mechanisms",
+        "engineering"
+      ],
+      "source": "ANDM platform architecture 2026-07",
+      "question": "An engineering mechanism that supports IP networking at scale is best exemplified by:",
+      "options": [
+        "Standardized fabric designs, golden configs, automated validation, and intent/reconcile pipelines\u2014not tribal CLI art",
+        "Unique snowflake configs per device with no review",
+        "Verbal-only change control",
+        "Disabling telemetry to save CPU"
+      ],
+      "correctIndex": 0,
+      "explanation": "JD: developing engineering mechanisms for IP systems at scale."
+    },
+    {
+      "id": "PLAT-017",
+      "module": "PLAT",
+      "difficulty": "interview",
+      "tags": [
+        "mechanisms",
+        "deployment"
+      ],
+      "source": "ANDM platform architecture 2026-07",
+      "question": "A deployment mechanism for large-scale IP fabrics should include:",
+      "options": [
+        "ZTP/turn-up checks, canary pools, health gates, and automatic stop/rollback on failed validation",
+        "Global unvalidated push on Friday night only",
+        "Manual USB per device with no inventory",
+        "Skipping optics/light-level checks"
+      ],
+      "correctIndex": 0,
+      "explanation": "JD: deployment mechanisms at scale."
+    },
+    {
+      "id": "PLAT-018",
+      "module": "PLAT",
+      "difficulty": "interview",
+      "tags": [
+        "mechanisms",
+        "operations"
+      ],
+      "source": "ANDM platform architecture 2026-07",
+      "question": "An operations mechanism that sustains IP networks at scale looks like:",
+      "options": [
+        "Fleet-wide monitoring, runbooks, auto-remediation with guardrails, and COE-driven permanent fixes",
+        "Only paging random engineers without signals",
+        "Closing every Sev as 'user error'",
+        "No ownership of recurring flaps"
+      ],
+      "correctIndex": 0,
+      "explanation": "JD: operations mechanisms at scale."
+    },
+    {
+      "id": "PLAT-019",
+      "module": "PLAT",
+      "difficulty": "interview",
+      "tags": [
+        "platform-select",
+        "spine"
+      ],
+      "source": "ANDM platform architecture 2026-07",
+      "question": "For a high-fan-in spine/aggregation facing mixed storage and speed mismatch, a reasonable platform signal is:",
+      "options": [
+        "Evaluate deep-buffer/VOQ capability and sustained congestion behavior\u2014not only port density marketing",
+        "Always the cheapest shallow leaf ASIC",
+        "Ignore buffer architecture entirely",
+        "Require Wi-Fi 7 support"
+      ],
+      "correctIndex": 0,
+      "explanation": "Spine/agg platform selection interview signal."
+    },
+    {
+      "id": "PLAT-020",
+      "module": "PLAT",
+      "difficulty": "interview",
+      "tags": [
+        "speed-mismatch",
+        "buffer"
+      ],
+      "source": "ANDM platform architecture 2026-07",
+      "question": "100G\u219210G (or similar) speed mismatch increases buffer pressure because:",
+      "options": [
+        "Ingress can arrive faster than egress drains\u2014queues build even without multi-flow incast",
+        "Lower speed always has infinite drain",
+        "Mismatch never causes drops",
+        "Only happens in chassis, never pizza-boxes"
+      ],
+      "correctIndex": 0,
+      "explanation": "NANOG ASIC talks: speed change is a classic buffer use case."
+    },
+    {
+      "id": "PLAT-021",
+      "module": "PLAT",
+      "difficulty": "interview",
+      "tags": [
+        "radix",
+        "design"
+      ],
+      "source": "ANDM platform architecture 2026-07",
+      "question": "High radix matters in fabric design because:",
+      "options": [
+        "More ports per chip/box reduces tiers/hops and can simplify Clos scale-out\u2014with power/buffer tradeoffs",
+        "Radix only means rack color",
+        "Lower radix always means fewer failures",
+        "Radix replaces routing"
+      ],
+      "correctIndex": 0,
+      "explanation": "Platform selection lever for large-scale environments."
+    },
+    {
+      "id": "PLAT-022",
+      "module": "PLAT",
+      "difficulty": "interview",
+      "tags": [
+        "feature-asic",
+        "design"
+      ],
+      "source": "ANDM platform architecture 2026-07",
+      "question": "Choosing a feature-rich vs high-bandwidth/low-latency ASIC family is a design tradeoff about:",
+      "options": [
+        "Needed features (ACL scale, tunneling, rich QoS) versus port speed/radix/buffer behavior for that tier",
+        "Always maximizing features on every leaf",
+        "Features never cost pipeline resources",
+        "Only the chassis color"
+      ],
+      "correctIndex": 0,
+      "explanation": "Reasonable platforms = fit-for-role silicon."
+    },
+    {
+      "id": "PLAT-023",
+      "module": "PLAT",
+      "difficulty": "interview",
+      "tags": [
+        "mechanisms",
+        "sdm"
+      ],
+      "source": "ANDM platform architecture 2026-07",
+      "question": "As SDM Network Core, driving platform/mechanism excellence means:",
+      "options": [
+        "Standards for which roles get which platform classes, plus software that makes deploy/operate safe at fleet scale",
+        "Letting every team pick random SKUs weekly",
+        "Banning all automation",
+        "Never documenting packet-flow assumptions"
+      ],
+      "correctIndex": 0,
+      "explanation": "People+tech leadership over platform strategy."
+    },
+    {
+      "id": "PLAT-024",
+      "module": "PLAT",
+      "difficulty": "interview",
+      "tags": [
+        "packet-flow",
+        "cpu"
+      ],
+      "source": "ANDM platform architecture 2026-07",
+      "question": "Exception path to the control-plane CPU (punted packets) is a scale risk when:",
+      "options": [
+        "Data-plane floods or soft faults punt too much traffic and melt the CPU/control plane",
+        "CPUs are infinitely fast for all packets",
+        "Punting always improves throughput",
+        "Only happens on pizza-boxes, never chassis"
+      ],
+      "correctIndex": 0,
+      "explanation": "Protect control plane; CoPP/rate-limit; keep forwarding in ASIC."
+    }
+  ]
+}
