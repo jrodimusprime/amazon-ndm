@@ -1,0 +1,364 @@
+{
+  "questions": [
+    {
+      "id": "AUTO-001",
+      "module": "AUTO",
+      "difficulty": "interview",
+      "tags": [
+        "python"
+      ],
+      "source": "ANDM technical domains 2026-07",
+      "question": "Best first step automating a risky network change in Python?",
+      "options": [
+        "Separate intent validation + dry-run/diff against live state before any write; never mix discover-and-mutate in one opaque shot",
+        "Use eval() on device output",
+        "Hardcode passwords in the script",
+        "Skip logging"
+      ],
+      "correctIndex": 0,
+      "explanation": "Safe automation patterns beat clever scripts."
+    },
+    {
+      "id": "AUTO-002",
+      "module": "AUTO",
+      "difficulty": "interview",
+      "tags": [
+        "shell"
+      ],
+      "source": "ANDM technical domains 2026-07",
+      "question": "Shell one-liners in production automation—manager stance:",
+      "options": [
+        "Fine for glue; dangerous as the system of record—prefer reviewed, tested code with clear exit codes and idempotency",
+        "Always better than Python",
+        "Forbidden forever",
+        "Required for BGP"
+      ],
+      "correctIndex": 0,
+      "explanation": "Right tool, right durability."
+    },
+    {
+      "id": "AUTO-003",
+      "module": "AUTO",
+      "difficulty": "interview",
+      "tags": [
+        "perl"
+      ],
+      "source": "ANDM technical domains 2026-07",
+      "question": "Perl still appears in network tooling. Fair take:",
+      "options": [
+        "Legacy reality—stabilize, wrap, or migrate deliberately; don't rewrite working glue mid-incident without cause",
+        "Perl cannot parse text",
+        "Immediately delete all Perl",
+        "Perl replaces NETCONF"
+      ],
+      "correctIndex": 0,
+      "explanation": "Pragmatism over fashion."
+    },
+    {
+      "id": "AUTO-004",
+      "module": "AUTO",
+      "difficulty": "interview",
+      "tags": [
+        "api"
+      ],
+      "source": "ANDM technical domains 2026-07",
+      "question": "Prefer device API/NETCONF/gNMI over screen-scraping CLI when:",
+      "options": [
+        "You need stable structured data and safer transactions—scraping breaks on banner/format changes",
+        "APIs never fail",
+        "CLI is encrypted better",
+        "Scraping gives transactional commits"
+      ],
+      "correctIndex": 0,
+      "explanation": "Structured interfaces reduce fragility."
+    },
+    {
+      "id": "AUTO-005",
+      "module": "AUTO",
+      "difficulty": "interview",
+      "tags": [
+        "secrets"
+      ],
+      "source": "ANDM technical domains 2026-07",
+      "question": "Secrets in automation:",
+      "options": [
+        "Use a vault/secret manager; never commit credentials; short-lived tokens where possible",
+        "Store in Git for audit",
+        "Embed in DNS TXT",
+        "Put in BGP communities"
+      ],
+      "correctIndex": 0,
+      "explanation": "Security baseline."
+    },
+    {
+      "id": "AUTO-006",
+      "module": "AUTO",
+      "difficulty": "interview",
+      "tags": [
+        "idempotent"
+      ],
+      "source": "ANDM technical domains 2026-07",
+      "question": "Idempotent automation means:",
+      "options": [
+        "Re-running converges to the same desired state without stacking duplicate changes",
+        "Runs only once ever",
+        "Ignores errors",
+        "Requires Perl"
+      ],
+      "correctIndex": 0,
+      "explanation": "Core NetDevOps property."
+    },
+    {
+      "id": "AUTO-007",
+      "module": "AUTO",
+      "difficulty": "interview",
+      "tags": [
+        "parsing"
+      ],
+      "source": "ANDM technical domains 2026-07",
+      "question": "Parsing CLI with regex in prod—risk:",
+      "options": [
+        "Format drift causes silent mis-parse—prefer structured encodings or golden parsers with tests",
+        "Regex is always safe",
+        "Devices never change output",
+        "JSON cannot represent interfaces"
+      ],
+      "correctIndex": 0,
+      "explanation": "Fragility theme."
+    },
+    {
+      "id": "AUTO-008",
+      "module": "AUTO",
+      "difficulty": "interview",
+      "tags": [
+        "concurrency"
+      ],
+      "source": "ANDM technical domains 2026-07",
+      "question": "Pushing config to 5000 boxes concurrently without limits:",
+      "options": [
+        "Can melt control planes/AAA—use pools, backoff, blast-radius budgets, and health gates",
+        "Faster is always safer",
+        "BGP will rate-limit for you",
+        "Only Ansible can do this"
+      ],
+      "correctIndex": 0,
+      "explanation": "Capacity of the management plane."
+    },
+    {
+      "id": "AUTO-009",
+      "module": "AUTO",
+      "difficulty": "interview",
+      "tags": [
+        "testing"
+      ],
+      "source": "ANDM technical domains 2026-07",
+      "question": "Unit test vs lab soak for network automation:",
+      "options": [
+        "Unit-test pure logic; integration-test against lab/cOS images; canary in prod—don't skip layers",
+        "Only unit tests needed",
+        "Only prod tests needed",
+        "Tests replace monitoring"
+      ],
+      "correctIndex": 0,
+      "explanation": "Pyramid of confidence."
+    },
+    {
+      "id": "AUTO-010",
+      "module": "AUTO",
+      "difficulty": "interview",
+      "tags": [
+        "errors"
+      ],
+      "source": "ANDM technical domains 2026-07",
+      "question": "Script fails halfway through a change window. Good design:",
+      "options": [
+        "Checkpointed, reversible steps with clear rollback and inventory of completed nodes",
+        "Restart blindly from zero always",
+        "Disable logging",
+        "Page everyone immediately without status"
+      ],
+      "correctIndex": 0,
+      "explanation": "Partial failure is the normal case."
+    },
+    {
+      "id": "AUTO-011",
+      "module": "AUTO",
+      "difficulty": "interview",
+      "tags": [
+        "python-libs"
+      ],
+      "source": "ANDM technical domains 2026-07",
+      "question": "Using vendor SDK vs raw requests:",
+      "options": [
+        "SDKs speed correct auth/pagination—still understand the API and handle rate limits/timeouts",
+        "SDKs remove all failure modes",
+        "Never use SDKs",
+        "SDKs replace Git"
+      ],
+      "correctIndex": 0,
+      "explanation": "Pragmatic engineering."
+    },
+    {
+      "id": "AUTO-012",
+      "module": "AUTO",
+      "difficulty": "interview",
+      "tags": [
+        "data"
+      ],
+      "source": "ANDM technical domains 2026-07",
+      "question": "Inventory source of truth should be:",
+      "options": [
+        "Authoritative DB/CMDB/Git-backed inventory—not tribal knowledge in a wiki paste",
+        "Engineer laptops",
+        "Chat history",
+        "DNS only"
+      ],
+      "correctIndex": 0,
+      "explanation": "Automation quality ≤ inventory quality."
+    },
+    {
+      "id": "AUTO-013",
+      "module": "AUTO",
+      "difficulty": "interview",
+      "tags": [
+        "dry-run"
+      ],
+      "source": "ANDM technical domains 2026-07",
+      "question": "Dry-run that doesn't read live state is weak because:",
+      "options": [
+        "It cannot detect drift or conflicting reality—compare intended vs actual",
+        "Dry-run is useless",
+        "Live state never drifts",
+        "Only YAML needs dry-run"
+      ],
+      "correctIndex": 0,
+      "explanation": "Diff against reality."
+    },
+    {
+      "id": "AUTO-014",
+      "module": "AUTO",
+      "difficulty": "interview",
+      "tags": [
+        "logging"
+      ],
+      "source": "ANDM technical domains 2026-07",
+      "question": "Automation logs should include:",
+      "options": [
+        "Who/what/when, target set, before/after or diff, success/fail per node—enough for RCA",
+        "Only 'done'",
+        "Passwords for debug",
+        "Nothing (security)"
+      ],
+      "correctIndex": 0,
+      "explanation": "Auditability."
+    },
+    {
+      "id": "AUTO-015",
+      "module": "AUTO",
+      "difficulty": "interview",
+      "tags": [
+        "timeouts"
+      ],
+      "source": "ANDM technical domains 2026-07",
+      "question": "Network device APIs hang—your code should:",
+      "options": [
+        "Bound timeouts, retries with jitter, and circuit-break unhealthy targets",
+        "Wait forever",
+        "Retry 1000 times instantly",
+        "Disable TLS"
+      ],
+      "correctIndex": 0,
+      "explanation": "Reliability of the automator."
+    },
+    {
+      "id": "AUTO-016",
+      "module": "AUTO",
+      "difficulty": "interview",
+      "tags": [
+        "perl-python"
+      ],
+      "source": "ANDM technical domains 2026-07",
+      "question": "Migrating a Perl collector to Python—order:",
+      "options": [
+        "Characterize outputs/SLAs; parity tests; dual-run; cut over; retire—don't big-bang rewrite",
+        "Stop monitoring during rewrite",
+        "Translate line-by-line without tests",
+        "Outsource without ownership"
+      ],
+      "correctIndex": 0,
+      "explanation": "Manager migration pattern."
+    },
+    {
+      "id": "AUTO-017",
+      "module": "AUTO",
+      "difficulty": "interview",
+      "tags": [
+        "shell-set"
+      ],
+      "source": "ANDM technical domains 2026-07",
+      "question": "Bash scripts in CI should use:",
+      "options": [
+        "set -euo pipefail (or equivalent discipline), quoted vars, and explicit error paths",
+        "Invisible failures",
+        "Unquoted curl to eval",
+        "Disabled exit codes"
+      ],
+      "correctIndex": 0,
+      "explanation": "Shell hygiene."
+    },
+    {
+      "id": "AUTO-018",
+      "module": "AUTO",
+      "difficulty": "interview",
+      "tags": [
+        "jinja"
+      ],
+      "source": "ANDM technical domains 2026-07",
+      "question": "Generating device config from templates—key risk:",
+      "options": [
+        "Incorrect assumptions → widespread wrong config; validate rendered output and peer review templates",
+        "Templates cannot err",
+        "Only CLI is risky",
+        "JSON cannot template"
+      ],
+      "correctIndex": 0,
+      "explanation": "Template blast radius."
+    },
+    {
+      "id": "AUTO-019",
+      "module": "AUTO",
+      "difficulty": "interview",
+      "tags": [
+        "netmiko"
+      ],
+      "source": "ANDM technical domains 2026-07",
+      "question": "CLI automation libraries still need:",
+      "options": [
+        "Prompt handling, paging, privilege modes, and idempotent intent—library ≠ safe change process",
+        "No error handling",
+        "Root SSH keys in repo",
+        "Disabled logging"
+      ],
+      "correctIndex": 0,
+      "explanation": "Tools don't replace process."
+    },
+    {
+      "id": "AUTO-020",
+      "module": "AUTO",
+      "difficulty": "interview",
+      "tags": [
+        "observability"
+      ],
+      "source": "ANDM technical domains 2026-07",
+      "question": "After an automated push, verify with:",
+      "options": [
+        "Telemetry/probes/canaries tied to customer impact—not only 'API returned 200'",
+        "Chat emoji reactions",
+        "Single ping from laptop",
+        "Waiting 24h silently"
+      ],
+      "correctIndex": 0,
+      "explanation": "Close the loop."
+    }
+  ]
+}

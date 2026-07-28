@@ -1,0 +1,764 @@
+{
+  "questions": [
+    {
+      "id": "ADV-001",
+      "module": "ADV",
+      "difficulty": "interview",
+      "tags": [
+        "bgp",
+        "decision"
+      ],
+      "source": "ANDM technical domains 2026-07 (Doyle / MPLS Fundamentals / RFC 7938)",
+      "question": "A peer claims BGP selects the path with the fewest hops. Your correction:",
+      "options": [
+        "BGP is policy-driven; the decision process uses attributes such as Weight, Local Preference, AS-path length, Origin, MED, then IGP cost—not raw hop count",
+        "BGP always mirrors OSPF cost",
+        "BGP only encrypts control packets",
+        "BGP ignores all attributes except MED"
+      ],
+      "correctIndex": 0,
+      "explanation": "Doyle Vol II: BGP decision process literacy beats 'shortest path' folklore."
+    },
+    {
+      "id": "ADV-002",
+      "module": "ADV",
+      "difficulty": "interview",
+      "tags": [
+        "bgp",
+        "ibgp"
+      ],
+      "source": "ANDM technical domains 2026-07 (Doyle / MPLS Fundamentals / RFC 7938)",
+      "question": "Why do large ASes need route reflectors or confederations for iBGP?",
+      "options": [
+        "Full-mesh iBGP does not re-advertise iBGP-learned routes, so scale needs RR/confeds (or add-path designs) to distribute paths without an N² mesh",
+        "iBGP cannot carry IPv4 prefixes",
+        "OSPF forbids more than two BGP speakers",
+        "Route reflectors replace TCP"
+      ],
+      "correctIndex": 0,
+      "explanation": "iBGP split-horizon drives RR/confederation architecture."
+    },
+    {
+      "id": "ADV-003",
+      "module": "ADV",
+      "difficulty": "interview",
+      "tags": [
+        "bgp",
+        "ebgp"
+      ],
+      "source": "ANDM technical domains 2026-07 (Doyle / MPLS Fundamentals / RFC 7938)",
+      "question": "In a Clos fabric built per RFC 7938, why is eBGP often preferred as the underlay routing protocol?",
+      "options": [
+        "eBGP gives clear AS boundaries, simple policy knobs, and scales with ECMP without flooding a full IGP topology into every leaf",
+        "eBGP cannot do multipath",
+        "RFC 7938 bans BGP in DCs",
+        "eBGP only works over the public Internet"
+      ],
+      "correctIndex": 0,
+      "explanation": "Modern DC: eBGP Clos underlay pattern."
+    },
+    {
+      "id": "ADV-004",
+      "module": "ADV",
+      "difficulty": "interview",
+      "tags": [
+        "bgp",
+        "attributes"
+      ],
+      "source": "ANDM technical domains 2026-07 (Doyle / MPLS Fundamentals / RFC 7938)",
+      "question": "Local Preference vs AS-path for outbound path selection inside one AS:",
+      "options": [
+        "Local Preference is local to the AS and preferred earlier in the decision process; AS-path length compares after Local Pref (among other steps)",
+        "AS-path always beats Local Pref",
+        "MED always beats Local Pref",
+        "They are identical knobs"
+      ],
+      "correctIndex": 0,
+      "explanation": "Order of BGP decision process matters for ops."
+    },
+    {
+      "id": "ADV-005",
+      "module": "ADV",
+      "difficulty": "interview",
+      "tags": [
+        "bgp",
+        "med"
+      ],
+      "source": "ANDM technical domains 2026-07 (Doyle / MPLS Fundamentals / RFC 7938)",
+      "question": "When is MED most useful?",
+      "options": [
+        "Influencing which entry point a neighboring AS prefers into your AS when multiple links exist—MED is typically compared between paths from the same neighboring AS",
+        "Encrypting BGP sessions",
+        "Replacing OSPF areas",
+        "Setting IPv6 next-hops only"
+      ],
+      "correctIndex": 0,
+      "explanation": "MED is an inter-AS ingress preference signal with caveats."
+    },
+    {
+      "id": "ADV-006",
+      "module": "ADV",
+      "difficulty": "interview",
+      "tags": [
+        "bgp",
+        "communities"
+      ],
+      "source": "ANDM technical domains 2026-07 (Doyle / MPLS Fundamentals / RFC 7938)",
+      "question": "A team wants operators to tag routes for later filtering without changing AS-path. Best tool:",
+      "options": [
+        "BGP communities (or large/extended communities) as opaque tags for policy",
+        "Increasing OSPF cost only",
+        "Shortening TTL",
+        "Disabling TCP MD5"
+      ],
+      "correctIndex": 0,
+      "explanation": "Communities are the workhorse for scalable BGP policy."
+    },
+    {
+      "id": "ADV-007",
+      "module": "ADV",
+      "difficulty": "interview",
+      "tags": [
+        "bgp",
+        "fsm"
+      ],
+      "source": "ANDM technical domains 2026-07 (Doyle / MPLS Fundamentals / RFC 7938)",
+      "question": "BGP session stuck in Active/Connect—most likely class of issue?",
+      "options": [
+        "TCP session / reachability / ACL / wrong peer IP or ASN—not a finished OPEN exchange",
+        "SPF calculation loop",
+        "Label stack exhaustion",
+        "DNS recursive failure only"
+      ],
+      "correctIndex": 0,
+      "explanation": "FSM literacy: Idle/Connect/Active/OpenSent/OpenConfirm/Established."
+    },
+    {
+      "id": "ADV-008",
+      "module": "ADV",
+      "difficulty": "interview",
+      "tags": [
+        "bgp",
+        "next-hop"
+      ],
+      "source": "ANDM technical domains 2026-07 (Doyle / MPLS Fundamentals / RFC 7938)",
+      "question": "iBGP advertises a prefix but the next-hop is unreachable. Symptom:",
+      "options": [
+        "Route may be in RIB as invalid/hidden until next-hop is resolvable via IGP/static—or next-hop-self is applied on the edge",
+        "BGP automatically rewrites Ethernet MACs",
+        "MPLS deletes the prefix",
+        "OSPF Area 0 fixes it automatically"
+      ],
+      "correctIndex": 0,
+      "explanation": "Next-hop reachability is a classic Dive Deep trap."
+    },
+    {
+      "id": "ADV-009",
+      "module": "ADV",
+      "difficulty": "interview",
+      "tags": [
+        "bgp",
+        "scale"
+      ],
+      "source": "ANDM technical domains 2026-07 (Doyle / MPLS Fundamentals / RFC 7938)",
+      "question": "Update-group / peer-group style scaling helps because:",
+      "options": [
+        "Speakers can format and replicate updates efficiently across peers that share the same outbound policy",
+        "They remove the need for TCP",
+        "They replace TCAM",
+        "They disable route reflection"
+      ],
+      "correctIndex": 0,
+      "explanation": "Control-plane CPU and formatting cost at scale."
+    },
+    {
+      "id": "ADV-010",
+      "module": "ADV",
+      "difficulty": "interview",
+      "tags": [
+        "bgp",
+        "graceful"
+      ],
+      "source": "ANDM technical domains 2026-07 (Doyle / MPLS Fundamentals / RFC 7938)",
+      "question": "Graceful Restart / long-lived graceful restart aims to:",
+      "options": [
+        "Preserve forwarding during control-plane restart so data plane can keep forwarding while sessions re-establish",
+        "Delete all FIB entries instantly",
+        "Convert BGP into OSPF",
+        "Disable BFD permanently"
+      ],
+      "correctIndex": 0,
+      "explanation": "Separate control plane restart from forwarding continuity."
+    },
+    {
+      "id": "ADV-011",
+      "module": "ADV",
+      "difficulty": "interview",
+      "tags": [
+        "ospf",
+        "areas"
+      ],
+      "source": "ANDM technical domains 2026-07 (Doyle / MPLS Fundamentals / RFC 7938)",
+      "question": "Why does OSPF use areas?",
+      "options": [
+        "To bound LSDB size and SPF blast radius—ABRs summarize/filter between areas while Area 0 is the backbone",
+        "To encrypt every LSA",
+        "To replace BGP ASNs",
+        "Areas only exist for IPv6"
+      ],
+      "correctIndex": 0,
+      "explanation": "Doyle Vol I: hierarchical OSPF design."
+    },
+    {
+      "id": "ADV-012",
+      "module": "ADV",
+      "difficulty": "interview",
+      "tags": [
+        "ospf",
+        "lsa"
+      ],
+      "source": "ANDM technical domains 2026-07 (Doyle / MPLS Fundamentals / RFC 7938)",
+      "question": "Type 1 vs Type 2 LSA roles:",
+      "options": [
+        "Type 1 (Router) describes a router's links; Type 2 (Network) describes a multi-access network and attached routers (DR-originated)",
+        "Type 2 replaces BGP UPDATE",
+        "Type 1 is only for stubs",
+        "They are identical"
+      ],
+      "correctIndex": 0,
+      "explanation": "LSA type literacy for adjacency/topology debugging."
+    },
+    {
+      "id": "ADV-013",
+      "module": "ADV",
+      "difficulty": "interview",
+      "tags": [
+        "ospf",
+        "lsa"
+      ],
+      "source": "ANDM technical domains 2026-07 (Doyle / MPLS Fundamentals / RFC 7938)",
+      "question": "Type 3 vs Type 5 LSA:",
+      "options": [
+        "Type 3 (Summary) is ABR-originated inter-area; Type 5 (External) is ASBR-originated redistributed external routes (Type 4 finds the ASBR)",
+        "Type 5 is only intra-area",
+        "Type 3 is MPLS labels",
+        "Type 5 cannot leave Area 0"
+      ],
+      "correctIndex": 0,
+      "explanation": "External vs summary is a frequent exam/interview discriminator."
+    },
+    {
+      "id": "ADV-014",
+      "module": "ADV",
+      "difficulty": "interview",
+      "tags": [
+        "ospf",
+        "adjacency"
+      ],
+      "source": "ANDM technical domains 2026-07 (Doyle / MPLS Fundamentals / RFC 7938)",
+      "question": "Two OSPF routers on a LAN form 2-Way but not Full. Likely focus:",
+      "options": [
+        "DR/BDR election and adjacency only to DR/BDR on broadcast—or MTU/area/network-type/hello mismatch blocking FULL",
+        "BGP community mismatch",
+        "Missing MPLS LDP",
+        "Cloud WAN segment map"
+      ],
+      "correctIndex": 0,
+      "explanation": "Neighbor state machine: Down→Init→2-Way→ExStart→Exchange→Loading→Full."
+    },
+    {
+      "id": "ADV-015",
+      "module": "ADV",
+      "difficulty": "interview",
+      "tags": [
+        "ospf",
+        "spf"
+      ],
+      "source": "ANDM technical domains 2026-07 (Doyle / MPLS Fundamentals / RFC 7938)",
+      "question": "An engineer proposes running OSPF as a single area across a huge DC. Risk:",
+      "options": [
+        "LSDB and SPF scale poorly—churn floods everywhere; hierarchy or alternate design (e.g. eBGP Clos) is usually safer",
+        "OSPF cannot do ECMP",
+        "Single area forbids BFD",
+        "SPF only works with MPLS"
+      ],
+      "correctIndex": 0,
+      "explanation": "Capacity of the control plane is a manager concern."
+    },
+    {
+      "id": "ADV-016",
+      "module": "ADV",
+      "difficulty": "interview",
+      "tags": [
+        "ospf",
+        "stub"
+      ],
+      "source": "ANDM technical domains 2026-07 (Doyle / MPLS Fundamentals / RFC 7938)",
+      "question": "Stub / totally stubby / NSSA intent:",
+      "options": [
+        "Reduce external (and optionally summary) LSAs in an area, injecting a default instead—NSSA allows limited external origination",
+        "Force every prefix into Type 5",
+        "Disable Area 0",
+        "Replace ABR with RR"
+      ],
+      "correctIndex": 0,
+      "explanation": "Area types trade reachability detail for scale."
+    },
+    {
+      "id": "ADV-017",
+      "module": "ADV",
+      "difficulty": "interview",
+      "tags": [
+        "ospf",
+        "cost"
+      ],
+      "source": "ANDM technical domains 2026-07 (Doyle / MPLS Fundamentals / RFC 7938)",
+      "question": "OSPF path selection basics:",
+      "options": [
+        "Intra-area paths preferred over inter-area; lowest cost wins; equal-cost paths can ECMP",
+        "AS-path length decides OSPF",
+        "Local Pref is an OSPF LSA",
+        "OSPF ignores interface cost"
+      ],
+      "correctIndex": 0,
+      "explanation": "Contrast with BGP policy model."
+    },
+    {
+      "id": "ADV-018",
+      "module": "ADV",
+      "difficulty": "interview",
+      "tags": [
+        "ospf",
+        "redistribute"
+      ],
+      "source": "ANDM technical domains 2026-07 (Doyle / MPLS Fundamentals / RFC 7938)",
+      "question": "Redistributing BGP into OSPF without filters—manager concern:",
+      "options": [
+        "Control-plane and LSDB explosion; suboptimal paths; feedback loops—need careful filtering, tags, and metrics",
+        "It always improves convergence",
+        "OSPF automatically aggregates Internet table safely",
+        "No risk if Area 0 exists"
+      ],
+      "correctIndex": 0,
+      "explanation": "Mutual redistribution is a classic blast-radius topic."
+    },
+    {
+      "id": "ADV-019",
+      "module": "ADV",
+      "difficulty": "interview",
+      "tags": [
+        "ospf",
+        "network-type"
+      ],
+      "source": "ANDM technical domains 2026-07 (Doyle / MPLS Fundamentals / RFC 7938)",
+      "question": "Point-to-point vs broadcast OSPF network types matter because:",
+      "options": [
+        "They change adjacency model (DR or not), timers expectations, and how links appear in the LSDB",
+        "They change TCP window size only",
+        "They enable IPsec",
+        "They set BGP MED"
+      ],
+      "correctIndex": 0,
+      "explanation": "Mismatched network types → stubborn adjacency issues."
+    },
+    {
+      "id": "ADV-020",
+      "module": "ADV",
+      "difficulty": "interview",
+      "tags": [
+        "ospf",
+        "v2v3"
+      ],
+      "source": "ANDM technical domains 2026-07 (Doyle / MPLS Fundamentals / RFC 7938)",
+      "question": "OSPFv2 vs OSPFv3 high-level difference:",
+      "options": [
+        "OSPFv3 is redesigned for IPv6 (and can carry IPv4 with extensions); addressing/flooding details differ from OSPFv2's IPv4-centric design",
+        "OSPFv3 removes the concept of areas",
+        "OSPFv2 supports only MPLS",
+        "They use identical packet formats"
+      ],
+      "correctIndex": 0,
+      "explanation": "Know they are related but not drop-in identical."
+    },
+    {
+      "id": "ADV-021",
+      "module": "ADV",
+      "difficulty": "interview",
+      "tags": [
+        "isis",
+        "levels"
+      ],
+      "source": "ANDM technical domains 2026-07 (Doyle / MPLS Fundamentals / RFC 7938)",
+      "question": "IS-IS Level-1 vs Level-2:",
+      "options": [
+        "L1 is intra-area routing; L2 is backbone/inter-area; L1-L2 routers attach areas to the L2 backbone (mental model analogous to OSPF areas)",
+        "L1 is only for BGP",
+        "L2 forbids TLVs",
+        "Levels replace ASNs"
+      ],
+      "correctIndex": 0,
+      "explanation": "Doyle Vol I IS-IS hierarchy."
+    },
+    {
+      "id": "ADV-022",
+      "module": "ADV",
+      "difficulty": "interview",
+      "tags": [
+        "isis",
+        "tlv"
+      ],
+      "source": "ANDM technical domains 2026-07 (Doyle / MPLS Fundamentals / RFC 7938)",
+      "question": "Why is IS-IS often described as TLV-extensible?",
+      "options": [
+        "Protocol data uses Type-Length-Value encoding, easing new address families and capabilities without redesigning the core",
+        "TLV means TCP Layer Virtualization",
+        "IS-IS cannot carry IPv6",
+        "TLVs replace SPF"
+      ],
+      "correctIndex": 0,
+      "explanation": "Extensibility is a key IS-IS selling point historically."
+    },
+    {
+      "id": "ADV-023",
+      "module": "ADV",
+      "difficulty": "interview",
+      "tags": [
+        "isis",
+        "vs-ospf"
+      ],
+      "source": "ANDM technical domains 2026-07 (Doyle / MPLS Fundamentals / RFC 7938)",
+      "question": "Practical reason some operators prefer IS-IS over OSPF in SP/DC cores:",
+      "options": [
+        "Runs over L2 (not IP), historically strong multi-AF/TLV story and operational familiarity—tradeoffs, not universal superiority",
+        "IS-IS cannot blackhole",
+        "OSPF cannot ECMP",
+        "IS-IS requires MPLS"
+      ],
+      "correctIndex": 0,
+      "explanation": "Interview answer: tradeoffs + ops culture, not dogma."
+    },
+    {
+      "id": "ADV-024",
+      "module": "ADV",
+      "difficulty": "interview",
+      "tags": [
+        "isis",
+        "net"
+      ],
+      "source": "ANDM technical domains 2026-07 (Doyle / MPLS Fundamentals / RFC 7938)",
+      "question": "An IS-IS NET address encodes:",
+      "options": [
+        "Area and system ID (NSAP/NET format)—misconfigured area/system ID prevents adjacency",
+        "BGP community lists",
+        "MPLS label ranges only",
+        "AWS VPC CIDRs"
+      ],
+      "correctIndex": 0,
+      "explanation": "Addressing mistakes are common IS-IS breaks."
+    },
+    {
+      "id": "ADV-025",
+      "module": "ADV",
+      "difficulty": "interview",
+      "tags": [
+        "isis",
+        "metric"
+      ],
+      "source": "ANDM technical domains 2026-07 (Doyle / MPLS Fundamentals / RFC 7938)",
+      "question": "Wide metrics in IS-IS matter because:",
+      "options": [
+        "Narrow metrics are too coarse for modern TE/ECMP designs; wide metrics give finer cost control",
+        "Wide metrics disable SPF",
+        "Metrics replace BFD",
+        "Only L1 uses metrics"
+      ],
+      "correctIndex": 0,
+      "explanation": "Cost granularity for traffic engineering style ops."
+    },
+    {
+      "id": "ADV-026",
+      "module": "ADV",
+      "difficulty": "interview",
+      "tags": [
+        "isis",
+        "overload"
+      ],
+      "source": "ANDM technical domains 2026-07 (Doyle / MPLS Fundamentals / RFC 7938)",
+      "question": "Setting the IS-IS overload bit is used to:",
+      "options": [
+        "Signal that the node should be avoided for transit during maintenance/boot until ready",
+        "Increase BGP Local Pref",
+        "Flush all MPLS labels permanently",
+        "Convert L1 to L2"
+      ],
+      "correctIndex": 0,
+      "explanation": "Maintenance hygiene analogous to max-metric tricks."
+    },
+    {
+      "id": "ADV-027",
+      "module": "ADV",
+      "difficulty": "interview",
+      "tags": [
+        "isis",
+        "adjacency"
+      ],
+      "source": "ANDM technical domains 2026-07 (Doyle / MPLS Fundamentals / RFC 7938)",
+      "question": "IS-IS adjacency fails—checklist includes:",
+      "options": [
+        "Level mismatch, NET/area mismatch, MTU, authentication, circuit type, and whether both sides expect point-to-point vs broadcast",
+        "Only AS-path filters",
+        "Only Security Group rules in AWS",
+        "DNS TTLs"
+      ],
+      "correctIndex": 0,
+      "explanation": "Same debugging discipline as OSPF, different knobs."
+    },
+    {
+      "id": "ADV-028",
+      "module": "ADV",
+      "difficulty": "interview",
+      "tags": [
+        "isis",
+        "attach"
+      ],
+      "source": "ANDM technical domains 2026-07 (Doyle / MPLS Fundamentals / RFC 7938)",
+      "question": "L1 router installs a default toward L1-L2 because:",
+      "options": [
+        "Attached bit / default origination from L1-L2 provides inter-area exit without full L2 topology in L1",
+        "BGP RR reflects defaults into IS-IS automatically",
+        "MPLS LDP injects defaults",
+        "OSPF Type 5 is required"
+      ],
+      "correctIndex": 0,
+      "explanation": "Hierarchy leak of default, not full Internet."
+    },
+    {
+      "id": "ADV-029",
+      "module": "ADV",
+      "difficulty": "interview",
+      "tags": [
+        "mpls",
+        "labels"
+      ],
+      "source": "ANDM technical domains 2026-07 (Doyle / MPLS Fundamentals / RFC 7938)",
+      "question": "What does an MPLS label primarily do in the data plane?",
+      "options": [
+        "Indexes a short label-switched forwarding decision (LFIB) so core LSRs can forward without IP lookup on every hop",
+        "Encrypts the IP payload",
+        "Replaces TCP sequence numbers",
+        "Stores BGP communities"
+      ],
+      "correctIndex": 0,
+      "explanation": "MPLS Fundamentals: label switching idea."
+    },
+    {
+      "id": "ADV-030",
+      "module": "ADV",
+      "difficulty": "interview",
+      "tags": [
+        "mpls",
+        "stack"
+      ],
+      "source": "ANDM technical domains 2026-07 (Doyle / MPLS Fundamentals / RFC 7938)",
+      "question": "A packet with a label stack arrives; the LSR typically:",
+      "options": [
+        "Looks up the top label and may swap/push/pop per LFIB—PHP often pops the penultimate label",
+        "Always strips all labels and floods L2",
+        "Converts labels into OSPF costs",
+        "Requires IPsec before any forward"
+      ],
+      "correctIndex": 0,
+      "explanation": "Push/swap/pop + penultimate hop popping concept."
+    },
+    {
+      "id": "ADV-031",
+      "module": "ADV",
+      "difficulty": "interview",
+      "tags": [
+        "mpls",
+        "ldp"
+      ],
+      "source": "ANDM technical domains 2026-07 (Doyle / MPLS Fundamentals / RFC 7938)",
+      "question": "LDP's role:",
+      "options": [
+        "Distribute label bindings for FECs so LSPs can be established for IGP-learned prefixes (common LDP+IGP model)",
+        "Replace BGP entirely",
+        "Encrypt WAN links",
+        "Allocate VPC CIDRs"
+      ],
+      "correctIndex": 0,
+      "explanation": "Control plane for labels alongside IGP."
+    },
+    {
+      "id": "ADV-032",
+      "module": "ADV",
+      "difficulty": "interview",
+      "tags": [
+        "mpls",
+        "rsvp-te"
+      ],
+      "source": "ANDM technical domains 2026-07 (Doyle / MPLS Fundamentals / RFC 7938)",
+      "question": "RSVP-TE is used when you need:",
+      "options": [
+        "Traffic-engineered LSPs with bandwidth/constraint routing—not just follow-IGP LDP paths",
+        "Faster ARP",
+        "YAML inventory parsing",
+        "Security Group evaluation"
+      ],
+      "correctIndex": 0,
+      "explanation": "TE vs vanilla shortest-path label distribution."
+    },
+    {
+      "id": "ADV-033",
+      "module": "ADV",
+      "difficulty": "interview",
+      "tags": [
+        "mpls",
+        "l3vpn"
+      ],
+      "source": "ANDM technical domains 2026-07 (Doyle / MPLS Fundamentals / RFC 7938)",
+      "question": "In MPLS L3VPN, VRF + RD + RT divide labor as:",
+      "options": [
+        "VRF separates tables; RD makes prefixes unique in BGP; RTs control which VPNs import/export which routes",
+        "RD encrypts packets; RT is a VLAN ID",
+        "VRF replaces the underlay IGP",
+        "RT is only for LDP hello"
+      ],
+      "correctIndex": 0,
+      "explanation": "Core L3VPN mental model for interviews."
+    },
+    {
+      "id": "ADV-034",
+      "module": "ADV",
+      "difficulty": "interview",
+      "tags": [
+        "mpls",
+        "vpnv4"
+      ],
+      "source": "ANDM technical domains 2026-07 (Doyle / MPLS Fundamentals / RFC 7938)",
+      "question": "VPNv4 BGP carries:",
+      "options": [
+        "Labeled VPN prefixes (RD:prefix) so PEs can exchange customer routes across a shared MPLS core",
+        "Only IS-IS TLVs",
+        "Only MAC addresses",
+        "CloudFormation templates"
+      ],
+      "correctIndex": 0,
+      "explanation": "MP-BGP as VPN control plane."
+    },
+    {
+      "id": "ADV-035",
+      "module": "ADV",
+      "difficulty": "interview",
+      "tags": [
+        "mpls",
+        "p-pe"
+      ],
+      "source": "ANDM technical domains 2026-07 (Doyle / MPLS Fundamentals / RFC 7938)",
+      "question": "P vs PE router roles:",
+      "options": [
+        "PE (Provider Edge) maintains VRFs/customer adjacency; P (Provider) typically switches labels in the core without customer routes",
+        "P routers store all Internet + VPN tables",
+        "PE never runs BGP",
+        "P routers terminate customer CE sessions"
+      ],
+      "correctIndex": 0,
+      "explanation": "Separation keeps core scalable."
+    },
+    {
+      "id": "ADV-036",
+      "module": "ADV",
+      "difficulty": "interview",
+      "tags": [
+        "mpls",
+        "php"
+      ],
+      "source": "ANDM technical domains 2026-07 (Doyle / MPLS Fundamentals / RFC 7938)",
+      "question": "Penultimate hop popping (PHP) exists to:",
+      "options": [
+        "Let the egress PE avoid an unnecessary label lookup by receiving an IP (or inner) packet from the penultimate LSR",
+        "Remove the need for LDP",
+        "Force RSVP on every link",
+        "Disable ECMP"
+      ],
+      "correctIndex": 0,
+      "explanation": "Classic MPLS optimization detail."
+    },
+    {
+      "id": "ADV-037",
+      "module": "ADV",
+      "difficulty": "interview",
+      "tags": [
+        "bfd",
+        "convergence"
+      ],
+      "source": "ANDM technical domains 2026-07 (Doyle / MPLS Fundamentals / RFC 7938)",
+      "question": "BFD paired with BGP/OSPF/IS-IS helps because:",
+      "options": [
+        "Sub-second forwarding-plane liveliness detection can trigger faster session teardown than hello timers alone",
+        "BFD replaces SPF",
+        "BFD allocates labels",
+        "BFD is only for Wi-Fi"
+      ],
+      "correctIndex": 0,
+      "explanation": "Fast failure detection cross-cutting control planes."
+    },
+    {
+      "id": "ADV-038",
+      "module": "ADV",
+      "difficulty": "interview",
+      "tags": [
+        "ecmp",
+        "fib"
+      ],
+      "source": "ANDM technical domains 2026-07 (Doyle / MPLS Fundamentals / RFC 7938)",
+      "question": "ECMP in the FIB means:",
+      "options": [
+        "Multiple equal-cost next hops installed; hashing spreads flows—watch polarization and unequal member health",
+        "One next hop always wins randomly per packet with no hash",
+        "ECMP disables BGP",
+        "ECMP requires MPLS L3VPN"
+      ],
+      "correctIndex": 0,
+      "explanation": "Underlay scale tool with operational caveats."
+    },
+    {
+      "id": "ADV-039",
+      "module": "ADV",
+      "difficulty": "interview",
+      "tags": [
+        "sr",
+        "evpn"
+      ],
+      "source": "ANDM technical domains 2026-07 (Doyle / MPLS Fundamentals / RFC 7938)",
+      "question": "Segment Routing vs classic LDP—manager-level distinction:",
+      "options": [
+        "SR encodes the path/segments in the packet (often MPLS or IPv6 SID) reducing per-flow state in the core versus distributed LDP bindings—EVPN is a separate overlay control plane for L2/L3 VPN services",
+        "SR deletes the need for an IGP",
+        "EVPN replaces TCP",
+        "SR and EVPN are identical protocols"
+      ],
+      "correctIndex": 0,
+      "explanation": "Light awareness only—don't over-claim expertise."
+    },
+    {
+      "id": "ADV-040",
+      "module": "ADV",
+      "difficulty": "interview",
+      "tags": [
+        "redistribute",
+        "policy"
+      ],
+      "source": "ANDM technical domains 2026-07 (Doyle / MPLS Fundamentals / RFC 7938)",
+      "question": "Mutually redistributing OSPF ↔ BGP without tags/filters—failure mode:",
+      "options": [
+        "Route feedback loops, suboptimal paths, and control-plane overload—use tags, prefer points, and tight prefix filters",
+        "Guaranteed optimal global routing",
+        "Automatic RD/RT assignment",
+        "IS-IS levels self-heal it"
+      ],
+      "correctIndex": 0,
+      "explanation": "Cross-protocol policy is where outages hide."
+    }
+  ]
+}

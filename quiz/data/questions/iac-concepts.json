@@ -1,0 +1,364 @@
+{
+  "questions": [
+    {
+      "id": "IAC-001",
+      "module": "IAC",
+      "difficulty": "interview",
+      "tags": [
+        "declarative"
+      ],
+      "source": "ANDM technical domains 2026-07 (AWS networking)",
+      "question": "Infrastructure as Code declarative style means:",
+      "options": [
+        "You declare desired end state; the engine converges—vs imperative click-ops scripts only",
+        "You never use Git",
+        "Devices invent state",
+        "No plans needed"
+      ],
+      "correctIndex": 0,
+      "explanation": "IaC core idea."
+    },
+    {
+      "id": "IAC-002",
+      "module": "IAC",
+      "difficulty": "interview",
+      "tags": [
+        "drift"
+      ],
+      "source": "ANDM technical domains 2026-07 (AWS networking)",
+      "question": "Drift in IaC is:",
+      "options": [
+        "Live infra differs from code—detect and reconcile or accept with eyes open",
+        "Faster CI",
+        "A BGP attribute",
+        "Only YAML comments"
+      ],
+      "correctIndex": 0,
+      "explanation": "Ops reality."
+    },
+    {
+      "id": "IAC-003",
+      "module": "IAC",
+      "difficulty": "interview",
+      "tags": [
+        "plan"
+      ],
+      "source": "ANDM technical domains 2026-07 (AWS networking)",
+      "question": "Plan/apply (or preview/commit) matters because:",
+      "options": [
+        "Shows blast radius before mutating reality—humans catch surprises",
+        "Plans change prod secretly",
+        "Apply never needs plan",
+        "Only for DNS"
+      ],
+      "correctIndex": 0,
+      "explanation": "Safe workflow."
+    },
+    {
+      "id": "IAC-004",
+      "module": "IAC",
+      "difficulty": "interview",
+      "tags": [
+        "state"
+      ],
+      "source": "ANDM technical domains 2026-07 (AWS networking)",
+      "question": "State files/backends track:",
+      "options": [
+        "What the tool believes it manages—lock and protect state; corruption hurts",
+        "Optical power",
+        "ARP caches",
+        "Flow Logs only"
+      ],
+      "correctIndex": 0,
+      "explanation": "State is critical."
+    },
+    {
+      "id": "IAC-005",
+      "module": "IAC",
+      "difficulty": "interview",
+      "tags": [
+        "lock"
+      ],
+      "source": "ANDM technical domains 2026-07 (AWS networking)",
+      "question": "State locking prevents:",
+      "options": [
+        "Concurrent applies corrupting state or double-mutating",
+        "DNS recursion",
+        "ECMP",
+        "SSH"
+      ],
+      "correctIndex": 0,
+      "explanation": "Concurrency control."
+    },
+    {
+      "id": "IAC-006",
+      "module": "IAC",
+      "difficulty": "interview",
+      "tags": [
+        "snowflake"
+      ],
+      "source": "ANDM technical domains 2026-07 (AWS networking)",
+      "question": "Snowflake servers/network boxes are risky because:",
+      "options": [
+        "Unreproducible, unreviewable, hard to rebuild—IaC reduces snowflakes",
+        "They are faster",
+        "They need no monitoring",
+        "Git cannot track them"
+      ],
+      "correctIndex": 0,
+      "explanation": "Anti-pattern."
+    },
+    {
+      "id": "IAC-007",
+      "module": "IAC",
+      "difficulty": "interview",
+      "tags": [
+        "intent"
+      ],
+      "source": "ANDM technical domains 2026-07 (AWS networking)",
+      "question": "Network intent vs CLI snowflake:",
+      "options": [
+        "Intent documents policy in code; CLI-only drifts and doesn't scale review",
+        "CLI is IaC",
+        "Intent forbids automation",
+        "Only Perl is intent"
+      ],
+      "correctIndex": 0,
+      "explanation": "Manager framing."
+    },
+    {
+      "id": "IAC-008",
+      "module": "IAC",
+      "difficulty": "interview",
+      "tags": [
+        "modules"
+      ],
+      "source": "ANDM technical domains 2026-07 (AWS networking)",
+      "question": "Reusable modules/modules help when:",
+      "options": [
+        "They encode good defaults and interfaces—bad modules multiply blast radius",
+        "Always wrap everything on day one",
+        "Modules replace reviews",
+        "No versioning needed"
+      ],
+      "correctIndex": 0,
+      "explanation": "Abstraction tradeoffs."
+    },
+    {
+      "id": "IAC-009",
+      "module": "IAC",
+      "difficulty": "interview",
+      "tags": [
+        "secrets-iac"
+      ],
+      "source": "ANDM technical domains 2026-07 (AWS networking)",
+      "question": "Secrets in Terraform/CloudFormation:",
+      "options": [
+        "Use secret managers / dynamic refs—don't plaintext in state if avoidable; protect state",
+        "Commit secrets for S3",
+        "Put in outputs public",
+        "Ignore"
+      ],
+      "correctIndex": 0,
+      "explanation": "IaC security."
+    },
+    {
+      "id": "IAC-010",
+      "module": "IAC",
+      "difficulty": "interview",
+      "tags": [
+        "multi-env"
+      ],
+      "source": "ANDM technical domains 2026-07 (AWS networking)",
+      "question": "Dev/stage/prod via IaC:",
+      "options": [
+        "Same code, different var/backends—promote artifacts carefully",
+        "Copy-paste three unrealted repos forever",
+        "Prod-only code",
+        "No diffs between envs ever"
+      ],
+      "correctIndex": 0,
+      "explanation": "Promotion discipline."
+    },
+    {
+      "id": "IAC-011",
+      "module": "IAC",
+      "difficulty": "interview",
+      "tags": [
+        "import"
+      ],
+      "source": "ANDM technical domains 2026-07 (AWS networking)",
+      "question": "Importing brownfield into IaC:",
+      "options": [
+        "Incremental adopt; don't claim coverage you don't manage",
+        "Big-bang rewrite overnight",
+        "Delete prod and recreate for purity",
+        "Skip state"
+      ],
+      "correctIndex": 0,
+      "explanation": "Migration pragmatism."
+    },
+    {
+      "id": "IAC-012",
+      "module": "IAC",
+      "difficulty": "interview",
+      "tags": [
+        "policy"
+      ],
+      "source": "ANDM technical domains 2026-07 (AWS networking)",
+      "question": "Policy-as-code (OPA/Sentinel/etc.) gates:",
+      "options": [
+        "Non-compliant plans fail CI before apply",
+        "Only after outage",
+        "Replace IAM",
+        "Disable plan"
+      ],
+      "correctIndex": 0,
+      "explanation": "Guardrails."
+    },
+    {
+      "id": "IAC-013",
+      "module": "IAC",
+      "difficulty": "interview",
+      "tags": [
+        "idempotent"
+      ],
+      "source": "ANDM technical domains 2026-07 (AWS networking)",
+      "question": "Idempotent applies mean:",
+      "options": [
+        "Re-apply converges without unnecessary churn when already correct",
+        "Always recreates resources",
+        "Skips state",
+        "Disables locks"
+      ],
+      "correctIndex": 0,
+      "explanation": "Same theme as Ansible."
+    },
+    {
+      "id": "IAC-014",
+      "module": "IAC",
+      "difficulty": "interview",
+      "tags": [
+        "graph"
+      ],
+      "source": "ANDM technical domains 2026-07 (AWS networking)",
+      "question": "Dependency graph awareness prevents:",
+      "options": [
+        "Creating resources before dependencies (or destroying in wrong order)",
+        "BGP loops only",
+        "Need for Git",
+        "DNS use"
+      ],
+      "correctIndex": 0,
+      "explanation": "Ordering."
+    },
+    {
+      "id": "IAC-015",
+      "module": "IAC",
+      "difficulty": "interview",
+      "tags": [
+        "blast"
+      ],
+      "source": "ANDM technical domains 2026-07 (AWS networking)",
+      "question": "One module change updates 200 firewalls—control with:",
+      "options": [
+        "Blast-radius reviews, staged rollouts, and tight module boundaries",
+        "Larger modules always",
+        "No code review",
+        "Disable CI"
+      ],
+      "correctIndex": 0,
+      "explanation": "Scale of IaC risk."
+    },
+    {
+      "id": "IAC-016",
+      "module": "IAC",
+      "difficulty": "interview",
+      "tags": [
+        "docs"
+      ],
+      "source": "ANDM technical domains 2026-07 (AWS networking)",
+      "question": "IaC reduces runbook length when:",
+      "options": [
+        "Code + pipeline is the procedure—docs explain policy/why, not click-by-click drift",
+        "Docs forbidden",
+        "Code comments replace monitoring",
+        "Wiki is source of truth over code"
+      ],
+      "correctIndex": 0,
+      "explanation": "Docs vs code."
+    },
+    {
+      "id": "IAC-017",
+      "module": "IAC",
+      "difficulty": "interview",
+      "tags": [
+        "testing"
+      ],
+      "source": "ANDM technical domains 2026-07 (AWS networking)",
+      "question": "Terratest/kitchen-style tests for IaC:",
+      "options": [
+        "Catch broken assumptions before prod—worth the investment for critical modules",
+        "Useless vs manual",
+        "Only for frontend",
+        "Replace canaries entirely"
+      ],
+      "correctIndex": 0,
+      "explanation": "Test pyramid."
+    },
+    {
+      "id": "IAC-018",
+      "module": "IAC",
+      "difficulty": "interview",
+      "tags": [
+        "gitops"
+      ],
+      "source": "ANDM technical domains 2026-07 (AWS networking)",
+      "question": "GitOps emphasizes:",
+      "options": [
+        "Desired state in Git; controllers reconcile cluster/network toward it with audit",
+        "Push from laptops only",
+        "No PRs",
+        "Ignore drift"
+      ],
+      "correctIndex": 0,
+      "explanation": "Operational model."
+    },
+    {
+      "id": "IAC-019",
+      "module": "IAC",
+      "difficulty": "interview",
+      "tags": [
+        "multi-tool"
+      ],
+      "source": "ANDM technical domains 2026-07 (AWS networking)",
+      "question": "Terraform + Ansible together often means:",
+      "options": [
+        "Terraform for cloud objects; Ansible for device/OS config—draw clear boundaries",
+        "Run both on everything always",
+        "Pick randomly per PR",
+        "Forbid Ansible"
+      ],
+      "correctIndex": 0,
+      "explanation": "Tool boundaries."
+    },
+    {
+      "id": "IAC-020",
+      "module": "IAC",
+      "difficulty": "interview",
+      "tags": [
+        "rollback-iac"
+      ],
+      "source": "ANDM technical domains 2026-07 (AWS networking)",
+      "question": "Rollback with IaC:",
+      "options": [
+        "Revert Git and apply previous known-good; or forward-fix with care—practice both",
+        "Impossible",
+        "Delete state to rollback",
+        "Only restore VMs"
+      ],
+      "correctIndex": 0,
+      "explanation": "Recovery paths."
+    }
+  ]
+}

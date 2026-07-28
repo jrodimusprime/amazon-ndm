@@ -1,0 +1,364 @@
+{
+  "questions": [
+    {
+      "id": "ANS-001",
+      "module": "ANS",
+      "difficulty": "interview",
+      "tags": [
+        "inventory"
+      ],
+      "source": "ANDM technical domains 2026-07",
+      "question": "Ansible inventory should represent:",
+      "options": [
+        "Hosts/groups/vars for targeting—dynamic inventory beats stale static lists at scale",
+        "Only one host ever",
+        "BGP ASNs only",
+        "Passwords in group names"
+      ],
+      "correctIndex": 0,
+      "explanation": "Inventory is targeting truth."
+    },
+    {
+      "id": "ANS-002",
+      "module": "ANS",
+      "difficulty": "interview",
+      "tags": [
+        "playbook"
+      ],
+      "source": "ANDM technical domains 2026-07",
+      "question": "A playbook is:",
+      "options": [
+        "Ordered plays mapping hosts to tasks/roles to converge desired state",
+        "A Python compiler",
+        "An OSPF LSA",
+        "A VPN tunnel"
+      ],
+      "correctIndex": 0,
+      "explanation": "Ansible core object."
+    },
+    {
+      "id": "ANS-003",
+      "module": "ANS",
+      "difficulty": "interview",
+      "tags": [
+        "idempotent"
+      ],
+      "source": "ANDM technical domains 2026-07",
+      "question": "Ansible idempotency means:",
+      "options": [
+        "Re-running tasks leaves the system in the same desired state without needless churn",
+        "Tasks always change config",
+        "Check mode is off",
+        "Handlers never run"
+      ],
+      "correctIndex": 0,
+      "explanation": "Why Ansible fits ops."
+    },
+    {
+      "id": "ANS-004",
+      "module": "ANS",
+      "difficulty": "interview",
+      "tags": [
+        "check"
+      ],
+      "source": "ANDM technical domains 2026-07",
+      "question": "ansible --check / check mode:",
+      "options": [
+        "Predicts changes without applying (module-dependent)—still validate critically; not a full lab",
+        "Guarantees production safety",
+        "Pushes to prod silently",
+        "Disables YAML"
+      ],
+      "correctIndex": 0,
+      "explanation": "Useful but incomplete."
+    },
+    {
+      "id": "ANS-005",
+      "module": "ANS",
+      "difficulty": "interview",
+      "tags": [
+        "vault"
+      ],
+      "source": "ANDM technical domains 2026-07",
+      "question": "Ansible Vault is for:",
+      "options": [
+        "Encrypting sensitive vars at rest in repos—manage keys carefully",
+        "Encrypting data plane traffic",
+        "Replacing TLS",
+        "OSPF auth only"
+      ],
+      "correctIndex": 0,
+      "explanation": "Secrets adjacent to playbooks."
+    },
+    {
+      "id": "ANS-006",
+      "module": "ANS",
+      "difficulty": "interview",
+      "tags": [
+        "roles"
+      ],
+      "source": "ANDM technical domains 2026-07",
+      "question": "Roles vs flat playbooks:",
+      "options": [
+        "Roles package tasks/handlers/defaults for reuse and clearer ownership",
+        "Roles disable idempotency",
+        "Flat is always better at 10k tasks",
+        "Roles replace inventory"
+      ],
+      "correctIndex": 0,
+      "explanation": "Structure for scale."
+    },
+    {
+      "id": "ANS-007",
+      "module": "ANS",
+      "difficulty": "interview",
+      "tags": [
+        "handlers"
+      ],
+      "source": "ANDM technical domains 2026-07",
+      "question": "Handlers run when:",
+      "options": [
+        "Notified by a changed task—typically for restart/reload once per play",
+        "Every task always",
+        "Only on check mode",
+        "Never in CI"
+      ],
+      "correctIndex": 0,
+      "explanation": "Change-driven side effects."
+    },
+    {
+      "id": "ANS-008",
+      "module": "ANS",
+      "difficulty": "interview",
+      "tags": [
+        "jinja"
+      ],
+      "source": "ANDM technical domains 2026-07",
+      "question": "Jinja2 in Ansible templates:",
+      "options": [
+        "Renders config from vars—incorrect vars → wrong config at scale; test rendered output",
+        "Cannot loop",
+        "Replaces inventory",
+        "Only works with Perl"
+      ],
+      "correctIndex": 0,
+      "explanation": "Template risk."
+    },
+    {
+      "id": "ANS-009",
+      "module": "ANS",
+      "difficulty": "interview",
+      "tags": [
+        "when"
+      ],
+      "source": "ANDM technical domains 2026-07",
+      "question": "When NOT to use Ansible:",
+      "options": [
+        "Ultra-low-latency dataplane control loops, or when a purpose-built controller/API transaction is the safer system of record",
+        "Any SSH task",
+        "Linting YAML",
+        "Generating reports"
+      ],
+      "correctIndex": 0,
+      "explanation": "Tool fitness."
+    },
+    {
+      "id": "ANS-010",
+      "module": "ANS",
+      "difficulty": "interview",
+      "tags": [
+        "facts"
+      ],
+      "source": "ANDM technical domains 2026-07",
+      "question": "Gathering facts:",
+      "options": [
+        "Collects host data for decisions—can be slow/noisy; tune/disable when unneeded",
+        "Facts replace monitoring",
+        "Facts are BGP attributes",
+        "Disable forever always"
+      ],
+      "correctIndex": 0,
+      "explanation": "Cost of discovery."
+    },
+    {
+      "id": "ANS-011",
+      "module": "ANS",
+      "difficulty": "interview",
+      "tags": [
+        "strategy"
+      ],
+      "source": "ANDM technical domains 2026-07",
+      "question": "Serial / batch rolls in Ansible help:",
+      "options": [
+        "Limit blast radius—deploy in waves with health checks between batches",
+        "Maximize simultaneous failure",
+        "Skip handlers",
+        "Disable vault"
+      ],
+      "correctIndex": 0,
+      "explanation": "Safe rollouts."
+    },
+    {
+      "id": "ANS-012",
+      "module": "ANS",
+      "difficulty": "interview",
+      "tags": [
+        "modules"
+      ],
+      "source": "ANDM technical domains 2026-07",
+      "question": "Prefer modules over raw shell because:",
+      "options": [
+        "Modules aim for idempotent, structured resource operations; shell is escape hatch",
+        "Shell is always idempotent",
+        "Modules cannot configure interfaces",
+        "Raw is required for YAML"
+      ],
+      "correctIndex": 0,
+      "explanation": "Use the right abstraction."
+    },
+    {
+      "id": "ANS-013",
+      "module": "ANS",
+      "difficulty": "interview",
+      "tags": [
+        "collections"
+      ],
+      "source": "ANDM technical domains 2026-07",
+      "question": "Pip/Galaxy collections:",
+      "options": [
+        "Version-pin trusted content; review supply chain before prod use",
+        "Always latest unpinned",
+        "Collections replace Git",
+        "No need to review"
+      ],
+      "correctIndex": 0,
+      "explanation": "Dependency hygiene."
+    },
+    {
+      "id": "ANS-014",
+      "module": "ANS",
+      "difficulty": "interview",
+      "tags": [
+        "delegate"
+      ],
+      "source": "ANDM technical domains 2026-07",
+      "question": "delegate_to is used to:",
+      "options": [
+        "Run a task on a different host than the current inventory host (e.g., controller/API endpoint)",
+        "Disable SSH",
+        "Encrypt vault",
+        "Set OSPF cost"
+      ],
+      "correctIndex": 0,
+      "explanation": "Targeting flexibility."
+    },
+    {
+      "id": "ANS-015",
+      "module": "ANS",
+      "difficulty": "interview",
+      "tags": [
+        "tags"
+      ],
+      "source": "ANDM technical domains 2026-07",
+      "question": "Tags help operators:",
+      "options": [
+        "Run subsets of tasks safely—don't rely on tags as your only change control",
+        "Hide failed tasks",
+        "Skip vault decrypt",
+        "Replace CI"
+      ],
+      "correctIndex": 0,
+      "explanation": "Selective execution."
+    },
+    {
+      "id": "ANS-016",
+      "module": "ANS",
+      "difficulty": "interview",
+      "tags": [
+        "diff"
+      ],
+      "source": "ANDM technical domains 2026-07",
+      "question": "Showing diffs on network modules matters because:",
+      "options": [
+        "Operators see intended vs actual change before/while applying",
+        "Diffs break idempotency",
+        "Diffs disable check mode",
+        "Diffs are only for Linux"
+      ],
+      "correctIndex": 0,
+      "explanation": "Transparency."
+    },
+    {
+      "id": "ANS-017",
+      "module": "ANS",
+      "difficulty": "interview",
+      "tags": [
+        "awx"
+      ],
+      "source": "ANDM technical domains 2026-07",
+      "question": "AWX/AAP (controller) adds:",
+      "options": [
+        "RBAC, scheduling, audit, and centralized runs beyond laptop ansible-playbook",
+        "Faster SPF",
+        "Free MPLS licenses",
+        "Automatic RD/RT"
+      ],
+      "correctIndex": 0,
+      "explanation": "Enterprise control plane for Ansible."
+    },
+    {
+      "id": "ANS-018",
+      "module": "ANS",
+      "difficulty": "interview",
+      "tags": [
+        "network-cli"
+      ],
+      "source": "ANDM technical domains 2026-07",
+      "question": "Network device automation via Ansible often uses:",
+      "options": [
+        "network_cli / httpapi / NETCONF connection plugins—not assuming Linux SSH Python",
+        "Only Docker modules",
+        "Only winrm",
+        "SMTP"
+      ],
+      "correctIndex": 0,
+      "explanation": "Network-specific connections."
+    },
+    {
+      "id": "ANS-019",
+      "module": "ANS",
+      "difficulty": "interview",
+      "tags": [
+        "errors"
+      ],
+      "source": "ANDM technical domains 2026-07",
+      "question": "any_errors_fatal / max_fail_percentage:",
+      "options": [
+        "Control whether a wave aborts on failures—tune to risk tolerance",
+        "Deletes inventory",
+        "Disables vault",
+        "Forces check mode"
+      ],
+      "correctIndex": 0,
+      "explanation": "Failure policy."
+    },
+    {
+      "id": "ANS-020",
+      "module": "ANS",
+      "difficulty": "interview",
+      "tags": [
+        "variables"
+      ],
+      "source": "ANDM technical domains 2026-07",
+      "question": "Variable precedence surprises cause:",
+      "options": [
+        "Wrong config from unexpected var winning—know precedence and minimize layers",
+        "Automatic correctness",
+        "Faster BGP",
+        "Disabled Jinja"
+      ],
+      "correctIndex": 0,
+      "explanation": "Clarity over cleverness."
+    }
+  ]
+}

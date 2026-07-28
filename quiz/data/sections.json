@@ -2,7 +2,7 @@
   "modules": [
     {
       "id": "LP-CORE",
-      "title": "Leadership Principles \u2014 core",
+      "title": "Leadership Principles — core",
       "questionCount": 24,
       "dataFile": "questions/lp-core.json",
       "buildOrder": 1,
@@ -10,7 +10,7 @@
     },
     {
       "id": "LP-FULL",
-      "title": "Leadership Principles \u2014 full coverage",
+      "title": "Leadership Principles — full coverage",
       "questionCount": 16,
       "dataFile": "questions/lp-full.json",
       "buildOrder": 2,
@@ -18,7 +18,7 @@
     },
     {
       "id": "NC",
-      "title": "Network Core \u2014 org & fabric domain",
+      "title": "Network Core — org & fabric domain",
       "questionCount": 16,
       "dataFile": "questions/nc-network-core.json",
       "buildOrder": 3,
@@ -42,7 +42,7 @@
     },
     {
       "id": "HW",
-      "title": "Hardware datapath \u2014 RU, ASICs, planes, buffers, protocols",
+      "title": "Hardware datapath — RU, ASICs, planes, buffers, protocols",
       "questionCount": 53,
       "dataFile": "questions/hw-datapath.json",
       "buildOrder": 6,
@@ -106,7 +106,7 @@
     },
     {
       "id": "N3",
-      "title": "Ops excellence \u2014 metrics & incidents",
+      "title": "Ops excellence — metrics & incidents",
       "questionCount": 16,
       "dataFile": "questions/n3-ops-incidents.json",
       "buildOrder": 14,
@@ -122,7 +122,7 @@
     },
     {
       "id": "LOOP",
-      "title": "Interview loop map \u2014 rounds & examples",
+      "title": "Interview loop map — rounds & examples",
       "questionCount": 18,
       "dataFile": "questions/loop-rounds.json",
       "buildOrder": 16,
@@ -135,6 +135,86 @@
       "dataFile": "questions/wx-weird.json",
       "buildOrder": 17,
       "priority": 2
+    },
+    {
+      "id": "FND",
+      "title": "Network Fundamentals & Routing",
+      "questionCount": 20,
+      "dataFile": "questions/fnd-fundamentals.json",
+      "buildOrder": 18,
+      "priority": 1
+    },
+    {
+      "id": "ADV",
+      "title": "Advanced Routing — BGP, OSPF, IS-IS, MPLS",
+      "questionCount": 40,
+      "dataFile": "questions/adv-routing.json",
+      "buildOrder": 19,
+      "priority": 1
+    },
+    {
+      "id": "AUTO",
+      "title": "Network Automation & Programming",
+      "questionCount": 20,
+      "dataFile": "questions/auto-programming.json",
+      "buildOrder": 20,
+      "priority": 1
+    },
+    {
+      "id": "NDEV",
+      "title": "NetDevOps — CI/CD, Git, YAML/JSON",
+      "questionCount": 20,
+      "dataFile": "questions/ndev-netdevops.json",
+      "buildOrder": 21,
+      "priority": 1
+    },
+    {
+      "id": "ANS",
+      "title": "Automation Tools — Ansible",
+      "questionCount": 20,
+      "dataFile": "questions/ans-ansible.json",
+      "buildOrder": 22,
+      "priority": 1
+    },
+    {
+      "id": "LNX",
+      "title": "Linux/Unix Systems Administration",
+      "questionCount": 20,
+      "dataFile": "questions/lnx-linux.json",
+      "buildOrder": 23,
+      "priority": 1
+    },
+    {
+      "id": "CLD",
+      "title": "Cloud Networking — VPC, TGW, Cloud WAN",
+      "questionCount": 20,
+      "dataFile": "questions/cld-cloud.json",
+      "buildOrder": 24,
+      "priority": 1
+    },
+    {
+      "id": "SEC",
+      "title": "Network Security — Firewalls, ACLs, VPNs",
+      "questionCount": 20,
+      "dataFile": "questions/sec-security.json",
+      "buildOrder": 25,
+      "priority": 1
+    },
+    {
+      "id": "IAC",
+      "title": "Infrastructure as Code concepts",
+      "questionCount": 20,
+      "dataFile": "questions/iac-concepts.json",
+      "buildOrder": 26,
+      "priority": 1
+    },
+    {
+      "id": "CAP",
+      "title": "Performance Tuning & Capacity Management",
+      "questionCount": 20,
+      "dataFile": "questions/cap-capacity.json",
+      "buildOrder": 27,
+      "priority": 1
     }
   ],
   "examPresets": [
@@ -157,7 +237,17 @@
         "N3",
         "N4",
         "LOOP",
-        "WX"
+        "WX",
+        "FND",
+        "ADV",
+        "AUTO",
+        "NDEV",
+        "ANS",
+        "LNX",
+        "CLD",
+        "SEC",
+        "IAC",
+        "CAP"
       ]
     },
     {
@@ -180,7 +270,33 @@
         "N3",
         "N4",
         "LOOP",
-        "WX"
+        "WX",
+        "FND",
+        "ADV",
+        "AUTO",
+        "NDEV",
+        "ANS",
+        "LNX",
+        "CLD",
+        "SEC",
+        "IAC",
+        "CAP"
+      ]
+    },
+    {
+      "id": "tech-domains",
+      "title": "Technical domains (manager duties)",
+      "modules": [
+        "FND",
+        "ADV",
+        "AUTO",
+        "NDEV",
+        "ANS",
+        "LNX",
+        "CLD",
+        "SEC",
+        "IAC",
+        "CAP"
       ]
     }
   ]

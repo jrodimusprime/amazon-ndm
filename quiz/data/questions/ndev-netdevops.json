@@ -1,0 +1,364 @@
+{
+  "questions": [
+    {
+      "id": "NDEV-001",
+      "module": "NDEV",
+      "difficulty": "interview",
+      "tags": [
+        "git"
+      ],
+      "source": "ANDM technical domains 2026-07",
+      "question": "Network config in Git — primary win:",
+      "options": [
+        "History, review, blame, and rollback of intent—not magic correctness by itself",
+        "Git pushes to devices automatically always",
+        "Git replaces monitoring",
+        "Git encrypts BGP"
+      ],
+      "correctIndex": 0,
+      "explanation": "Version control is foundation."
+    },
+    {
+      "id": "NDEV-002",
+      "module": "NDEV",
+      "difficulty": "interview",
+      "tags": [
+        "pr"
+      ],
+      "source": "ANDM technical domains 2026-07",
+      "question": "Pull request for a fabric change should show:",
+      "options": [
+        "Diff of intent, risk notes, test evidence, and rollback—not just 'LGTM' on a 5k-line dump",
+        "Only screenshots of CLI",
+        "No reviewers for speed",
+        "Secrets for repro"
+      ],
+      "correctIndex": 0,
+      "explanation": "Review quality."
+    },
+    {
+      "id": "NDEV-003",
+      "module": "NDEV",
+      "difficulty": "interview",
+      "tags": [
+        "ci"
+      ],
+      "source": "ANDM technical domains 2026-07",
+      "question": "CI for network automation should at least:",
+      "options": [
+        "Lint/syntax-check, unit tests, and render/validate configs before merge",
+        "Deploy straight to prod on commit",
+        "Skip tests on Fridays",
+        "Only format Markdown"
+      ],
+      "correctIndex": 0,
+      "explanation": "Shift-left checks."
+    },
+    {
+      "id": "NDEV-004",
+      "module": "NDEV",
+      "difficulty": "interview",
+      "tags": [
+        "cd"
+      ],
+      "source": "ANDM technical domains 2026-07",
+      "question": "Continuous delivery to network devices differs from app CD because:",
+      "options": [
+        "Blast radius, change windows, and partial failure modes dominate—canaries and health gates are mandatory",
+        "Networks never need canaries",
+        "CD means no rollback",
+        "Devices auto-heal always"
+      ],
+      "correctIndex": 0,
+      "explanation": "NetDevOps ≠ naïve app CD copy."
+    },
+    {
+      "id": "NDEV-005",
+      "module": "NDEV",
+      "difficulty": "interview",
+      "tags": [
+        "yaml"
+      ],
+      "source": "ANDM technical domains 2026-07",
+      "question": "YAML in network IaC — top footgun:",
+      "options": [
+        "Indentation/structure errors and ambiguous types (on/off, numbers)—validate schema, don't trust eyes",
+        "YAML cannot represent lists",
+        "YAML is binary only",
+        "YAML replaces JSON always"
+      ],
+      "correctIndex": 0,
+      "explanation": "Structured data literacy."
+    },
+    {
+      "id": "NDEV-006",
+      "module": "NDEV",
+      "difficulty": "interview",
+      "tags": [
+        "json"
+      ],
+      "source": "ANDM technical domains 2026-07",
+      "question": "JSON vs YAML for machine APIs:",
+      "options": [
+        "JSON is ubiquitous for APIs; YAML is common for humans/config—both need schemas and validation",
+        "JSON forbids nested objects",
+        "YAML cannot be parsed",
+        "Only XML is allowed"
+      ],
+      "correctIndex": 0,
+      "explanation": "Pick format for audience + tooling."
+    },
+    {
+      "id": "NDEV-007",
+      "module": "NDEV",
+      "difficulty": "interview",
+      "tags": [
+        "pipeline"
+      ],
+      "source": "ANDM technical domains 2026-07",
+      "question": "Sensible pipeline stages:",
+      "options": [
+        "lint → unit → lab/cOS → canary → prod with holds",
+        "prod → lab",
+        "skip lab if CI green on lint only",
+        "manual only forever"
+      ],
+      "correctIndex": 0,
+      "explanation": "Progressive confidence."
+    },
+    {
+      "id": "NDEV-008",
+      "module": "NDEV",
+      "difficulty": "interview",
+      "tags": [
+        "branch"
+      ],
+      "source": "ANDM technical domains 2026-07",
+      "question": "Long-lived config branches diverge because:",
+      "options": [
+        "Reality and trunk move on—prefer short-lived branches and frequent rebase/merge",
+        "Git cannot merge YAML",
+        "Branches improve MTU",
+        "Divergence is desired"
+      ],
+      "correctIndex": 0,
+      "explanation": "Trunk hygiene."
+    },
+    {
+      "id": "NDEV-009",
+      "module": "NDEV",
+      "difficulty": "interview",
+      "tags": [
+        "artifact"
+      ],
+      "source": "ANDM technical domains 2026-07",
+      "question": "Immutable artifacts in NetDevOps mean:",
+      "options": [
+        "Build once (image/package/rendered bundle), promote the same artifact through environments",
+        "Rebuild differently per env silently",
+        "Edit prod by hand after deploy",
+        "Skip hashes"
+      ],
+      "correctIndex": 0,
+      "explanation": "Reproducibility."
+    },
+    {
+      "id": "NDEV-010",
+      "module": "NDEV",
+      "difficulty": "interview",
+      "tags": [
+        "policy-as-code"
+      ],
+      "source": "ANDM technical domains 2026-07",
+      "question": "Policy-as-code for network changes:",
+      "options": [
+        "Encode constraints (prefix limits, banned patterns) checked in CI—not only human review",
+        "Policy only in slides",
+        "Disable CI checks for seniors",
+        "Store policy in ARP"
+      ],
+      "correctIndex": 0,
+      "explanation": "Automated guardrails."
+    },
+    {
+      "id": "NDEV-011",
+      "module": "NDEV",
+      "difficulty": "interview",
+      "tags": [
+        "drift"
+      ],
+      "source": "ANDM technical domains 2026-07",
+      "question": "Config drift detection belongs in NetDevOps because:",
+      "options": [
+        "Live state diverges from Git—detect, alert, and reconcile deliberately",
+        "Drift is impossible with YAML",
+        "Git pull fixes devices",
+        "Only Ansible vault detects drift"
+      ],
+      "correctIndex": 0,
+      "explanation": "Close the loop."
+    },
+    {
+      "id": "NDEV-012",
+      "module": "NDEV",
+      "difficulty": "interview",
+      "tags": [
+        "secrets-git"
+      ],
+      "source": "ANDM technical domains 2026-07",
+      "question": "Can you commit encrypted secrets?",
+      "options": [
+        "Sometimes with sealed/vault patterns—but prefer external secret stores; never plain secrets",
+        "Always commit plaintext for audit",
+        "Secrets in commit messages",
+        "Put keys in tags"
+      ],
+      "correctIndex": 0,
+      "explanation": "Security + Git."
+    },
+    {
+      "id": "NDEV-013",
+      "module": "NDEV",
+      "difficulty": "interview",
+      "tags": [
+        "reviewers"
+      ],
+      "source": "ANDM technical domains 2026-07",
+      "question": "Who should review a routing policy PR?",
+      "options": [
+        "Someone with domain competence and blast-radius accountability—not only 'any approver'",
+        "Only intern for speed",
+        "Bots only",
+        "No one if tests pass"
+      ],
+      "correctIndex": 0,
+      "explanation": "Human judgment still matters."
+    },
+    {
+      "id": "NDEV-014",
+      "module": "NDEV",
+      "difficulty": "interview",
+      "tags": [
+        "rollback"
+      ],
+      "source": "ANDM technical domains 2026-07",
+      "question": "Rollback strategy should be:",
+      "options": [
+        "Tested, owned, and fast—prefer forward-fix only when truly safer and rehearsed",
+        "Undefined until outage",
+        "Delete Git history",
+        "Disable monitoring during rollback"
+      ],
+      "correctIndex": 0,
+      "explanation": "Change management reality."
+    },
+    {
+      "id": "NDEV-015",
+      "module": "NDEV",
+      "difficulty": "interview",
+      "tags": [
+        "trunk"
+      ],
+      "source": "ANDM technical domains 2026-07",
+      "question": "Feature flags / safe toggles for network features:",
+      "options": [
+        "Allow dark launch and quick disable when software supports it—pair with metrics",
+        "Flags replace tests",
+        "Only for frontend",
+        "Disable all observability"
+      ],
+      "correctIndex": 0,
+      "explanation": "Progressive delivery ideas."
+    },
+    {
+      "id": "NDEV-016",
+      "module": "NDEV",
+      "difficulty": "interview",
+      "tags": [
+        "owners"
+      ],
+      "source": "ANDM technical domains 2026-07",
+      "question": "CODEOWNERS-style ownership helps:",
+      "options": [
+        "Route reviews to teams accountable for that domain (edge vs fabric vs tools)",
+        "Block all merges forever",
+        "Hide ownership",
+        "Replace on-call"
+      ],
+      "correctIndex": 0,
+      "explanation": "Clarity of accountability."
+    },
+    {
+      "id": "NDEV-017",
+      "module": "NDEV",
+      "difficulty": "interview",
+      "tags": [
+        "sbom"
+      ],
+      "source": "ANDM technical domains 2026-07",
+      "question": "Why track dependency versions for network tooling?",
+      "options": [
+        "Supply-chain and break-glass rebuilds—pin and patch deliberately",
+        "Versions never matter",
+        "Latest always safest with no testing",
+        "OSPF tracks pip"
+      ],
+      "correctIndex": 0,
+      "explanation": "Software hygiene for NetDevOps."
+    },
+    {
+      "id": "NDEV-018",
+      "module": "NDEV",
+      "difficulty": "interview",
+      "tags": [
+        "env"
+      ],
+      "source": "ANDM technical domains 2026-07",
+      "question": "Lab that doesn't mirror prod topologies fails because:",
+      "options": [
+        "False confidence—invest in representative labs or risk production-only learning",
+        "Labs are unused",
+        "Prod is the only ethical testbed",
+        "CI replaces lab"
+      ],
+      "correctIndex": 0,
+      "explanation": "Fidelity matters."
+    },
+    {
+      "id": "NDEV-019",
+      "module": "NDEV",
+      "difficulty": "interview",
+      "tags": [
+        "chatops"
+      ],
+      "source": "ANDM technical domains 2026-07",
+      "question": "ChatOps for network changes—guardrail:",
+      "options": [
+        "Authenticate, authorize, audit, and rate-limit—chat is a UI, not a security boundary",
+        "Anyone in Slack may push prod",
+        "Disable logs",
+        "Skip approvals"
+      ],
+      "correctIndex": 0,
+      "explanation": "Convenience vs control."
+    },
+    {
+      "id": "NDEV-020",
+      "module": "NDEV",
+      "difficulty": "interview",
+      "tags": [
+        "metrics"
+      ],
+      "source": "ANDM technical domains 2026-07",
+      "question": "Pipeline success metric that can mislead:",
+      "options": [
+        "Deploy frequency without change failure rate / MTTR—optimize the whole DORA-like set carefully for networks",
+        "Only speed",
+        "Only lines of YAML",
+        "Number of Git stars"
+      ],
+      "correctIndex": 0,
+      "explanation": "Measure what matters."
+    }
+  ]
+}

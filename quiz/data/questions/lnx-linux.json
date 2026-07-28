@@ -1,0 +1,364 @@
+{
+  "questions": [
+    {
+      "id": "LNX-001",
+      "module": "LNX",
+      "difficulty": "interview",
+      "tags": [
+        "ip"
+      ],
+      "source": "ANDM technical domains 2026-07",
+      "question": "Modern Linux interface/address tool of choice:",
+      "options": [
+        "ip (iproute2) — ifconfig is legacy",
+        "only traceroute",
+        "only Ansible",
+        "BGP daemon built-in"
+      ],
+      "correctIndex": 0,
+      "explanation": "iproute2 literacy."
+    },
+    {
+      "id": "LNX-002",
+      "module": "LNX",
+      "difficulty": "interview",
+      "tags": [
+        "ss"
+      ],
+      "source": "ANDM technical domains 2026-07",
+      "question": "ss vs netstat:",
+      "options": [
+        "ss (from iproute2) is the modern socket statistics tool replacing netstat in many distros",
+        "ss configures OSPF",
+        "netstat allocates labels",
+        "They manage YAML"
+      ],
+      "correctIndex": 0,
+      "explanation": "Socket triage."
+    },
+    {
+      "id": "LNX-003",
+      "module": "LNX",
+      "difficulty": "interview",
+      "tags": [
+        "tcpdump"
+      ],
+      "source": "ANDM technical domains 2026-07",
+      "question": "tcpdump helps when:",
+      "options": [
+        "You need on-box packet evidence—filter tightly; mind CPU and privacy",
+        "Replacing monitoring permanently",
+        "Editing BGP policies",
+        "Formatting JSON"
+      ],
+      "correctIndex": 0,
+      "explanation": "Packet truth."
+    },
+    {
+      "id": "LNX-004",
+      "module": "LNX",
+      "difficulty": "interview",
+      "tags": [
+        "proc"
+      ],
+      "source": "ANDM technical domains 2026-07",
+      "question": " /proc and /sys are:",
+      "options": [
+        "Kernel/runtime interfaces for introspection and some tuning—not permanent config stores by themselves",
+        "Git repos",
+        "MPLS LSPs",
+        "Ansible inventories"
+      ],
+      "correctIndex": 0,
+      "explanation": "Linux observability."
+    },
+    {
+      "id": "LNX-005",
+      "module": "LNX",
+      "difficulty": "interview",
+      "tags": [
+        "disk"
+      ],
+      "source": "ANDM technical domains 2026-07",
+      "question": "Disk full on a collector/log host—impact:",
+      "options": [
+        "Services fail, monitoring goes blind—capacity and log rotation are SRE basics",
+        "No impact if CPU free",
+        "BGP ignores disks",
+        "Only affects Perl"
+      ],
+      "correctIndex": 0,
+      "explanation": "Host capacity."
+    },
+    {
+      "id": "LNX-006",
+      "module": "LNX",
+      "difficulty": "interview",
+      "tags": [
+        "systemd"
+      ],
+      "source": "ANDM technical domains 2026-07",
+      "question": "systemd service failed—first checks:",
+      "options": [
+        "systemctl status/journalctl for unit logs and restart loops",
+        "Reboot without logs",
+        "Delete the unit",
+        "Disable SELinux always"
+      ],
+      "correctIndex": 0,
+      "explanation": "Service triage."
+    },
+    {
+      "id": "LNX-007",
+      "module": "LNX",
+      "difficulty": "interview",
+      "tags": [
+        "dns"
+      ],
+      "source": "ANDM technical domains 2026-07",
+      "question": "App slow; DNS path check includes:",
+      "options": [
+        "Resolv config, latency to resolvers, NXDOMAIN/SERVFAIL rates, search domains",
+        "Only traceroute to 8.8.8.8",
+        "OSPF areas",
+        "TGW attachments"
+      ],
+      "correctIndex": 0,
+      "explanation": "DNS is in the critical path."
+    },
+    {
+      "id": "LNX-008",
+      "module": "LNX",
+      "difficulty": "interview",
+      "tags": [
+        "latency"
+      ],
+      "source": "ANDM technical domains 2026-07",
+      "question": "Users report latency; on Linux you might use:",
+      "options": [
+        "ping/mtr, ss, app metrics, and tcpdump sparingly—correlate with fabric telemetry",
+        "Only uptime",
+        "Only free -m",
+        "Only YAML lint"
+      ],
+      "correctIndex": 0,
+      "explanation": "Multi-layer triage."
+    },
+    {
+      "id": "LNX-009",
+      "module": "LNX",
+      "difficulty": "interview",
+      "tags": [
+        "permissions"
+      ],
+      "source": "ANDM technical domains 2026-07",
+      "question": "Automation SSH user should have:",
+      "options": [
+        "Least privilege needed—not shared root keys in chat",
+        "Passwordless root from Internet",
+        "World-writable authorized_keys",
+        "Disabled logging"
+      ],
+      "correctIndex": 0,
+      "explanation": "Host security."
+    },
+    {
+      "id": "LNX-010",
+      "module": "LNX",
+      "difficulty": "interview",
+      "tags": [
+        "ulimit"
+      ],
+      "source": "ANDM technical domains 2026-07",
+      "question": "File descriptor limits bite when:",
+      "options": [
+        "High connection counts—ulimit/systemd LimitsNOFILE must match workload",
+        "Only during OSPF SPF",
+        "Only with MPLS",
+        "Never on servers"
+      ],
+      "correctIndex": 0,
+      "explanation": "Classic scale limit."
+    },
+    {
+      "id": "LNX-011",
+      "module": "LNX",
+      "difficulty": "interview",
+      "tags": [
+        "time"
+      ],
+      "source": "ANDM technical domains 2026-07",
+      "question": "Clock skew breaks:",
+      "options": [
+        "TLS, logs, Kerberos, and incident timelines—use NTP/chrony",
+        "Only ARP",
+        "Only ECMP",
+        "Only Jinja"
+      ],
+      "correctIndex": 0,
+      "explanation": "Time is infrastructure."
+    },
+    {
+      "id": "LNX-012",
+      "module": "LNX",
+      "difficulty": "interview",
+      "tags": [
+        "cgroups"
+      ],
+      "source": "ANDM technical domains 2026-07",
+      "question": "cgroups/containers matter to network tools because:",
+      "options": [
+        "CPU/mem isolation affects pollers and control agents—noisy neighbor is real",
+        "They replace BGP",
+        "They set MTU only",
+        "They disable tcpdump"
+      ],
+      "correctIndex": 0,
+      "explanation": "Shared host realities."
+    },
+    {
+      "id": "LNX-013",
+      "module": "LNX",
+      "difficulty": "interview",
+      "tags": [
+        "routing-linux"
+      ],
+      "source": "ANDM technical domains 2026-07",
+      "question": "Linux can be a router; manager caution:",
+      "options": [
+        "Policy routing, rp_filter, offloads, and conntrack behavior can surprise—treat as a network device with change control",
+        "Linux routing is always wrong",
+        "No FIB on Linux",
+        "Only bridges allowed"
+      ],
+      "correctIndex": 0,
+      "explanation": "Hosts as network elements."
+    },
+    {
+      "id": "LNX-014",
+      "module": "LNX",
+      "difficulty": "interview",
+      "tags": [
+        "logs"
+      ],
+      "source": "ANDM technical domains 2026-07",
+      "question": "Centralized logs vs local only:",
+      "options": [
+        "Centralize for incident response; retain locally enough for break-glass",
+        "Delete logs for privacy always",
+        "Logs replace metrics",
+        "syslog cannot leave box"
+      ],
+      "correctIndex": 0,
+      "explanation": "Operability."
+    },
+    {
+      "id": "LNX-015",
+      "module": "LNX",
+      "difficulty": "interview",
+      "tags": [
+        "package"
+      ],
+      "source": "ANDM technical domains 2026-07",
+      "question": "Unattended distro upgrades on network controllers:",
+      "options": [
+        "Need change control—kernel/network stacks can break datapaths/agents",
+        "Always automatic Friday night",
+        "Never patch",
+        "Only upgrade Ansible"
+      ],
+      "correctIndex": 0,
+      "explanation": "Patch vs risk."
+    },
+    {
+      "id": "LNX-016",
+      "module": "LNX",
+      "difficulty": "interview",
+      "tags": [
+        "nic"
+      ],
+      "source": "ANDM technical domains 2026-07",
+      "question": "RX drops on NIC counters suggest:",
+      "options": [
+        "Overload, ring buffer/coalescing issues, or busyness—investigate before blaming WAN",
+        "Always fiber cut",
+        "Always BGP flap",
+        "Always DNS"
+      ],
+      "correctIndex": 0,
+      "explanation": "Host datapath."
+    },
+    {
+      "id": "LNX-017",
+      "module": "LNX",
+      "difficulty": "interview",
+      "tags": [
+        "conntrack"
+      ],
+      "source": "ANDM technical domains 2026-07",
+      "question": "NAT/firewall conntrack table full:",
+      "options": [
+        "New flows fail—size/tune or reduce statefulness where safe",
+        "Only affects OSPF",
+        "Fixed by MPLS PHP",
+        "Ignore counters"
+      ],
+      "correctIndex": 0,
+      "explanation": "Stateful middlebox capacity."
+    },
+    {
+      "id": "LNX-018",
+      "module": "LNX",
+      "difficulty": "interview",
+      "tags": [
+        "strace"
+      ],
+      "source": "ANDM technical domains 2026-07",
+      "question": "strace is for:",
+      "options": [
+        "Debugging syscalls of a stuck process—heavy; use carefully in prod",
+        "Configuring BGP",
+        "Rendering YAML",
+        "Allocating VLANs"
+      ],
+      "correctIndex": 0,
+      "explanation": "Deep host debug."
+    },
+    {
+      "id": "LNX-019",
+      "module": "LNX",
+      "difficulty": "interview",
+      "tags": [
+        "ssh"
+      ],
+      "source": "ANDM technical domains 2026-07",
+      "question": "SSH bastion pattern:",
+      "options": [
+        "Controlled entry with audit—prefer SSM/short-lived certs over eternal keys on every box",
+        "Open port 22 worldwide",
+        "Telnet fallback",
+        "Shared root password"
+      ],
+      "correctIndex": 0,
+      "explanation": "Access architecture."
+    },
+    {
+      "id": "LNX-020",
+      "module": "LNX",
+      "difficulty": "interview",
+      "tags": [
+        "capacity"
+      ],
+      "source": "ANDM technical domains 2026-07",
+      "question": "Load average high but app idle—consider:",
+      "options": [
+        "I/O wait, stolen CPU (virt), disk, or niced batch jobs—don't assume need more app replicas only",
+        "Always add BGP peers",
+        "Always widen MTU",
+        "Disable metrics"
+      ],
+      "correctIndex": 0,
+      "explanation": "Interpret host signals."
+    }
+  ]
+}

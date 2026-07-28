@@ -1,0 +1,364 @@
+{
+  "questions": [
+    {
+      "id": "FND-001",
+      "module": "FND",
+      "difficulty": "interview",
+      "tags": [
+        "cidr"
+      ],
+      "source": "ANDM technical domains 2026-07",
+      "question": "You need 500 hosts in one subnet. Smallest traditional IPv4 mask that fits (ignoring special cases)?",
+      "options": [
+        " /23 (512 addresses, 510 usable in classic host math)—/24 is only 254 usable",
+        "/24",
+        "/30",
+        "/32"
+      ],
+      "correctIndex": 0,
+      "explanation": "CIDR sizing: powers of two; leave headroom."
+    },
+    {
+      "id": "FND-002",
+      "module": "FND",
+      "difficulty": "interview",
+      "tags": [
+        "lpm"
+      ],
+      "source": "ANDM technical domains 2026-07",
+      "question": "Two routes 10.0.0.0/8 and 10.1.2.0/24 exist. Packet to 10.1.2.9 uses:",
+      "options": [
+        "Longest Prefix Match — the /24 wins over the /8",
+        "Always the /8",
+        "Round-robin",
+        "ARP decides the prefix"
+      ],
+      "correctIndex": 0,
+      "explanation": "LPM is the core of IP forwarding."
+    },
+    {
+      "id": "FND-003",
+      "module": "FND",
+      "difficulty": "interview",
+      "tags": [
+        "arp"
+      ],
+      "source": "ANDM technical domains 2026-07",
+      "question": "ARP maps:",
+      "options": [
+        "IPv4 address to MAC address on a local L2 segment",
+        "ASNs to communities",
+        "Labels to VRFs",
+        "DNS names to TLS certs"
+      ],
+      "correctIndex": 0,
+      "explanation": "Fundamentals: control plane for Ethernet last hop."
+    },
+    {
+      "id": "FND-004",
+      "module": "FND",
+      "difficulty": "interview",
+      "tags": [
+        "mtu"
+      ],
+      "source": "ANDM technical domains 2026-07",
+      "question": "Classic symptom of MTU black hole:",
+      "options": [
+        "Large packets fail (often when DF set) while small pings work—path MTU discovery issues",
+        "BGP always drops",
+        "DNS never resolves",
+        "Only Wi-Fi fails"
+      ],
+      "correctIndex": 0,
+      "explanation": "MTU/PMTUD is a Dive Deep favorite."
+    },
+    {
+      "id": "FND-005",
+      "module": "FND",
+      "difficulty": "interview",
+      "tags": [
+        "ttl"
+      ],
+      "source": "ANDM technical domains 2026-07",
+      "question": "TTL/hop limit exists to:",
+      "options": [
+        "Bound packet lifetime and kill loops—traceroute increments TTL to map paths",
+        "Encrypt payloads",
+        "Select BGP best path",
+        "Size TCAM"
+      ],
+      "correctIndex": 0,
+      "explanation": "Loop safety + traceroute mechanism."
+    },
+    {
+      "id": "FND-006",
+      "module": "FND",
+      "difficulty": "interview",
+      "tags": [
+        "rib-fib"
+      ],
+      "source": "ANDM technical domains 2026-07",
+      "question": "RIB vs FIB:",
+      "options": [
+        "RIB is the routing table(s) from protocols; FIB is the forwarding table installed for data plane lookups",
+        "They are identical always",
+        "FIB only stores MAC",
+        "RIB is MPLS labels only"
+      ],
+      "correctIndex": 0,
+      "explanation": "Control vs forwarding separation."
+    },
+    {
+      "id": "FND-007",
+      "module": "FND",
+      "difficulty": "interview",
+      "tags": [
+        "ecmp"
+      ],
+      "source": "ANDM technical domains 2026-07",
+      "question": "ECMP at L3 means:",
+      "options": [
+        "Multiple equal-cost next hops; flow hashing spreads traffic",
+        "One path always",
+        "Layer-2 flooding only",
+        "NAT load balancing only"
+      ],
+      "correctIndex": 0,
+      "explanation": "Underlay scale tool."
+    },
+    {
+      "id": "FND-008",
+      "module": "FND",
+      "difficulty": "interview",
+      "tags": [
+        "l2-l3"
+      ],
+      "source": "ANDM technical domains 2026-07",
+      "question": "Broadcast domain vs subnet:",
+      "options": [
+        "A subnet is an L3 addressing construct; a broadcast domain is L2 reach without a router—design should align them carefully",
+        "They are always the same globally",
+        "Broadcast domains ignore switches",
+        "Subnets only exist in OSPF"
+      ],
+      "correctIndex": 0,
+      "explanation": "Clean L2/L3 mental model."
+    },
+    {
+      "id": "FND-009",
+      "module": "FND",
+      "difficulty": "interview",
+      "tags": [
+        "underlay-overlay"
+      ],
+      "source": "ANDM technical domains 2026-07",
+      "question": "Underlay vs overlay:",
+      "options": [
+        "Underlay forwards the outer transport; overlay (VXLAN/VPN/etc.) carries tenant networks atop it",
+        "Overlay replaces optics",
+        "Underlay is only BGP communities",
+        "They are synonyms"
+      ],
+      "correctIndex": 0,
+      "explanation": "Fabric + virtualization vocabulary."
+    },
+    {
+      "id": "FND-010",
+      "module": "FND",
+      "difficulty": "interview",
+      "tags": [
+        "traceroute"
+      ],
+      "source": "ANDM technical domains 2026-07",
+      "question": "traceroute typically works by:",
+      "options": [
+        "Sending probes with increasing TTL and reading ICMP time-exceeded from hops",
+        "Reading BGP LocRib only",
+        "Querying ARP caches remotely",
+        "Using only TCP FIN"
+      ],
+      "correctIndex": 0,
+      "explanation": "Operational path discovery."
+    },
+    {
+      "id": "FND-011",
+      "module": "FND",
+      "difficulty": "interview",
+      "tags": [
+        "anycast"
+      ],
+      "source": "ANDM technical domains 2026-07",
+      "question": "Anycast in networking means:",
+      "options": [
+        "Same prefix announced from multiple places; routing delivers to a 'near' instance",
+        "Guaranteed delivery to all replicas",
+        "L2 flooding of all packets",
+        "Disabling ECMP"
+      ],
+      "correctIndex": 0,
+      "explanation": "Common for DNS/services."
+    },
+    {
+      "id": "FND-012",
+      "module": "FND",
+      "difficulty": "interview",
+      "tags": [
+        "unicast"
+      ],
+      "source": "ANDM technical domains 2026-07",
+      "question": "Unicast vs multicast vs broadcast:",
+      "options": [
+        "Unicast one-to-one; multicast one-to-group; broadcast one-to-all on a segment",
+        "All are identical at L3",
+        "Multicast requires MPLS",
+        "Broadcast works across the Internet by default"
+      ],
+      "correctIndex": 0,
+      "explanation": "Basic traffic types."
+    },
+    {
+      "id": "FND-013",
+      "module": "FND",
+      "difficulty": "interview",
+      "tags": [
+        "default"
+      ],
+      "source": "ANDM technical domains 2026-07",
+      "question": "A default route 0.0.0.0/0 means:",
+      "options": [
+        "Gateway of last resort when no more-specific route matches",
+        "Drop all traffic",
+        "Only OSPF external Type 5",
+        "Disable LPM"
+      ],
+      "correctIndex": 0,
+      "explanation": "Fundamentals of reachability."
+    },
+    {
+      "id": "FND-014",
+      "module": "FND",
+      "difficulty": "interview",
+      "tags": [
+        "nat"
+      ],
+      "source": "ANDM technical domains 2026-07",
+      "question": "NAT typically breaks which assumption?",
+      "options": [
+        "End-to-end addressing transparency—ports/addresses rewritten; some apps need helpers or avoid NAT",
+        "ECMP hashing math",
+        "Optical SNR",
+        "YAML indentation"
+      ],
+      "correctIndex": 0,
+      "explanation": "Know NAT tradeoffs."
+    },
+    {
+      "id": "FND-015",
+      "module": "FND",
+      "difficulty": "interview",
+      "tags": [
+        "tcp-udp"
+      ],
+      "source": "ANDM technical domains 2026-07",
+      "question": "TCP vs UDP manager-level:",
+      "options": [
+        "TCP is reliable, ordered, connection-oriented; UDP is datagram, no built-in reliability—choose per app needs",
+        "UDP cannot traverse routers",
+        "TCP cannot be ECMP'd",
+        "UDP encrypts by default"
+      ],
+      "correctIndex": 0,
+      "explanation": "Transport choice."
+    },
+    {
+      "id": "FND-016",
+      "module": "FND",
+      "difficulty": "interview",
+      "tags": [
+        "icmp"
+      ],
+      "source": "ANDM technical domains 2026-07",
+      "question": "ICMP is primarily:",
+      "options": [
+        "Control/error messaging for IP (unreachable, time exceeded, echo)—not a data transport for apps",
+        "A routing protocol like OSPF",
+        "An MPLS label protocol",
+        "A VPN encryptor"
+      ],
+      "correctIndex": 0,
+      "explanation": "Don't confuse with routing protocols."
+    },
+    {
+      "id": "FND-017",
+      "module": "FND",
+      "difficulty": "interview",
+      "tags": [
+        "mac-learning"
+      ],
+      "source": "ANDM technical domains 2026-07",
+      "question": "Ethernet switches forward unknown unicast by:",
+      "options": [
+        "Flooding within the VLAN/broadcast domain while learning source MACs from frames",
+        "Dropping always",
+        "Querying BGP",
+        "Using TTL"
+      ],
+      "correctIndex": 0,
+      "explanation": "L2 forwarding basics."
+    },
+    {
+      "id": "FND-018",
+      "module": "FND",
+      "difficulty": "interview",
+      "tags": [
+        "duplex"
+      ],
+      "source": "ANDM technical domains 2026-07",
+      "question": "Duplex mismatch classic symptom:",
+      "options": [
+        "Poor performance, late collisions/errors on one side—verify speed/duplex on copper links",
+        "BGP flapping only",
+        "MPLS PHP failure",
+        "DNS NXDOMAIN"
+      ],
+      "correctIndex": 0,
+      "explanation": "Still appears in ops lore."
+    },
+    {
+      "id": "FND-019",
+      "module": "FND",
+      "difficulty": "interview",
+      "tags": [
+        "checksum"
+      ],
+      "source": "ANDM technical domains 2026-07",
+      "question": "If L2 FCS is fine but app data corrupt, consider:",
+      "options": [
+        "Higher-layer issues, middleboxes, or silent data corruption—don't assume L2 CRC catches all end-to-end faults",
+        "OSPF areas",
+        "RD/RT mis-import",
+        "Ansible vault"
+      ],
+      "correctIndex": 0,
+      "explanation": "Defense in depth for integrity."
+    },
+    {
+      "id": "FND-020",
+      "module": "FND",
+      "difficulty": "interview",
+      "tags": [
+        "summarization"
+      ],
+      "source": "ANDM technical domains 2026-07",
+      "question": "Route summarization helps when:",
+      "options": [
+        "It reduces table size and hides churn—but can create blackholes if specifics disappear underneath",
+        "It always increases security",
+        "It replaces BFD",
+        "It disables ECMP"
+      ],
+      "correctIndex": 0,
+      "explanation": "Aggregation tradeoffs."
+    }
+  ]
+}

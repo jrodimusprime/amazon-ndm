@@ -1,0 +1,364 @@
+{
+  "questions": [
+    {
+      "id": "CLD-001",
+      "module": "CLD",
+      "difficulty": "interview",
+      "tags": [
+        "vpc"
+      ],
+      "source": "ANDM technical domains 2026-07 (AWS networking)",
+      "question": "A VPC is:",
+      "options": [
+        "An isolated virtual network in AWS with CIDR(s), subnets, route tables, and gateways you control",
+        "A physical router Amazon ships",
+        "Only a Security Group",
+        "A global Internet ASN you own"
+      ],
+      "correctIndex": 0,
+      "explanation": "VPC baseline."
+    },
+    {
+      "id": "CLD-002",
+      "module": "CLD",
+      "difficulty": "interview",
+      "tags": [
+        "subnet"
+      ],
+      "source": "ANDM technical domains 2026-07 (AWS networking)",
+      "question": "Public vs private subnet typically differs by:",
+      "options": [
+        "Route to an Internet Gateway (and addressing/ops practice)—private uses NAT/endpoints for egress patterns",
+        "Private subnets cannot have IPs",
+        "Public subnets disable NACLs",
+        "Only AZ placement"
+      ],
+      "correctIndex": 0,
+      "explanation": "Routing defines 'public' more than name tags."
+    },
+    {
+      "id": "CLD-003",
+      "module": "CLD",
+      "difficulty": "interview",
+      "tags": [
+        "sg"
+      ],
+      "source": "ANDM technical domains 2026-07 (AWS networking)",
+      "question": "Security Groups are:",
+      "options": [
+        "Stateful firewall rules attached to ENIs—allow rules; return traffic permitted automatically",
+        "Stateless like NACLs always",
+        "Only for on-prem firewalls",
+        "Replacements for IAM"
+      ],
+      "correctIndex": 0,
+      "explanation": "SG mental model."
+    },
+    {
+      "id": "CLD-004",
+      "module": "CLD",
+      "difficulty": "interview",
+      "tags": [
+        "nacl"
+      ],
+      "source": "ANDM technical domains 2026-07 (AWS networking)",
+      "question": "NACLs differ from SGs because:",
+      "options": [
+        "NACLs are subnet-level and stateless—need explicit ephemeral return allows; SGs are stateful at ENI",
+        "NACLs are stateful",
+        "SGs are subnet-only",
+        "They are identical"
+      ],
+      "correctIndex": 0,
+      "explanation": "Classic AWS interview discriminator."
+    },
+    {
+      "id": "CLD-005",
+      "module": "CLD",
+      "difficulty": "interview",
+      "tags": [
+        "peering"
+      ],
+      "source": "ANDM technical domains 2026-07 (AWS networking)",
+      "question": "VPC peering limitation managers must know:",
+      "options": [
+        "No transitive routing—A↔B and B↔C does not give A↔C through B; CIDRs must not overlap",
+        "Peering encrypts Layer 1",
+        "Peering replaces TGW always",
+        "Unlimited transitive mesh free"
+      ],
+      "correctIndex": 0,
+      "explanation": "Why TGW/Cloud WAN appear."
+    },
+    {
+      "id": "CLD-006",
+      "module": "CLD",
+      "difficulty": "interview",
+      "tags": [
+        "tgw"
+      ],
+      "source": "ANDM technical domains 2026-07 (AWS networking)",
+      "question": "Transit Gateway primary value:",
+      "options": [
+        "Hub-and-spoke connectivity among VPCs/on-prem attachments with route tables—avoids full peering mesh",
+        "Replaces Security Groups",
+        "Provides public IPs",
+        "Terminates TLS for apps"
+      ],
+      "correctIndex": 0,
+      "explanation": "TGW as cloud router hub."
+    },
+    {
+      "id": "CLD-007",
+      "module": "CLD",
+      "difficulty": "interview",
+      "tags": [
+        "tgw-rt"
+      ],
+      "source": "ANDM technical domains 2026-07 (AWS networking)",
+      "question": "TGW association vs propagation:",
+      "options": [
+        "Association attaches an attachment to a TGW route table; propagation installs routes from that attachment into a table—control them deliberately",
+        "They are synonyms",
+        "Propagation deletes associations",
+        "Only for VPN"
+      ],
+      "correctIndex": 0,
+      "explanation": "Critical TGW design literacy."
+    },
+    {
+      "id": "CLD-008",
+      "module": "CLD",
+      "difficulty": "interview",
+      "tags": [
+        "tgw-seg"
+      ],
+      "source": "ANDM technical domains 2026-07 (AWS networking)",
+      "question": "Isolating prod/dev on one TGW often uses:",
+      "options": [
+        "Separate TGW route tables (and careful propagations)—segmentation by routing policy",
+        "One flat table for all always",
+        "Only NACLs",
+        "Disable DNS"
+      ],
+      "correctIndex": 0,
+      "explanation": "Segmentation pattern."
+    },
+    {
+      "id": "CLD-009",
+      "module": "CLD",
+      "difficulty": "interview",
+      "tags": [
+        "cloud-wan"
+      ],
+      "source": "ANDM technical domains 2026-07 (AWS networking)",
+      "question": "AWS Cloud WAN vs TGW — high level:",
+      "options": [
+        "Cloud WAN is a managed global network with policy-based segments/core network edges; TGW is regional hub you stitch—Cloud WAN targets multi-Region WAN policy",
+        "Cloud WAN replaces VPC",
+        "TGW is global-only",
+        "They are the same product name"
+      ],
+      "correctIndex": 0,
+      "explanation": "Modern AWS WAN portfolio."
+    },
+    {
+      "id": "CLD-010",
+      "module": "CLD",
+      "difficulty": "interview",
+      "tags": [
+        "cloud-wan-seg"
+      ],
+      "source": "ANDM technical domains 2026-07 (AWS networking)",
+      "question": "Cloud WAN segments help:",
+      "options": [
+        "Policy-driven isolation (e.g., prod/shared/dev) across Regions without DIY mesh of peerings",
+        "Allocate EC2 instance types",
+        "Replace IAM",
+        "Disable Flow Logs"
+      ],
+      "correctIndex": 0,
+      "explanation": "Segment policy idea."
+    },
+    {
+      "id": "CLD-011",
+      "module": "CLD",
+      "difficulty": "interview",
+      "tags": [
+        "vpn"
+      ],
+      "source": "ANDM technical domains 2026-07 (AWS networking)",
+      "question": "Site-to-Site VPN to AWS typically:",
+      "options": [
+        "IPsec tunnels to VGW/TGW—bandwidth/ops limits; DX for steady high volume",
+        "Clears Security Groups",
+        "Provides dedicated fiber always",
+        "Removes need for route tables"
+      ],
+      "correctIndex": 0,
+      "explanation": "VPN vs DX tradeoff."
+    },
+    {
+      "id": "CLD-012",
+      "module": "CLD",
+      "difficulty": "interview",
+      "tags": [
+        "dx"
+      ],
+      "source": "ANDM technical domains 2026-07 (AWS networking)",
+      "question": "Direct Connect is:",
+      "options": [
+        "Dedicated connectivity from on-prem to AWS—not automatically encrypted; often paired with VPN/MACsec patterns per needs",
+        "A free Internet peer",
+        "A Security Group type",
+        "Only for S3 public"
+      ],
+      "correctIndex": 0,
+      "explanation": "DX fundamentals."
+    },
+    {
+      "id": "CLD-013",
+      "module": "CLD",
+      "difficulty": "interview",
+      "tags": [
+        "igw"
+      ],
+      "source": "ANDM technical domains 2026-07 (AWS networking)",
+      "question": "Internet Gateway provides:",
+      "options": [
+        "Horizontal scale public Internet path for VPC resources with public addressing/routes",
+        "Private connectivity to on-prem only",
+        "Automatic IPsec",
+        "TGW segmentation"
+      ],
+      "correctIndex": 0,
+      "explanation": "IGW role."
+    },
+    {
+      "id": "CLD-014",
+      "module": "CLD",
+      "difficulty": "interview",
+      "tags": [
+        "nat"
+      ],
+      "source": "ANDM technical domains 2026-07 (AWS networking)",
+      "question": "NAT Gateway use case:",
+      "options": [
+        "Private subnet egress to Internet without exposing instances publicly—cost/AZ design matters",
+        "Inbound Internet to private IPs",
+        "Replace NACLs",
+        "Terminate DX"
+      ],
+      "correctIndex": 0,
+      "explanation": "Egress pattern."
+    },
+    {
+      "id": "CLD-015",
+      "module": "CLD",
+      "difficulty": "interview",
+      "tags": [
+        "endpoint"
+      ],
+      "source": "ANDM technical domains 2026-07 (AWS networking)",
+      "question": "VPC interface/gateway endpoints exist to:",
+      "options": [
+        "Reach AWS services without hairpinning the public Internet—policy and DNS matter",
+        "Peer two VPCs transitively",
+        "Replace TGW",
+        "Allocate EIPs only"
+      ],
+      "correctIndex": 0,
+      "explanation": "Private service access."
+    },
+    {
+      "id": "CLD-016",
+      "module": "CLD",
+      "difficulty": "interview",
+      "tags": [
+        "az"
+      ],
+      "source": "ANDM technical domains 2026-07 (AWS networking)",
+      "question": "Multi-AZ networking design:",
+      "options": [
+        "Subnet per AZ, redundant NAT/TGW attachments as needed—don't hide single points in 'HA' diagrams",
+        "One NAT for all AZs is always fine",
+        "AZ is only a billing tag",
+        "Cloud WAN removes AZs"
+      ],
+      "correctIndex": 0,
+      "explanation": "Failure domains in AWS."
+    },
+    {
+      "id": "CLD-017",
+      "module": "CLD",
+      "difficulty": "interview",
+      "tags": [
+        "flow"
+      ],
+      "source": "ANDM technical domains 2026-07 (AWS networking)",
+      "question": "VPC Flow Logs help:",
+      "options": [
+        "Accept/reject metadata for traffic—great for security/ops triage, not full payloads",
+        "Capture full packets always",
+        "Configure BGP",
+        "Replace CloudWatch"
+      ],
+      "correctIndex": 0,
+      "explanation": "Telemetry."
+    },
+    {
+      "id": "CLD-018",
+      "module": "CLD",
+      "difficulty": "interview",
+      "tags": [
+        "overlap"
+      ],
+      "source": "ANDM technical domains 2026-07 (AWS networking)",
+      "question": "Overlapping CIDRs across VPCs break:",
+      "options": [
+        "Clean routing/peering/TGW designs—use careful allocation or private NAT patterns",
+        "Nothing important",
+        "Only DNS",
+        "Only SGs"
+      ],
+      "correctIndex": 0,
+      "explanation": "IPAM discipline."
+    },
+    {
+      "id": "CLD-019",
+      "module": "CLD",
+      "difficulty": "interview",
+      "tags": [
+        "edge"
+      ],
+      "source": "ANDM technical domains 2026-07 (AWS networking)",
+      "question": "Central egress VPC inspection pattern:",
+      "options": [
+        "Hub VPC/TGW steers traffic through firewalls—watch complexity, cost, and failure modes",
+        "Never inspect",
+        "Only NACLs in every subnet",
+        "Disable Flow Logs"
+      ],
+      "correctIndex": 0,
+      "explanation": "Shared services patterns."
+    },
+    {
+      "id": "CLD-020",
+      "module": "CLD",
+      "difficulty": "interview",
+      "tags": [
+        "hybrid"
+      ],
+      "source": "ANDM technical domains 2026-07 (AWS networking)",
+      "question": "Hybrid DNS (on-prem + Route 53 Resolver) fails when:",
+      "options": [
+        "Forwarding rules, inbound/outbound endpoints, or security groups block resolver paths",
+        "TGW exists",
+        "Cloud WAN segments exist",
+        "SGs allow all"
+      ],
+      "correctIndex": 0,
+      "explanation": "Hybrid sticky issues."
+    }
+  ]
+}

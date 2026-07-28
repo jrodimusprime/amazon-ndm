@@ -93,7 +93,7 @@ class QuestionBankTests(unittest.TestCase):
                     if not q.get(field):
                         errors.append(f"{qid}: missing {field}")
         self.assertGreaterEqual(total, 120)
-        self.assertLessEqual(total, 400)
+        self.assertLessEqual(total, 800)
         self.assertEqual(errors, [], "\n".join(errors[:20]))
 
 
@@ -124,8 +124,8 @@ class QuizAppTests(unittest.TestCase):
 
     def test_all_questions_load(self):
         questions, config = get_all_questions()
-        self.assertEqual(len(config["modules"]), 17)
-        self.assertGreaterEqual(len(questions), 120)
+        self.assertEqual(len(config["modules"]), 27)
+        self.assertGreaterEqual(len(questions), 500)
         for mod in config["modules"]:
             qs = load_module_questions(mod)
             self.assertEqual(len(qs), mod["questionCount"], mod["id"])

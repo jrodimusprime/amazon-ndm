@@ -64,7 +64,15 @@ class CardBankTests(unittest.TestCase):
         core = json.loads((DATA / "cards" / "core.json").read_text(encoding="utf-8"))
         n = len(core["cards"])
         self.assertGreaterEqual(n, 80)
-        self.assertLessEqual(n, 400)
+        self.assertLessEqual(n, 800)
+
+    def test_technical_cards_expand_acronyms(self):
+        core = json.loads((DATA / "cards" / "core.json").read_text(encoding="utf-8"))
+        adv = [c for c in core["cards"] if c["id"].startswith("FC-ADV-")]
+        self.assertGreaterEqual(len(adv), 40)
+        with_terms = [c for c in adv if "Terms:" in c["back"]]
+        self.assertGreaterEqual(len(with_terms), 30)
+        self.assertIn("Border Gateway Protocol", with_terms[0]["back"])
 
 
 class CardsAppTests(unittest.TestCase):

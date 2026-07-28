@@ -1,0 +1,364 @@
+{
+  "questions": [
+    {
+      "id": "CAP-001",
+      "module": "CAP",
+      "difficulty": "interview",
+      "tags": [
+        "oversub"
+      ],
+      "source": "ANDM technical domains 2026-07 (AWS networking)",
+      "question": "Oversubscription in fabrics means:",
+      "options": [
+        "Aggregate edge capacity exceeds core/uplink capacity by design—know ratios and failure behavior",
+        "Always 1:1 everywhere",
+        "Only a billing term",
+        "Disables ECMP"
+      ],
+      "correctIndex": 0,
+      "explanation": "Capacity vocabulary."
+    },
+    {
+      "id": "CAP-002",
+      "module": "CAP",
+      "difficulty": "interview",
+      "tags": [
+        "nk"
+      ],
+      "source": "ANDM technical domains 2026-07 (AWS networking)",
+      "question": "N-k readiness asks:",
+      "options": [
+        "Can you serve after k failures (e.g., N-1 link/node)—prove with math and drills",
+        "Only marketing HA",
+        "k always 0",
+        "Ignore correlated failures"
+      ],
+      "correctIndex": 0,
+      "explanation": "Reliability engineering."
+    },
+    {
+      "id": "CAP-003",
+      "module": "CAP",
+      "difficulty": "interview",
+      "tags": [
+        "slo"
+      ],
+      "source": "ANDM technical domains 2026-07 (AWS networking)",
+      "question": "Latency/loss SLOs should be:",
+      "options": [
+        "Tied to customer experience, measured, alertable, and used in capacity decisions",
+        "Unset to stay agile",
+        "Only ICMP forever",
+        "Hidden from eng"
+      ],
+      "correctIndex": 0,
+      "explanation": "SLO-driven capacity."
+    },
+    {
+      "id": "CAP-004",
+      "module": "CAP",
+      "difficulty": "interview",
+      "tags": [
+        "buffer"
+      ],
+      "source": "ANDM technical domains 2026-07 (AWS networking)",
+      "question": "Buffer deep ≠ always better because:",
+      "options": [
+        "Excess buffering can add latency (bufferbloat) without fixing bandwidth shortage",
+        "Deep buffers fix loss always",
+        "Buffers replace links",
+        "No tradeoff"
+      ],
+      "correctIndex": 0,
+      "explanation": "Platform + capacity."
+    },
+    {
+      "id": "CAP-005",
+      "module": "CAP",
+      "difficulty": "interview",
+      "tags": [
+        "forecast"
+      ],
+      "source": "ANDM technical domains 2026-07 (AWS networking)",
+      "question": "Capacity forecast should use:",
+      "options": [
+        "Demand signals, seasonality, headroom policy, and lead times for optics/ports—not only last week peaks",
+        "Guesses in meetings only",
+        "Ignore lead times",
+        "Only CPU on controllers"
+      ],
+      "correctIndex": 0,
+      "explanation": "Planning."
+    },
+    {
+      "id": "CAP-006",
+      "module": "CAP",
+      "difficulty": "interview",
+      "tags": [
+        "headroom"
+      ],
+      "source": "ANDM technical domains 2026-07 (AWS networking)",
+      "question": "Headroom exists to:",
+      "options": [
+        "Absorb spikes, failures, and growth before congestion—set explicitly",
+        "Waste money only",
+        "Disable ECMP",
+        "Satisfy auditors with zero"
+      ],
+      "correctIndex": 0,
+      "explanation": "Policy choice."
+    },
+    {
+      "id": "CAP-007",
+      "module": "CAP",
+      "difficulty": "interview",
+      "tags": [
+        "goodput"
+      ],
+      "source": "ANDM technical domains 2026-07 (AWS networking)",
+      "question": "Goodput vs throughput:",
+      "options": [
+        "Goodput is useful delivered app data after loss/retransmit overhead—optimize for customer progress",
+        "Identical always",
+        "Goodput ignores loss",
+        "Only optical metric"
+      ],
+      "correctIndex": 0,
+      "explanation": "What customers feel."
+    },
+    {
+      "id": "CAP-008",
+      "module": "CAP",
+      "difficulty": "interview",
+      "tags": [
+        "hotspot"
+      ],
+      "source": "ANDM technical domains 2026-07 (AWS networking)",
+      "question": "ECMP polarization / hot spotting:",
+      "options": [
+        "Hashing + topology can overload some links while average looks fine—measure per-member",
+        "Impossible with BGP",
+        "Fixed by deeper buffers only",
+        "Only a DNS issue"
+      ],
+      "correctIndex": 0,
+      "explanation": "Micro-congestion."
+    },
+    {
+      "id": "CAP-009",
+      "module": "CAP",
+      "difficulty": "interview",
+      "tags": [
+        "lead"
+      ],
+      "source": "ANDM technical domains 2026-07 (AWS networking)",
+      "question": "Long lead-time optics mean:",
+      "options": [
+        "Order ahead based on forecast; expedite is not a strategy",
+        "Buy day-of need always",
+        "Cloud removes lead time always",
+        "Ignore"
+      ],
+      "correctIndex": 0,
+      "explanation": "Supply chain capacity."
+    },
+    {
+      "id": "CAP-010",
+      "module": "CAP",
+      "difficulty": "interview",
+      "tags": [
+        "control"
+      ],
+      "source": "ANDM technical domains 2026-07 (AWS networking)",
+      "question": "Control-plane CPU at 90% is a capacity issue because:",
+      "options": [
+        "Convergence and updates suffer—scale policy, RR design, or platform",
+        "Only data plane matters",
+        "CPU unused by BGP",
+        "Fixed by MTU"
+      ],
+      "correctIndex": 0,
+      "explanation": "Control vs data capacity."
+    },
+    {
+      "id": "CAP-011",
+      "module": "CAP",
+      "difficulty": "interview",
+      "tags": [
+        "telemetry"
+      ],
+      "source": "ANDM technical domains 2026-07 (AWS networking)",
+      "question": "Capacity decisions without telemetry:",
+      "options": [
+        "Are guesses—instrument utilization, drops, queueing, and app SLOs",
+        "Fine if experienced",
+        "SNMP optional forever",
+        "Only ticket volume"
+      ],
+      "correctIndex": 0,
+      "explanation": "Data-informed (without ROI bank)."
+    },
+    {
+      "id": "CAP-012",
+      "module": "CAP",
+      "difficulty": "interview",
+      "tags": [
+        "error"
+      ],
+      "source": "ANDM technical domains 2026-07 (AWS networking)",
+      "question": "CRC/errors rising with load:",
+      "options": [
+        "May indicate dirty optics/DUTs—capacity isn't only bits/s; error budgets matter",
+        "Ignore if traffic flows",
+        "Always congestion",
+        "Always DDoS"
+      ],
+      "correctIndex": 0,
+      "explanation": "Physical layer capacity."
+    },
+    {
+      "id": "CAP-013",
+      "module": "CAP",
+      "difficulty": "interview",
+      "tags": [
+        "burst"
+      ],
+      "source": "ANDM technical domains 2026-07 (AWS networking)",
+      "question": "95th percentile vs peak for planning:",
+      "options": [
+        "Peaks drive risk; percentiles summarize—know which decision needs which statistic",
+        "Only average",
+        "Only midnight trough",
+        "Ignore peaks"
+      ],
+      "correctIndex": 0,
+      "explanation": "Stats literacy."
+    },
+    {
+      "id": "CAP-014",
+      "module": "CAP",
+      "difficulty": "interview",
+      "tags": [
+        "scale-out"
+      ],
+      "source": "ANDM technical domains 2026-07 (AWS networking)",
+      "question": "Scale-out vs scale-up for fabric:",
+      "options": [
+        "Add parallel paths/devices vs bigger chassis—Clos favors scale-out with care for blast radius",
+        "Always bigger chassis",
+        "Always more NAT",
+        "Scale-out forbids ECMP"
+      ],
+      "correctIndex": 0,
+      "explanation": "Architecture choice."
+    },
+    {
+      "id": "CAP-015",
+      "module": "CAP",
+      "difficulty": "interview",
+      "tags": [
+        "queue"
+      ],
+      "source": "ANDM technical domains 2026-07 (AWS networking)",
+      "question": "Sustained high queue depth implies:",
+      "options": [
+        "Congestion—need bandwidth, QoS, admission, or traffic engineering—not only more monitoring",
+        "Healthy buffers",
+        "Need deeper buffers only",
+        "Disable ECN always"
+      ],
+      "correctIndex": 0,
+      "explanation": "Congestion response."
+    },
+    {
+      "id": "CAP-016",
+      "module": "CAP",
+      "difficulty": "interview",
+      "tags": [
+        "maintenance"
+      ],
+      "source": "ANDM technical domains 2026-07 (AWS networking)",
+      "question": "Capacity during maintenance:",
+      "options": [
+        "Plan drained capacity; N-k must hold through planned + unplanned overlap",
+        "Maintenance ignores capacity",
+        "Always overnight zero traffic",
+        "Disable alerts"
+      ],
+      "correctIndex": 0,
+      "explanation": "Change + capacity."
+    },
+    {
+      "id": "CAP-017",
+      "module": "CAP",
+      "difficulty": "interview",
+      "tags": [
+        "cost"
+      ],
+      "source": "ANDM technical domains 2026-07 (AWS networking)",
+      "question": "Cheap oversubscription that breaks SLOs:",
+      "options": [
+        "Is expensive—model failure + peak together for true cost",
+        "Always save money",
+        "SLOs don't affect cost",
+        "Only optics cost matters"
+      ],
+      "correctIndex": 0,
+      "explanation": "Economic engineering without ROI bank."
+    },
+    {
+      "id": "CAP-018",
+      "module": "CAP",
+      "difficulty": "interview",
+      "tags": [
+        "app"
+      ],
+      "source": "ANDM technical domains 2026-07 (AWS networking)",
+      "question": "Network green but app capacity brown:",
+      "options": [
+        "End-to-end—check app pools, DB, thread limits; avoid network-only tunnel vision",
+        "Always the NIC",
+        "Always BGP",
+        "Always TGW"
+      ],
+      "correctIndex": 0,
+      "explanation": " Holistic capacity."
+    },
+    {
+      "id": "CAP-019",
+      "module": "CAP",
+      "difficulty": "interview",
+      "tags": [
+        "growth"
+      ],
+      "source": "ANDM technical domains 2026-07 (AWS networking)",
+      "question": "Sudden viral growth response:",
+      "options": [
+        "Emergency capacity playbooks, degrade gracefully, accelerate orders—rehearse",
+        "Hope",
+        "Only add ACLs",
+        "Disable canaries"
+      ],
+      "correctIndex": 0,
+      "explanation": "Surge readiness."
+    },
+    {
+      "id": "CAP-020",
+      "module": "CAP",
+      "difficulty": "interview",
+      "tags": [
+        "review"
+      ],
+      "source": "ANDM technical domains 2026-07 (AWS networking)",
+      "question": "Periodic capacity reviews should output:",
+      "options": [
+        "Risks, orders, design changes, and owners—not slideware without actions",
+        "Only green dashboards",
+        "Only finance veto",
+        "No owners"
+      ],
+      "correctIndex": 0,
+      "explanation": "Cadence that works."
+    }
+  ]
+}

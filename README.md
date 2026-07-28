@@ -27,8 +27,20 @@ Vanilla HTML/CSS/JS (no build). Progress in `localStorage` (`andm-quiz-v1`, `and
 | M1–M3 | Hiring SysDEs, performance/on-call, stakeholders |
 | OSI | OSI 7-layer model |
 | N1–N4 | Fabric Dive Deep, capacity/change, ops, automation |
+| FND | Network fundamentals & routing |
+| ADV | Advanced routing — BGP, OSPF, IS-IS, MPLS |
+| AUTO | Network automation & programming (Python/Perl/Shell) |
+| NDEV | NetDevOps — CI/CD, Git, YAML/JSON |
+| ANS | Ansible |
+| LNX | Linux/Unix administration |
+| CLD | Cloud networking — VPC, Transit Gateway, Cloud WAN |
+| SEC | Network security — firewalls, ACLs, VPNs |
+| IAC | Infrastructure as Code concepts |
+| CAP | Performance tuning & capacity management |
 | LOOP | Interview stages + examples from Reddit/Blind/others |
 | WX | Loop quirks, AGSVA, Bar Raiser |
+
+Flash-card answer sides append a **Terms:** glossary expanding acronyms on that card.
 
 ## Ask your recruiter
 
