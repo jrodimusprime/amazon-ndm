@@ -5,3 +5,5 @@
 todo.txt
 prep-materials/
 scripts/
+__pycache__/
+*.py[cod]
