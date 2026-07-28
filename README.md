@@ -6,6 +6,7 @@ Static interview study tool for **Systems Development Manager, Network Core** (A
 
 - **Quiz:** [index.html](index.html) — MCQ banks (LPs, Network Core domain, SysDE platforms, manager ops, fabric Dive Deep)
 - **Flash cards:** [cards/](cards/) — confidence-rated flip deck
+- **IP / CIDR cards:** [cards/?deck=ip-cidr](cards/?deck=ip-cidr) — addressing & prefixes drill
 - **Cheat sheet:** [cheat-sheet.html](cheat-sheet.html) — SDM loop / LP printable A4
 - **Network sheet:** [network-cheat-sheet.html](network-cheat-sheet.html) — fabric, platforms, packet path
 

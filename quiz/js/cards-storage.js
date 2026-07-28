@@ -1,9 +1,23 @@
 const CardsStorage = (() => {
-  const KEY = 'andm-cards-v1';
+  const BASE_KEY = 'andm-cards-v1';
+  let activeDeck = 'core';
+
+  function storageKey(deckId) {
+    const id = deckId || activeDeck || 'core';
+    return id === 'core' ? BASE_KEY : `${BASE_KEY}:${id}`;
+  }
+
+  function setActiveDeck(deckId) {
+    activeDeck = deckId || 'core';
+  }
+
+  function getActiveDeck() {
+    return activeDeck;
+  }
 
   function load() {
     try {
-      return JSON.parse(localStorage.getItem(KEY) || '{}');
+      return JSON.parse(localStorage.getItem(storageKey()) || '{}');
     } catch {
       return {};
     }
@@ -11,7 +25,7 @@ const CardsStorage = (() => {
 
   function save(data) {
     data.updatedAt = Date.now();
-    localStorage.setItem(KEY, JSON.stringify(data));
+    localStorage.setItem(storageKey(), JSON.stringify(data));
   }
 
   function getState() {
@@ -35,7 +49,7 @@ const CardsStorage = (() => {
 
   function clearProgress() {
     const faceMode = getState().faceMode;
-    localStorage.removeItem(KEY);
+    localStorage.removeItem(storageKey());
     if (faceMode === 'answer') {
       setState({ faceMode: 'answer', ratings: {}, mastered: [], queue: null });
     }
@@ -46,5 +60,8 @@ const CardsStorage = (() => {
     setState,
     clearProgress,
     load,
+    setActiveDeck,
+    getActiveDeck,
+    BASE_KEY,
   };
 })();

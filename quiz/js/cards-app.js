@@ -34,10 +34,17 @@ const CardsApp = (() => {
   }
 
   async function init() {
-    const cards = await CardsLoader.getAllCards();
+    const deckId = CardsLoader.deckIdFromLocation(typeof location !== 'undefined' ? location : null);
+    CardsStorage.setActiveDeck(deckId === 'all' ? 'all' : deckId);
+    const { cards, title } = await CardsLoader.getCardsForDeck(deckId);
     if (!cards.length) {
       throw new Error('No flash cards loaded');
     }
+    const heading = document.querySelector('header h1');
+    if (heading && title) {
+      heading.textContent = title;
+    }
+    document.title = `${title} · Flash Cards`;
     CardsEngine.init(cards);
     showCard();
 

@@ -76,10 +76,26 @@ class CardsAppTests(unittest.TestCase):
     def test_study_page_links_to_cards(self):
         html = (ROOT / "index.html").read_text(encoding="utf-8")
         self.assertIn('href="cards/"', html)
+        self.assertIn("deck=ip-cidr", html)
+
+    def test_ip_cidr_deck_exists(self):
+        registry = json.loads((DATA / "cards.json").read_text(encoding="utf-8"))
+        decks = {d["id"]: d for d in registry["decks"]}
+        self.assertIn("ip-cidr", decks)
+        path = DATA / decks["ip-cidr"]["dataFile"]
+        cards = json.loads(path.read_text(encoding="utf-8"))["cards"]
+        self.assertEqual(len(cards), decks["ip-cidr"]["cardCount"])
+        self.assertGreaterEqual(len(cards), 20)
+
+    def test_loader_supports_deck_query(self):
+        loader = (JS / "cards-loader.js").read_text(encoding="utf-8")
+        self.assertIn("getCardsForDeck", loader)
+        self.assertIn("deckIdFromLocation", loader)
 
     def test_storage_uses_andm_key(self):
         storage = (JS / "cards-storage.js").read_text(encoding="utf-8")
         self.assertIn("andm-cards-v1", storage)
+        self.assertIn("setActiveDeck", storage)
 
     def test_queue_insert_helper(self):
         engine = (JS / "cards-engine.js").read_text(encoding="utf-8")

@@ -4,7 +4,15 @@
       "id": "core",
       "title": "SDM Network Core concepts",
       "dataFile": "cards/core.json",
-      "cardCount": 339
+      "cardCount": 339,
+      "default": true
+    },
+    {
+      "id": "ip-cidr",
+      "title": "IP addressing & CIDR",
+      "dataFile": "cards/ip-cidr.json",
+      "cardCount": 24,
+      "default": false
     }
   ]
 }

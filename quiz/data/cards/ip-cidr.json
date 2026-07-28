@@ -1,0 +1,268 @@
+{
+  "cards": [
+    {
+      "id": "FC-IP-001",
+      "deck": "ip-cidr",
+      "tags": [
+        "cidr",
+        "prefix"
+      ],
+      "source": "ANDM IP/CIDR drill",
+      "front": "What does /24 mean in 192.168.1.0/24?",
+      "back": "The first 24 bits are the network prefix; the remaining 8 bits are host space (256 addresses, 254 usable hosts typically)."
+    },
+    {
+      "id": "FC-IP-002",
+      "deck": "ip-cidr",
+      "tags": [
+        "cidr",
+        "mask"
+      ],
+      "source": "ANDM IP/CIDR drill",
+      "front": "Convert /24 to a dotted decimal subnet mask.",
+      "back": "255.255.255.0 \u2014 24 ones then 8 zeros."
+    },
+    {
+      "id": "FC-IP-003",
+      "deck": "ip-cidr",
+      "tags": [
+        "cidr",
+        "mask"
+      ],
+      "source": "ANDM IP/CIDR drill",
+      "front": "Convert /16 to a dotted decimal subnet mask.",
+      "back": "255.255.0.0"
+    },
+    {
+      "id": "FC-IP-004",
+      "deck": "ip-cidr",
+      "tags": [
+        "cidr",
+        "mask"
+      ],
+      "source": "ANDM IP/CIDR drill",
+      "front": "Convert /20 to a dotted decimal subnet mask.",
+      "back": "255.255.240.0 \u2014 20 ones: 255.255.(11110000)=240.0"
+    },
+    {
+      "id": "FC-IP-005",
+      "deck": "ip-cidr",
+      "tags": [
+        "cidr",
+        "hosts"
+      ],
+      "source": "ANDM IP/CIDR drill",
+      "front": "How many usable host addresses in a /30 (typical point-to-point)?",
+      "back": "2 usable hosts (4 total addresses: network, 2 hosts, broadcast) \u2014 classic P2P link."
+    },
+    {
+      "id": "FC-IP-006",
+      "deck": "ip-cidr",
+      "tags": [
+        "cidr",
+        "hosts"
+      ],
+      "source": "ANDM IP/CIDR drill",
+      "front": "Formula for number of addresses in a /N IPv4 prefix?",
+      "back": "2^(32\u2212N) total addresses in the block."
+    },
+    {
+      "id": "FC-IP-007",
+      "deck": "ip-cidr",
+      "tags": [
+        "cidr",
+        "network"
+      ],
+      "source": "ANDM IP/CIDR drill",
+      "front": "What is the network address of 10.1.5.37/24?",
+      "back": "10.1.5.0 \u2014 host bits zeroed."
+    },
+    {
+      "id": "FC-IP-008",
+      "deck": "ip-cidr",
+      "tags": [
+        "cidr",
+        "broadcast"
+      ],
+      "source": "ANDM IP/CIDR drill",
+      "front": "What is the broadcast address of 10.1.5.0/24?",
+      "back": "10.1.5.255 \u2014 host bits all ones."
+    },
+    {
+      "id": "FC-IP-009",
+      "deck": "ip-cidr",
+      "tags": [
+        "cidr",
+        "range"
+      ],
+      "source": "ANDM IP/CIDR drill",
+      "front": "First and last usable hosts in 172.16.0.0/26?",
+      "back": "172.16.0.1 through 172.16.0.62 (network .0, broadcast .63; 64 addresses)."
+    },
+    {
+      "id": "FC-IP-010",
+      "deck": "ip-cidr",
+      "tags": [
+        "cidr",
+        "contains"
+      ],
+      "source": "ANDM IP/CIDR drill",
+      "front": "Does 10.0.0.50 fall inside 10.0.0.0/28?",
+      "back": "No \u2014 /28 is 10.0.0.0\u201310.0.0.15 only."
+    },
+    {
+      "id": "FC-IP-011",
+      "deck": "ip-cidr",
+      "tags": [
+        "cidr",
+        "contains"
+      ],
+      "source": "ANDM IP/CIDR drill",
+      "front": "Does 10.0.0.14 fall inside 10.0.0.0/28?",
+      "back": "Yes \u2014 /28 covers 10.0.0.0\u201310.0.0.15."
+    },
+    {
+      "id": "FC-IP-012",
+      "deck": "ip-cidr",
+      "tags": [
+        "cidr",
+        "overlap"
+      ],
+      "source": "ANDM IP/CIDR drill",
+      "front": "Do 10.0.0.0/23 and 10.0.1.0/24 overlap?",
+      "back": "Yes \u2014 10.0.1.0/24 is entirely inside 10.0.0.0/23 (10.0.0.0\u201310.0.1.255)."
+    },
+    {
+      "id": "FC-IP-013",
+      "deck": "ip-cidr",
+      "tags": [
+        "cidr",
+        "summarize"
+      ],
+      "source": "ANDM IP/CIDR drill",
+      "front": "Summarize 10.1.0.0/24 and 10.1.1.0/24 into one prefix.",
+      "back": "10.1.0.0/23"
+    },
+    {
+      "id": "FC-IP-014",
+      "deck": "ip-cidr",
+      "tags": [
+        "cidr",
+        "longest-match"
+      ],
+      "source": "ANDM IP/CIDR drill",
+      "front": "In forwarding, if both /16 and /24 match a dest IP, which wins?",
+      "back": "Longest prefix match \u2014 the /24 (more specific) wins."
+    },
+    {
+      "id": "FC-IP-015",
+      "deck": "ip-cidr",
+      "tags": [
+        "private",
+        "rfc1918"
+      ],
+      "source": "ANDM IP/CIDR drill",
+      "front": "List the RFC1918 private IPv4 ranges.",
+      "back": "10.0.0.0/8 \u00b7 172.16.0.0/12 \u00b7 192.168.0.0/16"
+    },
+    {
+      "id": "FC-IP-016",
+      "deck": "ip-cidr",
+      "tags": [
+        "special",
+        "loopback"
+      ],
+      "source": "ANDM IP/CIDR drill",
+      "front": "What is 127.0.0.0/8 used for?",
+      "back": "Loopback / localhost (typically 127.0.0.1)."
+    },
+    {
+      "id": "FC-IP-017",
+      "deck": "ip-cidr",
+      "tags": [
+        "special",
+        "link-local"
+      ],
+      "source": "ANDM IP/CIDR drill",
+      "front": "What is 169.254.0.0/16 (IPv4)?",
+      "back": "Link-local (APIPA) \u2014 often means DHCP failure on a host."
+    },
+    {
+      "id": "FC-IP-018",
+      "deck": "ip-cidr",
+      "tags": [
+        "cidr",
+        "mask-to-prefix"
+      ],
+      "source": "ANDM IP/CIDR drill",
+      "front": "Subnet mask 255.255.255.252 is which CIDR prefix?",
+      "back": "/30"
+    },
+    {
+      "id": "FC-IP-019",
+      "deck": "ip-cidr",
+      "tags": [
+        "cidr",
+        "mask-to-prefix"
+      ],
+      "source": "ANDM IP/CIDR drill",
+      "front": "Subnet mask 255.255.255.128 is which CIDR prefix?",
+      "back": "/25 (128 usable hosts space: 126 usable typically)."
+    },
+    {
+      "id": "FC-IP-020",
+      "deck": "ip-cidr",
+      "tags": [
+        "cidr",
+        "wildcard"
+      ],
+      "source": "ANDM IP/CIDR drill",
+      "front": "In ACL/OSPF contexts, wildcard mask for /24 is often:",
+      "back": "0.0.0.255 \u2014 inverse of 255.255.255.0"
+    },
+    {
+      "id": "FC-IP-021",
+      "deck": "ip-cidr",
+      "tags": [
+        "ipv6",
+        "prefix"
+      ],
+      "source": "ANDM IP/CIDR drill",
+      "front": "What does 2001:db8::/32 mean?",
+      "back": "Documentation prefix (RFC 3849) with 32-bit network; remaining bits for subnet/host inside that block."
+    },
+    {
+      "id": "FC-IP-022",
+      "deck": "ip-cidr",
+      "tags": [
+        "ipv6",
+        "lla"
+      ],
+      "source": "ANDM IP/CIDR drill",
+      "front": "What is fe80::/10 in IPv6?",
+      "back": "Link-local unicast \u2014 not routed off-link; used for neighbor discovery etc."
+    },
+    {
+      "id": "FC-IP-023",
+      "deck": "ip-cidr",
+      "tags": [
+        "cidr",
+        "fabric"
+      ],
+      "source": "ANDM IP/CIDR drill",
+      "front": "Why do leaf\u2013spine point-to-point fabrics often use /31?",
+      "back": "Two addresses, no waste on broadcast/network in modern P2P (RFC 3021) \u2014 dense addressing at scale."
+    },
+    {
+      "id": "FC-IP-024",
+      "deck": "ip-cidr",
+      "tags": [
+        "cidr",
+        "plan"
+      ],
+      "source": "ANDM IP/CIDR drill",
+      "front": "Quick mental check: /22 has how many /24s?",
+      "back": "4 \u00d7 /24s (2^(24\u221222) = 4)."
+    }
+  ]
+}

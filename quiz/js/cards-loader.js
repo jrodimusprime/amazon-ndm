@@ -37,12 +37,35 @@ const CardsLoader = (() => {
     return cache.decks[dataFile];
   }
 
-  async function getAllCards() {
-    if (cache.allCards) return cache.allCards;
+  function deckIdFromLocation(loc) {
+    try {
+      const params = new URLSearchParams((loc && loc.search) || '');
+      const deck = (params.get('deck') || '').trim();
+      return deck || 'core';
+    } catch {
+      return 'core';
+    }
+  }
+
+  async function getCardsForDeck(deckId) {
     const registry = await loadRegistry();
+    const decks = registry.decks || [];
+    const id = deckId || 'core';
+    let selected;
+    if (id === 'all') {
+      selected = decks;
+    } else {
+      selected = decks.filter((d) => d.id === id);
+      if (!selected.length) {
+        selected = decks.filter((d) => d.default) ;
+      }
+      if (!selected.length && decks.length) {
+        selected = [decks[0]];
+      }
+    }
     const seen = new Set();
     const all = [];
-    for (const deck of registry.decks || []) {
+    for (const deck of selected) {
       const cards = await loadDeck(deck.dataFile);
       for (const card of cards) {
         if (!card.id || seen.has(card.id)) continue;
@@ -50,8 +73,14 @@ const CardsLoader = (() => {
         all.push({ ...card, deck: card.deck || deck.id });
       }
     }
-    cache.allCards = all;
-    return all;
+    return { cards: all, deckId: selected.length === 1 ? selected[0].id : id, title: selected.length === 1 ? selected[0].title : 'All decks' };
+  }
+
+  async function getAllCards() {
+    if (cache.allCards) return cache.allCards;
+    const { cards } = await getCardsForDeck('all');
+    cache.allCards = cards;
+    return cards;
   }
 
   function shuffle(arr) {
@@ -66,6 +95,8 @@ const CardsLoader = (() => {
   return {
     loadRegistry,
     getAllCards,
+    getCardsForDeck,
+    deckIdFromLocation,
     shuffle,
     getDataBase,
   };
