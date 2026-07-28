@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ANDM Network Cheat Sheet</title>
+  <style>
+    @page { size: A4; margin: 7mm; }
+    * { box-sizing: border-box; }
+    body {
+      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      font-size: 6.8pt;
+      line-height: 1.22;
+      color: #111;
+      margin: 0;
+      padding: 5mm;
+    }
+    h1 { font-size: 12pt; margin: 0 0 1.5mm; color: #232f3e; }
+    .subtitle { margin: 0 0 2.5mm; color: #555; font-size: 6.5pt; }
+    .grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 2mm; }
+    section {
+      border: 0.4pt solid #ccc; border-radius: 2px; padding: 1.8mm 2.2mm;
+      break-inside: avoid;
+    }
+    h2 {
+      font-size: 7.5pt; margin: 0 0 1.2mm; color: #232f3e;
+      border-bottom: 1.5pt solid #ff9900; padding-bottom: 0.4mm;
+    }
+    h3 { font-size: 6.5pt; margin: 1.2mm 0 0.4mm; color: #333; }
+    ul, ol { margin: 0; padding-left: 2.8mm; }
+    li { margin-bottom: 0.3mm; }
+    table { width: 100%; border-collapse: collapse; font-size: 6.2pt; }
+    th, td { border-bottom: 0.3pt solid #ddd; padding: 0.45mm 0.8mm; text-align: left; vertical-align: top; }
+    th { color: #232f3e; }
+    .mono { font-family: ui-monospace, Menlo, monospace; font-size: 6pt; }
+    .footer { margin-top: 2.5mm; font-size: 5.8pt; color: #777; text-align: center; }
+    a { color: #e47911; }
+    .path { background: #232f3e; color: #fff; padding: 1.5mm 2mm; border-radius: 2px; margin-bottom: 2.5mm; font-size: 6.3pt; }
+    .path span { color: #ff9900; }
+  </style>
+</head>
+<body>
+<h1>Network Cheat Sheet — Fabric · Platforms · Packet Path</h1>
+<p class="subtitle">ANDM · AWS Network Core technical Dive Deep · printable A4</p>
+
+<div class="path">
+  <strong>Life of a packet:</strong>
+  Host NIC → <span>ToR/Leaf</span> (L2/L3) → ECMP uplink → <span>Spine</span> → dest Leaf → Host
+  · each L3 hop: <span>FIB lookup → L2 rewrite → TTL−− → schedule/tx</span>
+</div>
+
+<div class="grid">
+  <section>
+    <h2>OSI 7 layers</h2>
+    <table>
+      <tr><th>#</th><th>Layer</th><th>Examples</th></tr>
+      <tr><td>7</td><td>Application</td><td>HTTP, DNS, SSH</td></tr>
+      <tr><td>6</td><td>Presentation</td><td>TLS, encoding</td></tr>
+      <tr><td>5</td><td>Session</td><td>dialog / RPC framing</td></tr>
+      <tr><td>4</td><td>Transport</td><td>TCP, UDP, ports</td></tr>
+      <tr><td>3</td><td>Network</td><td>IP, ICMP, routing</td></tr>
+      <tr><td>2</td><td>Data Link</td><td>Ethernet, MAC, VLAN</td></tr>
+      <tr><td>1</td><td>Physical</td><td>fiber, copper, SerDes</td></tr>
+    </table>
+    <h3>TCP/IP map</h3>
+    <ul>
+      <li>App ≈ L5–7 · Transport ≈ L4 · Internet ≈ L3 · Link ≈ L1–2</li>
+      <li>Troubleshoot by layer: L1 → L2/L3 → L4 → app</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Planes &amp; tables</h2>
+    <ul>
+      <li><strong>Control plane:</strong> protocols build RIB (BGP/OSPF/IS-IS)</li>
+      <li><strong>Forwarding / data plane:</strong> ASIC uses FIB + adjacency</li>
+      <li><strong>RIB ≠ FIB</strong> — always validate actual forward path</li>
+      <li><strong>CAM/TCAM:</strong> MAC, routes, ACLs — finite scale</li>
+      <li><strong>ARP:</strong> next-hop IP → MAC for L2 delivery</li>
+      <li><strong>CoPP:</strong> protect CPU from punt floods</li>
+    </ul>
+    <h3>L3 hop rewrite</h3>
+    <ul>
+      <li>Lookup NH · rewrite dest MAC · TTL−− · tx</li>
+      <li>TTL bounds loops</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Fabric &amp; region</h2>
+    <ul>
+      <li><strong>Clos / spine-leaf:</strong> multipath east-west scale-out</li>
+      <li><strong>ECMP:</strong> hash flows across equal-cost members</li>
+      <li><strong>Underpin:</strong> EC2/EBS/S3 need BW + fast recovery</li>
+      <li><strong>Region:</strong> AZ/DC fabrics + metro interconnect</li>
+      <li><strong>AZ isolation:</strong> no shared fabric fate across AZs</li>
+      <li><strong>eBGP underlay:</strong> policy + ECMP (RFC 7938 style)</li>
+      <li><strong>IGP:</strong> OSPF/IS-IS for interior topology tradeoffs</li>
+    </ul>
+    <h3>Reliability</h3>
+    <ul>
+      <li>N-k capacity · independent diversity</li>
+      <li>Gray failure probes · graceful degrade</li>
+      <li>Drain → canary → rollback</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Platforms</h2>
+    <table>
+      <tr><th>Form</th><th>Notes</th></tr>
+      <tr><td>1U / 2U pizza-box</td><td>Fixed ports; fleet replaceable</td></tr>
+      <tr><td>Chassis</td><td>Supervisor + line cards + fabric</td></tr>
+    </table>
+    <ul>
+      <li><strong>Leaf:</strong> high radix, shallow–mod buffer, economics</li>
+      <li><strong>Spine/agg/DCI:</strong> evaluate deep buffer / VOQ</li>
+      <li>Port density ↑ → power, thermals, blast radius ↑</li>
+      <li>Redundant PSUs / FRUs · correct airflow</li>
+      <li>Merchant ASIC · whitebox/SONiC = own integration</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Buffers &amp; congestion</h2>
+    <table>
+      <tr><th></th><th>Shallow</th><th>Deep</th></tr>
+      <tr><td>Mem</td><td>Small on-chip</td><td>Large / off-chip</td></tr>
+      <tr><td>Good</td><td>Low latency leaf</td><td>Burst / DCI / incast edge</td></tr>
+      <tr><td>Risk</td><td>Overflow fast</td><td>Latency / bufferbloat</td></tr>
+    </table>
+    <ul>
+      <li><strong>Incast:</strong> many→one fills shallow queues</li>
+      <li><strong>Speed mismatch:</strong> 100G→10G builds queues</li>
+      <li><strong>ECN/DCQCN:</strong> mark before overflow</li>
+      <li><strong>PFC:</strong> pause classes — HOL/deadlock risk</li>
+      <li><strong>TCP:</strong> loss/ECN → rate drop</li>
+      <li><strong>Microburst:</strong> avg green, peak drops</li>
+      <li><strong>Oversub:</strong> state ratios; design for N-k</li>
+      <li>VOQ reduces HOL across chassis fabric</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Protocols &amp; attachment</h2>
+    <ul>
+      <li><strong>BGP:</strong> path attributes / policy · eBGP vs iBGP</li>
+      <li><strong>BFD:</strong> fast detect vs false positives</li>
+      <li><strong>LACP/LAG:</strong> bundle + hash; member failure</li>
+      <li><strong>MLAG:</strong> dual-home across ToR pair</li>
+      <li><strong>ToR vs EoR:</strong> cable, domain, upgrade model</li>
+      <li><strong>Breakout / SerDes:</strong> port math &amp; cabling</li>
+      <li><strong>FEC:</strong> bit-error correction @ high rates</li>
+      <li><strong>MTU / jumbo:</strong> mismatch = black hole</li>
+      <li><strong>Underlay / overlay:</strong> VXLAN rides fabric IP</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Dive Deep symptoms</h2>
+    <table>
+      <tr><th>Symptom</th><th>Think</th></tr>
+      <tr><td>Small OK, large hang</td><td>MTU / PMTUD</td></tr>
+      <tr><td>Admin-up, cust down</td><td>Gray fail / wrong path</td></tr>
+      <tr><td>One flow hot</td><td>ECMP polarize / elephant</td></tr>
+      <tr><td>RIB green, blackhole</td><td>FIB / HW program</td></tr>
+      <tr><td>CPU pegged</td><td>Punts / CoPP</td></tr>
+      <tr><td>Loss on fan-in</td><td>Incast / shallow buf</td></tr>
+      <tr><td>High latency no drops</td><td>Bufferbloat</td></tr>
+      <tr><td>Asymmetric path</td><td>Stateful midbox</td></tr>
+    </table>
+  </section>
+
+  <section>
+    <h2>Change &amp; mechanisms</h2>
+    <ul>
+      <li>Golden design per role (leaf/spine/edge)</li>
+      <li>Intent / IaC · peer review · conformance</li>
+      <li>ZTP · canary · health gates · rollback</li>
+      <li>No stacked failure-domain changes</li>
+      <li>Optics/light checks on bring-up</li>
+      <li>GR/NSR/ISSU: control events ≠ silent FW</li>
+      <li>COE → mechanism (tests, guards, topology)</li>
+    </ul>
+    <h3>Physics napkin</h3>
+    <ul>
+      <li>1 TB @ 10 Mbps ≈ <strong>9.3 days</strong></li>
+      <li>Same units (Mb vs MB) every time</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Triage order</h2>
+    <ol>
+      <li>Impact — who / how much / since when</li>
+      <li>Mitigate — restore customers</li>
+      <li>Scope — failure domain</li>
+      <li>Correlate — change / peer / fiber</li>
+      <li>Evidence — errors, drops, probes, sessions</li>
+      <li>Durable fix — stop the class of bug</li>
+    </ol>
+    <h3>Telemetry minimum</h3>
+    <ul>
+      <li>Errors/drops · util · neighbor/session</li>
+      <li>Control-plane CPU · synthetic loss/latency</li>
+    </ul>
+  </section>
+</div>
+
+<p class="footer">
+  ANDM Network ·
+  <a href="https://jrodimusprime.github.io/amazon-ndm/">Quiz</a> ·
+  <a href="https://jrodimusprime.github.io/amazon-ndm/cards/">Cards</a> ·
+  <a href="cheat-sheet.html">SDM loop sheet</a> ·
+  Filter: OSI · HW · PLAT · FAB · N1–N4
+</p>
+</body>
+</html>
