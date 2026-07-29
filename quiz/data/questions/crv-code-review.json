@@ -1,0 +1,364 @@
+{
+  "questions": [
+    {
+      "id": "CRV-001",
+      "module": "CRV",
+      "difficulty": "interview",
+      "tags": [
+        "code-review"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "question": "Network automation PR review should prioritize:",
+      "options": [
+        "Correctness, blast radius, idempotency, and rollback—not only style nits",
+        "Only line length",
+        "Approve to clear queue",
+        "Skip tests if busy"
+      ],
+      "correctIndex": 0,
+      "explanation": "Review focus."
+    },
+    {
+      "id": "CRV-002",
+      "module": "CRV",
+      "difficulty": "interview",
+      "tags": [
+        "code-review"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "question": "Red flag in a device-config PR:",
+      "options": [
+        "Untested regex parse + broad match-all ACL change in one PR without canary plan",
+        "Small pure refactor with tests",
+        "Docstring fix",
+        "Log line clarify"
+      ],
+      "correctIndex": 0,
+      "explanation": "Risk smell."
+    },
+    {
+      "id": "CRV-003",
+      "module": "CRV",
+      "difficulty": "interview",
+      "tags": [
+        "code-review"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "question": "Good review comment is:",
+      "options": [
+        "Specific, actionable, and explains risk—not 'this is wrong' without why",
+        "Vague dislike",
+        "Personal attack",
+        "Rubber stamp"
+      ],
+      "correctIndex": 0,
+      "explanation": "Tone + value."
+    },
+    {
+      "id": "CRV-004",
+      "module": "CRV",
+      "difficulty": "interview",
+      "tags": [
+        "code-review"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "question": "When you disagree on approach in review:",
+      "options": [
+        "Offer alternative with tradeoffs; escalate if safety-critical—don't bike-shed forever",
+        "Block on style only",
+        "Force merge",
+        "Ghost the PR"
+      ],
+      "correctIndex": 0,
+      "explanation": "Collaboration."
+    },
+    {
+      "id": "CRV-005",
+      "module": "CRV",
+      "difficulty": "interview",
+      "tags": [
+        "code-review"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "question": "Must-check for concurrency changes:",
+      "options": [
+        "Races, lock scope, timeouts, and cancellation—network I/O makes races likely",
+        "Only formatting",
+        "Only commit message",
+        "Skip if green CI"
+      ],
+      "correctIndex": 0,
+      "explanation": "Concurrency review."
+    },
+    {
+      "id": "CRV-006",
+      "module": "CRV",
+      "difficulty": "interview",
+      "tags": [
+        "code-review"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "question": "Secrets in a PR:",
+      "options": [
+        "Block merge; rotate if leaked; push to vault—never 'fix later'",
+        "OK if private repo",
+        "OK in tests forever",
+        "Commit then delete history casually"
+      ],
+      "correctIndex": 0,
+      "explanation": "Security review."
+    },
+    {
+      "id": "CRV-007",
+      "module": "CRV",
+      "difficulty": "interview",
+      "tags": [
+        "code-review"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "question": "Large 3k-line PR for fabric controller—asker should:",
+      "options": [
+        "Split by risk (schema vs rollout vs UI) for reviewable diffs",
+        "Demand one mega-PR always",
+        "No description",
+        "Force Friday merge"
+      ],
+      "correctIndex": 0,
+      "explanation": "PR hygiene."
+    },
+    {
+      "id": "CRV-008",
+      "module": "CRV",
+      "difficulty": "interview",
+      "tags": [
+        "code-review"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "question": "CI red but author says 'flaky'—reviewer:",
+      "options": [
+        "Investigate; don't normalize merging red—quarantine with ownership if truly flaky",
+        "Merge anyway",
+        "Disable CI",
+        "Blame author only"
+      ],
+      "correctIndex": 0,
+      "explanation": "CI discipline."
+    },
+    {
+      "id": "CRV-009",
+      "module": "CRV",
+      "difficulty": "interview",
+      "tags": [
+        "code-review"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "question": "Reviewing infra-as-code that touches prod firewalls:",
+      "options": [
+        "Require plan output, staged rollout notes, and dual review from domain owners",
+        "LGTM from anyone",
+        "Skip plan",
+        "Apply from laptop in review"
+      ],
+      "correctIndex": 0,
+      "explanation": "High-risk review."
+    },
+    {
+      "id": "CRV-010",
+      "module": "CRV",
+      "difficulty": "interview",
+      "tags": [
+        "code-review"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "question": "Missing tests for CIDR overlap logic:",
+      "options": [
+        "Request tests before approve—pure logic is cheap to verify",
+        "Approve on trust",
+        "Only manual device test",
+        "Tests optional for seniors"
+      ],
+      "correctIndex": 0,
+      "explanation": "Test expectation."
+    },
+    {
+      "id": "CRV-011",
+      "module": "CRV",
+      "difficulty": "interview",
+      "tags": [
+        "code-review"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "question": "Nit vs blocking comment:",
+      "options": [
+        "Label clearly; don't block on nits—block on correctness/safety",
+        "All comments blocking",
+        "No nits ever",
+        "Nits only"
+      ],
+      "correctIndex": 0,
+      "explanation": "Review efficiency."
+    },
+    {
+      "id": "CRV-012",
+      "module": "CRV",
+      "difficulty": "interview",
+      "tags": [
+        "code-review"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "question": "Author force-pushes rewriting history mid-review:",
+      "options": [
+        "Prefer additive commits after review starts; communicate if rebase needed",
+        "Always force-push silently",
+        "Delete remote branch",
+        "Change tickets mid-air without note"
+      ],
+      "correctIndex": 0,
+      "explanation": "Review process."
+    },
+    {
+      "id": "CRV-013",
+      "module": "CRV",
+      "difficulty": "interview",
+      "tags": [
+        "code-review"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "question": "Dependency bump in network agent—review:",
+      "options": [
+        "Changelog for breaking behavior, SBOM/risk, and lab soak—not blind major bumps",
+        "Always latest",
+        "Never bump",
+        "Skip notes"
+      ],
+      "correctIndex": 0,
+      "explanation": "Supply chain."
+    },
+    {
+      "id": "CRV-014",
+      "module": "CRV",
+      "difficulty": "interview",
+      "tags": [
+        "code-review"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "question": "Code review for on-call readability:",
+      "options": [
+        "Prefer explicit error paths and runbooks links over magic",
+        "Maximize abstraction layers",
+        "Hide failures",
+        "One-letter vars"
+      ],
+      "correctIndex": 0,
+      "explanation": "Ops lens."
+    },
+    {
+      "id": "CRV-015",
+      "module": "CRV",
+      "difficulty": "interview",
+      "tags": [
+        "code-review"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "question": "Approving your own PR to prod automation:",
+      "options": [
+        "Avoid—require independent review for high blast-radius paths",
+        "Always OK",
+        "Only for seniors",
+        "Bots only"
+      ],
+      "correctIndex": 0,
+      "explanation": "Segregation of duties."
+    },
+    {
+      "id": "CRV-016",
+      "module": "CRV",
+      "difficulty": "interview",
+      "tags": [
+        "code-review"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "question": "Performance-sensitive FIB update code—ask:",
+      "options": [
+        "Complexity, allocation churn, and worst-case sizes—request benchmarks if unclear",
+        "Only style",
+        "Assume fine",
+        "Micro-opt every line blindly"
+      ],
+      "correctIndex": 0,
+      "explanation": "Perf review."
+    },
+    {
+      "id": "CRV-017",
+      "module": "CRV",
+      "difficulty": "interview",
+      "tags": [
+        "code-review"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "question": "Feature flag default-on in first PR:",
+      "options": [
+        "Prefer default-off with explicit enable plan and metrics",
+        "Default-on always",
+        "No flags",
+        "Flag forever never clean"
+      ],
+      "correctIndex": 0,
+      "explanation": "Safe rollout review."
+    },
+    {
+      "id": "CRV-018",
+      "module": "CRV",
+      "difficulty": "interview",
+      "tags": [
+        "code-review"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "question": "Review velocity too slow—manager lever:",
+      "options": [
+        "Smaller PRs, clear owners, SLAs for review, and protect focus time—not 'skip reviews'",
+        "Eliminate reviews",
+        "Only weekend reviews",
+        "One global approver bottleneck forever"
+      ],
+      "correctIndex": 0,
+      "explanation": "Process design."
+    },
+    {
+      "id": "CRV-019",
+      "module": "CRV",
+      "difficulty": "interview",
+      "tags": [
+        "code-review"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "question": "Comment 'LGTM' with no reading on ACL generator:",
+      "options": [
+        "Insufficient for high risk—spot-check critical paths or request walkthrough",
+        "Enough always",
+        "Better than questions",
+        "Required etiquette"
+      ],
+      "correctIndex": 0,
+      "explanation": "Accountability."
+    },
+    {
+      "id": "CRV-020",
+      "module": "CRV",
+      "difficulty": "interview",
+      "tags": [
+        "code-review"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "question": "Post-merge issue from reviewed code—healthy culture:",
+      "options": [
+        "Blameless fix + improve tests/review checklist—don't weaponize blame",
+        "Punish reviewer only",
+        "Punish author only",
+        "Disable reviews"
+      ],
+      "correctIndex": 0,
+      "explanation": "Learning system."
+    }
+  ]
+}

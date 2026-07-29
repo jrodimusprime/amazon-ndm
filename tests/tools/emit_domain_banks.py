@@ -15,10 +15,16 @@ sys.path.insert(0, str(TOOLS))
 BANKS = [
     ("fnd", "FND", "Network Fundamentals & Routing", "questions/fnd-fundamentals.json", 20),
     ("adv", "ADV", "Advanced Routing — BGP, OSPF, IS-IS, MPLS", "questions/adv-routing.json", 40),
+    ("l4", "L4", "IP, TCP, load balancers & firewalls", "questions/l4-tcp-lb-fw.json", 20),
     ("auto", "AUTO", "Network Automation & Programming", "questions/auto-programming.json", 20),
     ("ndev", "NDEV", "NetDevOps — CI/CD, Git, YAML/JSON", "questions/ndev-netdevops.json", 20),
     ("ans", "ANS", "Automation Tools — Ansible", "questions/ans-ansible.json", 20),
     ("lnx", "LNX", "Linux/Unix Systems Administration", "questions/lnx-linux.json", 20),
+    ("nsd", "NSD", "Network system design", "questions/nsd-system-design.json", 20),
+    ("req", "REQ", "Clarifying requirements (network)", "questions/req-clarifying.json", 20),
+    ("sra", "SRA", "Scalability, reliability & availability", "questions/sra-scale-reliability.json", 20),
+    ("code", "CODE", "Coding fundamentals (network software)", "questions/code-fundamentals.json", 20),
+    ("crv", "CRV", "Code reviews (network & automation)", "questions/crv-code-review.json", 20),
     ("cld", "CLD", "Cloud Networking — VPC, TGW, Cloud WAN", "questions/cld-cloud.json", 20),
     ("sec", "SEC", "Network Security — Firewalls, ACLs, VPNs", "questions/sec-security.json", 20),
     ("iac", "IAC", "Infrastructure as Code concepts", "questions/iac-concepts.json", 20),
@@ -73,21 +79,44 @@ def main() -> None:
             if mid not in mods:
                 mods.append(mid)
 
-    # Dedicated technical preset
+    # Dedicated technical preset (manager duties + interview syllabus modules)
     preset_ids = {p["id"] for p in sections["examPresets"]}
-    tech_modules = new_ids
-    if "tech-domains" not in preset_ids:
-        sections["examPresets"].append(
-            {
-                "id": "tech-domains",
-                "title": "Technical domains (manager duties)",
-                "modules": tech_modules,
-            }
-        )
-    else:
-        for p in sections["examPresets"]:
-            if p["id"] == "tech-domains":
-                p["modules"] = tech_modules
+    tech_modules = [
+        "FND",
+        "ADV",
+        "AUTO",
+        "NDEV",
+        "ANS",
+        "LNX",
+        "CLD",
+        "SEC",
+        "IAC",
+        "CAP",
+    ]
+    syllabus_modules = [
+        "FND",
+        "AUTO",
+        "ADV",
+        "L4",
+        "LNX",
+        "NSD",
+        "REQ",
+        "SRA",
+        "CODE",
+        "CRV",
+        "SEC",
+    ]
+    for pid, title, mods in (
+        ("tech-domains", "Technical domains (manager duties)", tech_modules),
+        ("interview-syllabus", "Interview syllabus (networking)", syllabus_modules),
+    ):
+        if pid not in preset_ids:
+            sections["examPresets"].append({"id": pid, "title": title, "modules": mods})
+        else:
+            for p in sections["examPresets"]:
+                if p["id"] == pid:
+                    p["title"] = title
+                    p["modules"] = mods
 
     sections_path.write_text(
         json.dumps(sections, indent=2, ensure_ascii=False) + "\n", encoding="utf-8"

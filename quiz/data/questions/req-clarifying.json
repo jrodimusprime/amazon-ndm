@@ -1,0 +1,364 @@
+{
+  "questions": [
+    {
+      "id": "REQ-001",
+      "module": "REQ",
+      "difficulty": "interview",
+      "tags": [
+        "clarify"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "question": "Ambiguous 'make the network faster'—you ask:",
+      "options": [
+        "Faster for whom? Which paths? Latency vs throughput vs loss? Peak vs p99? Constraint budget?",
+        "Just buy bigger links",
+        "Silence",
+        "Only change MTU"
+      ],
+      "correctIndex": 0,
+      "explanation": "Clarify metrics and users."
+    },
+    {
+      "id": "REQ-002",
+      "module": "REQ",
+      "difficulty": "interview",
+      "tags": [
+        "clarify"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "question": "Stakeholder says '100% available'—you clarify:",
+      "options": [
+        "Define SLO/SLA, error budget, and which failure classes are in/out of scope",
+        "Agree without numbers",
+        "Promise five nines always",
+        "Ignore"
+      ],
+      "correctIndex": 0,
+      "explanation": "Availability is defined."
+    },
+    {
+      "id": "REQ-003",
+      "module": "REQ",
+      "difficulty": "interview",
+      "tags": [
+        "clarify"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "question": "Before designing a new LB, missing requirement to ask:",
+      "options": [
+        "Traffic mix (L4/L7), TLS needs, stickiness, regions, compliance, and RPS/pps scale",
+        "Favorite color",
+        "Only ASN",
+        "Only rack brand"
+      ],
+      "correctIndex": 0,
+      "explanation": "Requirements checklist."
+    },
+    {
+      "id": "REQ-004",
+      "module": "REQ",
+      "difficulty": "interview",
+      "tags": [
+        "clarify"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "question": "Security asks 'encrypt everything'—clarify:",
+      "options": [
+        "Data in transit vs at rest, trust boundaries, performance budget, and key management ownership",
+        "Enable all ciphers",
+        "Disable monitoring",
+        "Skip"
+      ],
+      "correctIndex": 0,
+      "explanation": "Scope encryption."
+    },
+    {
+      "id": "REQ-005",
+      "module": "REQ",
+      "difficulty": "interview",
+      "tags": [
+        "clarify"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "question": "'Support hybrid cloud' needs clarification of:",
+      "options": [
+        "Regions, DX/VPN, overlapping CIDRs, DNS, identity, and failure domains across clouds",
+        "Only a peering checkbox",
+        "Only a logo",
+        "No routing"
+      ],
+      "correctIndex": 0,
+      "explanation": "Hybrid is many designs."
+    },
+    {
+      "id": "REQ-006",
+      "module": "REQ",
+      "difficulty": "interview",
+      "tags": [
+        "clarify"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "question": "Product wants 'real-time' telemetry—ask:",
+      "options": [
+        "Latency budget, cardinality, retention, and what decisions the data drives",
+        "Ship all packets to Kafka",
+        "No sampling ever",
+        "Monthly CSV"
+      ],
+      "correctIndex": 0,
+      "explanation": "Fit-for-purpose data."
+    },
+    {
+      "id": "REQ-007",
+      "module": "REQ",
+      "difficulty": "interview",
+      "tags": [
+        "clarify"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "question": "When two requirements conflict (cost vs latency), you:",
+      "options": [
+        "Surface the conflict with options and recommend; force an explicit decision",
+        "Hide the conflict",
+        "Optimize only cost",
+        "Optimize only latency silently"
+      ],
+      "correctIndex": 0,
+      "explanation": "Product partnership."
+    },
+    {
+      "id": "REQ-008",
+      "module": "REQ",
+      "difficulty": "interview",
+      "tags": [
+        "clarify"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "question": "Outage retro says 'improve monitoring'—clarify:",
+      "options": [
+        "Which golden signals, alert thresholds, ownership, and pages-vs-tickets outcomes",
+        "Add all metrics",
+        "Remove alerts",
+        "Only dashboards"
+      ],
+      "correctIndex": 0,
+      "explanation": "Actionable requirements."
+    },
+    {
+      "id": "REQ-009",
+      "module": "REQ",
+      "difficulty": "interview",
+      "tags": [
+        "clarify"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "question": "Migration deadline without success criteria—you push for:",
+      "options": [
+        "Measurable cutover gates (error rate, lag, rollback time) before the date",
+        "Move date only",
+        "Skip tests",
+        "Big-bang hope"
+      ],
+      "correctIndex": 0,
+      "explanation": "Definition of done."
+    },
+    {
+      "id": "REQ-010",
+      "module": "REQ",
+      "difficulty": "interview",
+      "tags": [
+        "clarify"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "question": "Customer 'can't connect'—first clarifying questions:",
+      "options": [
+        "Scope (who/where/when), symptoms (DNS/TCP/app), recent changes, and blast radius",
+        "Rebuild fabric first",
+        "Blame BGP always",
+        "Reboot all"
+      ],
+      "correctIndex": 0,
+      "explanation": "Incident requirements."
+    },
+    {
+      "id": "REQ-011",
+      "module": "REQ",
+      "difficulty": "interview",
+      "tags": [
+        "clarify"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "question": "Design interview silence after vague prompt—best move:",
+      "options": [
+        "Ask structured clarifying questions, then restate assumptions aloud for agreement",
+        "Start coding",
+        "Refuse the question",
+        "Only list protocols"
+      ],
+      "correctIndex": 0,
+      "explanation": "Interview technique."
+    },
+    {
+      "id": "REQ-012",
+      "module": "REQ",
+      "difficulty": "interview",
+      "tags": [
+        "clarify"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "question": "'Global anycast' requirement—clarify:",
+      "options": [
+        "Health failover semantics, regional stickiness needs, and DDoS/absorb capacity",
+        "Announce everywhere blindly",
+        "Skip health",
+        "One POP only"
+      ],
+      "correctIndex": 0,
+      "explanation": "Anycast specifics."
+    },
+    {
+      "id": "REQ-013",
+      "module": "REQ",
+      "difficulty": "interview",
+      "tags": [
+        "clarify"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "question": "Compliance 'must log all traffic'—clarify:",
+      "options": [
+        "Metadata vs payloads, retention, PII, and storage cost—often Flow Logs ≠ full PCAP",
+        "Capture everything forever",
+        "Ignore legal",
+        "Log passwords"
+      ],
+      "correctIndex": 0,
+      "explanation": "Feasible compliance."
+    },
+    {
+      "id": "REQ-014",
+      "module": "REQ",
+      "difficulty": "interview",
+      "tags": [
+        "clarify"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "question": "Team asks for 'automation'—clarify outcome:",
+      "options": [
+        "Which toil, risk reduced, SLO for the automator, and human approval gates",
+        "Automate all pushes tomorrow",
+        "No tests",
+        "Skip inventory"
+      ],
+      "correctIndex": 0,
+      "explanation": "Automation requirements."
+    },
+    {
+      "id": "REQ-015",
+      "module": "REQ",
+      "difficulty": "interview",
+      "tags": [
+        "clarify"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "question": "Capacity 'we're fine' without data—ask for:",
+      "options": [
+        "Headroom policy, forecast inputs, lead times, and N-k under maintenance",
+        "Trust vibes",
+        "Only last week average",
+        "Cancel orders"
+      ],
+      "correctIndex": 0,
+      "explanation": "Evidence-based asks."
+    },
+    {
+      "id": "REQ-016",
+      "module": "REQ",
+      "difficulty": "interview",
+      "tags": [
+        "clarify"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "question": "Multi-tenant fabric request—clarify:",
+      "options": [
+        "Isolation model (VRF/SG/cells), noisy-neighbor controls, and blast-radius limits",
+        "Flat shared everything",
+        "No quotas",
+        "One ACL"
+      ],
+      "correctIndex": 0,
+      "explanation": "Tenancy requirements."
+    },
+    {
+      "id": "REQ-017",
+      "module": "REQ",
+      "difficulty": "interview",
+      "tags": [
+        "clarify"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "question": "API for network changes—clarify:",
+      "options": [
+        "AuthZ model, idempotency, rate limits, audit, and sync vs async apply",
+        "Open unauthenticated",
+        "No versioning",
+        "Only sync forever with no timeout"
+      ],
+      "correctIndex": 0,
+      "explanation": "Platform requirements."
+    },
+    {
+      "id": "REQ-018",
+      "module": "REQ",
+      "difficulty": "interview",
+      "tags": [
+        "clarify"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "question": "'Low latency trading' vs 'bulk backup' on same path—clarify:",
+      "options": [
+        "Whether isolation/QoS/separate fabrics are required—don't average incompatible SLOs",
+        "One best effort for all",
+        "Disable QoS always",
+        "Ignore"
+      ],
+      "correctIndex": 0,
+      "explanation": "Workload classes."
+    },
+    {
+      "id": "REQ-019",
+      "module": "REQ",
+      "difficulty": "interview",
+      "tags": [
+        "clarify"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "question": "Vendor proposes feature—clarify:",
+      "options": [
+        "Problem it solves, operability, failure modes, lock-in, and exit criteria vs build",
+        "Buy immediately",
+        "Reject all vendors",
+        "Skip PoC"
+      ],
+      "correctIndex": 0,
+      "explanation": "Make vs buy clarity."
+    },
+    {
+      "id": "REQ-020",
+      "module": "REQ",
+      "difficulty": "interview",
+      "tags": [
+        "clarify"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "question": "Restate requirements before solving to:",
+      "options": [
+        "Confirm shared understanding and expose hidden constraints early",
+        "Waste time",
+        "Avoid design",
+        "Impress with jargon"
+      ],
+      "correctIndex": 0,
+      "explanation": "Communication habit."
+    }
+  ]
+}

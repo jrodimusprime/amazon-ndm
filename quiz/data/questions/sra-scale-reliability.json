@@ -1,0 +1,364 @@
+{
+  "questions": [
+    {
+      "id": "SRA-001",
+      "module": "SRA",
+      "difficulty": "interview",
+      "tags": [
+        "availability"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "question": "Availability for a network path is roughly:",
+      "options": [
+        "Fraction of time the service meets its success criteria—not merely 'link lights on'",
+        "Only optic presence",
+        "Only BGP Established",
+        "Ticket absence"
+      ],
+      "correctIndex": 0,
+      "explanation": "Define availability."
+    },
+    {
+      "id": "SRA-002",
+      "module": "SRA",
+      "difficulty": "interview",
+      "tags": [
+        "reliability"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "question": "Reliability emphasizes:",
+      "options": [
+        "Correct continuous operation under expected conditions—including after partial failures",
+        "Never failing ever",
+        "Only MTTR",
+        "Only marketing HA"
+      ],
+      "correctIndex": 0,
+      "explanation": "Reliability vs uptime slogans."
+    },
+    {
+      "id": "SRA-003",
+      "module": "SRA",
+      "difficulty": "interview",
+      "tags": [
+        "scalability"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "question": "Scalability means:",
+      "options": [
+        "Cost/complexity of adding capacity stays acceptable as load grows—horizontal or vertical with eyes open",
+        "One big chassis forever",
+        "Ignoring control plane",
+        "Only adding threads"
+      ],
+      "correctIndex": 0,
+      "explanation": "Scale definition."
+    },
+    {
+      "id": "SRA-004",
+      "module": "SRA",
+      "difficulty": "interview",
+      "tags": [
+        "n1"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "question": "N-1 capacity planning ensures:",
+      "options": [
+        "Service still meets SLO after one planned/unplanned failure of a key component",
+        "Zero spare always",
+        "Only dual power",
+        "Ignore correlated fiber"
+      ],
+      "correctIndex": 0,
+      "explanation": "Classic availability math."
+    },
+    {
+      "id": "SRA-005",
+      "module": "SRA",
+      "difficulty": "interview",
+      "tags": [
+        "redundancy"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "question": "Redundancy without diversity fails when:",
+      "options": [
+        "Shared fate (same conduit, same RR, same AZ pattern) takes both 'redundant' paths",
+        "ECMP exists",
+        "BFD is on",
+        "You bought two of everything"
+      ],
+      "correctIndex": 0,
+      "explanation": "Correlated failure."
+    },
+    {
+      "id": "SRA-006",
+      "module": "SRA",
+      "difficulty": "interview",
+      "tags": [
+        "mttr"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "question": "Improving availability often cheaper via:",
+      "options": [
+        "Lower MTTR (detect/mitigate faster) plus prevention—not only more spares",
+        "Only buying links",
+        "Disabling alerts",
+        "Longer RCAs only"
+      ],
+      "correctIndex": 0,
+      "explanation": "MTTD/MTTR lever."
+    },
+    {
+      "id": "SRA-007",
+      "module": "SRA",
+      "difficulty": "interview",
+      "tags": [
+        "slo"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "question": "Error budgets connect:",
+      "options": [
+        "Reliability targets to release/change velocity—burn budget → slow changes",
+        "Finance only",
+        "DNS only",
+        "Ignore incidents"
+      ],
+      "correctIndex": 0,
+      "explanation": "SLO operations."
+    },
+    {
+      "id": "SRA-008",
+      "module": "SRA",
+      "difficulty": "interview",
+      "tags": [
+        "load"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "question": "Scalability bottleneck in network controllers is often:",
+      "options": [
+        "Config rate, watchers, or DB—not only packet pps on the wire",
+        "Only optics",
+        "Only MAC tables",
+        "Only humans"
+      ],
+      "correctIndex": 0,
+      "explanation": "Control-plane scale."
+    },
+    {
+      "id": "SRA-009",
+      "module": "SRA",
+      "difficulty": "interview",
+      "tags": [
+        "failover"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "question": "Cold vs hot standby for network services:",
+      "options": [
+        "Hot reduces RTO at cost of complexity/split-brain risk; cold is simpler but slower recovery",
+        "Cold always better",
+        "Hot never fails",
+        "No difference"
+      ],
+      "correctIndex": 0,
+      "explanation": "HA patterns."
+    },
+    {
+      "id": "SRA-010",
+      "module": "SRA",
+      "difficulty": "interview",
+      "tags": [
+        "graceful"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "question": "Graceful degradation example:",
+      "options": [
+        "Shed non-critical telemetry or edge features to protect core forwarding under overload",
+        "Fail entirely",
+        "Disable all auth",
+        "Drop SLO silently without signal"
+      ],
+      "correctIndex": 0,
+      "explanation": "Survive overload."
+    },
+    {
+      "id": "SRA-011",
+      "module": "SRA",
+      "difficulty": "interview",
+      "tags": [
+        "replication"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "question": "Replicated control store without quorum thinking risks:",
+      "options": [
+        "Split brain and divergent fabric intent—design consistency model explicitly",
+        "Automatic correctness",
+        "Faster BGP always",
+        "No ops cost"
+      ],
+      "correctIndex": 0,
+      "explanation": "Distributed reliability."
+    },
+    {
+      "id": "SRA-012",
+      "module": "SRA",
+      "difficulty": "interview",
+      "tags": [
+        "capacity"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "question": "Availability during maintenance requires:",
+      "options": [
+        "Drain + N-k still holds while capacity is removed—schedule accordingly",
+        "Maintenance ignores SLO",
+        "Always unlimited spare",
+        "Disable monitoring"
+      ],
+      "correctIndex": 0,
+      "explanation": "Planned risk."
+    },
+    {
+      "id": "SRA-013",
+      "module": "SRA",
+      "difficulty": "interview",
+      "tags": [
+        "tail"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "question": "p99 latency matters for availability perception because:",
+      "options": [
+        "Many user attempts hit the tail—averages hide pain",
+        "Only averages matter",
+        "p99 is noise",
+        "Networks have no tails"
+      ],
+      "correctIndex": 0,
+      "explanation": "Tail latency."
+    },
+    {
+      "id": "SRA-014",
+      "module": "SRA",
+      "difficulty": "interview",
+      "tags": [
+        "retry"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "question": "Client retries without jitter can:",
+      "options": [
+        "Amplify outages (retry storms)—design backoff and idempotency",
+        "Always help",
+        "Fix loss forever",
+        "Replace health checks"
+      ],
+      "correctIndex": 0,
+      "explanation": "Retry reliability."
+    },
+    {
+      "id": "SRA-015",
+      "module": "SRA",
+      "difficulty": "interview",
+      "tags": [
+        "multi-az"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "question": "Multi-AZ improves availability if:",
+      "options": [
+        "Failure domains are independent and capacity/N-k is proven—not just checkbox subnets",
+        "Tags say multi-AZ",
+        "One NAT for all AZs fine",
+        "Ignore AZ limits"
+      ],
+      "correctIndex": 0,
+      "explanation": "Cloud HA reality."
+    },
+    {
+      "id": "SRA-016",
+      "module": "SRA",
+      "difficulty": "interview",
+      "tags": [
+        "scale-out"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "question": "Scale-out fabric growth pattern:",
+      "options": [
+        "Add leaf/spine stages with ECMP; watch cabling, ASN/policy, and automation scale",
+        "Only bigger ASICs always",
+        "Disable ECMP",
+        "Centralize all state"
+      ],
+      "correctIndex": 0,
+      "explanation": "Horizontal scale."
+    },
+    {
+      "id": "SRA-017",
+      "module": "SRA",
+      "difficulty": "interview",
+      "tags": [
+        "dependencies"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "question": "Hidden dependency kills availability when:",
+      "options": [
+        "Critical path relies on a soft dependency (DNS, single bastion, one region IAM) without SLO",
+        "All deps listed",
+        "Only hard deps exist",
+        "Graphs unused"
+      ],
+      "correctIndex": 0,
+      "explanation": "Dependency reliability."
+    },
+    {
+      "id": "SRA-018",
+      "module": "SRA",
+      "difficulty": "interview",
+      "tags": [
+        "chaos"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "question": "Game days / failure injection help because:",
+      "options": [
+        "They validate detection and failover before real SEVs—within safety bounds",
+        "They cause only harm",
+        "Replace unit tests",
+        "Only for apps not networks"
+      ],
+      "correctIndex": 0,
+      "explanation": "Proactive reliability."
+    },
+    {
+      "id": "SRA-019",
+      "module": "SRA",
+      "difficulty": "interview",
+      "tags": [
+        "brownout"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "question": "Brownout is dangerous because:",
+      "options": [
+        "Service is 'up' but SLO-violating—monitors must catch latency/error not only binary down",
+        "Brownout is healthy",
+        "Only total down matters",
+        "Ping success enough"
+      ],
+      "correctIndex": 0,
+      "explanation": "Partial failure."
+    },
+    {
+      "id": "SRA-020",
+      "module": "SRA",
+      "difficulty": "interview",
+      "tags": [
+        "tradeoff"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "question": "Reliability vs feature velocity—manager framing:",
+      "options": [
+        "Use error budgets and risk-tiered change policies—don't pretend zero tradeoff",
+        "Ship always",
+        "Freeze forever",
+        "Ignore data"
+      ],
+      "correctIndex": 0,
+      "explanation": "Explicit tradeoffs."
+    }
+  ]
+}

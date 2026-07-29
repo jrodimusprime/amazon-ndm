@@ -180,7 +180,7 @@
       ],
       "source": "ANDM prep",
       "front": "Deliver Results for an NDM is best shown by:",
-      "back": "Measurable outcomes — availability, change success rate, MTTR, hiring bar — not activity theater — Deliver Results: Amazon interviewers score STAR stories against LPs. Strong answers show customer impact, personal ownership, and measurable results."
+      "back": "Measurable outcomes — availability, change success rate, MTTR, hiring bar — not activity theater — Deliver Results: Amazon interviewers score STAR stories against LPs. Strong answers show customer impact, personal ownership, and measurable results. — Terms: MTTR (Mean Time To Repair)"
     },
     {
       "id": "FC-LP-CORE-015",
@@ -2840,7 +2840,7 @@
       ],
       "source": "ANDM OSI model 2026-07",
       "front": "OSI Layer 4 (Transport) is best associated with:",
-      "back": "End-to-end delivery semantics — e.g. TCP reliability/ports or UDP datagrams — L4 = TCP/UDP (in practice). — Terms: TCP (Transmission Control Protocol); UDP (User Datagram Protocol)"
+      "back": "End-to-end delivery semantics — e.g. TCP reliability/ports or UDP datagrams — L4 = TCP/UDP (in practice). — Terms: L4 (Layer 4 (transport)); TCP (Transmission Control Protocol); UDP (User Datagram Protocol)"
     },
     {
       "id": "FC-OSI-006",
@@ -2862,7 +2862,7 @@
       ],
       "source": "ANDM OSI model 2026-07",
       "front": "How does the practical TCP/IP model relate to OSI?",
-      "back": "TCP/IP collapses some OSI layers (e.g. L5–L7 into Application; Link often covers L1–L2) but the OSI names still help locate faults — Interviewers want mapping literacy, not pedantry. — Terms: TCP (Transmission Control Protocol)"
+      "back": "TCP/IP collapses some OSI layers (e.g. L5–L7 into Application; Link often covers L1–L2) but the OSI names still help locate faults — Interviewers want mapping literacy, not pedantry. — Terms: L7 (Layer 7 (application)); TCP (Transmission Control Protocol)"
     },
     {
       "id": "FC-OSI-008",
@@ -2873,7 +2873,7 @@
       ],
       "source": "ANDM OSI model 2026-07",
       "front": "A useful OSI troubleshooting habit is:",
-      "back": "Start from symptoms and test bottom-up or top-down systematically (L1 link → L2/L3 reachability → L4 ports → app) — Layered isolation speeds Dive Deep."
+      "back": "Start from symptoms and test bottom-up or top-down systematically (L1 link → L2/L3 reachability → L4 ports → app) — Layered isolation speeds Dive Deep. — Terms: L4 (Layer 4 (transport))"
     },
     {
       "id": "FC-OSI-009",
@@ -2917,7 +2917,7 @@
       ],
       "source": "ANDM OSI model 2026-07",
       "front": "Which mapping is most accurate?",
-      "back": "Ethernet/MAC ≈ L2; IP/ICMP ≈ L3; TCP/UDP ≈ L4; HTTP/DNS/TLS≈ upper layers (L5–L7 in OSI terms) — Concrete protocol ↔ layer mapping. — Terms: HTTP (Hypertext Transfer Protocol); TCP (Transmission Control Protocol)"
+      "back": "Ethernet/MAC ≈ L2; IP/ICMP ≈ L3; TCP/UDP ≈ L4; HTTP/DNS/TLS≈ upper layers (L5–L7 in OSI terms) — Concrete protocol ↔ layer mapping. — Terms: HTTP (Hypertext Transfer Protocol); L4 (Layer 4 (transport)); L7 (Layer 7 (application)); TCP (Transmission Control Protocol)"
     },
     {
       "id": "FC-N1-001",
@@ -5099,7 +5099,7 @@
       ],
       "source": "ANDM technical domains 2026-07",
       "front": "Pipeline success metric that can mislead:",
-      "back": "Deploy frequency without change failure rate / MTTR—optimize the whole DORA-like set carefully for networks — Measure what matters."
+      "back": "Deploy frequency without change failure rate / MTTR—optimize the whole DORA-like set carefully for networks — Measure what matters. — Terms: MTTR (Mean Time To Repair)"
     },
     {
       "id": "FC-ANS-001",
@@ -6420,6 +6420,1365 @@
       "source": "ANDM technical domains 2026-07 (AWS networking)",
       "front": "Periodic capacity reviews should output:",
       "back": "Risks, orders, design changes, and owners—not slideware without actions — Cadence that works."
+    },
+    {
+      "id": "FC-L4-001",
+      "deck": "core",
+      "tags": [
+        "tcp",
+        "handshake",
+        "l4"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "front": "TCP three-way handshake purpose:",
+      "back": "Agree sequence/ack state so both sides can track a reliable byte stream before data — TCP connection establishment literacy. — Terms: TCP (Transmission Control Protocol)"
+    },
+    {
+      "id": "FC-L4-002",
+      "deck": "core",
+      "tags": [
+        "tcp",
+        "reliability",
+        "l4"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "front": "TCP delivers reliability primarily via:",
+      "back": "Sequence numbers, ACKs, retransmits, and congestion/flow control—not magic wire guarantees — What TCP does vs IP. — Terms: TCP (Transmission Control Protocol)"
+    },
+    {
+      "id": "FC-L4-003",
+      "deck": "core",
+      "tags": [
+        "tcp",
+        "vs-udp",
+        "l4"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "front": "Prefer UDP over TCP when:",
+      "back": "App can handle loss/reorder or needs low latency (DNS, some telemetry, media)—trade reliability for simplicity/speed — Transport choice in network systems. — Terms: DNS (Domain Name System)"
+    },
+    {
+      "id": "FC-L4-004",
+      "deck": "core",
+      "tags": [
+        "tcp",
+        "congestion",
+        "l4"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "front": "TCP congestion control reacts to:",
+      "back": "Loss/delay signals by reducing send rate to avoid collapse—impacts goodput under bufferbloat/lossy paths — Why network loss looks like 'app slowness'."
+    },
+    {
+      "id": "FC-L4-005",
+      "deck": "core",
+      "tags": [
+        "tcp",
+        "handshake-fail",
+        "l4"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "front": "SYN sent, no SYN-ACK—likely classes of cause:",
+      "back": "Filter/ACL/firewall drop, routing blackhole, overloaded listener, or asymmetric path—not 'TCP is broken' — L3/L4 triage. — Terms: TCP (Transmission Control Protocol)"
+    },
+    {
+      "id": "FC-L4-006",
+      "deck": "core",
+      "tags": [
+        "ip",
+        "forward",
+        "l4"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "front": "IP's job vs TCP's job:",
+      "back": "IP provides best-effort packet delivery/routing; TCP builds reliability on top between endpoints — Layering clarity. — Terms: TCP (Transmission Control Protocol)"
+    },
+    {
+      "id": "FC-L4-007",
+      "deck": "core",
+      "tags": [
+        "ip",
+        "fragment",
+        "l4"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "front": "IP fragmentation is risky because:",
+      "back": "Middleboxes/MTU issues drop fragments; prefer PMTUD and right-sized MTU end-to-end — Ops reality. — Terms: MTU (Maximum Transmission Unit)"
+    },
+    {
+      "id": "FC-L4-008",
+      "deck": "core",
+      "tags": [
+        "lb",
+        "l4"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "front": "L4 load balancer forwards based on:",
+      "back": "IP/TCP/UDP 5-tuple (or subset)—not HTTP paths; fast, protocol-agnostic distribution — LB layer literacy. — Terms: HTTP (Hypertext Transfer Protocol); LB (Load Balancer)"
+    },
+    {
+      "id": "FC-L4-009",
+      "deck": "core",
+      "tags": [
+        "lb",
+        "l7",
+        "l4"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "front": "L7 load balancer advantage:",
+      "back": "Content-aware routing (host/path), TLS terminate, richer health—cost is complexity/state — When L7 earns its keep. — Terms: L7 (Layer 7 (application)); TLS (Transport Layer Security)"
+    },
+    {
+      "id": "FC-L4-010",
+      "deck": "core",
+      "tags": [
+        "lb",
+        "health",
+        "l4"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "front": "LB health check that only pings ICMP is weak because:",
+      "back": "ICMP up ≠ app/TCP listener healthy—check the service port/path you actually serve — Health check design. — Terms: ICMP (Internet Control Message Protocol)"
+    },
+    {
+      "id": "FC-L4-011",
+      "deck": "core",
+      "tags": [
+        "lb",
+        "persistence",
+        "l4"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "front": "Session persistence (stickiness) tradeoff:",
+      "back": "Helps stateful apps but hurts even load and failover—prefer stateless apps when possible — LB design tradeoff. — Terms: LB (Load Balancer)"
+    },
+    {
+      "id": "FC-L4-012",
+      "deck": "core",
+      "tags": [
+        "lb",
+        "vip",
+        "l4"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "front": "VIP (virtual IP) in LB design is:",
+      "back": "The stable address clients hit; LB maps VIP→backend pool members — VIP mental model. — Terms: LB (Load Balancer); VIP (Virtual IP address)"
+    },
+    {
+      "id": "FC-L4-013",
+      "deck": "core",
+      "tags": [
+        "fw",
+        "state",
+        "l4"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "front": "Stateful firewall tracks:",
+      "back": "Connection state so return traffic can be allowed without mirror rules for every flow — Firewall vs ACL. — Terms: ACL (Access Control List)"
+    },
+    {
+      "id": "FC-L4-014",
+      "deck": "core",
+      "tags": [
+        "fw",
+        "placement",
+        "l4"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "front": "Firewall on every leaf vs centralized inspection:",
+      "back": "Distributed reduces hairpin latency but multiplies policy ops; central simplifies policy but adds hops/failure modes—choose deliberately — Network design choice."
+    },
+    {
+      "id": "FC-L4-015",
+      "deck": "core",
+      "tags": [
+        "fw",
+        "asymmetry",
+        "l4"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "front": "Asymmetric routing through stateful firewalls fails when:",
+      "back": "Return path hits a different firewall without shared state—fix routing/symmetric policy or active-active state sync — Classic outage pattern."
+    },
+    {
+      "id": "FC-L4-016",
+      "deck": "core",
+      "tags": [
+        "acl",
+        "order",
+        "l4"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "front": "ACL first-match order bugs cause:",
+      "back": "Wrong allow/deny because a broader earlier rule shadows intent — Policy correctness."
+    },
+    {
+      "id": "FC-L4-017",
+      "deck": "core",
+      "tags": [
+        "tcp",
+        "rst",
+        "l4"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "front": "Sudden TCP RSTs after policy change often mean:",
+      "back": "Firewall/ACL/security group now denying mid-flow or killing state—correlate change window — Change ↔ symptom."
+    },
+    {
+      "id": "FC-L4-018",
+      "deck": "core",
+      "tags": [
+        "lb",
+        "failover",
+        "l4"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "front": "Backend dies; good LB behavior:",
+      "back": "Health check marks down; stop new flows; drain or reset existing per policy—monitor pool capacity — Availability mechanics."
+    },
+    {
+      "id": "FC-L4-019",
+      "deck": "core",
+      "tags": [
+        "tcp",
+        "keepalive",
+        "l4"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "front": "TCP keepalive vs app heartbeat:",
+      "back": "OS keepalives are coarse; apps often need explicit health for LB/failover timing — Failure detection layers. — Terms: LB (Load Balancer)"
+    },
+    {
+      "id": "FC-L4-020",
+      "deck": "core",
+      "tags": [
+        "edge",
+        "defense",
+        "l4"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "front": "Defense in depth for Internet edge:",
+      "back": "LB + firewall/WAF + least-privilege ACLs + monitoring—not one box as the only control — Layered controls. — Terms: LB (Load Balancer)"
+    },
+    {
+      "id": "FC-NSD-001",
+      "deck": "core",
+      "tags": [
+        "design",
+        "clarify",
+        "nsd"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "front": "First step in a network system design interview:",
+      "back": "Clarify goals, users, constraints (latency, loss, regions, compliance), and non-goals before drawing boxes — Design discipline."
+    },
+    {
+      "id": "FC-NSD-002",
+      "deck": "core",
+      "tags": [
+        "design",
+        "clos",
+        "nsd"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "front": "Why Clos/leaf-spine for DC fabrics?",
+      "back": "Scalable east-west with ECMP, predictable failure domains, and horizontal scale-out vs big chassis trees — Canonical fabric design. — Terms: ECMP (Equal-Cost Multi-Path)"
+    },
+    {
+      "id": "FC-NSD-003",
+      "deck": "core",
+      "tags": [
+        "design",
+        "failure",
+        "nsd"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "front": "When sketching design, always show:",
+      "back": "Failure domains and what breaks when X fails (N-k), not only happy-path arrows — Reliability in design."
+    },
+    {
+      "id": "FC-NSD-004",
+      "deck": "core",
+      "tags": [
+        "design",
+        "api",
+        "nsd"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "front": "Network control-plane software design should separate:",
+      "back": "Intent API / policy, reconciliation, and device drivers—so one bug doesn't require rewriting everything — Software architecture for NetCore. — Terms: API (Application Programming Interface)"
+    },
+    {
+      "id": "FC-NSD-005",
+      "deck": "core",
+      "tags": [
+        "design",
+        "consistency",
+        "nsd"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "front": "Strong consistency for fabric inventory vs availability:",
+      "back": "Know CAP-ish tradeoffs: during partitions, choose stale-serve vs refuse-write for each subsystem — Distributed systems for network platforms."
+    },
+    {
+      "id": "FC-NSD-006",
+      "deck": "core",
+      "tags": [
+        "design",
+        "multiregion",
+        "nsd"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "front": "Multi-region network service design needs:",
+      "back": "Per-region failure isolation, global traffic steering, and clear data residency/compliance story — Global design."
+    },
+    {
+      "id": "FC-NSD-007",
+      "deck": "core",
+      "tags": [
+        "design",
+        "observability",
+        "nsd"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "front": "Observability is part of the design when:",
+      "back": "You specify metrics/logs/traces and SLO signals before launch—not bolted on after the first SEV — Operable by design. — Terms: SLO (Service Level Objective)"
+    },
+    {
+      "id": "FC-NSD-008",
+      "deck": "core",
+      "tags": [
+        "design",
+        "blast",
+        "nsd"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "front": "Blast radius reduction techniques:",
+      "back": "Cell/slice isolation, canaries, rate limits, staged rollout, and least privilege — Safe evolution."
+    },
+    {
+      "id": "FC-NSD-009",
+      "deck": "core",
+      "tags": [
+        "design",
+        "lb",
+        "nsd"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "front": "Designing a global LB service—key components:",
+      "back": "Health, capacity, consistency of config, DDoS posture, and DNS/anycast or Anycast+LB handoff — End-to-end LB system. — Terms: DNS (Domain Name System); LB (Load Balancer)"
+    },
+    {
+      "id": "FC-NSD-010",
+      "deck": "core",
+      "tags": [
+        "design",
+        "control-data",
+        "nsd"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "front": "Separate control and data planes because:",
+      "back": "Control can fail/restart while forwarding continues (with care)—and scale independently — Classic network systems split."
+    },
+    {
+      "id": "FC-NSD-011",
+      "deck": "core",
+      "tags": [
+        "design",
+        "idempotent",
+        "nsd"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "front": "Config push system design requires:",
+      "back": "Idempotent apply, versioning, dry-run/diff, and per-device checkpoints — Automation as a system."
+    },
+    {
+      "id": "FC-NSD-012",
+      "deck": "core",
+      "tags": [
+        "design",
+        "backpressure",
+        "nsd"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "front": "When collectors overwhelm a bus, design should:",
+      "back": "Apply backpressure, shed load, and protect control plane—don't drop silently forever without signals — Stability under load."
+    },
+    {
+      "id": "FC-NSD-013",
+      "deck": "core",
+      "tags": [
+        "design",
+        "security",
+        "nsd"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "front": "Threat model in network design includes:",
+      "back": "Compromise of device, controller, CI, and insider change—authN/Z, audit, segmentation — Secure by design."
+    },
+    {
+      "id": "FC-NSD-014",
+      "deck": "core",
+      "tags": [
+        "design",
+        "migration",
+        "nsd"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "front": "Brownfield migration design:",
+      "back": "Strangler/dual-run, clear cutover criteria, and rollback—avoid big-bang untested swaps — Change as design."
+    },
+    {
+      "id": "FC-NSD-015",
+      "deck": "core",
+      "tags": [
+        "design",
+        "sla",
+        "nsd"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "front": "Map requirements to SLOs by:",
+      "back": "Translating customer pain (timeouts/errors) into measurable latency/loss/availability targets — Requirements → metrics."
+    },
+    {
+      "id": "FC-NSD-016",
+      "deck": "core",
+      "tags": [
+        "design",
+        "scale",
+        "nsd"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "front": "Estimate scale early:",
+      "back": "Flows, pps, prefixes, devices, config rate, and storage—size bottlenecks before pretty diagrams — Back-of-envelope."
+    },
+    {
+      "id": "FC-NSD-017",
+      "deck": "core",
+      "tags": [
+        "design",
+        "tradeoff",
+        "nsd"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "front": "Good design answer states tradeoffs:",
+      "back": "Explicit alternatives with costs (complexity, latency, ops)—pick and justify — Interview signal."
+    },
+    {
+      "id": "FC-NSD-018",
+      "deck": "core",
+      "tags": [
+        "design",
+        "cells",
+        "nsd"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "front": "Cell-based architecture helps networks by:",
+      "back": "Limiting blast radius and enabling parallel scale—at cost of more routing/ops complexity — Modern large-system pattern."
+    },
+    {
+      "id": "FC-NSD-019",
+      "deck": "core",
+      "tags": [
+        "design",
+        "single",
+        "nsd"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "front": "Spot the single point of failure:",
+      "back": "Shared RR, single NAT, one TGW route table mistake, one region control plane—call it out and mitigate — Reviewer's eye. — Terms: NAT (Network Address Translation); RR (Route Reflector); TGW (Transit Gateway)"
+    },
+    {
+      "id": "FC-NSD-020",
+      "deck": "core",
+      "tags": [
+        "design",
+        "evolve",
+        "nsd"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "front": "Design for evolution means:",
+      "back": "Versioned APIs, compatible rollouts, and feature flags—assume requirements will change — Long-lived platforms."
+    },
+    {
+      "id": "FC-REQ-001",
+      "deck": "core",
+      "tags": [
+        "clarify",
+        "req"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "front": "Ambiguous 'make the network faster'—you ask:",
+      "back": "Faster for whom? Which paths? Latency vs throughput vs loss? Peak vs p99? Constraint budget? — Clarify metrics and users."
+    },
+    {
+      "id": "FC-REQ-002",
+      "deck": "core",
+      "tags": [
+        "clarify",
+        "req"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "front": "Stakeholder says '100% available'—you clarify:",
+      "back": "Define SLO/SLA, error budget, and which failure classes are in/out of scope — Availability is defined. — Terms: SLO (Service Level Objective)"
+    },
+    {
+      "id": "FC-REQ-003",
+      "deck": "core",
+      "tags": [
+        "clarify",
+        "req"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "front": "Before designing a new LB, missing requirement to ask:",
+      "back": "Traffic mix (L4/L7), TLS needs, stickiness, regions, compliance, and RPS/pps scale — Requirements checklist. — Terms: L4 (Layer 4 (transport)); TLS (Transport Layer Security)"
+    },
+    {
+      "id": "FC-REQ-004",
+      "deck": "core",
+      "tags": [
+        "clarify",
+        "req"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "front": "Security asks 'encrypt everything'—clarify:",
+      "back": "Data in transit vs at rest, trust boundaries, performance budget, and key management ownership — Scope encryption."
+    },
+    {
+      "id": "FC-REQ-005",
+      "deck": "core",
+      "tags": [
+        "clarify",
+        "req"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "front": "'Support hybrid cloud' needs clarification of:",
+      "back": "Regions, DX/VPN, overlapping CIDRs, DNS, identity, and failure domains across clouds — Hybrid is many designs. — Terms: DNS (Domain Name System); DX (AWS Direct Connect)"
+    },
+    {
+      "id": "FC-REQ-006",
+      "deck": "core",
+      "tags": [
+        "clarify",
+        "req"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "front": "Product wants 'real-time' telemetry—ask:",
+      "back": "Latency budget, cardinality, retention, and what decisions the data drives — Fit-for-purpose data."
+    },
+    {
+      "id": "FC-REQ-007",
+      "deck": "core",
+      "tags": [
+        "clarify",
+        "req"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "front": "When two requirements conflict (cost vs latency), you:",
+      "back": "Surface the conflict with options and recommend; force an explicit decision — Product partnership."
+    },
+    {
+      "id": "FC-REQ-008",
+      "deck": "core",
+      "tags": [
+        "clarify",
+        "req"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "front": "Outage retro says 'improve monitoring'—clarify:",
+      "back": "Which golden signals, alert thresholds, ownership, and pages-vs-tickets outcomes — Actionable requirements."
+    },
+    {
+      "id": "FC-REQ-009",
+      "deck": "core",
+      "tags": [
+        "clarify",
+        "req"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "front": "Migration deadline without success criteria—you push for:",
+      "back": "Measurable cutover gates (error rate, lag, rollback time) before the date — Definition of done."
+    },
+    {
+      "id": "FC-REQ-010",
+      "deck": "core",
+      "tags": [
+        "clarify",
+        "req"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "front": "Customer 'can't connect'—first clarifying questions:",
+      "back": "Scope (who/where/when), symptoms (DNS/TCP/app), recent changes, and blast radius — Incident requirements. — Terms: DNS (Domain Name System)"
+    },
+    {
+      "id": "FC-REQ-011",
+      "deck": "core",
+      "tags": [
+        "clarify",
+        "req"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "front": "Design interview silence after vague prompt—best move:",
+      "back": "Ask structured clarifying questions, then restate assumptions aloud for agreement — Interview technique."
+    },
+    {
+      "id": "FC-REQ-012",
+      "deck": "core",
+      "tags": [
+        "clarify",
+        "req"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "front": "'Global anycast' requirement—clarify:",
+      "back": "Health failover semantics, regional stickiness needs, and DDoS/absorb capacity — Anycast specifics."
+    },
+    {
+      "id": "FC-REQ-013",
+      "deck": "core",
+      "tags": [
+        "clarify",
+        "req"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "front": "Compliance 'must log all traffic'—clarify:",
+      "back": "Metadata vs payloads, retention, PII, and storage cost—often Flow Logs ≠ full PCAP — Feasible compliance. — Terms: PII (Personally Identifiable Information)"
+    },
+    {
+      "id": "FC-REQ-014",
+      "deck": "core",
+      "tags": [
+        "clarify",
+        "req"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "front": "Team asks for 'automation'—clarify outcome:",
+      "back": "Which toil, risk reduced, SLO for the automator, and human approval gates — Automation requirements. — Terms: SLO (Service Level Objective)"
+    },
+    {
+      "id": "FC-REQ-015",
+      "deck": "core",
+      "tags": [
+        "clarify",
+        "req"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "front": "Capacity 'we're fine' without data—ask for:",
+      "back": "Headroom policy, forecast inputs, lead times, and N-k under maintenance — Evidence-based asks."
+    },
+    {
+      "id": "FC-REQ-016",
+      "deck": "core",
+      "tags": [
+        "clarify",
+        "req"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "front": "Multi-tenant fabric request—clarify:",
+      "back": "Isolation model (VRF/SG/cells), noisy-neighbor controls, and blast-radius limits — Tenancy requirements. — Terms: VRF (Virtual Routing and Forwarding)"
+    },
+    {
+      "id": "FC-REQ-017",
+      "deck": "core",
+      "tags": [
+        "clarify",
+        "req"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "front": "API for network changes—clarify:",
+      "back": "AuthZ model, idempotency, rate limits, audit, and sync vs async apply — Platform requirements."
+    },
+    {
+      "id": "FC-REQ-018",
+      "deck": "core",
+      "tags": [
+        "clarify",
+        "req"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "front": "'Low latency trading' vs 'bulk backup' on same path—clarify:",
+      "back": "Whether isolation/QoS/separate fabrics are required—don't average incompatible SLOs — Workload classes."
+    },
+    {
+      "id": "FC-REQ-019",
+      "deck": "core",
+      "tags": [
+        "clarify",
+        "req"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "front": "Vendor proposes feature—clarify:",
+      "back": "Problem it solves, operability, failure modes, lock-in, and exit criteria vs build — Make vs buy clarity."
+    },
+    {
+      "id": "FC-REQ-020",
+      "deck": "core",
+      "tags": [
+        "clarify",
+        "req"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "front": "Restate requirements before solving to:",
+      "back": "Confirm shared understanding and expose hidden constraints early — Communication habit."
+    },
+    {
+      "id": "FC-SRA-001",
+      "deck": "core",
+      "tags": [
+        "availability",
+        "sra"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "front": "Availability for a network path is roughly:",
+      "back": "Fraction of time the service meets its success criteria—not merely 'link lights on' — Define availability."
+    },
+    {
+      "id": "FC-SRA-002",
+      "deck": "core",
+      "tags": [
+        "reliability",
+        "sra"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "front": "Reliability emphasizes:",
+      "back": "Correct continuous operation under expected conditions—including after partial failures — Reliability vs uptime slogans."
+    },
+    {
+      "id": "FC-SRA-003",
+      "deck": "core",
+      "tags": [
+        "scalability",
+        "sra"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "front": "Scalability means:",
+      "back": "Cost/complexity of adding capacity stays acceptable as load grows—horizontal or vertical with eyes open — Scale definition."
+    },
+    {
+      "id": "FC-SRA-004",
+      "deck": "core",
+      "tags": [
+        "n1",
+        "sra"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "front": "N-1 capacity planning ensures:",
+      "back": "Service still meets SLO after one planned/unplanned failure of a key component — Classic availability math. — Terms: SLO (Service Level Objective)"
+    },
+    {
+      "id": "FC-SRA-005",
+      "deck": "core",
+      "tags": [
+        "redundancy",
+        "sra"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "front": "Redundancy without diversity fails when:",
+      "back": "Shared fate (same conduit, same RR, same AZ pattern) takes both 'redundant' paths — Correlated failure. — Terms: RR (Route Reflector)"
+    },
+    {
+      "id": "FC-SRA-006",
+      "deck": "core",
+      "tags": [
+        "mttr",
+        "sra"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "front": "Improving availability often cheaper via:",
+      "back": "Lower MTTR (detect/mitigate faster) plus prevention—not only more spares — MTTD/MTTR lever. — Terms: MTTD (Mean Time To Detect); MTTR (Mean Time To Repair)"
+    },
+    {
+      "id": "FC-SRA-007",
+      "deck": "core",
+      "tags": [
+        "slo",
+        "sra"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "front": "Error budgets connect:",
+      "back": "Reliability targets to release/change velocity—burn budget → slow changes — SLO operations. — Terms: SLO (Service Level Objective)"
+    },
+    {
+      "id": "FC-SRA-008",
+      "deck": "core",
+      "tags": [
+        "load",
+        "sra"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "front": "Scalability bottleneck in network controllers is often:",
+      "back": "Config rate, watchers, or DB—not only packet pps on the wire — Control-plane scale."
+    },
+    {
+      "id": "FC-SRA-009",
+      "deck": "core",
+      "tags": [
+        "failover",
+        "sra"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "front": "Cold vs hot standby for network services:",
+      "back": "Hot reduces RTO at cost of complexity/split-brain risk; cold is simpler but slower recovery — HA patterns. — Terms: RTO (Recovery Time Objective)"
+    },
+    {
+      "id": "FC-SRA-010",
+      "deck": "core",
+      "tags": [
+        "graceful",
+        "sra"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "front": "Graceful degradation example:",
+      "back": "Shed non-critical telemetry or edge features to protect core forwarding under overload — Survive overload."
+    },
+    {
+      "id": "FC-SRA-011",
+      "deck": "core",
+      "tags": [
+        "replication",
+        "sra"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "front": "Replicated control store without quorum thinking risks:",
+      "back": "Split brain and divergent fabric intent—design consistency model explicitly — Distributed reliability."
+    },
+    {
+      "id": "FC-SRA-012",
+      "deck": "core",
+      "tags": [
+        "capacity",
+        "sra"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "front": "Availability during maintenance requires:",
+      "back": "Drain + N-k still holds while capacity is removed—schedule accordingly — Planned risk."
+    },
+    {
+      "id": "FC-SRA-013",
+      "deck": "core",
+      "tags": [
+        "tail",
+        "sra"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "front": "p99 latency matters for availability perception because:",
+      "back": "Many user attempts hit the tail—averages hide pain — Tail latency."
+    },
+    {
+      "id": "FC-SRA-014",
+      "deck": "core",
+      "tags": [
+        "retry",
+        "sra"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "front": "Client retries without jitter can:",
+      "back": "Amplify outages (retry storms)—design backoff and idempotency — Retry reliability."
+    },
+    {
+      "id": "FC-SRA-015",
+      "deck": "core",
+      "tags": [
+        "multi-az",
+        "sra"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "front": "Multi-AZ improves availability if:",
+      "back": "Failure domains are independent and capacity/N-k is proven—not just checkbox subnets — Cloud HA reality."
+    },
+    {
+      "id": "FC-SRA-016",
+      "deck": "core",
+      "tags": [
+        "scale-out",
+        "sra"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "front": "Scale-out fabric growth pattern:",
+      "back": "Add leaf/spine stages with ECMP; watch cabling, ASN/policy, and automation scale — Horizontal scale. — Terms: ASN (Autonomous System Number); ECMP (Equal-Cost Multi-Path)"
+    },
+    {
+      "id": "FC-SRA-017",
+      "deck": "core",
+      "tags": [
+        "dependencies",
+        "sra"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "front": "Hidden dependency kills availability when:",
+      "back": "Critical path relies on a soft dependency (DNS, single bastion, one region IAM) without SLO — Dependency reliability. — Terms: DNS (Domain Name System); SLO (Service Level Objective)"
+    },
+    {
+      "id": "FC-SRA-018",
+      "deck": "core",
+      "tags": [
+        "chaos",
+        "sra"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "front": "Game days / failure injection help because:",
+      "back": "They validate detection and failover before real SEVs—within safety bounds — Proactive reliability."
+    },
+    {
+      "id": "FC-SRA-019",
+      "deck": "core",
+      "tags": [
+        "brownout",
+        "sra"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "front": "Brownout is dangerous because:",
+      "back": "Service is 'up' but SLO-violating—monitors must catch latency/error not only binary down — Partial failure. — Terms: SLO (Service Level Objective)"
+    },
+    {
+      "id": "FC-SRA-020",
+      "deck": "core",
+      "tags": [
+        "tradeoff",
+        "sra"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "front": "Reliability vs feature velocity—manager framing:",
+      "back": "Use error budgets and risk-tiered change policies—don't pretend zero tradeoff — Explicit tradeoffs."
+    },
+    {
+      "id": "FC-CODE-001",
+      "deck": "core",
+      "tags": [
+        "coding",
+        "code"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "front": "Language-agnostic coding bar for network tools means:",
+      "back": "Clear control flow, tested edge cases, and readable structure—language is secondary — Interview signal."
+    },
+    {
+      "id": "FC-CODE-002",
+      "deck": "core",
+      "tags": [
+        "coding",
+        "code"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "front": "Maintainable network automation code prioritizes:",
+      "back": "Small functions, explicit errors, and boring patterns over clever one-liners — Readability."
+    },
+    {
+      "id": "FC-CODE-003",
+      "deck": "core",
+      "tags": [
+        "coding",
+        "code"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "front": "Pure logic (CIDR overlap, graph BFS) should be:",
+      "back": "Unit-tested without devices—deterministic fixtures beat live SSH in CI — Testability. — Terms: SSH (Secure Shell)"
+    },
+    {
+      "id": "FC-CODE-004",
+      "deck": "core",
+      "tags": [
+        "coding",
+        "code"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "front": "Parsing device output—maintainable approach:",
+      "back": "Structured parsers/APIs with golden fixtures; isolate regex mess behind interfaces — Boundaries."
+    },
+    {
+      "id": "FC-CODE-005",
+      "deck": "core",
+      "tags": [
+        "coding",
+        "code"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "front": "Error handling that aids ops:",
+      "back": "Typed/explicit failures with context (device, step)—don't swallow and return None silently — Debuggability."
+    },
+    {
+      "id": "FC-CODE-006",
+      "deck": "core",
+      "tags": [
+        "coding",
+        "code"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "front": "Avoiding god-objects in a collector:",
+      "back": "Separate fetch, normalize, store, and alert stages with clear interfaces — Structure."
+    },
+    {
+      "id": "FC-CODE-007",
+      "deck": "core",
+      "tags": [
+        "coding",
+        "code"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "front": "Concurrency in network scrapers—safe default:",
+      "back": "Bounded pools, timeouts, and per-host limits—correctness over max parallelism — Concurrency hygiene."
+    },
+    {
+      "id": "FC-CODE-008",
+      "deck": "core",
+      "tags": [
+        "coding",
+        "code"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "front": "Naming in network code should:",
+      "back": "Use domain words (prefix, peer, ASN) consistently—not a/b/tmp2 — Clarity. — Terms: ASN (Autonomous System Number)"
+    },
+    {
+      "id": "FC-CODE-009",
+      "deck": "core",
+      "tags": [
+        "coding",
+        "code"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "front": "Feature flags for protocol behavior:",
+      "back": "Allow dark launch and fast disable—pair with metrics and clean defaults — Safe change."
+    },
+    {
+      "id": "FC-CODE-010",
+      "deck": "core",
+      "tags": [
+        "coding",
+        "code"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "front": "Input validation for an ACL API:",
+      "back": "Reject impossible ranges/shadowing early with clear errors—don't push bad intent to devices — Defensive coding."
+    },
+    {
+      "id": "FC-CODE-011",
+      "deck": "core",
+      "tags": [
+        "coding",
+        "code"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "front": "Idempotent apply function property:",
+      "back": "Same intent twice → same end state without duplicate side effects — Core property."
+    },
+    {
+      "id": "FC-CODE-012",
+      "deck": "core",
+      "tags": [
+        "coding",
+        "code"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "front": "Logging in library code:",
+      "back": "Structured fields; no secrets; levels that ops can filter during incidents — Operable code."
+    },
+    {
+      "id": "FC-CODE-013",
+      "deck": "core",
+      "tags": [
+        "coding",
+        "code"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "front": "Choosing algorithms for longest-prefix match in software:",
+      "back": "Use appropriate structures (trie/radix) and know complexity—don't O(n) scan huge tables hot-path without cause — Complexity awareness."
+    },
+    {
+      "id": "FC-CODE-014",
+      "deck": "core",
+      "tags": [
+        "coding",
+        "code"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "front": "Dead code and TODOs in critical path:",
+      "back": "Delete or schedule—ambiguity in failover paths is an outage waiting — Hygiene."
+    },
+    {
+      "id": "FC-CODE-015",
+      "deck": "core",
+      "tags": [
+        "coding",
+        "code"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "front": "Dependency injection for device clients helps:",
+      "back": "Tests swap fakes; prod uses real—keeps logic testable — Test doubles."
+    },
+    {
+      "id": "FC-CODE-016",
+      "deck": "core",
+      "tags": [
+        "coding",
+        "code"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "front": "Backwards-compatible config schema change:",
+      "back": "Additive fields, version negotiation, dual-read—avoid break-the-world renames — Evolution."
+    },
+    {
+      "id": "FC-CODE-017",
+      "deck": "core",
+      "tags": [
+        "coding",
+        "code"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "front": "Handle partial success across N devices by:",
+      "back": "Per-target results, resume/rollback plan, and clear aggregate status—never one boolean for 500 boxes — Distributed apply."
+    },
+    {
+      "id": "FC-CODE-018",
+      "deck": "core",
+      "tags": [
+        "coding",
+        "code"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "front": "Code that is 'clever' with bit packing for prefixes:",
+      "back": "OK if documented/tested and necessary—otherwise prefer clarity until profiling demands — Premature vs justified."
+    },
+    {
+      "id": "FC-CODE-019",
+      "deck": "core",
+      "tags": [
+        "coding",
+        "code"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "front": "Contract tests between controller and agent:",
+      "back": "Catch wire-format drift before prod—schema/golden fixtures in CI — Interface stability."
+    },
+    {
+      "id": "FC-CODE-020",
+      "deck": "core",
+      "tags": [
+        "coding",
+        "code"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "front": "Readable code review question to ask yourself:",
+      "back": "Can an on-call engineer unfamiliar with this file debug it at 3am? — Maintainability bar."
+    },
+    {
+      "id": "FC-CRV-001",
+      "deck": "core",
+      "tags": [
+        "code-review",
+        "crv"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "front": "Network automation PR review should prioritize:",
+      "back": "Correctness, blast radius, idempotency, and rollback—not only style nits — Review focus."
+    },
+    {
+      "id": "FC-CRV-002",
+      "deck": "core",
+      "tags": [
+        "code-review",
+        "crv"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "front": "Red flag in a device-config PR:",
+      "back": "Untested regex parse + broad match-all ACL change in one PR without canary plan — Risk smell. — Terms: ACL (Access Control List); PR (Pull Request)"
+    },
+    {
+      "id": "FC-CRV-003",
+      "deck": "core",
+      "tags": [
+        "code-review",
+        "crv"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "front": "Good review comment is:",
+      "back": "Specific, actionable, and explains risk—not 'this is wrong' without why — Tone + value."
+    },
+    {
+      "id": "FC-CRV-004",
+      "deck": "core",
+      "tags": [
+        "code-review",
+        "crv"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "front": "When you disagree on approach in review:",
+      "back": "Offer alternative with tradeoffs; escalate if safety-critical—don't bike-shed forever — Collaboration."
+    },
+    {
+      "id": "FC-CRV-005",
+      "deck": "core",
+      "tags": [
+        "code-review",
+        "crv"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "front": "Must-check for concurrency changes:",
+      "back": "Races, lock scope, timeouts, and cancellation—network I/O makes races likely — Concurrency review."
+    },
+    {
+      "id": "FC-CRV-006",
+      "deck": "core",
+      "tags": [
+        "code-review",
+        "crv"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "front": "Secrets in a PR:",
+      "back": "Block merge; rotate if leaked; push to vault—never 'fix later' — Security review."
+    },
+    {
+      "id": "FC-CRV-007",
+      "deck": "core",
+      "tags": [
+        "code-review",
+        "crv"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "front": "Large 3k-line PR for fabric controller—asker should:",
+      "back": "Split by risk (schema vs rollout vs UI) for reviewable diffs — PR hygiene. — Terms: PR (Pull Request)"
+    },
+    {
+      "id": "FC-CRV-008",
+      "deck": "core",
+      "tags": [
+        "code-review",
+        "crv"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "front": "CI red but author says 'flaky'—reviewer:",
+      "back": "Investigate; don't normalize merging red—quarantine with ownership if truly flaky — CI discipline."
+    },
+    {
+      "id": "FC-CRV-009",
+      "deck": "core",
+      "tags": [
+        "code-review",
+        "crv"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "front": "Reviewing infra-as-code that touches prod firewalls:",
+      "back": "Require plan output, staged rollout notes, and dual review from domain owners — High-risk review."
+    },
+    {
+      "id": "FC-CRV-010",
+      "deck": "core",
+      "tags": [
+        "code-review",
+        "crv"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "front": "Missing tests for CIDR overlap logic:",
+      "back": "Request tests before approve—pure logic is cheap to verify — Test expectation."
+    },
+    {
+      "id": "FC-CRV-011",
+      "deck": "core",
+      "tags": [
+        "code-review",
+        "crv"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "front": "Nit vs blocking comment:",
+      "back": "Label clearly; don't block on nits—block on correctness/safety — Review efficiency."
+    },
+    {
+      "id": "FC-CRV-012",
+      "deck": "core",
+      "tags": [
+        "code-review",
+        "crv"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "front": "Author force-pushes rewriting history mid-review:",
+      "back": "Prefer additive commits after review starts; communicate if rebase needed — Review process."
+    },
+    {
+      "id": "FC-CRV-013",
+      "deck": "core",
+      "tags": [
+        "code-review",
+        "crv"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "front": "Dependency bump in network agent—review:",
+      "back": "Changelog for breaking behavior, SBOM/risk, and lab soak—not blind major bumps — Supply chain. — Terms: SBOM (Software Bill of Materials)"
+    },
+    {
+      "id": "FC-CRV-014",
+      "deck": "core",
+      "tags": [
+        "code-review",
+        "crv"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "front": "Code review for on-call readability:",
+      "back": "Prefer explicit error paths and runbooks links over magic — Ops lens."
+    },
+    {
+      "id": "FC-CRV-015",
+      "deck": "core",
+      "tags": [
+        "code-review",
+        "crv"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "front": "Approving your own PR to prod automation:",
+      "back": "Avoid—require independent review for high blast-radius paths — Segregation of duties."
+    },
+    {
+      "id": "FC-CRV-016",
+      "deck": "core",
+      "tags": [
+        "code-review",
+        "crv"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "front": "Performance-sensitive FIB update code—ask:",
+      "back": "Complexity, allocation churn, and worst-case sizes—request benchmarks if unclear — Perf review."
+    },
+    {
+      "id": "FC-CRV-017",
+      "deck": "core",
+      "tags": [
+        "code-review",
+        "crv"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "front": "Feature flag default-on in first PR:",
+      "back": "Prefer default-off with explicit enable plan and metrics — Safe rollout review."
+    },
+    {
+      "id": "FC-CRV-018",
+      "deck": "core",
+      "tags": [
+        "code-review",
+        "crv"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "front": "Review velocity too slow—manager lever:",
+      "back": "Smaller PRs, clear owners, SLAs for review, and protect focus time—not 'skip reviews' — Process design."
+    },
+    {
+      "id": "FC-CRV-019",
+      "deck": "core",
+      "tags": [
+        "code-review",
+        "crv"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "front": "Comment 'LGTM' with no reading on ACL generator:",
+      "back": "Insufficient for high risk—spot-check critical paths or request walkthrough — Accountability."
+    },
+    {
+      "id": "FC-CRV-020",
+      "deck": "core",
+      "tags": [
+        "code-review",
+        "crv"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "front": "Post-merge issue from reviewed code—healthy culture:",
+      "back": "Blameless fix + improve tests/review checklist—don't weaponize blame — Learning system."
     }
   ]
 }

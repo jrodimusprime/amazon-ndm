@@ -215,6 +215,54 @@
       "dataFile": "questions/cap-capacity.json",
       "buildOrder": 27,
       "priority": 1
+    },
+    {
+      "id": "L4",
+      "title": "IP, TCP, load balancers & firewalls",
+      "questionCount": 20,
+      "dataFile": "questions/l4-tcp-lb-fw.json",
+      "buildOrder": 28,
+      "priority": 1
+    },
+    {
+      "id": "NSD",
+      "title": "Network system design",
+      "questionCount": 20,
+      "dataFile": "questions/nsd-system-design.json",
+      "buildOrder": 29,
+      "priority": 1
+    },
+    {
+      "id": "REQ",
+      "title": "Clarifying requirements (network)",
+      "questionCount": 20,
+      "dataFile": "questions/req-clarifying.json",
+      "buildOrder": 30,
+      "priority": 1
+    },
+    {
+      "id": "SRA",
+      "title": "Scalability, reliability & availability",
+      "questionCount": 20,
+      "dataFile": "questions/sra-scale-reliability.json",
+      "buildOrder": 31,
+      "priority": 1
+    },
+    {
+      "id": "CODE",
+      "title": "Coding fundamentals (network software)",
+      "questionCount": 20,
+      "dataFile": "questions/code-fundamentals.json",
+      "buildOrder": 32,
+      "priority": 1
+    },
+    {
+      "id": "CRV",
+      "title": "Code reviews (network & automation)",
+      "questionCount": 20,
+      "dataFile": "questions/crv-code-review.json",
+      "buildOrder": 33,
+      "priority": 1
     }
   ],
   "examPresets": [
@@ -247,7 +295,13 @@
         "CLD",
         "SEC",
         "IAC",
-        "CAP"
+        "CAP",
+        "L4",
+        "NSD",
+        "REQ",
+        "SRA",
+        "CODE",
+        "CRV"
       ]
     },
     {
@@ -280,7 +334,13 @@
         "CLD",
         "SEC",
         "IAC",
-        "CAP"
+        "CAP",
+        "L4",
+        "NSD",
+        "REQ",
+        "SRA",
+        "CODE",
+        "CRV"
       ]
     },
     {
@@ -297,6 +357,23 @@
         "SEC",
         "IAC",
         "CAP"
+      ]
+    },
+    {
+      "id": "interview-syllabus",
+      "title": "Interview syllabus (networking)",
+      "modules": [
+        "FND",
+        "AUTO",
+        "ADV",
+        "L4",
+        "LNX",
+        "NSD",
+        "REQ",
+        "SRA",
+        "CODE",
+        "CRV",
+        "SEC"
       ]
     }
   ]

@@ -1,0 +1,384 @@
+{
+  "questions": [
+    {
+      "id": "L4-001",
+      "module": "L4",
+      "difficulty": "interview",
+      "tags": [
+        "tcp",
+        "handshake"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "question": "TCP three-way handshake purpose:",
+      "options": [
+        "Agree sequence/ack state so both sides can track a reliable byte stream before data",
+        "Encrypt the payload",
+        "Replace ARP",
+        "Allocate BGP communities"
+      ],
+      "correctIndex": 0,
+      "explanation": "TCP connection establishment literacy."
+    },
+    {
+      "id": "L4-002",
+      "module": "L4",
+      "difficulty": "interview",
+      "tags": [
+        "tcp",
+        "reliability"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "question": "TCP delivers reliability primarily via:",
+      "options": [
+        "Sequence numbers, ACKs, retransmits, and congestion/flow control—not magic wire guarantees",
+        "UDP checksums only",
+        "OSPF SPF",
+        "Firewall state alone"
+      ],
+      "correctIndex": 0,
+      "explanation": "What TCP does vs IP."
+    },
+    {
+      "id": "L4-003",
+      "module": "L4",
+      "difficulty": "interview",
+      "tags": [
+        "tcp",
+        "vs-udp"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "question": "Prefer UDP over TCP when:",
+      "options": [
+        "App can handle loss/reorder or needs low latency (DNS, some telemetry, media)—trade reliability for simplicity/speed",
+        "You always need ordered delivery",
+        "Crossing firewalls is impossible",
+        "BGP requires UDP"
+      ],
+      "correctIndex": 0,
+      "explanation": "Transport choice in network systems."
+    },
+    {
+      "id": "L4-004",
+      "module": "L4",
+      "difficulty": "interview",
+      "tags": [
+        "tcp",
+        "congestion"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "question": "TCP congestion control reacts to:",
+      "options": [
+        "Loss/delay signals by reducing send rate to avoid collapse—impacts goodput under bufferbloat/lossy paths",
+        "Only DNS TTLs",
+        "Only ARP timeouts",
+        "BGP MED"
+      ],
+      "correctIndex": 0,
+      "explanation": "Why network loss looks like 'app slowness'."
+    },
+    {
+      "id": "L4-005",
+      "module": "L4",
+      "difficulty": "interview",
+      "tags": [
+        "tcp",
+        "handshake-fail"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "question": "SYN sent, no SYN-ACK—likely classes of cause:",
+      "options": [
+        "Filter/ACL/firewall drop, routing blackhole, overloaded listener, or asymmetric path—not 'TCP is broken'",
+        "OSPF Area 0 missing",
+        "Missing MPLS PHP",
+        "YAML indent"
+      ],
+      "correctIndex": 0,
+      "explanation": "L3/L4 triage."
+    },
+    {
+      "id": "L4-006",
+      "module": "L4",
+      "difficulty": "interview",
+      "tags": [
+        "ip",
+        "forward"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "question": "IP's job vs TCP's job:",
+      "options": [
+        "IP provides best-effort packet delivery/routing; TCP builds reliability on top between endpoints",
+        "IP guarantees delivery",
+        "TCP picks OSPF areas",
+        "IP replaces ports"
+      ],
+      "correctIndex": 0,
+      "explanation": "Layering clarity."
+    },
+    {
+      "id": "L4-007",
+      "module": "L4",
+      "difficulty": "interview",
+      "tags": [
+        "ip",
+        "fragment"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "question": "IP fragmentation is risky because:",
+      "options": [
+        "Middleboxes/MTU issues drop fragments; prefer PMTUD and right-sized MTU end-to-end",
+        "It speeds BGP",
+        "It encrypts better",
+        "Firewalls love fragments"
+      ],
+      "correctIndex": 0,
+      "explanation": "Ops reality."
+    },
+    {
+      "id": "L4-008",
+      "module": "L4",
+      "difficulty": "interview",
+      "tags": [
+        "lb",
+        "l4"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "question": "L4 load balancer forwards based on:",
+      "options": [
+        "IP/TCP/UDP 5-tuple (or subset)—not HTTP paths; fast, protocol-agnostic distribution",
+        "Only URL paths",
+        "Only BGP AS-path",
+        "Only MAC learning"
+      ],
+      "correctIndex": 0,
+      "explanation": "LB layer literacy."
+    },
+    {
+      "id": "L4-009",
+      "module": "L4",
+      "difficulty": "interview",
+      "tags": [
+        "lb",
+        "l7"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "question": "L7 load balancer advantage:",
+      "options": [
+        "Content-aware routing (host/path), TLS terminate, richer health—cost is complexity/state",
+        "Always lower latency than L4",
+        "No health checks needed",
+        "Replaces DNS"
+      ],
+      "correctIndex": 0,
+      "explanation": "When L7 earns its keep."
+    },
+    {
+      "id": "L4-010",
+      "module": "L4",
+      "difficulty": "interview",
+      "tags": [
+        "lb",
+        "health"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "question": "LB health check that only pings ICMP is weak because:",
+      "options": [
+        "ICMP up ≠ app/TCP listener healthy—check the service port/path you actually serve",
+        "ICMP is illegal",
+        "LBs cannot use TCP checks",
+        "DNS replaces health"
+      ],
+      "correctIndex": 0,
+      "explanation": "Health check design."
+    },
+    {
+      "id": "L4-011",
+      "module": "L4",
+      "difficulty": "interview",
+      "tags": [
+        "lb",
+        "persistence"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "question": "Session persistence (stickiness) tradeoff:",
+      "options": [
+        "Helps stateful apps but hurts even load and failover—prefer stateless apps when possible",
+        "Always required for HTTP",
+        "Removes need for health checks",
+        "Fixes BGP asymmetry"
+      ],
+      "correctIndex": 0,
+      "explanation": "LB design tradeoff."
+    },
+    {
+      "id": "L4-012",
+      "module": "L4",
+      "difficulty": "interview",
+      "tags": [
+        "lb",
+        "vip"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "question": "VIP (virtual IP) in LB design is:",
+      "options": [
+        "The stable address clients hit; LB maps VIP→backend pool members",
+        "The BGP router-id only",
+        "A firewall rule name",
+        "An OSPF cost"
+      ],
+      "correctIndex": 0,
+      "explanation": "VIP mental model."
+    },
+    {
+      "id": "L4-013",
+      "module": "L4",
+      "difficulty": "interview",
+      "tags": [
+        "fw",
+        "state"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "question": "Stateful firewall tracks:",
+      "options": [
+        "Connection state so return traffic can be allowed without mirror rules for every flow",
+        "Only MAC tables",
+        "Only OSPF LSAs",
+        "YAML inventories"
+      ],
+      "correctIndex": 0,
+      "explanation": "Firewall vs ACL."
+    },
+    {
+      "id": "L4-014",
+      "module": "L4",
+      "difficulty": "interview",
+      "tags": [
+        "fw",
+        "placement"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "question": "Firewall on every leaf vs centralized inspection:",
+      "options": [
+        "Distributed reduces hairpin latency but multiplies policy ops; central simplifies policy but adds hops/failure modes—choose deliberately",
+        "Always central",
+        "Always every leaf",
+        "Firewalls obsolete"
+      ],
+      "correctIndex": 0,
+      "explanation": "Network design choice."
+    },
+    {
+      "id": "L4-015",
+      "module": "L4",
+      "difficulty": "interview",
+      "tags": [
+        "fw",
+        "asymmetry"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "question": "Asymmetric routing through stateful firewalls fails when:",
+      "options": [
+        "Return path hits a different firewall without shared state—fix routing/symmetric policy or active-active state sync",
+        "TCP cannot be asymmetric ever",
+        "Only DNS fails",
+        "BGP forbids asymmetry"
+      ],
+      "correctIndex": 0,
+      "explanation": "Classic outage pattern."
+    },
+    {
+      "id": "L4-016",
+      "module": "L4",
+      "difficulty": "interview",
+      "tags": [
+        "acl",
+        "order"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "question": "ACL first-match order bugs cause:",
+      "options": [
+        "Wrong allow/deny because a broader earlier rule shadows intent",
+        "Faster SPF",
+        "Automatic load balancing",
+        "IPsec"
+      ],
+      "correctIndex": 0,
+      "explanation": "Policy correctness."
+    },
+    {
+      "id": "L4-017",
+      "module": "L4",
+      "difficulty": "interview",
+      "tags": [
+        "tcp",
+        "rst"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "question": "Sudden TCP RSTs after policy change often mean:",
+      "options": [
+        "Firewall/ACL/security group now denying mid-flow or killing state—correlate change window",
+        "OSPF always sends RST",
+        "BGP communities encode RST",
+        "Linux ignores RST"
+      ],
+      "correctIndex": 0,
+      "explanation": "Change ↔ symptom."
+    },
+    {
+      "id": "L4-018",
+      "module": "L4",
+      "difficulty": "interview",
+      "tags": [
+        "lb",
+        "failover"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "question": "Backend dies; good LB behavior:",
+      "options": [
+        "Health check marks down; stop new flows; drain or reset existing per policy—monitor pool capacity",
+        "Keep sending forever",
+        "Delete VIP",
+        "Disable TCP"
+      ],
+      "correctIndex": 0,
+      "explanation": "Availability mechanics."
+    },
+    {
+      "id": "L4-019",
+      "module": "L4",
+      "difficulty": "interview",
+      "tags": [
+        "tcp",
+        "keepalive"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "question": "TCP keepalive vs app heartbeat:",
+      "options": [
+        "OS keepalives are coarse; apps often need explicit health for LB/failover timing",
+        "Identical always",
+        "Keepalive replaces BGP",
+        "Disable all health"
+      ],
+      "correctIndex": 0,
+      "explanation": "Failure detection layers."
+    },
+    {
+      "id": "L4-020",
+      "module": "L4",
+      "difficulty": "interview",
+      "tags": [
+        "edge",
+        "defense"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "question": "Defense in depth for Internet edge:",
+      "options": [
+        "LB + firewall/WAF + least-privilege ACLs + monitoring—not one box as the only control",
+        "Only a big firewall",
+        "Only BGP",
+        "Only Linux iptables forever"
+      ],
+      "correctIndex": 0,
+      "explanation": "Layered controls."
+    }
+  ]
+}

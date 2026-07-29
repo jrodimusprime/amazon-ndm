@@ -29,10 +29,16 @@ Vanilla HTML/CSS/JS (no build). Progress in `localStorage` (`andm-quiz-v1`, `and
 | N1–N4 | Fabric Dive Deep, capacity/change, ops, automation |
 | FND | Network fundamentals & routing |
 | ADV | Advanced routing — BGP, OSPF, IS-IS, MPLS |
+| L4 | IP, TCP, load balancers & firewalls |
 | AUTO | Network automation & programming (Python/Perl/Shell) |
 | NDEV | NetDevOps — CI/CD, Git, YAML/JSON |
 | ANS | Ansible |
 | LNX | Linux/Unix administration |
+| NSD | Network system design |
+| REQ | Clarifying requirements (network) |
+| SRA | Scalability, reliability & availability |
+| CODE | Coding fundamentals (language-agnostic, maintainable) |
+| CRV | Code reviews (network & automation) |
 | CLD | Cloud networking — VPC, Transit Gateway, Cloud WAN |
 | SEC | Network security — firewalls, ACLs, VPNs |
 | IAC | Infrastructure as Code concepts |
@@ -40,7 +46,7 @@ Vanilla HTML/CSS/JS (no build). Progress in `localStorage` (`andm-quiz-v1`, `and
 | LOOP | Interview stages + examples from Reddit/Blind/others |
 | WX | Loop quirks, AGSVA, Bar Raiser |
 
-Flash-card answer sides append a **Terms:** glossary expanding acronyms on that card.
+Preset **interview-syllabus** maps the common loop categories (fundamentals → code review). Flash-card answer sides append a **Terms:** glossary expanding acronyms on that card.
 
 ## Ask your recruiter
 

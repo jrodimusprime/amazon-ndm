@@ -107,7 +107,7 @@ load(`${ROOT}quiz/js/app.js`);
 
 assert(typeof QuizLoader.getAllQuestions === 'function', 'loader');
 QuizLoader.getAllQuestions().then((all) => {
-  assert(all.length >= 500, `expected >=500 questions, got ${all.length}`);
+  assert(all.length >= 650, `expected >=650 questions, got ${all.length}`);
   QuizEngine.init(all, new Set(['LP-CORE']), new Set(all.filter((q) => q.module === 'LP-CORE').map((q) => q.id)));
   const q = QuizEngine.pickRandom();
   assert(q && q.module === 'LP-CORE', 'engine picks LP-CORE');

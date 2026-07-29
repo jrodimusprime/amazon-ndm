@@ -1,0 +1,384 @@
+{
+  "questions": [
+    {
+      "id": "NSD-001",
+      "module": "NSD",
+      "difficulty": "interview",
+      "tags": [
+        "design",
+        "clarify"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "question": "First step in a network system design interview:",
+      "options": [
+        "Clarify goals, users, constraints (latency, loss, regions, compliance), and non-goals before drawing boxes",
+        "Draw Clos immediately",
+        "List every RFC",
+        "Start coding"
+      ],
+      "correctIndex": 0,
+      "explanation": "Design discipline."
+    },
+    {
+      "id": "NSD-002",
+      "module": "NSD",
+      "difficulty": "interview",
+      "tags": [
+        "design",
+        "clos"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "question": "Why Clos/leaf-spine for DC fabrics?",
+      "options": [
+        "Scalable east-west with ECMP, predictable failure domains, and horizontal scale-out vs big chassis trees",
+        "Fewer cables always",
+        "Eliminates need for monitoring",
+        "Removes BGP"
+      ],
+      "correctIndex": 0,
+      "explanation": "Canonical fabric design."
+    },
+    {
+      "id": "NSD-003",
+      "module": "NSD",
+      "difficulty": "interview",
+      "tags": [
+        "design",
+        "failure"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "question": "When sketching design, always show:",
+      "options": [
+        "Failure domains and what breaks when X fails (N-k), not only happy-path arrows",
+        "Only peak happy path",
+        "Only brand logos",
+        "Only cost"
+      ],
+      "correctIndex": 0,
+      "explanation": "Reliability in design."
+    },
+    {
+      "id": "NSD-004",
+      "module": "NSD",
+      "difficulty": "interview",
+      "tags": [
+        "design",
+        "api"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "question": "Network control-plane software design should separate:",
+      "options": [
+        "Intent API / policy, reconciliation, and device drivers—so one bug doesn't require rewriting everything",
+        "Everything in one script",
+        "UI from DNS only",
+        "BGP from TCP always in one process"
+      ],
+      "correctIndex": 0,
+      "explanation": "Software architecture for NetCore."
+    },
+    {
+      "id": "NSD-005",
+      "module": "NSD",
+      "difficulty": "interview",
+      "tags": [
+        "design",
+        "consistency"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "question": "Strong consistency for fabric inventory vs availability:",
+      "options": [
+        "Know CAP-ish tradeoffs: during partitions, choose stale-serve vs refuse-write for each subsystem",
+        "Always CP everywhere",
+        "Always AP everywhere",
+        "Networks ignore consistency"
+      ],
+      "correctIndex": 0,
+      "explanation": "Distributed systems for network platforms."
+    },
+    {
+      "id": "NSD-006",
+      "module": "NSD",
+      "difficulty": "interview",
+      "tags": [
+        "design",
+        "multiregion"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "question": "Multi-region network service design needs:",
+      "options": [
+        "Per-region failure isolation, global traffic steering, and clear data residency/compliance story",
+        "One shared control plane with no isolation",
+        "Only anycast DNS",
+        "Disable health checks"
+      ],
+      "correctIndex": 0,
+      "explanation": "Global design."
+    },
+    {
+      "id": "NSD-007",
+      "module": "NSD",
+      "difficulty": "interview",
+      "tags": [
+        "design",
+        "observability"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "question": "Observability is part of the design when:",
+      "options": [
+        "You specify metrics/logs/traces and SLO signals before launch—not bolted on after the first SEV",
+        "Optional for networks",
+        "Only CPU graphs",
+        "Only ticket counts"
+      ],
+      "correctIndex": 0,
+      "explanation": "Operable by design."
+    },
+    {
+      "id": "NSD-008",
+      "module": "NSD",
+      "difficulty": "interview",
+      "tags": [
+        "design",
+        "blast"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "question": "Blast radius reduction techniques:",
+      "options": [
+        "Cell/slice isolation, canaries, rate limits, staged rollout, and least privilege",
+        "Bigger blast radius for speed",
+        "Global lockstep pushes",
+        "No feature flags"
+      ],
+      "correctIndex": 0,
+      "explanation": "Safe evolution."
+    },
+    {
+      "id": "NSD-009",
+      "module": "NSD",
+      "difficulty": "interview",
+      "tags": [
+        "design",
+        "lb"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "question": "Designing a global LB service—key components:",
+      "options": [
+        "Health, capacity, consistency of config, DDoS posture, and DNS/anycast or Anycast+LB handoff",
+        "Only round-robin code",
+        "Only firewall rules",
+        "Only OSPF"
+      ],
+      "correctIndex": 0,
+      "explanation": "End-to-end LB system."
+    },
+    {
+      "id": "NSD-010",
+      "module": "NSD",
+      "difficulty": "interview",
+      "tags": [
+        "design",
+        "control-data"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "question": "Separate control and data planes because:",
+      "options": [
+        "Control can fail/restart while forwarding continues (with care)—and scale independently",
+        "They must share one CPU always",
+        "Data plane runs BGP best",
+        "Control plane forwards packets"
+      ],
+      "correctIndex": 0,
+      "explanation": "Classic network systems split."
+    },
+    {
+      "id": "NSD-011",
+      "module": "NSD",
+      "difficulty": "interview",
+      "tags": [
+        "design",
+        "idempotent"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "question": "Config push system design requires:",
+      "options": [
+        "Idempotent apply, versioning, dry-run/diff, and per-device checkpoints",
+        "Fire-and-forget SSH",
+        "No inventory",
+        "Shared root passwords"
+      ],
+      "correctIndex": 0,
+      "explanation": "Automation as a system."
+    },
+    {
+      "id": "NSD-012",
+      "module": "NSD",
+      "difficulty": "interview",
+      "tags": [
+        "design",
+        "backpressure"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "question": "When collectors overwhelm a bus, design should:",
+      "options": [
+        "Apply backpressure, shed load, and protect control plane—don't drop silently forever without signals",
+        "Ignore overload",
+        "Disable metrics",
+        "Add unlimited threads"
+      ],
+      "correctIndex": 0,
+      "explanation": "Stability under load."
+    },
+    {
+      "id": "NSD-013",
+      "module": "NSD",
+      "difficulty": "interview",
+      "tags": [
+        "design",
+        "security"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "question": "Threat model in network design includes:",
+      "options": [
+        "Compromise of device, controller, CI, and insider change—authN/Z, audit, segmentation",
+        "Only external DDoS",
+        "Only physical theft",
+        "Skip for private DC"
+      ],
+      "correctIndex": 0,
+      "explanation": "Secure by design."
+    },
+    {
+      "id": "NSD-014",
+      "module": "NSD",
+      "difficulty": "interview",
+      "tags": [
+        "design",
+        "migration"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "question": "Brownfield migration design:",
+      "options": [
+        "Strangler/dual-run, clear cutover criteria, and rollback—avoid big-bang untested swaps",
+        "Weekend rewrite only",
+        "Delete old without metrics",
+        "No dual-run"
+      ],
+      "correctIndex": 0,
+      "explanation": "Change as design."
+    },
+    {
+      "id": "NSD-015",
+      "module": "NSD",
+      "difficulty": "interview",
+      "tags": [
+        "design",
+        "sla"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "question": "Map requirements to SLOs by:",
+      "options": [
+        "Translating customer pain (timeouts/errors) into measurable latency/loss/availability targets",
+        "Picking round numbers for slides",
+        "Ignoring clients",
+        "Only link uptime"
+      ],
+      "correctIndex": 0,
+      "explanation": "Requirements → metrics."
+    },
+    {
+      "id": "NSD-016",
+      "module": "NSD",
+      "difficulty": "interview",
+      "tags": [
+        "design",
+        "scale"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "question": "Estimate scale early:",
+      "options": [
+        "Flows, pps, prefixes, devices, config rate, and storage—size bottlenecks before pretty diagrams",
+        "Only draw logos",
+        "Estimate after outage",
+        "Ignore control plane"
+      ],
+      "correctIndex": 0,
+      "explanation": "Back-of-envelope."
+    },
+    {
+      "id": "NSD-017",
+      "module": "NSD",
+      "difficulty": "interview",
+      "tags": [
+        "design",
+        "tradeoff"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "question": "Good design answer states tradeoffs:",
+      "options": [
+        "Explicit alternatives with costs (complexity, latency, ops)—pick and justify",
+        "One true architecture always",
+        "Avoid decisions",
+        "Only vendor slides"
+      ],
+      "correctIndex": 0,
+      "explanation": "Interview signal."
+    },
+    {
+      "id": "NSD-018",
+      "module": "NSD",
+      "difficulty": "interview",
+      "tags": [
+        "design",
+        "cells"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "question": "Cell-based architecture helps networks by:",
+      "options": [
+        "Limiting blast radius and enabling parallel scale—at cost of more routing/ops complexity",
+        "Removing need for LB",
+        "Eliminating BGP",
+        "Forbidding regions"
+      ],
+      "correctIndex": 0,
+      "explanation": "Modern large-system pattern."
+    },
+    {
+      "id": "NSD-019",
+      "module": "NSD",
+      "difficulty": "interview",
+      "tags": [
+        "design",
+        "single"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "question": "Spot the single point of failure:",
+      "options": [
+        "Shared RR, single NAT, one TGW route table mistake, one region control plane—call it out and mitigate",
+        "Nothing if HA pair exists by name",
+        "Only optics",
+        "Only humans"
+      ],
+      "correctIndex": 0,
+      "explanation": "Reviewer's eye."
+    },
+    {
+      "id": "NSD-020",
+      "module": "NSD",
+      "difficulty": "interview",
+      "tags": [
+        "design",
+        "evolve"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "question": "Design for evolution means:",
+      "options": [
+        "Versioned APIs, compatible rollouts, and feature flags—assume requirements will change",
+        "Freeze forever",
+        "Rewrite yearly mandatory",
+        "No abstraction"
+      ],
+      "correctIndex": 0,
+      "explanation": "Long-lived platforms."
+    }
+  ]
+}

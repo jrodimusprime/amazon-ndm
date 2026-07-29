@@ -1,0 +1,364 @@
+{
+  "questions": [
+    {
+      "id": "CODE-001",
+      "module": "CODE",
+      "difficulty": "interview",
+      "tags": [
+        "coding"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "question": "Language-agnostic coding bar for network tools means:",
+      "options": [
+        "Clear control flow, tested edge cases, and readable structure—language is secondary",
+        "Memorize syntax trivia",
+        "Only use Python",
+        "Only use C"
+      ],
+      "correctIndex": 0,
+      "explanation": "Interview signal."
+    },
+    {
+      "id": "CODE-002",
+      "module": "CODE",
+      "difficulty": "interview",
+      "tags": [
+        "coding"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "question": "Maintainable network automation code prioritizes:",
+      "options": [
+        "Small functions, explicit errors, and boring patterns over clever one-liners",
+        "Max density golf",
+        "Hidden globals",
+        "No names"
+      ],
+      "correctIndex": 0,
+      "explanation": "Readability."
+    },
+    {
+      "id": "CODE-003",
+      "module": "CODE",
+      "difficulty": "interview",
+      "tags": [
+        "coding"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "question": "Pure logic (CIDR overlap, graph BFS) should be:",
+      "options": [
+        "Unit-tested without devices—deterministic fixtures beat live SSH in CI",
+        "Only tested in prod",
+        "Untestable",
+        "Device-only"
+      ],
+      "correctIndex": 0,
+      "explanation": "Testability."
+    },
+    {
+      "id": "CODE-004",
+      "module": "CODE",
+      "difficulty": "interview",
+      "tags": [
+        "coding"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "question": "Parsing device output—maintainable approach:",
+      "options": [
+        "Structured parsers/APIs with golden fixtures; isolate regex mess behind interfaces",
+        "Copy-paste regex everywhere",
+        "No tests",
+        "eval the output"
+      ],
+      "correctIndex": 0,
+      "explanation": "Boundaries."
+    },
+    {
+      "id": "CODE-005",
+      "module": "CODE",
+      "difficulty": "interview",
+      "tags": [
+        "coding"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "question": "Error handling that aids ops:",
+      "options": [
+        "Typed/explicit failures with context (device, step)—don't swallow and return None silently",
+        "Bare except pass",
+        "Print only",
+        "Crash without message"
+      ],
+      "correctIndex": 0,
+      "explanation": "Debuggability."
+    },
+    {
+      "id": "CODE-006",
+      "module": "CODE",
+      "difficulty": "interview",
+      "tags": [
+        "coding"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "question": "Avoiding god-objects in a collector:",
+      "options": [
+        "Separate fetch, normalize, store, and alert stages with clear interfaces",
+        "One 2k-line main",
+        "Circular imports as design",
+        "Shared mutable soup"
+      ],
+      "correctIndex": 0,
+      "explanation": "Structure."
+    },
+    {
+      "id": "CODE-007",
+      "module": "CODE",
+      "difficulty": "interview",
+      "tags": [
+        "coding"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "question": "Concurrency in network scrapers—safe default:",
+      "options": [
+        "Bounded pools, timeouts, and per-host limits—correctness over max parallelism",
+        "Unlimited threads",
+        "No timeouts",
+        "Shared unguarded dicts"
+      ],
+      "correctIndex": 0,
+      "explanation": "Concurrency hygiene."
+    },
+    {
+      "id": "CODE-008",
+      "module": "CODE",
+      "difficulty": "interview",
+      "tags": [
+        "coding"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "question": "Naming in network code should:",
+      "options": [
+        "Use domain words (prefix, peer, ASN) consistently—not a/b/tmp2",
+        "Single-letter everywhere",
+        "Joke names in prod",
+        "Encode types in Hungarian always"
+      ],
+      "correctIndex": 0,
+      "explanation": "Clarity."
+    },
+    {
+      "id": "CODE-009",
+      "module": "CODE",
+      "difficulty": "interview",
+      "tags": [
+        "coding"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "question": "Feature flags for protocol behavior:",
+      "options": [
+        "Allow dark launch and fast disable—pair with metrics and clean defaults",
+        "Flags replace tests",
+        "Hardcode forever",
+        "Remote eval strings"
+      ],
+      "correctIndex": 0,
+      "explanation": "Safe change."
+    },
+    {
+      "id": "CODE-010",
+      "module": "CODE",
+      "difficulty": "interview",
+      "tags": [
+        "coding"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "question": "Input validation for an ACL API:",
+      "options": [
+        "Reject impossible ranges/shadowing early with clear errors—don't push bad intent to devices",
+        "Trust all JSON",
+        "Fix silently",
+        "Only check auth"
+      ],
+      "correctIndex": 0,
+      "explanation": "Defensive coding."
+    },
+    {
+      "id": "CODE-011",
+      "module": "CODE",
+      "difficulty": "interview",
+      "tags": [
+        "coding"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "question": "Idempotent apply function property:",
+      "options": [
+        "Same intent twice → same end state without duplicate side effects",
+        "Toggles each run",
+        "Requires reboot",
+        "Ignores state"
+      ],
+      "correctIndex": 0,
+      "explanation": "Core property."
+    },
+    {
+      "id": "CODE-012",
+      "module": "CODE",
+      "difficulty": "interview",
+      "tags": [
+        "coding"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "question": "Logging in library code:",
+      "options": [
+        "Structured fields; no secrets; levels that ops can filter during incidents",
+        "Log passwords",
+        "Printf chaos",
+        "No correlation ids"
+      ],
+      "correctIndex": 0,
+      "explanation": "Operable code."
+    },
+    {
+      "id": "CODE-013",
+      "module": "CODE",
+      "difficulty": "interview",
+      "tags": [
+        "coding"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "question": "Choosing algorithms for longest-prefix match in software:",
+      "options": [
+        "Use appropriate structures (trie/radix) and know complexity—don't O(n) scan huge tables hot-path without cause",
+        "Always linear scan",
+        "Only SQL",
+        "Ignore scale"
+      ],
+      "correctIndex": 0,
+      "explanation": "Complexity awareness."
+    },
+    {
+      "id": "CODE-014",
+      "module": "CODE",
+      "difficulty": "interview",
+      "tags": [
+        "coding"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "question": "Dead code and TODOs in critical path:",
+      "options": [
+        "Delete or schedule—ambiguity in failover paths is an outage waiting",
+        "Leave forever",
+        "Comment 'fix later' only",
+        "Duplicate instead"
+      ],
+      "correctIndex": 0,
+      "explanation": "Hygiene."
+    },
+    {
+      "id": "CODE-015",
+      "module": "CODE",
+      "difficulty": "interview",
+      "tags": [
+        "coding"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "question": "Dependency injection for device clients helps:",
+      "options": [
+        "Tests swap fakes; prod uses real—keeps logic testable",
+        "Hardcode SSH in every function",
+        "Global singleton only",
+        "No interfaces"
+      ],
+      "correctIndex": 0,
+      "explanation": "Test doubles."
+    },
+    {
+      "id": "CODE-016",
+      "module": "CODE",
+      "difficulty": "interview",
+      "tags": [
+        "coding"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "question": "Backwards-compatible config schema change:",
+      "options": [
+        "Additive fields, version negotiation, dual-read—avoid break-the-world renames",
+        "Rename all keys day one",
+        "No version",
+        "Silent truncate"
+      ],
+      "correctIndex": 0,
+      "explanation": "Evolution."
+    },
+    {
+      "id": "CODE-017",
+      "module": "CODE",
+      "difficulty": "interview",
+      "tags": [
+        "coding"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "question": "Handle partial success across N devices by:",
+      "options": [
+        "Per-target results, resume/rollback plan, and clear aggregate status—never one boolean for 500 boxes",
+        "All-or-nothing lie",
+        "Ignore failures",
+        "Retry infinite"
+      ],
+      "correctIndex": 0,
+      "explanation": "Distributed apply."
+    },
+    {
+      "id": "CODE-018",
+      "module": "CODE",
+      "difficulty": "interview",
+      "tags": [
+        "coding"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "question": "Code that is 'clever' with bit packing for prefixes:",
+      "options": [
+        "OK if documented/tested and necessary—otherwise prefer clarity until profiling demands",
+        "Always clever",
+        "Never optimize",
+        "No comments ever"
+      ],
+      "correctIndex": 0,
+      "explanation": "Premature vs justified."
+    },
+    {
+      "id": "CODE-019",
+      "module": "CODE",
+      "difficulty": "interview",
+      "tags": [
+        "coding"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "question": "Contract tests between controller and agent:",
+      "options": [
+        "Catch wire-format drift before prod—schema/golden fixtures in CI",
+        "Only manual QA",
+        "Skip for internal",
+        "Only load tests"
+      ],
+      "correctIndex": 0,
+      "explanation": "Interface stability."
+    },
+    {
+      "id": "CODE-020",
+      "module": "CODE",
+      "difficulty": "interview",
+      "tags": [
+        "coding"
+      ],
+      "source": "ANDM interview syllabus 2026-07 (networking focus)",
+      "question": "Readable code review question to ask yourself:",
+      "options": [
+        "Can an on-call engineer unfamiliar with this file debug it at 3am?",
+        "Is it the fewest characters?",
+        "Does it impress?",
+        "Are there enough emojis?"
+      ],
+      "correctIndex": 0,
+      "explanation": "Maintainability bar."
+    }
+  ]
+}
